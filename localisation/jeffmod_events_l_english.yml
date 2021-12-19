@@ -1,0 +1,77 @@
+﻿l_english:
+
+ssk.1.t:0 "Democratic Victory!"
+ssk.1.d:0 "With our recent victory in the 1936 elections its time to decide who to form a coalition with. As forming a coalition with any of the main stream parties will result in a victory which do you choose?"
+ssk.1.a:0 "New Democratic Party"
+ssk.1.b:0 "Saskatchewan Party"
+ssk.1.c:0 "Liberal Party"
+
+ssk.2.t:0 "Split in the Party"
+ssk.2.d:0 "As we attain more power in the country a rivalry in the party has sprang back up. For years Saori and Anchovy have been at eachothers throats over party policy. With both factions sides getting more and more violent a clear winner has to cone out on top. Who will impress the people?"
+ssk.2.a:0 "Anchovy"
+ssk.2.b:0 "Saori" 
+
+ssk.3.t:0 "Buying the West"
+ssk.3.d:0 "With our recent stability crisis finally fixed we can move on to our master plan. \n \nUniting Canada under a new government. \n \nOur diplomat is on the way right now. Hopefully we can pull this off."
+ssk.3.a:0 "Hope is all we need."
+
+ssk.6.t:0 "Canada Demands our Northern States!"
+ssk.6.d:0 "lol why you playing america"
+ssk.6.a:0 "To War!"
+
+ssk.7.t:0 "America Says No"
+ssk.7.d:0 "Our demands for our northern american territory have been rejected. Their capitalist nation as responded aggresively and we must act before we lose the war."
+ssk.7.a:0 "For the Workers!"
+
+ssk.8.t:0 "The Yanks Surrender!"
+ssk.8.d:0 "After taking vital cities and infrastructure the Capitalist Scum have offered a peace. With all our terms met we have no choice to accept this peace."
+ssk.8.a:0 "We have made Comrade Klara Proud!"
+
+##OPERATION PURPLE STORM
+ssk.9.t:0 "Operation §0Purple§! Storm"
+ssk.9.d:0 "All around us nations are progressing rapidly in the field of technology. As we are not the most wealthy of nation we are falling behind. \n \nWith this knowledge we are surly out matched in any future wars. But in the last few months our scientist have theorized what this new resource found in the deep caverns of Slave Lake in the northern territories is. Right now it is therorized that this new resource could be used to power our war machine and give us the trump card we need."
+ssk.9.a:0 "Only time will tell."
+
+ssk.10.t:0 "Operation §0Purple§! Storm, Phase 2"
+ssk.10.d:0 "With the new mystical mineral found and extracted from the lake time has come to test with it. As it stands the new mineral is called Magicite. \n \nWith tests under going it has shown great results. When shot from a slingshot the chunk of ore fires normally till getting close to a surface which then it speeds up incredibly with a purple flash. Could this be used to power our weapons of war?"
+ssk.10.a:0 "This is looking promising"
+
+ssk.11.t:0 "Operation §0Purple§! Storm, Phase 3"
+ssk.11.d:0 "With the first experiments far behind us Prairie Steel has taken initiative to design a protoype firearm with this new technology. \n \nWith this the first Magicite Firearm was invented. The first test were proven successful being able to go straight through L3/35 armour with no hassel. The rifle could also penetrate a Char D1 frontally. With this knowledge Prairie Steel will begin to produce a varient of the Ross Rifle."
+ssk.11.a:0 "The Future of Warfare!"
+
+ssk.12.t:0 "Operation §0Purple§! Storm, Phase 4"
+ssk.12.d:0 "The Ross Rifle M/1 has been a great success. Tests continued with tanks shells. At this point in time tank Magicite rounds are unable to penetrate any type of armour but are pretty effective against ground units. \n \nOn the other hand artillery has been showing promising results as the explosions are much larger and leave basically tracer rounds. The purple smoke from the barrel is also pretty cool. But with these limited options are most elite gaurd troops can be upgraded with this experimental equipment."
+ssk.12.a:0 "The Trump Card has arrived at last"
+
+ssk.13.t:0 "Operation §0Purple§! Storm, Phase 5"
+ssk.13.d:0 "With our tests wrapping up it has appeared that our experimental weapons are a semi success. Still the problem remains that the rifles may explode while reloading but scientists and engineers cant figure out why. \n \nNow it is time to equip the 37th Guards Infantry Brigade with Magicite weapons. Amongst the soldiers they call these new rifles magical rifles. With this we finally have our first Magicite infantry Brigade."
+ssk.13.a:0 "The Tide turns in our Favour!"
+
+##REARMAMENT
+ssk.14.t:0 "Saskatchewan Asks to Rearm"
+ssk.14.d:0 "Saskatchewan is asking to rearm. plus why you playing america in the saskatchewan mod."
+ssk.14.a:0 "Sure let them."
+
+ssk.15.t:0 "American Allows us to Rearm"
+ssk.15.d:0 "Today we finally were contacted back by the american embassy in Regina that we have full rights to Rearm. The treaty of Regina has finally be called off."
+ssk.15.a:0 "Thank you USA, you are my best friend"
+
+##DEATH OF KLARA
+ssk.16.t:0 "The Death of Klara"
+ssk.16.d:0 "Today terrible news has came out from the capital. Comrade Klara has been assasinated. During her speech a rouge American Fascist had shot Klara with their 1911. The man was ambushed while trying to escape the scene by the SSF. \n \nWith this the flames of the revolution burn higher. Reports of violince against Canadian-Americans has sky rocketed. Both in the home country and the newly conquored territory. \n \nWith the death of Comrade Klara filling the nations heart the party is now preparing to elect a new leader."
+ssk.16.a:0 "Oh God what have we done!"
+
+ssk.17.t:0 "Comrade Nonna"
+ssk.17.d:0 "The Communist Party has voted on Comrade Nonna to be Klara's Successor. Suprising news that the Reformist faction in the party had won. But now the De-Klaraisation has begun. With our new leader in control hopefully this brings a new age to Saskatchewan and Socialism!"
+ssk.17.a:0 "Lots of Work Ahead"
+
+##ELECTIONS 
+ssk.18.t:0 "Elections"
+ssk.18.d:0 "Today is the first election since 1936. The gift Nonna has given this nation is bigger than anyone can realize. We have finally been saved from the shackles of Communism. \n \nNow for the Candidates: \n \nFirst we have Mika. \nMika has been the long running leader of the New Democratic Party even all the way back when we were still Saskatchewan. \n \nSecond we have Rosehip. \nAfter the death of Kei to the Great Purge Rosehip took the mantal and replaced her as the leader. In exile she has called out the Communist Party for their misdeeds. \n \nThird we have Suzuki. \nJust like with Rosehip, Maria was both exiled and took the leadership role of the Liberal Party. During her stay in America she has also spoken out against the government. She also wrote a book called 'Saskatchewan, A failed Experiment'."
+ssk.18.a:0 "And the winner is!"
+
+##VICOTRIES
+ssk.19.t:0 "Communist Victory"
+ssk.19.d:0 "With the current election wrapping up its clear that our Workers Party has won the elections! With this victory we must quickly reform the Government and economic policy to keep our nation together."
+ssk.19.a:0 "A Great day for the Workers!"

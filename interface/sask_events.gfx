@@ -1,0 +1,115 @@
+spriteTypes = {
+
+##COUNTRY EVENTS
+
+	spriteType = {
+		name = "GFX_report_event_sask_prairie"
+		texturefile = "gfx/event_pictures/report_event_sask_prairie.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_fascist_divide"
+		texturefile = "gfx/event_pictures/report_event_fascist_divide.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_buy_west"
+		texturefile = "gfx/event_pictures/report_event_buy_west.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_march_south"
+		texturefile = "gfx/event_pictures/report_event_march_south.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_victory_day"
+		texturefile = "gfx/event_pictures/report_event_victory_day.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_purplestorm1"
+		texturefile = "gfx/event_pictures/report_event_purplestorm1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_purplestorm2"
+		texturefile = "gfx/event_pictures/report_event_purplestorm2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_purplestorm3"
+		texturefile = "gfx/event_pictures/report_event_purplestorm3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_purplestorm4"
+		texturefile = "gfx/event_pictures/report_event_purplestorm4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_purplestorm5"
+		texturefile = "gfx/event_pictures/report_event_purplestorm5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_rearm"
+		texturefile = "gfx/event_pictures/report_event_rearm.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_klara_death"
+		texturefile = "gfx/event_pictures/report_event_klara_death.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_nonna_succession"
+		texturefile = "gfx/event_pictures/report_event_nonna_succession.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_communist_victory"
+		texturefile = "gfx/event_pictures/report_event_communist_victory.dds"
+	}
+	
+##IDEAS
+
+	spriteType = {
+		name = "GFX_idea_ssk_albertain_nationalists"
+		texturefile = "gfx/interface/ideas/ssk_albertain_nationalists.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ssk_dying_democracy"
+		texturefile = "gfx/interface/ideas/ssk_dying_democracy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_war_communism"
+		texturefile = "gfx/interface/ideas/idea_war_communism_economic_mobilisation.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ssk_deorg_highcommand"
+		texturefile = "gfx/interface/ideas/ssk_deorg_highcommand.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ssk_regina_treadty"
+		texturefile = "gfx/interface/ideas/ssk_regina_treadty.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_nonna_advisor"
+		texturefile = "gfx/interface/ideas/portraits/idea_SSK_nonna.dds"
+	}
+
+##EQUIPMENT
+
+	SpriteType = {
+		name = "GFX_CRY_magical_equipment_1"
+		texturefile = "gfx/interface/technologies/CRY_magical_equipment_1.dds"
+	}
+
+
+}

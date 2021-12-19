@@ -1,0 +1,154 @@
+guiTypes = {
+	
+	containerWindowType = {
+		name = "SSK_elections_window"
+		size = { width = 538 height = 400 }
+		position = { x = 0 y = 0 }
+		
+		##SFASFSAFSAF
+		iconType = {
+			name = "SSK_elections_picture"
+			spriteType = "GFX_SSK_elections_decision"
+			position = { x = 20 y = -4 }
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "GFX_1922_election_results"
+			spriteType = "GFX_1922_election_results"
+			position = { x = 340 y = -4 }
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "GFX_sask_flag_decisions"
+			spriteType = "GFX_sask_flag_decisions"
+			position = { x = 410 y = 170 }
+			alwaystransparent = yes
+		}
+		
+		##INFO
+		instantTextboxType = {
+			name = "infomation_text"
+			position = { x = 10 y = 175 }
+			font = "hoi_10mbs"
+			text = "ELECTIONS_TEXT"
+			maxWidth = 400
+			maxHeight = 24
+			format = centre
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "GFX_party_pop_decision"
+			spriteType = "GFX_party_pop_decision"
+			position = { x = 20 y = 270 }
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "GFX_party_pop_decision2"
+			spriteType = "GFX_party_pop_decision"
+			position = { x = 20 y = 310 }
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "GFX_party_pop_decision3"
+			spriteType = "GFX_party_pop_decision"
+			position = { x = 20 y = 350 }
+			alwaystransparent = yes
+		}
+		
+		##TEXT
+		instantTextboxType = {
+			name = "fascism_text"
+			position = { x = 30 y = 275 }
+			font = "hoi_10mbs"
+			text = "ELECTIONS_FASCIST_TEXT"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "democratic_text"
+			position = { x = 30 y = 315 }
+			font = "hoi_10mbs"
+			text = "ELECTIONS_DEMOCRATIC_TEXT"
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "communist_text"
+			position = { x = 30 y = 355 }
+			font = "hoi_10mbs"
+			text = "ELECTIONS_COMMUNIST_TEXT"
+			alwaystransparent = yes
+		}
+		##PERCENTS
+		instantTextboxType = {
+			name = "fascistnumber_text"
+			position = { x = 190 y = 275 }
+			font = "hoi_10mbs"
+			text = "[?global.ssk_fascism]%"
+			maxWidth = 50
+			format = center
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "democraticnumber_text"
+			position = { x = 190 y = 315 }
+			font = "hoi_10mbs"
+			text = "[?global.ssk_democractic]%"
+			maxWidth = 50
+			format = center
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "communismnumber_text"
+			position = { x = 190 y = 355 }
+			font = "hoi_10mbs"
+			text = "[?global.ssk_communist]%"
+			maxWidth = 50
+			format = center
+			alwaystransparent = yes
+		}
+	}
+	
+	
+	##AMERICAN WAR INFO BOX
+	containerWindowType = {
+		name = "SSK_americainfo_window_custom"
+		size = { width = 220 height = 128 }
+		position = { x = 650 y = 300 }
+
+		iconType = {
+			name = "SSK_background_tile"
+			spriteType = "GFX_tile_big_window"
+			position = { x = 20 y = -4 }
+			alwaystransparent = yes
+		}
+	}
+
+	
+	containerWindowType = {
+		name = "GUP_SG_big_event_frame_finale_victory_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		
+		buttonType = {
+			name = "Option"
+			text = "BE_GUP_VICTORY2"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -200 y = 80 }
+			quadTextureSprite ="GFX_super_event_button"
+			buttonFont = "hoi_18mbs"
+			Orientation = center
+		}
+	}
+	}
+}

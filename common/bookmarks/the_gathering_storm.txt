@@ -1,0 +1,31 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "SSK"
+		default = yes
+		
+		"SSK"={
+			history = "SSK_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = {  }
+			ideas = {
+				ssk_dying_democracy
+				ssk_albertain_nationalists
+				ssk_regina_treaty
+			}
+			focuses = {
+				SSK_communist_victory
+				SSK_democratic_victory
+				SSK_fascist_victory
+			}
+		}
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

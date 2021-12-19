@@ -1,0 +1,91 @@
+# options for map_icon_category:
+# For land units: infantry,armored,other
+# For sea units: ship,transport,uboat
+
+sub_units = {
+
+	magicalinf = {
+		abbreviation = "MGI"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 599
+		ai_priority = 200
+		active = no
+
+		type = { infantry }
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_army
+		}
+
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 35
+		max_organisation = 60
+		default_morale = 0.8
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 120
+		suppression = 2.2
+		weight = 0.5
+
+		#Offensive Abilities
+		suppression = 2
+	
+		need = {
+			magical_equipment_1 = 300
+		}
+	}
+	
+	
+	magicalarty = {
+		abbreviation = "MGA"
+		sprite = artillery
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+		affects_speed = no
+
+		type = {
+			infantry
+		}
+		
+		group = support
+		
+		categories = {
+			category_army
+			category_artillery
+		}
+
+
+		combat_width = 3
+
+		need = {
+			magical_artillery_equipment_1 = 40
+		}
+		manpower = 300
+		training_time = 120
+		max_organisation = 0
+		default_morale = 0.1
+		max_strength = 0.2
+		weight = 0.1
+		
+		supply_consumption = 0.16
+
+		# Support nerfs to combat abilities
+		defense = -0.4
+		breakthrough = -0.4
+		soft_attack = -0.4
+		hard_attack = -0.4
+
+
+		can_be_parachuted = yes
+	}
+}

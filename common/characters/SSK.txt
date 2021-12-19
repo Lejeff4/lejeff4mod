@@ -1,0 +1,539 @@
+characters={
+	SSK_koume_akaboshi={
+		name="Koume Akaboshi"
+		portraits={
+			civilian={
+				large="gfx/leaders/SSK/GFX_koume.dds"
+			}
+	
+			civilian = {
+				small="gfx/interface/ideas/portraits/idea_SSK_koume.dds"
+			}
+			
+			army={
+				small="gfx/interface/ideas/portraits/idea_SSK_koume.dds"
+			}
+			
+			army = {
+				large="gfx/leaders/SSK/GFX_koume.dds"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer expert_improviser }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=1
+			legacy_id=9007
+		}
+		country_leader={
+			ideology=conservatism
+			traits={ ssk_underrated_politician }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	SSK_mika = {
+		name = "Mika"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SSK/GFX_mika.dds"
+			}
+			
+			civilian = {
+				small="gfx/interface/ideas/portraits/idea_SSK_mika.dds"
+			}
+
+		}
+		
+		country_leader = {
+			ideology = conservatism
+			traits = { equal_rights_advocate }
+			expire = "1965.1.1"
+			id = 1
+		}
+	}
+	
+	SSK_saori_takebe={
+		name="Saori Takebe"
+		portraits={
+			civilian={
+				large="gfx/leaders/SSK/GFX_saori.dds"
+			}
+			civilian = {
+				small="gfx/interface/ideas/portraits/idea_SSK_saori.dds"
+			}
+			
+			army={
+				small="gfx/interface/ideas/portraits/idea_SSK_saori.dds"
+			}
+			
+			army = {
+				large="gfx/leaders/SSK/GFX_saori.dds"
+			}
+		}
+		field_marshal={
+			traits={ media_personality war_hero }
+			skill=4
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=9002
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SSK_youko={
+		name="Youko"
+		portraits={
+			civilian={
+				large="gfx/leaders/SSK/GFX_youko.dds"
+			}
+			
+			civilian = {
+				small="gfx/interface/ideas/portraits/idea_SSK_youko.dds"
+			}
+			
+			army={
+				small="gfx/interface/ideas/portraits/idea_SSK_youko.dds"
+			}
+			
+			army = {
+				large="gfx/leaders/SSK/GFX_youko.dds"
+			}
+		}
+		country_leader={
+			ideology=centrism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SSK_klara={
+		name="Klara"
+		portraits={
+			civilian={
+				large="gfx/leaders/SSK/GFX_klara.dds"
+			}
+			
+			civilian = {
+				small="gfx/interface/ideas/portraits/idea_SSK_klara.dds"
+			}
+			
+			army={
+				small="gfx/interface/ideas/portraits/idea_SSK_klara.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_mountaineer urban_assault_specialist }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=9001
+		}
+		country_leader={
+			ideology=marxism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SSK_kiyomi_sugiyama={
+		name="Kiyomi Sugiyama"
+		portraits={
+			army={
+				small="gfx/interface/ideas/portraits/idea_SSK_saemonza.dds"
+			}
+			army={
+				large="gfx/leaders/SSK/GFX_saemonza.dds"
+			}
+		}
+		corps_commander={
+			traits={ media_personality bold swamp_fox }
+			skill=3
+			attack_skill=5
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=6
+			legacy_id=9003
+		}
+	}
+	SSK_maria_suzuki={
+		name="Maria Suzuki"
+		portraits={
+			army={
+				small="gfx/interface/ideas/portraits/idea_SSK_saemonza.dds"
+			}
+			army={
+				large="gfx/leaders/SSK/GFX_suzuki.dds"
+			}
+		}
+		corps_commander={
+			traits={ media_personality armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=9004
+		}
+	}
+	SSK_chiyomi_anzai={
+		name="Chiyomi Anzai"
+		portraits={
+			civilian = {
+				large = "gfx/leaders/SSK/GFX_anchovy2.dds"
+			}
+			
+			civilian = {
+				small="gfx/interface/ideas/portraits/idea_SSK_anchovy.dds"
+			}
+		
+			army={
+				small="gfx/interface/ideas/portraits/idea_SSK_anchovy.dds"
+			}
+			army={
+				large="gfx/leaders/SSK/GFX_anchovy.dds"
+			}
+		}
+		corps_commander={
+			traits={ inflexible_strategist trait_reckless }
+			skill=4
+			attack_skill=5
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=9005
+		}
+		
+		country_leader = {
+			ideology = nazism
+			traits = { ssk_funny_fish }
+			expire = "1965.1.1"
+			id = 1
+		}
+	}
+	
+	SSK_kei={
+		name="Kei"
+		portraits={
+		
+			civilian = {
+				large="gfx/leaders/SSK/GFX_kay2.dds"
+			}
+			
+			civilian = {
+				small="gfx/interface/ideas/portraits/idea_SSK_kay.dds"
+			}
+			
+			army={
+				small="gfx/interface/ideas/portraits/idea_SSK_kay.dds"
+			}
+			army={
+				large="gfx/leaders/SSK/GFX_kay.dds"
+			}
+		}
+		corps_commander={
+			traits={ skilled_staffer commando }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=9006
+		}
+		
+		country_leader = {
+			ideology = conservatism
+			traits = { ssk_nationalist }
+			expire = "1965.1.1"
+			id = 1
+		}
+	}
+	
+
+	SSK_rosehip={
+		name="Rosehip"
+		portraits={
+			army={
+				small="gfx/interface/ideas/portraits/idea_SSK_rosehip.dds"
+			}
+			army={
+				large="gfx/leaders/SSK/GFX_rosehip.dds"
+			}
+		}
+		corps_commander={
+			traits={ fast_planner aggressive_assaulter }
+			skill=3
+			attack_skill=6
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=9008
+		}
+	}
+	SSK_vietnam_warfare={
+		name="Vietnam Warfare"
+		portraits={
+			army={
+				small="gfx/interface/ideas/portraits/idea_SSK_vietnam.dds"
+			}
+			army={
+				large="gfx/leaders/SSK/GFX_vietnam.dds"
+			}
+		}
+		corps_commander={
+			traits={ death_or_dishonor trait_reckless }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=9009
+		}
+	}
+	
+	SSK_katyusha = {
+		name = "Katyusha"
+		portraits = {
+			army = {
+				small="gfx/interface/ideas/portraits/idea_SSK_katyusha.dds"
+			}
+			
+			army = {
+				large = "gfx/leaders/SSK/GFX_katyusha.dds"
+			}
+		}
+		
+		corps_commander = {
+			traits = { hill_fighter urban_assault_specialist panzer_expert } 
+			skill = 5
+			attack_skill = 6
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 9011
+		}
+	}
+	
+	SSK_nonna = {
+		name = "Nonna"
+		portraits = {
+			army = {
+				small="gfx/interface/ideas/portraits/idea_SSK_nonna.dds"
+			}
+			
+			army = {
+				large = "gfx/leaders/SSK/GFX_nonna.dds"
+			}
+		}
+		
+		corps_commander = {
+			traits ={ winter_specialist winter_expert panzer_leader }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 9010
+		}
+	}
+	
+	SSK_alina = {
+		name = "Alina"
+		portraits = {
+			army = {
+				small="gfx/interface/ideas/portraits/idea_SSK_alina.dds"
+			}
+			
+			army = {
+				large = "gfx/leaders/SSK/GFX_alina.dds"
+			}
+		}
+		
+		corps_commander = {
+			traits = { winter_specialist } 
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 9012		
+			
+		}
+	}
+	
+	SSK_nina = {
+		name = "Nina"
+		portraits = {
+			army = {
+				small="gfx/interface/ideas/portraits/idea_SSK_nina.dds"
+			}
+			
+			army = {
+				large = "gfx/leaders/SSK/GFX_nina.dds"
+			}
+		}
+		
+		corps_commander = {
+			traits = { winter_specialist } 
+					skill = 2
+					attack_skill = 2
+					defense_skill = 1
+					planning_skill = 1
+					logistics_skill = 1
+					legacy_id = 9013
+		}
+	}
+	
+	##ADVISORS
+	
+	##COMMIE
+	SSK_nonna2={
+		name = "Nonna"
+		portraits={
+			army = {
+				small="gfx/interface/ideas/portraits/idea_SSK_nonna.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SSK_nonna_idea
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+				has_government = communism
+			}
+			traits = {
+				communist_reformist
+			}
+			
+			cost = 150
+		}
+	}
+	
+	SSK_katyusha2 = {
+		name = "Katyusha"
+		portraits={
+			army = {
+				small="gfx/interface/ideas/portraits/idea_SSK_katyusha.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SSK_katyusha_idea
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+				has_government = communism
+			}
+			traits = {
+				diehard_socialist
+			}
+			
+			cost = 150
+		}
+	}
+	
+	SSK_mika2 = {
+		name = "Mika"
+		portraits={
+			army = {
+				small="gfx/interface/ideas/portraits/idea_SSK_mika.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SSK_mika_idea
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+			OR = {
+				has_government = communism
+				has_government = democratic
+			}	
+			}
+			traits = {
+				moderate_socialist
+			}
+		}
+	}
+	
+	SSK_alina2 = {
+		name = "Alina"
+		portraits={
+			army = {
+				small="gfx/interface/ideas/portraits/idea_SSK_alina.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SSK_alina_idea
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+				has_government = communism
+			}
+			traits = {
+				rapid_industrialist
+			}
+		}
+	}
+	
+	SSK_klara2 = {
+		name = "Klara"
+		portraits={
+			army = {
+				small="gfx/interface/ideas/portraits/idea_SSK_klara.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SSK_klara_idea
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+				has_government = communism
+			}
+			traits = {
+				people_pleaser
+			}
+		}
+	}
+	
+	SSK_vietnam_warfare2 = {
+		name = "Vietnam"
+		portraits={
+			army = {
+				small="gfx/interface/ideas/portraits/idea_SSK_vietnam.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = SSK_vietnam_warfare_idea
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+				has_completed_focus = SSK_war_plan_V
+			}
+			traits = {
+				army_armored_1
+			}
+			
+			cost = 50
+		}
+	
+	}
+}

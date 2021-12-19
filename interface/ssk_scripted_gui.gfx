@@ -1,0 +1,39 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_SSK_elections_decision"
+		textureFile = "gfx/interface/decisions/decision_cat_generic_ssk_elections.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_party_pop_decision"
+		textureFile = "gfx/interface/decisions/party_pop_decision.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sask_flag_decisions"
+		textureFile = "gfx/interface/decisions/sask_flag_decisions.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_1922_election_results"
+		textureFile = "gfx/interface/decisions/1922_election_results.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tile_big_window"
+		textureFile = "gfx/interface/tiled_window_bigevent_border1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tile_bg_window"
+		textureFile = "gfx/interface/tiled_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_super_event_button"
+		textureFile = "gfx/interface/super_event_button.dds"
+	}
+	
+
+}

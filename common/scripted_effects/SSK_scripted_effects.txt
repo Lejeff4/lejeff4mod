@@ -1,0 +1,18 @@
+ssk_fascism_effect = {
+	clear_array = global.ssk_fascism_array
+	set_variable = { global.ssk_fascism = 1 }
+	add_to_array = { global.ssk_fascism_array = 1 } 
+}
+
+ssk_democractic_effect = {
+	clear_array = global.ssk_democractic_array
+	set_variable = { global.ssk_democractic = 1 }
+	add_to_array = { global.ssk_democractic_array = 1 } 
+}
+
+ssk_communist_effect = {
+	clear_array = global.ssk_communist_array
+	set_variable = { global.ssk_communist = 1 }
+	add_to_array = { global.ssk_communist_array = 1 } 
+}
+

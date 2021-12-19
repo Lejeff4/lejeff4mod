@@ -1,0 +1,14 @@
+SSK_east_united = {
+	color = rgb { 8 110 20 }
+	color_ui = rgb { 8 110 20 }
+}
+
+SSK_canada_united = {
+	color = { 233  59  59 }
+	color_ui = { 233  59  59 }
+}
+
+SSK_SOVIET_UNITED = {
+	color = { 233  59  59 }
+	color_ui = { 233  59  59 }
+}

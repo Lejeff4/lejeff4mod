@@ -1,0 +1,84 @@
+leader_traits = {
+	
+	equal_rights_advocate = {
+		random = no
+		
+		stability_factor = 0.05
+		political_advisor_cost_factor = 0.25
+	}
+	
+	ssk_nationalist = {
+		random = no
+		
+		stability_factor = 0.1
+		war_support_factor = 0.05
+	
+	}
+	
+	ssk_underrated_politician = {
+		random = no
+		
+		consumer_goods_factor = -0.05
+		stability_factor = 0.05
+	
+	}
+	
+	ssk_iron_fist = {
+		random = no
+		
+		war_support_factor = 0.1
+		stability_factor = -0.05
+		compliance_gain = 0.1
+	
+	}
+	
+	ssk_funny_fish = {
+		stability_factor = 0.15
+		war_support_factor = -0.04
+		political_power_gain = 0.05
+	}
+	
+	##POLITICAL ADVISORS
+	
+	communist_reformist = {
+		random = no
+		sprite = 13
+		political_power_factor = 0.15
+		industrial_capacity_factory = 0.05
+		democratic_drift = 0.01
+	}
+	
+	diehard_socialist = {
+		random = no
+		sprite = 13
+		stability_factor = -0.05
+		communism_drift = 0.05
+	}
+	
+	moderate_socialist = {
+		random = no
+		sprite = 13
+		democratic_drift = 0.05
+		political_advisor_cost_factor = -0.15
+		stability_factor = 0.1
+	}
+	
+	rapid_industrialist = {
+		random = no
+		sprite = 13
+		consumer_goods_factor = -0.05
+		stability_factor = -0.1
+		industrial_capacity_factory = 0.05
+		production_speed_buildings_factor = 0.05
+	}
+	
+	people_pleaser = {
+		random = no
+		sprite = 13
+		stability_factor = 0.05
+		compliance_gain = 0.05
+		democratic_acceptance = 50
+		communism_acceptance = 50
+	}
+
+}
