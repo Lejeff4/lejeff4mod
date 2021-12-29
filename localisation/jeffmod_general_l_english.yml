@@ -44,6 +44,10 @@ ELECTIONS_FASCIST_TEXT:0 "§ONationalists§! Popularity:"
 ELECTIONS_DEMOCRATIC_TEXT:0 "§CDemocratic§! Popularity:"
 ELECTIONS_COMMUNIST_TEXT:0 "§RCommunist§! Popularity:"
 
+NONNA_VICTORY_TEXT:0 "Pravda is a school that always let victory that should have been theirs slip away, today we change that! \n - Nonna"
+NONNA_BUTTON_TEXT:0 "Finally, Freedom"
+NONNA_TITLE_TEXT:0 "Wholesome Ending"
+
 ##DECISIONS
 ssk_fascist_divide:0 "Fascist Party Divide"
 ssk_f_test:0 "Split in the Party"
@@ -230,6 +234,7 @@ ssk_labour_camps:0 "Albertan Labour Camps"
 ssk_recovering_genocide:0 "Aftermath of the Albertan Genocide"
 ssk_united_together:0 "United Together"
 ssk_united_north:0 "North American Republic"
+ssk_diplomatic_challange:0 "Reaching Out"
 
 ##FOCUSES
 SSK_elections:0 "Elections"

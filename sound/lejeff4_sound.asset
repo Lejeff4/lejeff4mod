@@ -1,0 +1,4 @@
+sound = {
+	name = "nonnasuperevent"
+	file = "nonnasuperevent.wav"
+}

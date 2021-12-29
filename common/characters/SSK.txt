@@ -465,6 +465,8 @@ characters={
 			traits = {
 				moderate_socialist
 			}
+			
+			cost = 50
 		}
 	}
 	
@@ -487,6 +489,8 @@ characters={
 			traits = {
 				rapid_industrialist
 			}
+			
+			cost = 200
 		}
 	}
 	
@@ -509,6 +513,8 @@ characters={
 			traits = {
 				people_pleaser
 			}
+			
+			cost = 150
 		}
 	}
 	
@@ -535,5 +541,29 @@ characters={
 			cost = 50
 		}
 	
+	}
+	
+	SSK_nico_telephone = {
+		name = "Nico is a Telephone99"
+		portraits={
+			army = {
+				small="gfx/interface/ideas/portraits/idea_SSK_nico.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = SSK_vietnam_warfare_idea
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+				has_completed_focus = SSK_war_plan_N
+			}
+			traits = {
+				army_infantry_2
+			}
+			
+			cost = 50
+		}
 	}
 }

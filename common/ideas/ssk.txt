@@ -1371,6 +1371,21 @@ ideas = {
 				stability_factor = 0.05
 			}
 		}
+		
+		ssk_diplomatic_challange = {
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.25
+				democratic_drift = 0.01
+				democratic_acceptance = 200
+			}
+		}
 
 		##HAS ICONS
 		

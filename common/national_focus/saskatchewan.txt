@@ -1349,7 +1349,7 @@ focus_tree = {
 			id = SSK_industrial_problems
 			icon = GFX_goal_industrial_problems
 			relative_position_id = SSK_elections
-			x = 30
+			x = 40
 			y = 8
 			
 			prerequisite = { }
@@ -3553,7 +3553,7 @@ focus_tree = {
 			}
 			
 			prerequisite = { focus = SSK_east_united }
-			mutually_exclusive = {}
+			mutually_exclusive = { focus = SSK_diplomatic_challange }
 			
 			cost = 5
 			
@@ -5009,14 +5009,22 @@ focus_tree = {
 	
 		focus = {
 			id = SSK_diplomatic_challange
-			x = 27
-			y = 8
+			relative_position_id = SSK_elections
+			x = 18
+			y = 11
 			
-			prerequisite = {}
-			mutually_exclusive = {}
+			available = {
+				has_completed_focus = SSK_democratic_victory
+			}
+			
+			prerequisite = { focus = SSK_east_united }
+			mutually_exclusive = { focus = SSK_communist_expansion}
+			
+			cost = 5
 			
 			completion_reward = {
-			
+				add_political_power = 50
+				add_ideas = ssk_diplomatic_challange
 			}
 		}
 		
@@ -5029,8 +5037,17 @@ focus_tree = {
 			prerequisite = { focus = SSK_diplomatic_challange }
 			mutually_exclusive = {}
 			
-			completion_reward = {
+			cost = 2
 			
+			completion_reward = {
+				add_opinion_modifier = {
+					target = CAN
+					modifier =  CAN_strengthen_the_commonwealth_ties
+				}
+				
+				CAN = {
+					add_political_power = 25
+				}
 			}
 		}
 		
@@ -5042,6 +5059,8 @@ focus_tree = {
 			
 			prerequisite = { focus = SSK_approch_canada }
 			mutually_exclusive = { focus = SSK_autonomy }
+			
+			cost = 5
 			
 			completion_reward = {
 			

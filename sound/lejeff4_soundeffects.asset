@@ -1,0 +1,8 @@
+
+soundeffect = {
+	name = "nonnasuperevent_bigevent"
+	sounds = {
+		sound = nonnasuperevent
+	}
+	volume = 3
+}
