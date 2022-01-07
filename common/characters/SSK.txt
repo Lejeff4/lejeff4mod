@@ -518,6 +518,104 @@ characters={
 		}
 	}
 	
+	##DEMOCRATIC
+	
+	SSK_kei2 = {
+		name = "Kei"
+		portraits={
+			army = {
+				small="gfx/interface/ideas/portraits/idea_SSK_kay.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SSK_kay_idea
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+				has_government = democratic
+			}
+			traits = {
+				conservitive
+			}
+			
+			cost = 150
+		}
+	}
+	
+	SSK_suzuki2 = {
+		name = "Maria Suzuki"
+		portraits={
+			army = {
+				small="gfx/interface/ideas/portraits/idea_SSK_suzuki.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SSK_suzuki_idea
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+				has_government = democratic
+			}
+			traits = {
+				popular_author
+			}
+			
+			cost = 150
+		}
+	}
+	
+	SSK_koume2 = {
+		name = "Koume Akaboshi"
+		portraits={
+			army = {
+				small="gfx/interface/ideas/portraits/idea_SSK_koume.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SSK_koume_idea
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+				has_government = democratic
+			}
+			traits = {
+				laissez_faire
+			}
+			
+			cost = 150
+		}
+	}
+	
+	SSK_rosehip2 = {
+		name = "Rosehip"
+		portraits={
+			army = {
+				small="gfx/interface/ideas/portraits/idea_SSK_rosehip.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SSK_rosehip_idea
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+				has_government = democratic
+			}
+			traits = {
+				efficent_burocrat
+			}
+			
+			cost = 150
+		}
+	}
+	
 	SSK_vietnam_warfare2 = {
 		name = "Vietnam"
 		portraits={

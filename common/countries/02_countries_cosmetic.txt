@@ -12,3 +12,8 @@ SSK_SOVIET_UNITED = {
 	color = { 233  59  59 }
 	color_ui = { 233  59  59 }
 }
+
+SSK_HAMBURGER = {
+	color =  rgb { 143  40  40 }
+	color_ui = rgb { 143  40  40 }
+}

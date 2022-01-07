@@ -80,5 +80,39 @@ leader_traits = {
 		democratic_acceptance = 50
 		communism_acceptance = 50
 	}
+	
+	conservitive = {
+		random = no
+		sprite = 13
+		
+		democratic_drift = 0.05
+		stability_factor = 0.05
+		production_factory_max_efficiency_factor = 0.05
+	}
+	
+	popular_author = {
+		random = no
+		sprite = 13
+		
+		research_speed_factor = 0.05
+		political_power_factor = 0.05
+	}
+	
+	laissez_faire = {
+		random = no
+		sprite = 13
+		
+		consumer_goods_factor = -0.05
+		trade_opinion_factor = 0.15
+	}
+	
+	efficent_burocrat = {
+		random = no
+		sprite = 13
+		
+		production_speed_buildings_factor = 0.05
+		consumer_goods_factor = -0.01
+		political_power_gain = 0.25
+	}
 
 }
