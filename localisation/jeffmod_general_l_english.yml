@@ -50,6 +50,13 @@ SSK_HAMBURGER_communism:0 "No Food Union of North America"
 SSK_HAMBURGER_democratic:0 "United North American States of Fast Food"
 SSK_HAMBURGER_neutrality:0 "Fast Food"
 
+SSK_canada_union_ADJ:0 "Canadian"
+SSK_canada_union_DEF:0 "Canada"
+SSK_canada_union_communism:0 "Socialist Canada"
+SSK_canada_union_fascism:0 "Unitary Canada"
+SSK_canada_union_democratic:0 "Canadian Union"
+SSK_canada_union_neutrality:0 "Dominion of Canada"
+
 ##SCRIPTED GUI
 ELECTIONS_TEXT:0 "Since our inception in 1919 our elections have been quite chaotic, the upcoming one is no better. All sides of the political spectrum are fighting it out to grab onto power. This will be a tight race."
 ELECTIONS_FASCIST_TEXT:0 "§ONationalists§! Popularity:"
@@ -59,6 +66,10 @@ ELECTIONS_COMMUNIST_TEXT:0 "§RCommunist§! Popularity:"
 NONNA_VICTORY_TEXT:0 "Pravda is a school that always let victory that should have been theirs slip away, today we change that! \n - Nonna"
 NONNA_BUTTON_TEXT:0 "Finally, Freedom"
 NONNA_TITLE_TEXT:0 "Wholesome Ending"
+
+diplo_TITLE_TEXT:0 "Diplomatic Ending"
+diplo_VICTORY_TEXT:0 "I matched our number to the number of tanks you had. Because that's Shensha-do! This isn't war. The wanks would be sad if we forgot that. \n -Kay"
+diplomatic_BUTTON_TEXT:0 "Free World United Once More!"
 
 ##DECISIONS
 ssk_fascist_divide:0 "Fascist Party Divide"
@@ -148,6 +159,7 @@ SSK_NAET_TOOLTIP5:0 "Allows for armies and citizens alike to §CMove§! througho
 SSK_SASKATCHEWAN:0 "§GSaska§!§Ychewan§!:"
 SSK_PACIFIC_INTERVENTION:0 "Will give §RWargoals§! on any §OFascist§! Nation in §CAsia§!"
 SSK_EUROPEANA_INTERVENTION:0 "Will give §RWargoals§! on any §OFascist§! Nation in §CEurope§!"
+SSK_canadian_union_tooltip:0 "Depending on your §CChoices§! this focus will do §CMultiple§! §RDifferent§! things!"
 
 
 ##FACTIONS
@@ -270,8 +282,13 @@ ssk_mscaS:0 "Mexican-Saskatchewanian-Canadian-American Economic Union"
 ssk_msca_federated:0 "Federated Military"
 ssk_mscaT:0 "Federation Taxes"
 ssk_same_marriage:0 "Legalized Same Sex Marriage"
-
-
+ssk_prepare_economy:0 "Preparing the Economy"
+ssk_prepare_admin:0 "Preparing the Bureaucracy"
+ssk_economic_partnership:0 "Sask/American Economic Partnership"
+ssk_british_cooperation:0 "Sask/British Cooperation"
+ssk_french_allowed:0 "Multi-Offical Language"
+ssk_french_banned:0 "French Banned"
+ssk_canada_union:0 "Benifits of the Canadian Union"
 
 
 ##FOCUSES
@@ -667,3 +684,32 @@ SSK_pacific_intervention_desc:0 ""
 SSK_europe_invervention:0 "European Involvement"
 SSK_europe_invervention_desc:0 ""
 
+SSK_european_intervention:0 "European Intervention"
+SSK_european_intervention_desc:0 ""
+SSK_nato:0 "Founding of N.A.T.O"
+SSK_nato_desc:0 ""
+SSK_SA_invite:0 "Central/South American Membership"
+SSK_SA_invite_desc:0 ""
+SSK_carribian_invite:0 "Caribbean Membership"
+SSK_carribian_invite_desc:0 ""
+SSK_fight_fascism:0 "Fight Fascism"
+SSK_fight_fascism_desc:0 ""
+
+SSK_autonomy:0 "Canadian Autonomy"
+SSK_autonomy_desc:0 ""
+SSK_prepare_economy:0 "Prepare the Economy"
+SSK_prepare_economy_desc:0 ""
+SSK_admin_expansion:0 "Administrative Sector Expansion"
+SSK_admin_expansion_desc:0 ""
+SSK_economic_partnership:0 "American Economic Partnership"
+SSK_economic_partnership_desc:0 ""
+SSK_british_cooperation:0 "British Cooperation"
+SSK_british_cooperation_desc:0 ""
+SSK_canadian_union:0 "Canadian Union"
+SSK_canadian_union_desc:0 ""
+SSK_qubec_problem:0 "French Language Issue"
+SSK_qubec_problem_desc:0 ""
+SSK_connect_railways:0 "Connect the Railways"
+SSK_connect_railways_desc:0 ""
+SSK_canadians_united:0 "Canadians United"
+SSK_canadians_united_desc:0 ""

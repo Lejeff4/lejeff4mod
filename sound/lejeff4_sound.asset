@@ -2,3 +2,9 @@ sound = {
 	name = "nonnasuperevent"
 	file = "nonnasuperevent.wav"
 }
+
+sound = {
+	name = "diplomatic_superevent"
+	file = "diplomatic_superevent.wav"
+}
+

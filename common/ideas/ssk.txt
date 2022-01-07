@@ -1599,6 +1599,112 @@ ideas = {
 			}
 		}
 		
+		ssk_prepare_economy = {
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		ssk_prepare_admin = {
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.15
+				stability_factor = -0.05
+				weekly_manpower = -50
+			}
+		}
+		
+		ssk_economic_partnership = {
+			allowed = {
+				NOT = {
+					has_completed_focus = SSK_economic_influence
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.05
+				political_power_gain = 0.25
+			}
+		}
+		
+		ssk_british_cooperation = {
+			allowed = {
+				
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.05
+				political_power_gain = 0.05
+			}
+			
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		
+		ssk_french_banned = {
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.25
+			}
+		}
+		
+		ssk_french_allowed = {
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		
+		ssk_canada_union = {
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		
 		##HAS ICONS
 		
 		ssk_albertain_nationalists = {

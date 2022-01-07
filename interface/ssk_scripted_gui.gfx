@@ -45,5 +45,10 @@ spriteTypes = {
 		name = "GFX_super_event_nonna_endscreen"
 		textureFile = "gfx/interface/super_event_nonna_endscreen.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_super_event_diplomatic"
+		textureFile = "gfx/interface/super_event_diplomatic.dds"
+	}
 
 }

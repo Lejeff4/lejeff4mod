@@ -920,3 +920,31 @@ country_event = {
 		}
 	}
 }
+
+##QUBEC PROBLEM
+country_event = {
+	id = ssk.29
+	title = ssk.29.t
+	desc = ssk.29.d
+	picture = GFX_report_event_qubec_problem
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ssk.29.a
+		ai_chance = {
+			base = 2
+		}
+			add_ideas = ssk_french_allowed
+	}
+	
+	option = {
+		name = ssk.29.b
+		ai_chance = {
+			base = 2
+		}
+			add_ideas = ssk_french_banned
+	}
+	
+}

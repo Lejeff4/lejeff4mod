@@ -92,6 +92,11 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_nato_invite.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_report_event_qubec_problem"
+		texturefile = "gfx/event_pictures/report_event_qubec_problem.dds"
+	}
+	
 ##IDEAS
 	
 	spriteType = {

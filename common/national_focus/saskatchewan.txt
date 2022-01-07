@@ -5122,6 +5122,7 @@ focus_tree = {
 		
 		focus = {
 			id = SSK_autonomy
+			icon = GFX_goal_autonomy
 			relative_position_id = SSK_diplomatic_challange 
 			x = 1
 			y = 2
@@ -5167,6 +5168,7 @@ focus_tree = {
 		
 		focus = {
 			id = SSK_european_intervention
+			icon = GFX_goal_european_involvement
 			relative_position_id = SSK_approch_america
 			x = 0
 			y = 1
@@ -6210,12 +6212,15 @@ focus_tree = {
 		
 		focus = {
 			id = SSK_nato
+			icon = GFX_goal_nato
 			relative_position_id = SSK_european_intervention
 			x = 0
 			y = 1
 			
 			prerequisite = { focus = SSK_european_intervention }
 			mutually_exclusive = {}
+			
+			cost = 5
 			
 			completion_reward = {
 				create_faction = "N.A.T.O"
@@ -6259,6 +6264,7 @@ focus_tree = {
 		
 		focus = {
 			id = SSK_SA_invite
+			icon = GFX_goal_centralsouth
 			relative_position_id = SSK_european_intervention
 			x = -1
 			y = 2
@@ -6266,13 +6272,201 @@ focus_tree = {
 			prerequisite = { focus = SSK_nato }
 			mutually_exclusive = {}
 			
-			completion_reward = {
+			cost = 5
 			
+			completion_reward = {
+				if = {
+					limit = {
+						GUA = {
+							has_government = democratic
+						}
+					}
+					GUA = {
+						country_event = { id = ssk.28 days = 1 }
+					}
+				}
+				
+				if = {
+					limit = {
+						HON = {
+							has_government = democratic
+						}
+					}
+					HON = {
+						country_event = { id = ssk.28 days = 1 }
+					}
+				}
+				
+				if = {
+					limit = {
+						ELS = {
+							has_government = democratic
+						}
+					}
+					ELS = {
+						country_event = { id = ssk.28 days = 1 }
+					}
+				}
+				
+				if = {
+					limit = {
+						NIC = {
+							has_government = democratic
+						}
+					}
+					NIC = {
+						country_event = { id = ssk.28 days = 1 }
+					}
+				}
+				
+				if = {
+					limit = {
+						COS = {
+							has_government = democratic
+						}
+					}
+					COS = {
+						country_event = { id = ssk.28 days = 1 }
+					}
+				}
+				
+				if = {
+					limit = {
+						PAN = {
+							has_government = democratic
+						}
+					}
+					PAN = {
+						country_event = { id = ssk.28 days = 1 }
+					}
+				}
+				
+				if = {
+					limit = {
+						COL = {
+							has_government = democratic
+						}
+					}
+					COL = {
+						country_event = { id = ssk.28 days = 1 }
+					}
+				}
+				
+				if = {
+					limit = {
+						VEN = {
+							has_government = democratic
+						}
+					}
+					VEN = {
+						country_event = { id = ssk.28 days = 1 }
+					}
+				}
+				
+				if = {
+					limit = {
+						ECU = {
+							has_government = democratic
+						}
+					}
+					ECU = {
+						country_event = { id = ssk.28 days = 1 }
+					}
+				}
+				
+				if = {
+					limit = {
+						PRU = {
+							has_government = democratic
+						}
+					}
+					PRU = {
+						country_event = { id = ssk.28 days = 1 }
+					}
+				}
+				
+				if = {
+					limit = {
+						BRA = {
+							has_government = democratic
+						}
+					}
+					BRA = {
+						country_event = { id = ssk.28 days = 1 }
+					}
+				}
+				
+				if = {
+					limit = {
+						BOL = {
+							has_government = democratic
+						}
+					}
+					BOL = {
+						country_event = { id = ssk.28 days = 1 }
+					}
+				}
+				
+				if = {
+					limit = {
+						CHL = {
+							has_government = democratic
+						}
+					}
+					CHL = {
+						country_event = { id = ssk.28 days = 1 }
+					}
+				}
+				
+				if = {
+					limit = {
+						PAR = {
+							has_government = democratic
+						}
+					}
+					PAR = {
+						country_event = { id = ssk.28 days = 1 }
+					}
+				}
+				
+				if = {
+					limit = {
+						URG = {
+							has_government = democratic
+						}
+					}
+					URG = {
+						country_event = { id = ssk.28 days = 1 }
+					}
+				}
+				
+				if = {
+					limit = {
+						URG = {
+							has_government = democratic
+						}
+					}
+					URG = {
+						country_event = { id = ssk.28 days = 1 }
+					}
+				}
+				
+				if = {
+					limit = {
+						ARG = {
+							has_government = democratic
+						}
+					}
+					ARG = {
+						country_event = { id = ssk.28 days = 1 }
+					}
+				}
 			}
 		}
 		
 		focus = {
 			id = SSK_carribian_invite
+			icon = GFX_goal_carabean
 			relative_position_id = SSK_european_intervention
 			x = 1
 			y = 2
@@ -6280,13 +6474,47 @@ focus_tree = {
 			prerequisite = { focus = SSK_nato }
 			mutually_exclusive = {}
 			
-			completion_reward = {
+			cost = 5
 			
+			completion_reward = {
+				if = {
+					limit = {
+						CUB = {
+							has_government = democratic
+						}
+					}
+					CUB = {
+						country_event = { id = ssk.28 days = 1 }
+					}
+				}
+				
+				if = {
+					limit = {
+						HAI = {
+							has_government = democratic
+						}
+					}
+					HAI = {
+						country_event = { id = ssk.28 days = 1 }
+					}
+				}
+				
+				if = {
+					limit = {
+						DOM = {
+							has_government = democratic
+						}
+					}
+					DOM = {
+						country_event = { id = ssk.28 days = 1 }
+					}
+				}
 			}
 		}
 		
 		focus = {
 			id = SSK_fight_fascism
+			icon = GFX_goal_fight_fascism
 			relative_position_id = SSK_european_intervention 
 			x = 0
 			y = 3
@@ -6294,8 +6522,27 @@ focus_tree = {
 			prerequisite = { focus = SSK_SA_invite focus = SSK_carribian_invite }
 			mutually_exclusive = {}
 			
-			completion_reward = {
+			cost = 2
 			
+			completion_reward = {
+				if = {
+					limit = {
+						GER = {
+							has_government = fascism
+						}
+					}
+					create_wargoal = { type =  puppet_wargoal_focus target = GER }
+				}
+				
+				if = {
+					limit = {
+						JAP = {
+							has_government = fascism
+						}
+					}
+					
+					create_wargoal = { type =  puppet_wargoal_focus target = JAP }
+				}
 			}
 		}
 		
@@ -6303,6 +6550,7 @@ focus_tree = {
 		
 		focus = {
 			id = SSK_prepare_economy
+			icon = GFX_goal_prepare_economy
 			relative_position_id = SSK_diplomatic_challange
 			x = 0
 			y = 3
@@ -6310,13 +6558,19 @@ focus_tree = {
 			prerequisite = { focus = SSK_propose_union focus = SSK_autonomy }
 			mutually_exclusive = {}
 			
-			completion_reward = {
+			cost = 5
 			
+			completion_reward = {
+				add_timed_idea = {
+					idea = ssk_prepare_economy
+					days = 90
+				}
 			}
 		}
 		
 		focus = {
 			id = SSK_admin_expansion
+			icon = GFX_goal_admin_expansion
 			relative_position_id = SSK_diplomatic_challange
 			x = 0
 			y = 4
@@ -6324,56 +6578,145 @@ focus_tree = {
 			prerequisite = { focus = SSK_prepare_economy }
 			mutually_exclusive = {}
 			
-			completion_reward = {
+			cost = 5
 			
+			completion_reward = {
+				add_timed_idea = {
+					idea = ssk_prepare_admin
+					days = 90
+				}
 			}
 		}
 		
 		focus = {
 			id = SSK_economic_partnership
+			icon = GFX_goal_economic_partnership
 			relative_position_id = SSK_diplomatic_challange
 			x = -2
 			y = 5
 			
+			available = {
+				NOT = {
+					has_idea = ssk_prepare_admin
+					has_idea = ssk_prepare_economy
+				}
+			}
+			
 			prerequisite = { focus = SSK_approch_america }
 			mutually_exclusive  = {}
 			
-			completion_reward = {
+			cost = 5
 			
+			completion_reward = {
+				SSK = {
+					add_ideas = ssk_economic_partnership
+				}
+				
+				USA = {
+					add_ideas = ssk_economic_partnership
+				}
 			}
 		}
 		
 		focus = {
 			id = SSK_british_cooperation
+			icon = GFX_goal_british_cooperation
 			relative_position_id = SSK_diplomatic_challange
 			x = 2
 			y = 5
 			
+			available = {
+				NOT = {
+					has_idea = ssk_prepare_admin
+					has_idea = ssk_prepare_economy
+				}
+			}
+			
 			prerequisite = { focus = SSK_regina_proposal }
 			mutually_exclusive = {}
 			
-			completion_reward = {
+			cost = 5
 			
+			completion_reward = {
+				ENG = {
+					add_ideas = ssk_british_cooperation
+				}
+				
+				SSK = {
+					add_ideas = ssk_british_cooperation
+				}
 			}
 		}
 		
 		focus = { ##DIFFERENT DEPENDING ON FOCUS
 			id = SSK_canadian_union
+			icon = GFX_goal_canadian_union
 			relative_position_id = SSK_diplomatic_challange
 			x = 0
 			y = 6
+			
+			available = {
+				NOT = {
+					has_idea = ssk_prepare_admin
+					has_idea = ssk_prepare_economy
+				}
+			}
 			
 			prerequisite = { focus = SSK_economic_partnership focus = SSK_british_cooperation }
 			prerequisite = { focus = SSK_admin_expansion }
 			mutually_exclusive = {}
 			
-			completion_reward = {
+			cost = 10
 			
+			completion_reward = {
+				custom_effect_tooltip = SSK_canadian_union_tooltip
+				if = {
+					limit = {
+						SSK = {
+							has_country_flag = SSK_NORTHAMERICA
+						}
+					}
+					
+					hidden_effect = {
+						CAN = {
+							every_owned_state = {
+								add_claim_by = SSK
+							}
+						}
+					}
+					
+					set_cosmetic_tag = SSK_canada_union
+					
+					annex_country = {
+						target = CAN
+						transfer_troops = yes
+					}
+				}
+				
+				if = {
+					limit = {
+						SSK = {
+							has_country_flag = SSK_EUROPE
+						}
+					}
+					
+					puppet = CAN
+					
+					SSK = {
+						set_autonomy = {
+							target = CAN
+							autonomy_state = autonomy_dominion
+							end_wars = no
+							end_civil_wars = no
+						}	
+					}
+				}
 			}
 		}
 		
 		focus = { 
 			id = SSK_qubec_problem
+			icon = GFX_goal_quebec_rpoblem
 			relative_position_id = SSK_diplomatic_challange
 			x = -1
 			y = 7
@@ -6381,13 +6724,16 @@ focus_tree = {
 			prerequisite = { focus = SSK_canadian_union }
 			mutually_exclusive = {}
 			
-			completion_reward = {
+			cost = 5
 			
+			completion_reward = {
+				country_event = { id = ssk.29 days = 1 }
 			}
 		}
 		
 		focus = {
 			id = SSK_connect_railways
+			icon = GFX_goal_connect_railways
 			relative_position_id = SSK_diplomatic_challange
 			x = 1
 			y = 7
@@ -6395,22 +6741,87 @@ focus_tree = {
 			prerequisite = { focus = SSK_canadian_union }
 			mutually_exclusive = {}
 			
-			completion_reward = {
+			cost = 7
 			
+			completion_reward = {
+				if = {
+					limit = {
+						CAN = {
+							is_puppet_of = SSK
+						}
+					}
+					
+					CAN = {
+						every_owned_state = {
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+							}
+						}
+					}
+					
+					SSK = {
+						every_owned_state = {
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+							}
+						}
+					}
+					
+					else = {
+						SSK = {
+						every_owned_state = {
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = yes
+							}
+						}
+					}
+					}
+				}
+				
+				
 			}
 			
 		}
 		
 		focus = {
 			id = SSK_canadians_united
+			icon = GFX_goal_canadians_uniteed
 			relative_position_id = SSK_diplomatic_challange
 			x = 0
 			y = 8
 			
 			prerequisite = { focus = SSK_qubec_problem }
 			prerequisite = { focus = SSK_connect_railways }
-			mutually_exclusive = {
+			mutually_exclusive = {}
 			
+			cost = 10
+			
+			completion_reward = {
+				if = {
+					limit = {
+						SSK = {
+							has_country_flag = SSK_NORTHAMERICA
+						}
+					}
+					
+					every_owned_state = {
+						limit = {
+							is_claimed_by = SSK
+						}
+							add_core_of = SSK
+					}
+					
+					else = {
+						add_ideas = ssk_canada_union
+					}
+				}
+				set_country_flag = big_event_custom_GUP3
 			}
 		}
 		
