@@ -948,3 +948,363 @@ country_event = {
 	}
 	
 }
+
+##HELP ALLIES
+country_event = {
+	id = ssk.30
+	title = ssk.30.t
+	desc = ssk.30.d
+	picture = GFX_report_event_buy_east
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ssk.30.a
+		ai_chance = {
+			base = 10
+		}
+		SSK = {
+			country_event = { id = ssk.31 days = 1 }
+		}
+	}
+	
+	option = {
+		name = ssk.30.b
+		ai_chance = {
+			base = 2
+		}
+	}
+}
+
+country_event = {
+	id = ssk.31
+	title = ssk.31.t
+	desc = ssk.31.d
+	picture = GFX_report_event_buy_east
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ssk.31.a
+		ai_chance = {
+			base = 1
+		}
+		
+		CAN = {
+			transfer_state = 332
+			transfer_state = 331
+		}
+	}
+}
+
+
+
+country_event = {
+	id = ssk.32
+	title = ssk.32.t
+	desc = ssk.32.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ssk.32.a
+		ai_chance = {
+			base = 1
+		}
+		
+		set_country_flag = SSK_council_fascism
+		
+	}
+}
+
+country_event = {
+	id = ssk.33
+	title = ssk.33.t
+	desc = ssk.33.d
+	picture = GFX_report_event_economic_minister
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ssk.33.a
+		ai_chance = {
+			base = 1
+		}
+		set_country_flag = SSK_economic_minister1
+		clr_country_flag = SSK_economic_minister2
+			remove_ideas = SSK_yukari_idea
+			add_ideas = SSK_mako_idea
+			
+		if = {
+			limit = {
+				SSK = {
+					OR = {
+						has_country_flag = SSK_economic_minister1
+						has_country_flag = SSK_economic_minister2
+					}
+				}
+			}
+			
+			else = {
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = ssk.33.b
+		ai_chance = {
+			base = 1
+		}
+		set_country_flag = SSK_economic_minister2
+		clr_country_flag = SSK_economic_minister1
+		
+			remove_ideas = SSK_mako_idea
+			add_ideas = SSK_yukari_idea
+			
+			if = {
+			limit = {
+				SSK = {
+					OR = {
+						has_country_flag = SSK_economic_minister1
+						has_country_flag = SSK_economic_minister2
+					}
+				}
+			}
+			
+			else = {
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.1
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ssk.34
+	title = ssk.34.t
+	desc = ssk.34.d
+	picture = GFX_report_event_security_minister
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ssk.34.a
+		ai_chance = {
+			base = 1
+		}
+		set_country_flag = SSK_head_security1
+		clr_country_flag = SSK_head_security2
+		
+		add_ideas = SSK_saemonza_idea
+		remove_ideas = SSK_maho_idea
+		
+		if = {
+			limit = {
+				SSK = {
+					OR = {
+						has_country_flag = SSK_head_security1
+						has_country_flag = SSK_head_security2
+					}
+				}
+			}
+			
+			else = {
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.1
+				}
+			}
+		}
+		
+	}
+	
+	option = {
+		name = ssk.34.b
+		ai_chance = {
+			base = 1
+		}
+		set_country_flag = SSK_head_security2
+		clr_country_flag = SSK_head_security1
+		
+		add_ideas = SSK_maho_idea
+		remove_ideas = SSK_saemonza_idea
+		
+		if = {
+			limit = {
+				SSK = {
+					OR = {
+						has_country_flag = SSK_head_security1
+						has_country_flag = SSK_head_security2
+					}
+				}
+			}
+			
+			else = {
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.1
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ssk.35
+	title = ssk.35.t
+	desc = ssk.35.d
+	picture = GFX_report_event_foriegn
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ssk.35.a
+		ai_chance = {
+			base = 1
+		}
+		set_country_flag = SSK_forign_minister1
+		clr_country_flag = SSK_forign_minister2
+		
+		add_ideas = SSK_marie_idea
+		remove_ideas = SSK_miho_idea
+		
+		if = {
+			limit = {
+				SSK = {
+					OR = {
+						has_country_flag = SSK_forign_minister1
+						has_country_flag = SSK_forign_minister2
+					}
+				}
+			}
+			
+			else = {
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = ssk.35.b
+		ai_chance = {
+			base = 1 
+		}
+		
+		set_country_flag = SSK_forign_minister2
+		clr_country_flag = SSK_forign_minister1
+		
+		add_ideas = SSK_miho_idea
+		remove_ideas = SSK_marie_idea
+		
+		if = {
+			limit = {
+				SSK = {
+					OR = {
+						has_country_flag = SSK_forign_minister1
+						has_country_flag = SSK_forign_minister2
+					}
+				}
+			}
+			
+			else = {
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.1
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ssk.36
+	title = ssk.36.t
+	desc = ssk.36.d
+	picture = GFX_report_event_prime_minister
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ssk.36.a
+		ai_chance = {
+			base = 1
+		}
+		set_country_flag = SSK_prime_minister1
+		clr_country_flag = SSK_prime_minister2
+		
+		add_ideas = ssk_prime_minister1
+	}	
+	
+	option = {
+		name = ssk.36.b
+		ai_chance = {
+			base = 1
+		}
+		
+		set_country_flag = SSK_prime_minister2
+		clr_country_flag = SSK_prime_minister1
+		
+		add_ideas = ssk_prime_minister2
+	}
+
+}
+
+country_event = {
+	id = ssk.37
+	title = ssk.37.t
+	desc = ssk.37.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = ssk.37.a
+		ai_chance = {
+			base = 5
+		}
+			add_ideas = ssk_oil_selling
+	}
+	
+	option = {
+		name = ssk.37.b
+		ai_chance = {
+			base = 1
+		}
+			
+				470 = {
+					add_resource = {
+						type = oil
+						amount = 10
+					}
+				}
+	}
+}
+
+country_event = { ##HAS TO FINISHED
+	id = ssk.38
+	title = ssk.38.t 
+	desc = ssk.38.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = ssk.38.a
+		ai_chance = {
+			base = 1
+		}
+			add_ideas = ssk_economic_crisis
+	}
+}

@@ -53,7 +53,7 @@ ssk.14.t:0 "Saskatchewan Asks to Rearm"
 ssk.14.d:0 "Saskatchewan is asking to rearm. plus why you playing america in the saskatchewan mod."
 ssk.14.a:0 "Sure let them."
 
-ssk.15.t:0 "American Allows us to Rearm"
+ssk.15.t:0 "America Allows us to Rearm"
 ssk.15.d:0 "Today we finally were contacted back by the american embassy in Regina that we have full rights to Rearm. The treaty of Regina has finally be called off."
 ssk.15.a:0 "Thank you USA, you are my best friend"
 
@@ -103,3 +103,37 @@ ssk.29.t:0 "Question of the French Language"
 ssk.29.d:0 "With most of our politcal reach and power in the more Anglo-Canadian parts of the nation the question of the old Government has popped up. Should keep French an offical language of the state? Both sides have great arguements. Hopefully we wont upset the French"
 ssk.29.a:0 "Status Quo"
 ssk.29.b:0 "Remove it!"
+
+ssk.30.t:0 "Regina Proposal"
+ssk.30.d:0 "The break away state of Saskatchewan has reached out to us. They are suggesting that we return our Canadian held territories and in return they will help us in the war effort."
+ssk.30.a:0 "Hand it over."
+ssl.30.b:0 "We will not work this these Fascists"
+
+ssk.31.t:0 "United Kingdom Accepts"
+ssk.31.d:0 "Our great offer of helping the Allies for core Canadian land has worked! The U.K. has returned Canada's rightful territory."
+ssk.31.a:0 "Epic Win"
+
+ssk.33.t:0 "Deciding on an Economic Minister"
+ssk.33.d:0 "Both Candidates show great skill with Economic development. Both ministers are on different sides of the Fascist Party. Yukari is on the more radical side while Mako is on the moderate side."
+ssk.33.a:0 "Mako"
+ssk.33.b:0 "Yukari"
+
+ssk.34.t:0 "The Head of Security"
+ssk.34.d:0 "The Head of Security is very vital to our nation. We must pick a person that would be great for our cabinet and the country. Like every other position the two Candidates are split on party lines. Saemonza is part of the Moderates and Maho is part of the Radicals."
+ssk.34.a:0 "Saemonza"
+ssk.34.b:0 "Maho"
+
+ssk.35.t:0 "Minister of Foreign Affairs"
+ssk.35.d:0 "With our nation finally coming to prominence in the world stage we need a Foreign minister that will represent our interests. Like every other minister they are split on party lines between the moderates and the radicals. Marie is part of Saori's moderates while Miho is on the radical side."
+ssk.35.a:0 "Marie"
+ssk.35.b:0 "Miho"
+
+ssk.36.t:0 "Most Important Decision"
+ssk.36.d:0 "Debatably the biggest and most important decision Anzai has to make, choosing the Prime Minister of the party. The two options are quite easy to distinguish between. \n \nOn the left side of the party Saori stands. She is promoting a more liberalized version of fascism so we do not look as bad as the fascist European powers. She promotes many great things as immigration, agricultural reform, and family. \n \nWhile on the other side. \n \nErika is on the right and radical side of the party. While somethings we can all agree with like ending the Albertans she also has more radical ideas. She is more modeled by the German Reich with her stance to most political and social issue. And it also rumoured she has a special project. \n \nIt is up to you Anzai, what will you choose. \n \n§RTHIS CHOICE WILL SHAPE THE PARTY§!."
+ssk.36.a:0 "Saori"
+ssk.36.b:0 "Erika"
+
+ssk.37.t:0 "Albertan Oil"
+ssk.37.d:0 "Finally we have been able to wield the power to extract oil from the massive Albertan Oil Fields! There is so much black gold that we dont know what to do with. Most economic experts say we should sell but expect the price to go down in a few years unless a war breaks out."
+ssk.37.a:0 "Here comes the Money!"
+ssk.37.b:0 "We should keep it."

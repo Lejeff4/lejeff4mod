@@ -1,0 +1,57 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_council_fascism"
+		textureFile = "gfx/interface/council/council_fascism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_council_escape"
+		textureFile = "gfx/interface/council/council_escape.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_council_button"
+		textureFile = "gfx/interface/council/council_button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_mako_economic_minister"
+		textureFile = "gfx/interface/council/mako_economic_minister.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_yukari_economic_minister"
+		textureFile = "gfx/interface/council/yukari_economic_minister.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_saemonza_head_of_security"
+		textureFile = "gfx/interface/council/saemonza_head_of_security.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_maho_head_of_security"
+		textureFile = "gfx/interface/council/maho_head_of_security.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_marie_forign_policy"
+		textureFile = "gfx/interface/council/marie_forign_policy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_miho_forign_policy"
+		textureFile = "gfx/interface/council/miho_forign_policy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_saori_head_of_government"
+		textureFile = "gfx/interface/council/saori_head_of_government.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_erika_head_of_government"
+		textureFile = "gfx/interface/council/erika_head_of_government.dds"
+	}
+}

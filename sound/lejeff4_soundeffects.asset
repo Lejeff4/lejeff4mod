@@ -14,3 +14,11 @@ soundeffect = {
 	}
 	volume = 3
 }
+
+soundeffect = {
+	name = "canadian_civlwar_superevent_bigevent"
+	sounds = {
+		sound = canadian_civlwar_superevent
+	}
+	volume = 3
+}

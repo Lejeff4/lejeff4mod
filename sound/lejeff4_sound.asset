@@ -8,3 +8,7 @@ sound = {
 	file = "diplomatic_superevent.wav"
 }
 
+sound = {
+	name = "canadian_civlwar_superevent"
+	file = "canadian_civlwar_superevent.wav"
+}

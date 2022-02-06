@@ -49,4 +49,30 @@ scripted_gui = {
 			}
 		}
 	}
+	
+	##CANADIAN CIVIL WAR
+	
+	SSK_canadian_civilwar_window_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SSK_canadian_civilwar_window_custom"
+
+		visible = {
+			has_country_flag = big_event_custom_GUP4 ### this country flag triggers the #superevent
+		}
+	}
+	
+	GUP_SG_canadian_civilwar_victory_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "GUP_SG_canadian_civilwar_victory_custom"
+
+		visible = {
+			has_country_flag =  big_event_custom_GUP4
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = big_event_custom_GUP4 ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
 }

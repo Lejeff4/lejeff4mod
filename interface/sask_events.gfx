@@ -97,6 +97,31 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_qubec_problem.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_report_event_buy_east"
+		texturefile = "gfx/event_pictures/report_event_buy_east.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_economic_minister"
+		texturefile = "gfx/event_pictures/report_event_economic_minister.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_security_minister"
+		texturefile = "gfx/event_pictures/report_event_security_minister.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_foriegn"
+		texturefile = "gfx/event_pictures/report_event_foriegn.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_prime_minister"
+		texturefile = "gfx/event_pictures/report_event_prime_minister.dds"
+	}
+	
 ##IDEAS
 	
 	spriteType = {
@@ -192,21 +217,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_challange_parliament"
 		texturefile = "gfx/interface/ideas/idea_challange_parliament.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_idea_military_police"
-		texturefile = "gfx/interface/ideas/idea_military_police.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_idea_indoctrination"
-		texturefile = "gfx/interface/ideas/idea_indoctrination.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_idea_takebe_youth"
-		texturefile = "gfx/interface/ideas/idea_takebe_youth.dds"
 	}
 	
 	spriteType = {
@@ -432,6 +442,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_prarie_steel"
 		texturefile = "gfx/interface/ideas/Designers/idea_prarie_steel.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SSK_saori"
+		texturefile = "gfx/interface/ideas/portraits/idea_SSK_saori.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SSK_erika"
+		texturefile = "gfx/interface/ideas/portraits/idea_SSK_erika.dds"
 	}
 	
 ##EQUIPMENT 

@@ -83,11 +83,6 @@ characters={
 			logistics_skill=5
 			legacy_id=9002
 		}
-		country_leader={
-			ideology=fascism_ideology
-			expire="1965.1.1.1"
-			id=-1
-		}
 	}
 	SSK_youko={
 		name="Youko"
@@ -163,6 +158,22 @@ characters={
 			logistics_skill=6
 			legacy_id=9003
 		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = SSK_saemonza_idea
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+				has_country_flag = SSK_head_security1
+			}
+			traits = {
+				head_of_security
+			}
+			
+			cost = 100
+		}
 	}
 	SSK_maria_suzuki={
 		name="Maria Suzuki"
@@ -210,6 +221,12 @@ characters={
 			planning_skill=2
 			logistics_skill=1
 			legacy_id=9005
+		}
+		
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
 		}
 		
 		country_leader = {
@@ -302,12 +319,12 @@ characters={
 	SSK_katyusha = {
 		name = "Katyusha"
 		portraits = {
-			army = {
+			army={
 				small="gfx/interface/ideas/portraits/idea_SSK_katyusha.dds"
 			}
 			
 			army = {
-				large = "gfx/leaders/SSK/GFX_katyusha.dds"
+				large="gfx/leaders/SSK/GFX_katyusha.dds"
 			}
 		}
 		
@@ -325,12 +342,12 @@ characters={
 	SSK_nonna = {
 		name = "Nonna"
 		portraits = {
-			army = {
+			army={
 				small="gfx/interface/ideas/portraits/idea_SSK_nonna.dds"
 			}
 			
 			army = {
-				large = "gfx/leaders/SSK/GFX_nonna.dds"
+				large="gfx/leaders/SSK/GFX_nonna.dds"
 			}
 		}
 		
@@ -348,12 +365,12 @@ characters={
 	SSK_alina = {
 		name = "Alina"
 		portraits = {
-			army = {
+			army={
 				small="gfx/interface/ideas/portraits/idea_SSK_alina.dds"
 			}
 			
 			army = {
-				large = "gfx/leaders/SSK/GFX_alina.dds"
+				large="gfx/leaders/SSK/GFX_alina.dds"
 			}
 		}
 		
@@ -372,12 +389,12 @@ characters={
 	SSK_nina = {
 		name = "Nina"
 		portraits = {
-			army = {
+			army={
 				small="gfx/interface/ideas/portraits/idea_SSK_nina.dds"
 			}
 			
 			army = {
-				large = "gfx/leaders/SSK/GFX_nina.dds"
+				large="gfx/leaders/SSK/GFX_nina.dds"
 			}
 		}
 		
@@ -662,6 +679,139 @@ characters={
 			}
 			
 			cost = 50
+		}
+	}
+	
+	SSK_mako = {
+		name = "Mako"
+		
+		portraits={
+			army = {
+				small="gfx/interface/ideas/portraits/idea_SSK_mako.dds"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = SSK_mako_idea
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+				has_country_flag = SSK_economic_minister1
+			}
+			traits = {
+				economic_genuius
+			}
+			
+			cost = 100
+		}
+		
+	}
+	
+	SSK_yukari = {
+		name = "Yukari"
+		
+		portraits={
+			army = {
+				small="gfx/interface/ideas/portraits/idea_SSK_yukari.dds"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = SSK_yukari_idea
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+				has_country_flag = SSK_economic_minister2
+			}
+			traits = {
+				economic_genuius
+			}
+			
+			cost = 100
+		}
+	
+	}
+	
+	SSK_maho = {
+		name = "Maho"
+		
+		portraits = {
+			army = {
+				small="gfx/interface/ideas/portraits/idea_SSK_maho.dds"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = SSK_maho_idea
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+				has_country_flag = SSK_head_security2
+			}
+			traits = {
+				head_of_security
+			}
+			
+			cost = 100
+		}
+	
+	}
+	
+	SSK_marie = {
+		name = "Marie"
+		
+		portraits = {
+			army = {
+				small="gfx/interface/ideas/portraits/idea_SSK_marie.dds"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = SSK_marie_idea
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+				has_country_flag = SSK_forign_minister1
+			}
+			traits = {
+				forign_minister
+			}
+			
+			cost = 100
+		}
+	}
+	
+	SSK_miho = {
+		name = "Miho"
+		
+		portraits = {
+			army = {
+				small="gfx/interface/ideas/portraits/idea_SSK_miho.dds"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = SSK_miho_idea
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+				has_country_flag = SSK_forign_minister2
+			}
+			traits = {
+				forign_minister2
+			}
+			
+			cost = 100
 		}
 	}
 }

@@ -1,0 +1,159 @@
+scripted_gui = {
+
+
+SSK_fascist_council_window_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SSK_fascist_council_window_custom"
+
+		visible = {
+			has_country_flag = SSK_council_fascism ### this country flag triggers the #superevent
+		}
+	}
+	
+	SSK_button_fascist_council_window_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SSK_button_fascist_council_window_custom"
+
+		visible = {
+			has_country_flag =  SSK_council_fascism
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = SSK_council_fascism ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+	
+	SSK_economic1_fascist_council_window_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SSK_economic1_fascist_council_window_custom"
+
+		visible = {
+			has_country_flag = SSK_council_fascism			### this country flag triggers the #superevent
+			has_country_flag = SSK_economic_minister1
+		}
+	}
+	
+	SSK_economic2_fascist_council_window_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SSK_economic2_fascist_council_window_custom"
+
+		visible = {
+			has_country_flag = SSK_council_fascism			### this country flag triggers the #superevent
+			has_country_flag = SSK_economic_minister2
+		}
+	}
+	
+	SSK_button2_fascist_council_window_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SSK_button2_fascist_council_window_custom"
+
+		visible = {
+			has_country_flag =  SSK_council_fascism
+		}
+
+		effects = {
+			Option_click = {
+				SSK = {
+					country_event = { id = ssk.33 days = 0 }
+				}
+			}
+		}
+	}
+	
+	SSK_button3_fascist_council_window_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SSK_button3_fascist_council_window_custom"
+
+		visible = {
+			has_country_flag =  SSK_council_fascism
+		}
+
+		effects = {
+			Option_click = {
+				SSK = {
+					country_event = { id = ssk.34 days = 0 }
+				}
+			}
+		}
+	}
+	
+	SSK_security1_fascist_council_window_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SSK_security1_fascist_council_window_custom"
+
+		visible = {
+			has_country_flag = SSK_council_fascism			### this country flag triggers the #superevent
+			has_country_flag = SSK_head_security1
+		}
+	}
+	
+	SSK_security2_fascist_council_window_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SSK_security2_fascist_council_window_custom"
+
+		visible = {
+			has_country_flag = SSK_council_fascism			### this country flag triggers the #superevent
+			has_country_flag = SSK_head_security2
+		}
+	}
+	
+	SSK_button4_fascist_council_window_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SSK_button4_fascist_council_window_custom"
+
+		visible = {
+			has_country_flag =  SSK_council_fascism
+		}
+
+		effects = {
+			Option_click = {
+				SSK = {
+					country_event = { id = ssk.35 days = 0 }
+				}
+			}
+		}
+	}
+	
+	SSK_forign1_fascist_council_window_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SSK_forign1_fascist_council_window_custom"
+
+		visible = {
+			has_country_flag = SSK_council_fascism			### this country flag triggers the #superevent
+			has_country_flag = SSK_forign_minister1
+		}
+	}
+	
+	SSK_forign2_fascist_council_window_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SSK_forign2_fascist_council_window_custom"
+
+		visible = {
+			has_country_flag = SSK_council_fascism			### this country flag triggers the #superevent
+			has_country_flag = SSK_forign_minister2
+		}
+	}
+	
+	SSK_prime_fascist_council_window_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SSK_prime_fascist_council_window_custom"
+
+		visible = {
+			has_country_flag = SSK_council_fascism			### this country flag triggers the #superevent
+			has_country_flag = SSK_prime_minister1
+		}
+	}
+	
+	SSK_prime2_fascist_council_window_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SSK_prime2_fascist_council_window_custom"
+
+		visible = {
+			has_country_flag = SSK_council_fascism			### this country flag triggers the #superevent
+			has_country_flag = SSK_prime_minister2
+		}
+	}
+
+}

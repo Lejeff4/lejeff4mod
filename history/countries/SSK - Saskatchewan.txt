@@ -117,6 +117,12 @@ recruit_character = SSK_suzuki2
 recruit_character = SSK_koume2
 recruit_character = SSK_rosehip2
 
+recruit_character = SSK_mako
+recruit_character = SSK_yukari
+recruit_character = SSK_maho
+recruit_character = SSK_marie
+recruit_character = SSK_miho
+
 ##ARMY
 recruit_character = SSK_vietnam_warfare2
 recruit_character = SSK_nico_telephone

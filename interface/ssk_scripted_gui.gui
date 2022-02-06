@@ -279,4 +279,67 @@ guiTypes = {
 		}
 	}
 	
+	##CANADIAN CIVIL WAR
+	containerWindowType = {
+		name = "SSK_canadian_civilwar_window_custom"
+		size = { width = 220 height = 128 }
+		position = { x = 375 y = 200 }
+		show_sound = canadian_civlwar_superevent_bigevent
+	
+		iconType = {
+			name = "SSK_canadian_civilwar_background_tile"
+			spriteType = "GFX_super_event_canadian_civilwar"
+			position = { x = 20 y = -4 }
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "SSK_canadian_civilwartext_background_tile"
+			spriteType = "GFX_super_event_endtext"
+			position = { x = -130 y = 660}
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "endgamecanadian_civilwar_text"
+			position = { x = 200 y = 680 }
+			font = "hoi_20bs"
+			text = "canadian_civilwar_VICTORY_TEXT"
+			maxWidth = 725
+			maxHeight = 24
+			format = centre
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "endgamecanadian_civilwartitle_text"
+			position = { x = 200 y = 20 }
+			font = "hoi_20bs"
+			text = "canadian_civilwar_TITLE_TEXT"
+			maxWidth = 725
+			maxHeight = 24
+			format = centre
+			alwaystransparent = yes
+		}
+	}
+
+	
+	containerWindowType = {
+		name = "GUP_SG_canadian_civilwar_victory_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		
+		buttonType = {
+			name = "Option"
+			text = "canadian_civilwar_BUTTON_TEXT"			############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -125 y = 400 }
+			quadTextureSprite ="GFX_super_event_button"
+			buttonFont = "hoi_20bs"
+			Orientation = center
+		}
+	}
 }

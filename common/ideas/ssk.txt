@@ -210,57 +210,6 @@ ideas = {
 		
 		}
 		
-		ssk_mp_deployed = {
-			picture = military_police
-			allowed = {
-				original_tag = SSK
-			}
-			
-			removal_cost = -1
-			
-			modifier = {
-				conscription = 0.03
-				conscription_factor = 0.05
-				resistance_damage_to_garrison = -0.15
-				root_out_resistance_effectiveness_factor = 0.1
-				compliance_gain = 0.1
-			
-			}
-		
-		}
-		
-		ssk_indoctrination = {
-			picture = indoctrination
-			allowed = {
-				original_tag = SSK
-			}
-			
-			removal_cost = -1
-			
-			modifier = {
-				research_speed_factor = -0.05
-				stability_factor = 0.05
-				conscription = 0.01
-			}
-		
-		}
-		
-		ssk_takebe_youth = {
-			picture = takebe_youth
-			allowed = {
-				original_tag = SSK
-			}
-			
-			removal_cost = -1
-			
-			modifier = {
-				conscription = 0.025
-				stability_factor = -0.1
-				war_support_factor = 0.1
-			}
-		
-		}
-		
 		ssk_party_united = {
 			picture = party_united
 			allowed = {
@@ -1705,6 +1654,153 @@ ideas = {
 			}
 		}
 		
+		ssk_allied_volunteers = {
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.01
+				weekly_manpower = 2500
+			}
+		}
+		
+		ssk_saskatchewan_strong = {
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				special_forces_cap = 0.05
+				special_forces_training_time_factor = -0.1
+				army_attack_factor = 0.025
+				army_defence_factor = 0.025
+			}
+		}
+		
+		ssk_brothers_united = {
+			allowed = {
+				
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.1
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+				weekly_manpower = 100
+			}
+		}
+		
+		ssk_canadian_sask_union = {
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			
+			}
+		}
+		
+		ssk_commonwealth_memeber = {
+			allowed = {
+			
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				research_speed_factor = 0.05
+				political_power_gain = 0.25
+			}
+		}
+		
+		ssk_fast_excavation = {
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = 0.25
+				production_factory_max_efficiency_factor = -0.02
+			}
+		}
+		
+		ssk_oil_selling = {
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		
+		ssk_economic_crisis = {
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 1
+				production_speed_buildings_factor = -1
+				production_factory_max_efficiency_factor = -1
+				weekly_manpower = -9500
+				stability_factor = -0.5
+				political_power_factor = -1
+				political_power_gain = -1
+				army_core_attack_factor = -0.5
+				army_core_defence_factor = -0.5
+				army_attack_factor = -0.5
+				army_defence_factor = -0.5
+				
+			}
+		}
+		
+		ssk_production1 = {
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		
+		ssk_production2 = {
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = -0.05
+				conscription = -0.002
+			}
+		}
+		
 		##HAS ICONS
 		
 		ssk_albertain_nationalists = {
@@ -1796,6 +1892,36 @@ ideas = {
 				production_speed_dockyard_factor = -0.15
 			}
 		
+		}
+		
+		ssk_prime_minister1 = {
+			picture = SSK_saori
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.25
+				political_advisor_cost_factor = -0.15
+			}
+		}
+		
+		ssk_prime_minister2 = {
+			picture = SSK_erika
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+				fascism_drift = 0.05
+				compliance_gain = -0.05
+			}
 		}
 	}	
 		##ECONOMIC LAWS
