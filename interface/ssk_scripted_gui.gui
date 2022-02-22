@@ -10,109 +10,109 @@ guiTypes = {
 			name = "SSK_elections_picture"
 			spriteType = "GFX_SSK_elections_decision"
 			position = { x = 20 y = -4 }
-			alwaystransparent = yes
+			alwaystransparent = no
 		}
 		
 		iconType = {
 			name = "GFX_1922_election_results"
 			spriteType = "GFX_1922_election_results"
 			position = { x = 340 y = -4 }
-			alwaystransparent = yes
+			alwaystransparent = no
 		}
 		
 		iconType = {
 			name = "GFX_sask_flag_decisions"
 			spriteType = "GFX_sask_flag_decisions"
 			position = { x = 410 y = 170 }
-			alwaystransparent = yes
+			alwaystransparent = no
 		}
 		
 		##INFO
 		instantTextboxType = {
 			name = "infomation_text"
 			position = { x = 10 y = 175 }
-			font = "hoi_10mbs"
+			font = "hoi_18mbs"
 			text = "ELECTIONS_TEXT"
 			maxWidth = 400
 			maxHeight = 24
 			format = centre
-			alwaystransparent = yes
+			alwaystransparent = no
 		}
 		
 		iconType = {
 			name = "GFX_party_pop_decision"
 			spriteType = "GFX_party_pop_decision"
 			position = { x = 20 y = 270 }
-			alwaystransparent = yes
+			alwaystransparent = no
 		}
 		
 		iconType = {
 			name = "GFX_party_pop_decision2"
 			spriteType = "GFX_party_pop_decision"
 			position = { x = 20 y = 310 }
-			alwaystransparent = yes
+			alwaystransparent = no
 		}
 		
 		iconType = {
 			name = "GFX_party_pop_decision3"
 			spriteType = "GFX_party_pop_decision"
 			position = { x = 20 y = 350 }
-			alwaystransparent = yes
+			alwaystransparent = no
 		}
 		
 		##TEXT
 		instantTextboxType = {
 			name = "fascism_text"
 			position = { x = 30 y = 275 }
-			font = "hoi_10mbs"
+			font = "hoi_18mbs"
 			text = "ELECTIONS_FASCIST_TEXT"
-			alwaystransparent = yes
+			alwaystransparent = no
 		}
 		
 		instantTextboxType = {
 			name = "democratic_text"
 			position = { x = 30 y = 315 }
-			font = "hoi_10mbs"
+			font = "hoi_18mbs"
 			text = "ELECTIONS_DEMOCRATIC_TEXT"
-			alwaystransparent = yes
+			alwaystransparent = no
 		}
 		
 		instantTextboxType = {
 			name = "communist_text"
 			position = { x = 30 y = 355 }
-			font = "hoi_10mbs"
+			font = "hoi_18mbs"
 			text = "ELECTIONS_COMMUNIST_TEXT"
-			alwaystransparent = yes
+			alwaystransparent = no
 		}
 		##PERCENTS
 		instantTextboxType = {
 			name = "fascistnumber_text"
 			position = { x = 190 y = 275 }
-			font = "hoi_10mbs"
+			font = "hoi_18mbs"
 			text = "[?global.ssk_fascism]%"
 			maxWidth = 50
 			format = center
-			alwaystransparent = yes
+			alwaystransparent = no
 		}
 		
 		instantTextboxType = {
 			name = "democraticnumber_text"
 			position = { x = 190 y = 315 }
-			font = "hoi_10mbs"
+			font = "hoi_18mbs"
 			text = "[?global.ssk_democractic]%"
 			maxWidth = 50
 			format = center
-			alwaystransparent = yes
+			alwaystransparent = no
 		}
 		
 		instantTextboxType = {
 			name = "communismnumber_text"
 			position = { x = 190 y = 355 }
-			font = "hoi_10mbs"
+			font = "hoi_18mbs"
 			text = "[?global.ssk_communist]%"
 			maxWidth = 50
 			format = center
-			alwaystransparent = yes
+			alwaystransparent = no
 		}
 	}
 	
@@ -127,7 +127,7 @@ guiTypes = {
 			name = "SSK_background_tile"
 			spriteType = "GFX_tile_big_window"
 			position = { x = 20 y = -4 }
-			alwaystransparent = yes
+			alwaystransparent = no
 		}
 	}
 
@@ -162,14 +162,14 @@ guiTypes = {
 			name = "SSK_nonna_background_tile"
 			spriteType = "GFX_super_event_nonna_endscreen"
 			position = { x = 20 y = -4 }
-			alwaystransparent = yes
+			alwaystransparent = no
 		}
 		
 		iconType = {
 			name = "SSK_nonnatext_background_tile"
 			spriteType = "GFX_super_event_endtext"
 			position = { x = -130 y = 660}
-			alwaystransparent = yes
+			alwaystransparent = no
 		}
 		
 		instantTextboxType = {
@@ -180,7 +180,7 @@ guiTypes = {
 			maxWidth = 725
 			maxHeight = 24
 			format = centre
-			alwaystransparent = yes
+			alwaystransparent = no
 		}
 		
 		instantTextboxType = {
@@ -191,7 +191,7 @@ guiTypes = {
 			maxWidth = 725
 			maxHeight = 24
 			format = centre
-			alwaystransparent = yes
+			alwaystransparent = no
 		}
 	}
 
@@ -226,14 +226,14 @@ guiTypes = {
 			name = "SSK_diplomatic_background_tile"
 			spriteType = "GFX_super_event_diplomatic"
 			position = { x = 20 y = -4 }
-			alwaystransparent = yes
+			alwaystransparent = no
 		}
 		
 		iconType = {
 			name = "SSK_diplomatictext_background_tile"
 			spriteType = "GFX_super_event_endtext"
 			position = { x = -130 y = 660}
-			alwaystransparent = yes
+			alwaystransparent = no
 		}
 		
 		instantTextboxType = {
@@ -244,7 +244,7 @@ guiTypes = {
 			maxWidth = 725
 			maxHeight = 24
 			format = centre
-			alwaystransparent = yes
+			alwaystransparent = no
 		}
 		
 		instantTextboxType = {
@@ -255,7 +255,7 @@ guiTypes = {
 			maxWidth = 725
 			maxHeight = 24
 			format = centre
-			alwaystransparent = yes
+			alwaystransparent = no
 		}
 	}
 
@@ -290,14 +290,14 @@ guiTypes = {
 			name = "SSK_canadian_civilwar_background_tile"
 			spriteType = "GFX_super_event_canadian_civilwar"
 			position = { x = 20 y = -4 }
-			alwaystransparent = yes
+			alwaystransparent = no
 		}
 		
 		iconType = {
 			name = "SSK_canadian_civilwartext_background_tile"
 			spriteType = "GFX_super_event_endtext"
 			position = { x = -130 y = 660}
-			alwaystransparent = yes
+			alwaystransparent = no
 		}
 		
 		instantTextboxType = {
@@ -308,7 +308,7 @@ guiTypes = {
 			maxWidth = 725
 			maxHeight = 24
 			format = centre
-			alwaystransparent = yes
+			alwaystransparent = no
 		}
 		
 		instantTextboxType = {
@@ -319,7 +319,7 @@ guiTypes = {
 			maxWidth = 725
 			maxHeight = 24
 			format = centre
-			alwaystransparent = yes
+			alwaystransparent = no
 		}
 	}
 
@@ -335,6 +335,69 @@ guiTypes = {
 		buttonType = {
 			name = "Option"
 			text = "canadian_civilwar_BUTTON_TEXT"			############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -125 y = 400 }
+			quadTextureSprite ="GFX_super_event_button"
+			buttonFont = "hoi_20bs"
+			Orientation = center
+		}
+	}
+	
+	containerWindowType = {
+		name = "SSK_civilwar_window_custom"
+		size = { width = 220 height = 128 }
+		position = { x = 375 y = 200 }
+		show_sound = civilwar2_bigevent
+	
+		iconType = {
+			name = "SSK_civilwar_background_tile"
+			spriteType = "GFX_super_event_civil_war"
+			position = { x = 20 y = -4 }
+			alwaystransparent = no
+		}
+		
+		iconType = {
+			name = "SSK_civilwartext_background_tile"
+			spriteType = "GFX_super_event_endtext"
+			position = { x = -130 y = 660}
+			alwaystransparent = no
+		}
+		
+		instantTextboxType = {
+			name = "endgame_civilwar_text"
+			position = { x = 200 y = 680 }
+			font = "hoi_20bs"
+			text = "civilwar_VICTORY_TEXT"
+			maxWidth = 725
+			maxHeight = 24
+			format = centre
+			alwaystransparent = no
+		}
+		
+		instantTextboxType = {
+			name = "endgame_civilwartitle_text"
+			position = { x = 200 y = 20 }
+			font = "hoi_20bs"
+			text = "civilwar_TITLE_TEXT"
+			maxWidth = 725
+			maxHeight = 24
+			format = centre
+			alwaystransparent = no
+		}
+	}
+
+	
+	containerWindowType = {
+		name = "GUP_SG_civilwar_victory_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		
+		buttonType = {
+			name = "Option"
+			text = "civilwar_BUTTON_TEXT"			############## OPTION
 			shortcut = "ESCAPE"
 			position = { x = -125 y = 400 }
 			quadTextureSprite ="GFX_super_event_button"

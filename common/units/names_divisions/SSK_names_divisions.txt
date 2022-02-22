@@ -1,0 +1,53 @@
+SSK_INF_01 = { # DIVISIONS_NAME_GROUP, set in your units folder
+	name = "Infantry Divisions" # The name you want for your name list, can either be a string or in quotes.
+	for_countries = { SSK } # Sets what countries can use this name list, change NEP to your countries tag
+	can_use = { always = yes } # A country scope trigger that can lock or unlock a division name group given certain triggers
+	division_types = { "infantry" } # Sets what types of units can use this name list, replace mountaineers with whatever type of unit you are using
+	fallback_name = "%d Infantry Division of the Republic" # This will be used if you run out of numbered divisions. Always use either %d for decimal numbers or %s for Roman numerals but you can change the rest
+	link_numbering_with = { SSK_INF_01 } # Alternative to fallback name, if you run out of numbers in this group you can use another list after it.
+	ordered = {
+		1 = { "%dst Infantry Division of the Republic" } # The first division.
+		2 = { "%dnd Guards Rifle Infantry Division" } # Numbers must always start from 1 and go up
+		3 = { "%drd Infantry Division of the Republic" } # The numbers do not need to be sequential
+		27 = { "%dth Guards Rifle Infantry Division" }
+		4 = { "%dthInfantry Division of the Republic" }
+		5 = { "%dth Infantry Division of the Republic" }
+		6 = { "%dth Infantry Division of the Republic" }
+		7 = { "%dth Infantry Division of the Republic" }
+		8 = { "%dth Infantry Division of the Republic" }
+		9 = { "%dth Infantry Division of the Republic" }
+		10 = { "%dth Infantry Division of the Republic" }
+		11 = { "%dth Infantry Division of the Republic" }
+		12 = { "%dth Infantry Division of the Republic" }
+	}
+}
+
+SSK_INF_02 = { # DIVISIONS_NAME_GROUP, set in your units folder ##37th Name
+	name = "37th Infantry Division" # The name you want for your name list, can either be a string or in quotes.
+	for_countries = { SSK } # Sets what countries can use this name list, change NEP to your countries tag
+	can_use = { always = no } # A country scope trigger that can lock or unlock a division name group given certain triggers
+	division_types = { "infantry" } # Sets what types of units can use this name list, replace mountaineers with whatever type of unit you are using
+	fallback_name = "%d 'Moose Jaw Rangers' Guards Rifle Infantry of the Republic" # This will be used if you run out of numbered divisions. Always use either %d for decimal numbers or %s for Roman numerals but you can change the rest
+	link_numbering_with = { SSK_INF_02 } # Alternative to fallback name, if you run out of numbers in this group you can use another list after it.
+	ordered = {
+		1 = { "%dst 'Moose Jaw Rangers' Guards Rifle Infantry of the Republic" } # The first division.
+	}
+}
+
+SSK_ARM_01 = {
+	name = "Tank Division"
+
+	for_countries = { SSK }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
+
+	fallback_name = "%d Armoured Brigade"
+	ordered = {
+		1 = { "%dst Armoured Division of the Republic" } # The first division.
+		2 = { "%dnd Guards Rifle Armoured Division" } # Numbers must always start from 1 and go up
+		3 = { "%drd Armoured Division of the Republic" } # The numbers do not need to be sequential
+	}
+
+}

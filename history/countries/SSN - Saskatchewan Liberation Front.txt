@@ -1,0 +1,70 @@
+capital = 469
+
+set_research_slots = 2
+set_stability = 0.02
+set_war_support = 0
+
+set_popularities = {
+	democratic = 35
+	communism = 35
+	fascism = 0
+	neutrality = 30
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_recon = 1
+	tech_signal_company = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	basic_light_tank = 1
+	early_fighter = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	early_carrier = 1
+	SSK_magical_infantry_tech = 1
+	SSK_magical_artillery_tech = 1
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		improved_light_tank = 1
+		basic_heavy_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+		improved_light_tank_chassis = 1
+		basic_heavy_tank_chassis = 1
+		engine_tech_1 = 1
+	}
+}
+
+recruit_character = SSN_saori_takebe
+recruit_character = SSN_youko
+recruit_character = SSN_maria_suzuki ##ONLY ALIVE IF DONE ALL PURGES
+recruit_character = SSN_chiyomi_anzai
+recruit_character = SSN_kei
+recruit_character = SSN_big_floppa ##ONLY GENERAL IF DONE ALL PURGES

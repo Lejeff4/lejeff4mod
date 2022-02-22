@@ -19,6 +19,12 @@ focus_tree = {
 			x = 10
 			y = 0
 			
+			allow_branch = {
+				NOT = {
+					has_country_flag = SSK_ERIKA_WINNER
+				}	
+			}
+			
 			prerequisite = {}
 			mutually_exclusive = {}
 		
@@ -89,11 +95,27 @@ focus_tree = {
 			cost = 10
 			
 			completion_reward = {
-				remove_unit_leader = 9002
-				remove_unit_leader = 9007
-				remove_unit_leader = 9006
-				remove_unit_leader = 9005
-				
+				custom_effect_tooltip = SSK_GREAT_PURGE_TOOLTIP
+				hidden_effect = {
+					retire_character = SSK_koume_akaboshi
+					retire_character = SSK_mika
+					retire_character = SSK_saori_takebe
+					retire_character = SSK_youko
+					retire_character = SSK_kiyomi_sugiyama
+					retire_character = SSK_maria_suzuki
+					retire_character = SSK_chiyomi_anzai
+					retire_character = SSK_kei
+					retire_character = SSK_rosehip
+					retire_character = SSK_kei2
+					retire_character = SSK_suzuki2
+					retire_character = SSK_koume2
+					retire_character = SSK_rosehip2
+					retire_character = SSK_mako
+					retire_character = SSK_yukari
+					retire_character = SSK_maho
+					retire_character = SSK_marie
+					retire_character = SSK_miho
+				}
 				add_popularity = {
 					ideology = communism
 					popularity = 0.20
@@ -300,13 +322,10 @@ focus_tree = {
 			prerequisite = { focus = SSK_socialism_in_country }
 			mutually_exclusive = {}
 			
-			cost = 6
+			cost = 2
 			
 			completion_reward = {
-				recruit_character = SSK_nonna
-				recruit_character = SSK_katyusha
-				recruit_character = SSK_alina
-				recruit_character = SSK_nina
+				custom_effect_tooltip = SSK_COMMIE_GENERALS_TOOLTIP
 			}
 		}
 		##FREEDOM
@@ -354,18 +373,16 @@ focus_tree = {
 					long_name = SSK_SOCIALIST_WIN_LONG
 					name = SSK_SOCIALIST_WIN
 					}
-					
 					create_country_leader = {
 					name = "Mika"
-					desc = ""
-					picture = "gfx/leaders/SSK/GFX_mika.dds"
+					desc = "POLITICS_ERIKA_DESC"
+					picture = GFX_mika.dds
 					expire = "1965.1.1"
-					ideology = conservatism
+					ideology = socialism
 						traits = {
 							equal_rights_advocate
-						}	
+						}
 					}
-					
 						
 					remove_ideas = ssk_dying_democracy
 					
@@ -377,10 +394,7 @@ focus_tree = {
 								days = 1460
 							
 							}
-						
 						}
-					
-					
 					}
 			}
 		}
@@ -599,13 +613,13 @@ focus_tree = {
 					
 				create_country_leader = {
 					name = "Kei"
-					desc = ""
-					picture = "gfx/leaders/SSK/GFX_kay2.dds"
+					desc = "POLITICS_ERIKA_DESC"
+					picture = GFX_kay2.dds
 					expire = "1965.1.1"
 					ideology = conservatism
 						traits = {
 							ssk_nationalist
-						}	
+						}
 					}	
 						
 					remove_ideas = ssk_dying_democracy
@@ -977,7 +991,7 @@ focus_tree = {
 			
 			completion_reward = {
 				set_politics = {
-					ruling_party = fascism
+					ruling_party = neutrality
 					elections_allowed = no
 				}
 				
@@ -1016,7 +1030,7 @@ focus_tree = {
 			completion_reward = {
 				add_political_power = 150
 				add_popularity = {
-					ideology = fascism
+					ideology = neutrality
 					popularity = 0.15
 				}
 			
@@ -1063,7 +1077,7 @@ focus_tree = {
 			completion_reward = {
 				add_stability = 0.05
 				add_popularity = {
-					ideology = fascism
+					ideology = neutrality
 					popularity = 0.05
 				}
 			}
@@ -1207,10 +1221,6 @@ focus_tree = {
 			x = 8
 			y = 6
 			
-			available = {
-				has_country_flag = SSK_anchovy_victory
-			}
-			
 			prerequisite = { focus = SSK_economic_minister }
 			prerequisite = { focus = SSK_head_security }
 			prerequisite = { focus = SSK_forign_affairs }
@@ -1220,25 +1230,33 @@ focus_tree = {
 			cost = 1
 			
 			completion_reward = {
+			
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = SSK_prime_minister2
+						}
+					}
+				
 				add_stability = 0.1
 				add_political_power = 50
 				
 				set_party_name = { 
-					ideology = fascism 
+					ideology = neutrality
 					long_name = SSK_DEMOCRATIC_FASCISM_WIN_LONG
 					name = SSK_DEMOCRATIC_FASCISM_WIN
 				}
 				
-				create_country_leader = {
-					name = "Chiyomi Anzai"
-					desc = ""
-					picture = "gfx/leaders/SSK/GFX_anchovy2.dds"
-					expire = "1965.1.1"
-					ideology = nazism
-						traits = {
-							ssk_funny_fish
-						}	
+				else = {
+					set_cosmetic_tag = SSK_deutschordensstaat
+					set_politics = {
+						ruling_party = fascism
+						elections_allowed = no
 					}
+					set_country_flag = SSK_ERIKA_WINNER
+					mark_focus_tree_layout_dirty = yes 
+				}
+				}
 			}
 		}
 		
@@ -1348,6 +1366,12 @@ focus_tree = {
 			relative_position_id = SSK_elections
 			x = 47
 			y = 0
+			
+			allow_branch = {
+				NOT = {
+					has_country_flag = SSK_ERIKA_WINNER
+				}	
+			}
 			
 			prerequisite = { }
 			mutually_exclusive = {}
@@ -2663,6 +2687,12 @@ focus_tree = {
 			x = 25
 			y = 0
 			
+			allow_branch = {
+				NOT = {
+					has_country_flag = SSK_ERIKA_WINNER
+				}	
+			}
+			
 			prerequisite = { }
 			mutually_exclusive = {}
 			
@@ -3565,6 +3595,12 @@ focus_tree = {
 			x = 13
 			y = 0
 			
+			allow_branch = {
+				NOT = {
+					has_country_flag = SSK_ERIKA_WINNER
+				}	
+			}
+			
 			available = {
 				has_completed_focus = SSK_east_united
 			}
@@ -3835,6 +3871,7 @@ focus_tree = {
 			
 			prerequisite = { focus = SSK_east_united }
 			mutually_exclusive = { focus = SSK_diplomatic_challange }
+			mutually_exclusive = { focus = SSK_anzai_constitution }
 			
 			cost = 5
 			
@@ -4513,33 +4550,59 @@ focus_tree = {
 			x = 0
 			y = 1
 			
+			select_effect = {
+				random_list = {
+						50 = {
+							country_event = { id = ssk.16 days = 10 }
+						}
+						
+						50 = {
+						
+						}
+					}
+			}
+			
 			prerequisite = { focus = SSK_sacred_war }
 			mutually_exclusive = {}
 			
 			cost = 10
-			
-			select_effect = {
-				SSK = {
-					country_event = { id = ssk.16 days = 55 }
-				}
-			}
+	
 			completion_reward = {
 				set_cosmetic_tag = SSK_SOVIET_UNITED
 				
-				hidden_effect = {
-					random_list = {
-						50 = {
-							country_event = { id = ssk.16 days = 1 }		
+					hidden_effect = {
+						if = {
+							limit = {
+								SSK = {
+									has_country_flag = SSK_NONNA_REFORMS
+								}
+							}
+						
+							remove_country_leader_role = {
+								character = SSK_klara
+								ideology = marxism
+							}
+							
+							add_country_leader_role = {
+								Character = SSK_nonna
+								Promote_leader = yes
+								Country_leader = {
+									ideology = marxism
+									expire = "1965.1.1"
+									traits = {
+								}
+							}
 						}
-				
-						50 = {
+						}
+						
+						else = {
+
 							add_ideas = ssk_albertain_problem
 							470 = {
 								remove_core_of = SSK
 							}
 						}
-					}
-				}
+						}
 				
 				if = {
 					limit = {
@@ -5308,6 +5371,7 @@ focus_tree = {
 			
 			prerequisite = { focus = SSK_east_united }
 			mutually_exclusive = { focus = SSK_communist_expansion}
+			mutually_exclusive = { focus = SSK_anzai_constitution }
 			
 			cost = 5
 			
@@ -7341,7 +7405,7 @@ focus_tree = {
 			completion_reward = {
 				custom_effect_tooltip = SSK_whitehorse_marines_tooltip
 				hidden_effect = {
-					load_oob = "SSK_whitehorse_marines.txt"
+					load_oob = "SSK_whitehorse_marines"
 					}
 			}
 		}
@@ -7472,8 +7536,1278 @@ focus_tree = {
 			prerequisite = { focus = SSK_united_army }
 			mutually_exclusive = {}
 			
+			cost = 5
+			
 			completion_reward = {
 				add_ideas = ssk_commonwealth_memeber
+			}
+		}
+		
+		##GOOD FASCIST ENDING
+		
+		focus = {
+			id = SSK_anzai_constitution
+			relative_position_id = SSK_elections
+			x = 37
+			y = 11
+			
+			prerequisite = { focus = SSK_east_united }
+			mutually_exclusive = { focus = SSK_communist_expansion }
+			mutually_exclusive = { focus = SSK_diplomatic_challange }
+			
+			cost = 1
+			
+			completion_reward = {
+				add_political_power = 50
+				add_stability = 0.05
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.15
+				}
+			}
+		}
+		
+		focus = {
+			id = SSK_saoris_reforms
+			relative_position_id = SSK_anzai_constitution
+			x = 0
+			y = 1
+			
+			prerequisite = { focus = SSK_anzai_constitution }
+			mutually_exclusive = {}
+			
+			cost = 5
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_remiliterize_rhien
+			relative_position_id = SSK_anzai_constitution
+			x = 5
+			y = 2
+			
+			prerequisite = { focus = SSK_saoris_reforms }
+			mutually_exclusive = {}
+			
+			cost = 5
+			
+			completion_reward = {
+				custom_effect_tooltip = SSK_remiliterize
+				hidden_effect = {
+					836 = { set_demilitarized_zone = no }
+					838 = { set_demilitarized_zone = no }
+					
+					USA = {
+						country_event = { id = ssk.43 days = 1 }
+					}
+				}
+			}
+		}
+		
+		focus = {
+			id = SSK_anzai_plan
+			relative_position_id = SSK_remiliterize_rhien
+			x = 0
+			y = 1
+			
+			prerequisite = { focus = SSK_remiliterize_rhien }
+			mutually_exclusive = {}
+			
+			cost = 1
+			
+			completion_reward = {
+			
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_prairiesteel_funding
+			relative_position_id = SSK_remiliterize_rhien
+			x = -2
+			y = 2
+			
+			prerequisite = { focus = SSK_anzai_plan }
+			mutually_exclusive = {}
+			
+			cost = 5
+			
+			completion_reward = {
+			
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_aircraft_production 
+			relative_position_id = SSK_remiliterize_rhien
+			x = 0
+			y = 2
+			
+			prerequisite = { focus = SSK_anzai_plan }
+			mutually_exclusive = {}
+			
+			cost = 5
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_request_magicite
+			relative_position_id = SSK_remiliterize_rhien
+			x = 2
+			y = 2
+			
+			prerequisite = { focus = SSK_anzai_plan }
+			mutually_exclusive = {}
+			
+			cost = 10
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_anzai_economy
+			relative_position_id = SSK_remiliterize_rhien
+			x = -1
+			y = 3
+			
+			prerequisite = { focus = SSK_prairiesteel_funding }
+			prerequisite = { focus = SSK_aircraft_production }
+			mutually_exclusive = {}
+			
+			cost = 7
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_armoured_tractors
+			relative_position_id = SSK_remiliterize_rhien 
+			x = 1
+			y = 3
+			
+			prerequisite = { focus = SSK_aircraft_production focus = SSK_request_magicite }
+			mutually_exclusive = {}
+			
+			cost = 5
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_conscription
+			relative_position_id = SSK_remiliterize_rhien
+			x = 0
+			y = 4
+			
+			prerequisite = { focus = SSK_anzai_economy }
+			prerequisite = { focus = SSK_armoured_tractors }
+			mutually_exclusive = {}
+			
+			cost = 3
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_anchluss
+			relative_position_id = SSK_remiliterize_rhien 
+			x = 0
+			y = 5
+			
+			prerequisite = { focus = SSK_conscription }
+			mutually_exclusive = {}
+			
+			cost = 7
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = { ##SAORI PATH
+			id = SSK_continue_unite
+			relative_position_id = SSK_remiliterize_rhien
+			x = 2
+			y = 6
+			
+			prerequisite = { focus = SSK_anchluss }
+			mutually_exclusive = { focus = SSK_reforming_government }
+			
+			cost = 1
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_buying_manitoba
+			relative_position_id = SSK_continue_unite
+			x = 0
+			y = 1
+			
+			prerequisite = { focus = SSK_continue_unite }
+			mutually_exclusive = {}
+			
+			cost = 3
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_american_crisis
+			relative_position_id = SSK_continue_unite
+			x = 0
+			y = 2
+			
+			prerequisite = { focus = SSK_buying_manitoba }
+			mutually_exclusive = {}
+			
+			cost = 20
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = { ##ANZAI PATH
+			id = SSK_reforming_government
+			relative_position_id = SSK_remiliterize_rhien
+			x = -2
+			y = 6
+			
+			prerequisite = { focus = SSK_anchluss }
+			mutually_exclusive = { focus =  SSK_continue_unite }
+			
+			cost = 1
+			
+		}
+		
+		focus = {
+			id = SSK_anzai_constitution2
+			relative_position_id = SSK_reforming_government
+			x = 0
+			y = 1
+			
+			prerequisite = { focus = SSK_reforming_government }
+			mutually_exclusive = {}
+			
+			cost = 10
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_true_democracy
+			relative_position_id = SSK_reforming_government
+			x = 0
+			y = 2
+			
+			prerequisite = { focus = SSK_anzai_constitution2 }
+			mutually_exclusive = {}
+			
+			cost = 20
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_repeal_alberta_act
+			relative_position_id = SSK_anzai_constitution
+			x = -5
+			y = 2
+			
+			prerequisite = { focus = SSK_saoris_reforms }
+			mutually_exclusive = {}
+			
+			cost = 1
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_secure_civil_liberties
+			relative_position_id = SSK_repeal_alberta_act
+			x = 0
+			y = 1
+			
+			prerequisite = { focus = SSK_repeal_alberta_act }
+			mutually_exclusive = {}
+			
+			cost = 1
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_battle_for_healthcare
+			relative_position_id = SSK_repeal_alberta_act
+			x = -1
+			y = 2
+			
+			prerequisite = { focus = SSK_secure_civil_liberties }
+			mutually_exclusive = {}
+			
+			cost = 4
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_promote_womens_sufferage
+			relative_position_id = SSK_repeal_alberta_act
+			x = 1
+			y = 2
+			
+			prerequisite = { focus = SSK_secure_civil_liberties }
+			mutually_exclusive = {}
+			
+			cost = 4
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_free_municipl_elections
+			relative_position_id = SSK_repeal_alberta_act
+			x = 0
+			y = 3
+			
+			prerequisite = { focus = SSK_battle_for_healthcare focus = SSK_promote_womens_sufferage }
+			mutually_exclusive = {}
+			
+			cost = 5
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_social_welfare
+			relative_position_id = SSK_repeal_alberta_act
+			x = -2
+			y = 4
+			
+			prerequisite = { focus = SSK_free_municipl_elections }
+			mutually_exclusive = {}
+			
+			cost = 10
+			
+			completion_reward = {
+			
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_minister_elecions
+			relative_position_id = SSK_repeal_alberta_act 
+			x = 0
+			y = 4
+			
+			prerequisite = { focus = SSK_free_municipl_elections }
+			mutually_exclusive = {}
+			
+			cost = 5
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_canadian_voting_system
+			relative_position_id = SSK_repeal_alberta_act
+			x = 2
+			y = 4
+			
+			prerequisite = { focus = SSK_free_municipl_elections }
+			mutually_exclusive = {}
+			
+			cost = 5
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_leadership_question
+			relative_position_id = SSK_repeal_alberta_act
+			x = 0
+			y = 5
+			
+			prerequisite = { focus = SSK_social_welfare focus = SSK_minister_elecions }
+			prerequisite = { focus = SSK_canadian_voting_system }
+			mutually_exclusive = {}
+			
+			cost = 1
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_saoris_vision
+			relative_position_id = SSK_repeal_alberta_act
+			x = -1
+			y = 6
+			
+			prerequisite = { focus = SSK_leadership_question }
+			mutually_exclusive = { focus = SSK_anzais_vision }
+			
+			cost = 0
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_anzais_vision
+			relative_position_id = SSK_repeal_alberta_act 
+			x = 1
+			y = 6
+			
+			prerequisite = { focus = SSK_leadership_question }
+			mutually_exclusive = { focus = SSK_saoris_vision }
+			
+			cost = 0
+			
+			completion_reward = {
+			
+			}
+			
+		}
+		
+		focus = {
+			id = SSK_liberalize_economy
+			relative_position_id = SSK_anzai_constitution
+			x = 0
+			y = 2
+			
+			prerequisite = { focus = SSK_saoris_reforms }
+			mutually_exclusive = {}
+			
+			cost = 2
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_expand_worker_rights
+			relative_position_id = SSK_liberalize_economy
+			x = -2
+			y = 1
+			
+			prerequisite = { focus = SSK_liberalize_economy }
+			mutually_exclusive = {}
+			
+			cost = 3
+			
+			completion_reward = {
+			
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_opening_markets
+			relative_position_id = SSK_liberalize_economy
+			x = 0
+			y = 1
+			
+			prerequisite = { focus = SSK_liberalize_economy }
+			mutually_exclusive = {}
+			
+			cost = 3
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_civillian_economy
+			relative_position_id = SSK_liberalize_economy
+			x = 2
+			y = 1
+			
+			prerequisite = { focus = SSK_liberalize_economy }
+			mutually_exclusive = {}
+			
+			cost = 3
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_ross_contracts
+			relative_position_id = SSK_liberalize_economy
+			x = 0
+			y = 2
+			
+			prerequisite = { focus = SSK_expand_worker_rights focus = SSK_opening_markets focus = SSK_civillian_economy }
+			mutually_exclusive = {}
+			
+			cost = 5
+			
+			completion_reward = {
+			
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_ban_socialist_companies
+			relative_position_id = SSK_liberalize_economy
+			x = -1
+			y = 3
+			
+			prerequisite = { focus = SSK_ross_contracts }
+			mutually_exclusive = {}
+			
+			cost = 2
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_encourage_entrapanures
+			relative_position_id = SSK_liberalize_economy
+			x = 1
+			y = 3
+			
+			prerequisite = { focus = SSK_ross_contracts }
+			mutually_exclusive = {}
+			
+			cost = 4
+			
+			completion_reward = {
+			
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_the_free_market
+			relative_position_id = SSK_liberalize_economy
+			x = 0
+			y = 4
+			
+			prerequisite = { focus = SSK_ban_socialist_companies }
+			prerequisite = { focus = SSK_encourage_entrapanures }
+			mutually_exclusive = {}
+			
+			cost = 5
+			
+			completion_reward = {
+			
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_workcamp
+			relative_position_id = SSK_liberalize_economy
+			x = -2
+			y = 5
+			
+			prerequisite = { focus = SSK_the_free_market }
+			mutually_exclusive = {}
+			
+			cost = 2
+			
+			completion_reward = {
+			
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_rapid_buildup2
+			relative_position_id = SSK_liberalize_economy
+			x = 0
+			y = 5
+			
+			prerequisite = { focus = SSK_the_free_market }
+			mutually_exclusive = {}
+			
+			cost = 7
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_forced_industrialization
+			relative_position_id = SSK_liberalize_economy
+			x = 2
+			y = 5
+			
+			prerequisite = { focus = SSK_the_free_market }
+			mutually_exclusive = {}
+			
+			cost = 10
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_regina_industrial_park
+			relative_position_id = SSK_liberalize_economy
+			x = 1
+			y = 6
+			
+			prerequisite = { focus = SSK_rapid_buildup2 }
+			prerequisite = { focus = SSK_forced_industrialization }
+			mutually_exclusive = {}
+			
+			cost = 5
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_sask_science
+			relative_position_id = SSK_liberalize_economy
+			x = -1
+			y = 6
+			
+			prerequisite = { focus = SSK_workcamp }
+			prerequisite = { focus = SSK_rapid_buildup2 }
+			mutually_exclusive = {}
+			
+			cost = 5
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_continue_industrialization
+			relative_position_id = SSK_liberalize_economy
+			x = 0
+			y = 7
+			
+			prerequisite = { focus = SSK_regina_industrial_park }
+			prerequisite = { focus = SSK_sask_science }
+			mutually_exclusive = {}
+			
+			cost = 20
+			
+			completion_reward = {
+			
+			
+			}
+		}
+		
+		
+		##CRACK ERIKA PATH
+		
+		focus = {
+			id = SSK_coup_successful
+			
+			allow_branch = {
+				has_country_flag = SSK_ERIKA_WINNER
+			}
+			
+			x = 10
+			y = 0
+			
+			available = {
+				NOT = {
+					has_country_flag = SSK_CIVILWAR
+				}
+			}
+			
+			prerequisite = {}
+			mutually_exclusive = {}
+			
+			cost = 1
+			
+			completion_reward = {
+				add_political_power = 75
+				add_popularity = {
+					ideology = fascism
+					popularity = 0.15
+				}		
+			}
+		}
+		
+		focus = {
+			id = SSK_first_steps
+			relative_position_id = SSK_coup_successful
+			x = 0
+			y = 1
+			
+			available = {
+				NOT = {
+					has_country_flag = SSK_CIVILWAR
+				}
+			}
+			
+			prerequisite = { focus = SSK_coup_successful }
+			mutually_exclusive = {}
+			
+			cost = 1
+			
+			completion_reward = {
+				country_event = { id = ssk.42 days = 1 }
+			}
+		}
+		
+		focus = {
+			id = SSK_control_riots
+			relative_position_id = SSK_coup_successful
+			x = -4
+			y = 2
+			
+			available = {
+				NOT = {
+					has_country_flag = SSK_CIVILWAR
+				}
+			}
+			
+			prerequisite = { focus = SSK_first_steps }
+			mutually_exclusive = {}
+			
+			cost = 3
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_deploy_blackshirts
+			relative_position_id = SSK_control_riots
+			x = -1
+			y = 1
+			
+			available = {
+				NOT = {
+					has_country_flag = SSK_CIVILWAR
+				}
+			}
+			
+			prerequisite = { focus = SSK_control_riots }
+			mutually_exclusive = {}
+			
+			cost = 1
+			
+			completion_reward = {
+			
+			}
+		
+		}
+		
+		focus = {
+			id = SSK_form_schutzstaffel
+			relative_position_id = SSK_control_riots 
+			x = 1
+			y = 1
+			
+			available = {
+				NOT = {
+					has_country_flag = SSK_CIVILWAR
+				}
+			}
+			
+			prerequisite = { focus = SSK_control_riots }
+			mutually_exclusive = {}
+			
+			cost = 3
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_shoot_sight
+			relative_position_id = SSK_control_riots
+			x = 0
+			y = 2
+			
+			available = {
+				NOT = {
+					has_country_flag = SSK_CIVILWAR
+				}
+			}
+			
+			prerequisite = { focus = SSK_deploy_blackshirts }
+			prerequisite = { focus = SSK_form_schutzstaffel }
+			mutually_exclusive = {}
+			
+			cost = 1
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_from_lamps
+			relative_position_id = SSK_control_riots
+			x = 0
+			y = 3
+			
+			available = {
+				NOT = {
+					has_country_flag = SSK_CIVILWAR
+				}
+			}
+			
+			prerequisite = { focus = SSK_shoot_sight }
+			mutually_exclusive = {}
+			
+			cost = 1
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_form_SSF
+			relative_position_id = SSK_control_riots
+			x = 0
+			y = 4
+			
+			available = {
+				NOT = {
+					has_country_flag = SSK_CIVILWAR
+				}
+			}
+			
+			prerequisite = { focus = SSK_from_lamps }
+			mutually_exclusive = {}
+			
+			cost = 4
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_deal_with_liberals
+			relative_position_id = SSK_coup_successful
+			x = 0
+			y = 2
+			
+			available = {
+				NOT = {
+					has_country_flag = SSK_CIVILWAR
+				}
+			}
+			
+			prerequisite = { focus = SSK_first_steps }
+			mutually_exclusive = {}
+			
+			cost = 2
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_parliament_decree
+			relative_position_id = SSK_deal_with_liberals 
+			x = -1
+			y = 1
+			
+			available = {
+				NOT = {
+					has_country_flag = SSK_CIVILWAR
+				}
+			}
+			
+			prerequisite = { focus = SSK_deal_with_liberals }
+			mutually_exclusive = {}
+			
+			cost =  1
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_conserviative_question
+			relative_position_id = SSK_deal_with_liberals 
+			x = 1
+			y = 1
+			
+			available = {
+				NOT = {
+					has_country_flag = SSK_CIVILWAR
+				}
+			}
+			
+			prerequisite = { focus = SSK_deal_with_liberals }
+			mutually_exclusive = {}
+			
+			cost = 2
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_communist_purge
+			relative_position_id = SSK_deal_with_liberals 
+			x = -1
+			y = 2
+			
+			available = {
+				NOT = {
+					has_country_flag = SSK_CIVILWAR
+				}
+			}
+			
+			prerequisite = { focus = SSK_parliament_decree }
+			mutually_exclusive = {}
+			
+			cost = 7
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_execute_leftist_liberals
+			relative_position_id = SSK_deal_with_liberals
+			x = -1
+			y = 3
+			
+			available = {
+				NOT = {
+					has_country_flag = SSK_CIVILWAR
+				}
+			}
+			
+			prerequisite = { focus = SSK_communist_purge }
+			mutually_exclusive = {}
+			
+			cost = 3
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_rid_of_centrists
+			relative_position_id = SSK_deal_with_liberals 
+			x = 1
+			y = 2
+			
+			available = {
+				NOT = {
+					has_country_flag = SSK_CIVILWAR
+				}
+			}
+			
+			prerequisite = { focus = SSK_conserviative_question }
+			mutually_exclusive = {}
+			
+			cost = 1
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_disolve_parliament
+			relative_position_id = SSK_deal_with_liberals
+			x = 1
+			y = 3
+			
+			available = {
+				NOT = {
+					has_country_flag = SSK_CIVILWAR
+				}
+			}
+			
+			prerequisite = { focus = SSK_rid_of_centrists }
+			mutually_exclusive = {}
+			
+			cost = 1
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_one_party_state
+			relative_position_id = SSK_deal_with_liberals
+			x = 0
+			y = 4
+			
+			available = {
+				NOT = {
+					has_country_flag = SSK_CIVILWAR
+				}
+			}
+			
+			prerequisite = { focus = SSK_execute_leftist_liberals }
+			prerequisite = { focus = SSK_disolve_parliament }
+			mutually_exclusive = {}
+			
+			cost = 5
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus =  {
+			id = SSK_fascist_party
+			relative_position_id = SSK_coup_successful
+			x = 4
+			y = 2
+			
+			available = {
+				NOT = {
+					has_country_flag = SSK_CIVILWAR
+				}
+			}
+			
+			prerequisite = { focus = SSK_first_steps }
+			mutually_exclusive = {}
+			
+			cost = 1
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_keep_old_guard
+			relative_position_id = SSK_fascist_party
+			x = -1
+			y = 1
+			
+			available = {
+				NOT = {
+					has_country_flag = SSK_CIVILWAR
+				}
+			}
+			
+			prerequisite = { focus = SSK_fascist_party }
+			mutually_exclusive = { focus = SSK_rid_of_moderates }
+			
+			cost = 1
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_loyal_military
+			relative_position_id = SSK_fascist_party
+			x = -1
+			y = 2
+			
+			available = {
+				NOT = {
+					has_country_flag = SSK_CIVILWAR
+				}
+			}
+			
+			prerequisite = { focus = SSK_keep_old_guard }
+			mutually_exclusive = {}
+			
+			cost = 2
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_old_talent
+			relative_position_id = SSK_fascist_party
+			x = -1
+			y = 3
+			
+			available = {
+				NOT = {
+					has_country_flag = SSK_CIVILWAR
+				}
+			}
+			
+			prerequisite = { focus = SSK_loyal_military }
+			mutually_exclusive = {}
+			
+			cost = 4
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_rid_of_moderates
+			relative_position_id = SSK_fascist_party
+			x = 1
+			y = 1
+			
+			available = {
+				NOT = {
+					has_country_flag = SSK_CIVILWAR
+				}
+			}
+			
+			prerequisite = { focus = SSK_fascist_party }
+			mutually_exclusive = { focus = SSK_keep_old_guard }
+			
+			cost = 1
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_purge_army
+			relative_position_id = SSK_fascist_party
+			x = 1
+			y = 2
+			
+			available = {
+				NOT = {
+					has_country_flag = SSK_CIVILWAR
+				}
+			}
+			
+			prerequisite = { focus = SSK_rid_of_moderates }
+			mutually_exclusive = {}
+			
+			cost = 2
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_anzais_fate
+			relative_position_id = SSK_fascist_party 
+			x = 1
+			y = 3
+			
+			available = {
+				NOT = {
+					has_country_flag = SSK_CIVILWAR
+				}
+			}
+			
+			prerequisite = { focus = SSK_purge_army }
+			mutually_exclusive = {}
+			
+			cost = 2
+			
+			completion_reward = {
+				
+			}
+		}
+		
+		focus = {
+			id = SSK_reformed_army
+			relative_position_id = SSK_fascist_party
+			x = 0
+			y = 4
+			
+			available = {
+				NOT = {
+					has_country_flag = SSK_CIVILWAR
+				}
+			}
+			
+			prerequisite = { focus = SSK_old_talent focus = SSK_anzais_fate }
+			mutually_exclusive = {}
+			
+			cost = 1
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_coup_evaded
+			relative_position_id = SSK_first_steps
+			x = 0
+			y = 6
+			
+			available = {
+				NOT = {
+					has_country_flag = SSK_CIVILWAR
+				}
+			}
+			
+			prerequisite = { focus = SSK_form_SSF }
+			prerequisite = { focus = SSK_one_party_state }
+			prerequisite = { focus = SSK_reformed_army }
+			mutually_exclusive = {}
+			
+			cost = 1
+			
+			completion_reward = {
+			
 			}
 		}
 }

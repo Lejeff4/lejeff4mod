@@ -137,3 +137,26 @@ ssk.37.t:0 "Albertan Oil"
 ssk.37.d:0 "Finally we have been able to wield the power to extract oil from the massive Albertan Oil Fields! There is so much black gold that we dont know what to do with. Most economic experts say we should sell but expect the price to go down in a few years unless a war breaks out."
 ssk.37.a:0 "Here comes the Money!"
 ssk.37.b:0 "We should keep it."
+
+ssk.40.t:0 "The Republic Rises Again!"
+ssk.40.d:0 "The political situation of the Reich has deteriorated past the point of no reutrn. In the north there are rumors of a open rebellion against us. With our scouts in the north they have reported back that the reminants of the old republic has rosen up. \n \nThe Second Republic has rose from the ashes to end our rule and tear down all that we have built up. Its time for the Greater Saskatchewanians to fight the inferiors. \n \nFor the Fuhrer and Fatherland. \n \n§REACH OPTION CHOOSES YOU A SIDE§!"
+ssk.40.a:0 "Stand by the Fuhrer!"
+ssk.40.b:0 "For Freedom and Liberty!"
+
+ssk.41.t:0 "Erika's Coup"
+ssk.41.d:0 "§RPUT DOWN YOUR ARMS, OR YOU WILL BE SHOT§! \n \nWith the Parliament seized and most of the Government buildings taken over the Coup has ended bloodless, except for the civillians. Now is the time to end our opposition and bring order back to our once great nation!"
+ssk.41.a:0 "May the Wolf Spirit Guide Us!"
+
+ssk.42.t:0 "Anarchy"
+ssk.42.d:0 "With tensions cooling in the nation from our recent coup the country has feel into Anarchy as more security officals resign. We must restore order to the streets and fields of the country whether the people like it or not. We will rid these Anarcho-Capitalists from our proud nation!"
+ssk.42.a:0 "For the Fatherland!"
+
+ssk.43.t:0 "Saskatchewan breaks the Regina Treaty!"
+ssk.43.d:0 "Today the Saskatchewanian Army has moved back into the South remiliterizing the border between us. Most think the treaty is too hard hitting for the Saskatchewanian people. Should we let them remiliterize?"
+ssk.43.a:0 "They must obey the treaty!"
+ssk.43.b:0 "Let them be free!"
+
+ssk.44.t:0 "America Opposes the Remilitarization!"
+ssk.44.d:0 "Our recent move into lower Saskatchewan to restore order has been met with a heavy American response. They are willing to commit their army and resources to a full out war if we do not back down."
+ssk.44.a:0 "We should back down"
+ssk.44.b:0 "Send those Fascists back to where they came!"

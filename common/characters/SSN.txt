@@ -1,0 +1,208 @@
+characters={
+	SSN_saori_takebe={
+		name="Saori Takebe"
+		portraits={
+			civilian={
+				large="gfx/leaders/SSK/GFX_saori2.dds"
+			}
+			civilian = {
+				small="gfx/interface/ideas/portraits/idea_SSK_saori.dds"
+			}
+			
+			army={
+				small="gfx/interface/ideas/portraits/idea_SSK_saori.dds"
+			}
+			
+			army = {
+				large="gfx/leaders/SSK/GFX_saori.dds"
+			}
+		}
+		field_marshal={
+			traits={ media_personality war_hero }
+			skill=4
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=10005
+		}
+		
+		country_leader={
+			ideology=liberalism
+			traits={}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	SSN_youko={
+		name="Youko"
+		portraits={
+			civilian={
+				large="gfx/leaders/SSK/GFX_youko.dds"
+			}
+			
+			civilian = {
+				small="gfx/interface/ideas/portraits/idea_SSK_youko.dds"
+			}
+			
+			army={
+				small="gfx/interface/ideas/portraits/idea_SSK_youko.dds"
+			}
+			
+			army = {
+				large="gfx/leaders/SSK/GFX_youko.dds"
+			}
+		}
+		
+		corps_commander={
+			traits={ trait_mountaineer }
+			skill=1
+			attack_skill=4
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=10004
+		}
+		
+		country_leader={
+			ideology=nazism
+			traits={}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	SSN_maria_suzuki={
+		name="Maria Suzuki"
+		portraits={
+			civilian={
+				large="gfx/leaders/SSK/GFX_suzuki.dds"
+			}
+			civilian = {
+				small="gfx/interface/ideas/portraits/idea_SSK_suzuki.dds"
+			}
+			
+			army={
+				small="gfx/interface/ideas/portraits/idea_SSK_suzuki.dds"
+			}
+			army={
+				large="gfx/leaders/SSK/GFX_suzuki.dds"
+			}
+		}
+		corps_commander={
+			traits={ media_personality armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=10000
+		}
+		
+		country_leader={
+			ideology=marxism
+			traits={}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	SSN_chiyomi_anzai={
+		name="Chiyomi Anzai"
+		portraits={
+			civilian = {
+				large = "gfx/leaders/SSK/GFX_anchovy2.dds"
+			}
+			
+			civilian = {
+				small="gfx/interface/ideas/portraits/idea_SSK_anchovy.dds"
+			}
+		
+			army={
+				small="gfx/interface/ideas/portraits/idea_SSK_anchovy.dds"
+			}
+			army={
+				large="gfx/leaders/SSK/GFX_anchovy.dds"
+			}
+		}
+		corps_commander={
+			traits={ inflexible_strategist trait_reckless }
+			skill=4
+			attack_skill=5
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=10003
+		}
+		
+		country_leader={
+			ideology=liberalism
+			traits={}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	SSN_kei={
+		name="Kei"
+		portraits={
+		
+			civilian = {
+				large="gfx/leaders/SSK/GFX_kay2.dds"
+			}
+			
+			civilian = {
+				small="gfx/interface/ideas/portraits/idea_SSK_kay.dds"
+			}
+			
+			army={
+				small="gfx/interface/ideas/portraits/idea_SSK_kay.dds"
+			}
+			army={
+				large="gfx/leaders/SSK/GFX_kay.dds"
+			}
+		}
+		corps_commander={
+			traits={ skilled_staffer commando }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=1002
+		}
+		
+		country_leader = {
+			ideology = conservatism
+			traits = { ssk_nationalist }
+			expire = "1965.1.1"
+			id = 1
+		}
+	}
+	
+	SSN_big_floppa = {
+		name = "Small Floppa"
+		portraits = {
+			army = {
+				small="gfx/interface/ideas/portraits/idea_SSK_floppa.dds"
+			}
+			
+			army = {
+				large="gfx/leaders/SSK/GFX_floppa.dds"
+			}
+		}
+		
+		corps_commander={
+			traits={ commando }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=10001
+		}
+	}
+
+
+}

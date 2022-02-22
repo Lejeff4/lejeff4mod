@@ -1,6 +1,9 @@
 category = {
  name = "Event Sound"
  soundeffects = {
-		nonnasuperevent
+		nonnasuperevent_bigevent
+		diplomatic_superevent_bigevent
+		canadian_civlwar_superevent_bigevent
+		civilwar2_bigevent
 	}
 }

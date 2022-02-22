@@ -1,13 +1,4 @@
 
-
-##SUPEREVENT 
-
-music = {
-	name = "nonnasuperevent"
-	file = "nonnasuperevent.ogg"
-	volume = 1
-}
-
 # MAIN THEME
 music = {
 	name = "maintheme"

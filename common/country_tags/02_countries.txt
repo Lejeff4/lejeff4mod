@@ -1,2 +1,3 @@
 SSK = "countries/Saskatchewan.txt"
 SSZ = "countries/Southern_Zone.txt"
+SSN = "countries/Saskatchewan_Liberation_Front.txt"

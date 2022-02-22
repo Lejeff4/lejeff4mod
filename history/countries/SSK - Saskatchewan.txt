@@ -1,4 +1,4 @@
-capital = 469
+capital = 835
 
 load_oob = "SSK_units_start"
 
@@ -23,6 +23,7 @@ set_technology = {
 	trench_warfare = 1
 	fleet_in_being = 1
 	early_carrier = 1
+	basic_train = 1
 }
 
 if = {
@@ -104,18 +105,8 @@ recruit_character = SSK_chiyomi_anzai
 recruit_character = SSK_kei
 recruit_character = SSK_rosehip
 recruit_character = SSK_vietnam_warfare
-
-##ADVISORS
-recruit_character = SSK_nonna2
-recruit_character = SSK_katyusha2
-recruit_character = SSK_mika2
-recruit_character = SSK_alina2
-recruit_character = SSK_klara2
-
-recruit_character = SSK_kei2
-recruit_character = SSK_suzuki2
-recruit_character = SSK_koume2
-recruit_character = SSK_rosehip2
+recruit_character = SSK_mika
+recruit_character = SSK_erika
 
 recruit_character = SSK_mako
 recruit_character = SSK_yukari
@@ -124,5 +115,9 @@ recruit_character = SSK_marie
 recruit_character = SSK_miho
 
 ##ARMY
-recruit_character = SSK_vietnam_warfare2
 recruit_character = SSK_nico_telephone
+recruit_character = SSK_nonna
+recruit_character = SSK_katyusha
+recruit_character = SSK_alina
+recruit_character = SSK_nina
+recruit_character = SSK_emi

@@ -11,6 +11,8 @@ sub_units = {
 		priority = 599
 		ai_priority = 200
 		active = no
+		special_forces = yes
+		active = no 
 
 		type = { infantry }
 		
@@ -52,12 +54,14 @@ sub_units = {
 		ai_priority = 0
 		active = yes
 		affects_speed = no
+		special_forces = yes
+		active = no 
 
 		type = {
 			infantry
 		}
 		
-		group = support
+		group = infantry
 		
 		categories = {
 			category_army

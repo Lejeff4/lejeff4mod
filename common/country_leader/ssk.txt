@@ -125,6 +125,15 @@ leader_traits = {
 		
 	}
 	
+	ruthless_capitalist = {
+		random = no
+		sprite = 13
+		
+		stability_factor = -0.075
+		consumer_goods_factor = -0.1
+		production_speed_buildings_factor = 0.05
+	}
+	
 	head_of_security = {
 		random = no
 		sprite = 13
@@ -142,6 +151,7 @@ leader_traits = {
 		trade_opinion_factor = 0.05
 		opinion_gain_monthly_factor = 0.15
 		neutrality_acceptance = 50
+		democratic_acceptance = 50
 	}
 	
 	forign_minister2 = {
@@ -149,7 +159,7 @@ leader_traits = {
 		sprite = 13
 		
 		trade_opinion_factor = 0.05
-		opinion_gain_monthly_factor = 0.15
+		fascism_drift = 0.05
 		fascism_acceptance = 50
 	}
 

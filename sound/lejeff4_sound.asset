@@ -12,3 +12,8 @@ sound = {
 	name = "canadian_civlwar_superevent"
 	file = "canadian_civlwar_superevent.wav"
 }
+
+sound = {
+	name = "civilwar2"
+	file = "civilwar2.wav"
+}

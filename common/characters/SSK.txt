@@ -18,6 +18,26 @@ characters={
 				large="gfx/leaders/SSK/GFX_koume.dds"
 			}
 		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = SSK_koume_idea
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+				has_government = democratic
+			}
+			visible = {
+				has_government = democratic
+			}
+			traits = {
+				laissez_faire
+			}
+			
+			cost = 150
+		}
+		
 		corps_commander={
 			traits={ infantry_officer expert_improviser }
 			skill=3
@@ -28,7 +48,7 @@ characters={
 			legacy_id=9007
 		}
 		country_leader={
-			ideology=conservatism
+			ideology=liberalism
 			traits={ ssk_underrated_politician }
 			expire="1965.1.1.1"
 			id=-1
@@ -48,8 +68,33 @@ characters={
 
 		}
 		
+		advisor={
+			slot = political_advisor
+			idea_token = SSK_mika_idea
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+			OR = {
+				has_government = communism
+				has_government = democratic
+			}	
+			}
+			visible = {
+			OR = {
+				has_government = communism
+				has_government = democratic
+			}	
+			}
+			traits = {
+				moderate_socialist
+			}
+			
+			cost = 50
+		}
+		
 		country_leader = {
-			ideology = conservatism
+			ideology = socialism
 			traits = { equal_rights_advocate }
 			expire = "1965.1.1"
 			id = 1
@@ -60,7 +105,7 @@ characters={
 		name="Saori Takebe"
 		portraits={
 			civilian={
-				large="gfx/leaders/SSK/GFX_saori.dds"
+				large="gfx/leaders/SSK/GFX_saori3.dds"
 			}
 			civilian = {
 				small="gfx/interface/ideas/portraits/idea_SSK_saori.dds"
@@ -103,11 +148,6 @@ characters={
 				large="gfx/leaders/SSK/GFX_youko.dds"
 			}
 		}
-		country_leader={
-			ideology=centrism
-			expire="1965.1.1.1"
-			id=-1
-		}
 	}
 	SSK_klara={
 		name="Klara"
@@ -124,6 +164,26 @@ characters={
 				small="gfx/interface/ideas/portraits/idea_SSK_klara.dds"
 			}
 		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = SSK_klara_idea
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+				has_government = communism
+			}
+			visible = {
+				has_government = communism
+			}
+			traits = {
+				people_pleaser
+			}
+			
+			cost = 150
+		}
+		
 		corps_commander={
 			traits={ trait_mountaineer urban_assault_specialist }
 			skill=3
@@ -168,6 +228,9 @@ characters={
 			available = {
 				has_country_flag = SSK_head_security1
 			}
+			visible = {
+				has_country_flag = SSK_head_security1
+			}
 			traits = {
 				head_of_security
 			}
@@ -179,12 +242,32 @@ characters={
 		name="Maria Suzuki"
 		portraits={
 			army={
-				small="gfx/interface/ideas/portraits/idea_SSK_saemonza.dds"
+				small="gfx/interface/ideas/portraits/idea_SSK_suzuki.dds"
 			}
 			army={
 				large="gfx/leaders/SSK/GFX_suzuki.dds"
 			}
 		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = SSK_suzuki_idea
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+				has_government = democratic
+			}
+			visible = {
+				has_government = democratic 
+			}
+			traits = {
+				popular_author
+			}
+			
+			cost = 150
+		}
+		
 		corps_commander={
 			traits={ media_personality armor_officer }
 			skill=3
@@ -223,15 +306,9 @@ characters={
 			legacy_id=9005
 		}
 		
-		country_leader={
-			ideology=fascism_ideology
-			expire="1965.1.1.1"
-			id=-1
-		}
-		
 		country_leader = {
-			ideology = nazism
-			traits = { ssk_funny_fish }
+			ideology = centrism
+			traits = { }
 			expire = "1965.1.1"
 			id = 1
 		}
@@ -256,6 +333,26 @@ characters={
 				large="gfx/leaders/SSK/GFX_kay.dds"
 			}
 		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = SSK_kay_idea
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+				has_government = democratic
+			}
+			visible = {
+				has_government = democratic
+			}
+			traits = {
+				conservitive
+			}
+			
+			cost = 150
+		}
+		
 		corps_commander={
 			traits={ skilled_staffer commando }
 			skill=3
@@ -285,6 +382,26 @@ characters={
 				large="gfx/leaders/SSK/GFX_rosehip.dds"
 			}
 		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = SSK_rosehip_idea
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+				has_government = democratic
+			}
+			visible = {
+				has_government = democratic
+			}
+			traits = {
+				efficent_burocrat
+			}
+			
+			cost = 150
+		}
+		
 		corps_commander={
 			traits={ fast_planner aggressive_assaulter }
 			skill=3
@@ -305,6 +422,23 @@ characters={
 				large="gfx/leaders/SSK/GFX_vietnam.dds"
 			}
 		}
+		
+		advisor={
+			slot = army_chief
+			idea_token = SSK_vietnam_warfare_idea
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+				has_completed_focus = SSK_war_plan_V
+			}
+			traits = {
+				army_armored_1
+			}
+			
+			cost = 50
+		}
+		
 		corps_commander={
 			traits={ death_or_dishonor trait_reckless }
 			skill=1
@@ -328,6 +462,25 @@ characters={
 			}
 		}
 		
+		advisor={
+			slot = political_advisor
+			idea_token = SSK_katyusha_idea
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+				has_government = communism
+			}
+			visible = {
+				has_government = communism
+			}
+			traits = {
+				diehard_socialist
+			}
+			
+			cost = 150
+		}
+		
 		corps_commander = {
 			traits = { hill_fighter urban_assault_specialist panzer_expert } 
 			skill = 5
@@ -336,6 +489,7 @@ characters={
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 9011
+			visible = { has_completed_focus = SSK_ideal_communism }
 		}
 	}
 	
@@ -347,7 +501,7 @@ characters={
 			}
 			
 			army = {
-				large="gfx/leaders/SSK/GFX_nonna.dds"
+				large="gfx/leaders/SSK/GFX_nonna_portrait.dds"
 			}
 		}
 		
@@ -359,6 +513,33 @@ characters={
 			planning_skill = 2
 			logistics_skill = 2
 			legacy_id = 9010
+			visible = { has_completed_focus = SSK_ideal_communism }
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = SSK_nonna_idea
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+				has_government = communism
+			}
+			visible = {
+				has_government = communism
+			}
+			traits = {
+				communist_reformist
+			}
+			
+			cost = 150
+		}
+		
+		country_leader = {
+			ideology = marxism
+			traits = {  }
+			expire = "1965.1.1"
+			id = 1
 		}
 	}
 	
@@ -374,6 +555,25 @@ characters={
 			}
 		}
 		
+		advisor={
+			slot = political_advisor
+			idea_token = SSK_alina_idea
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+				has_government = communism
+			}
+			visible = {
+				has_government = communism
+			}
+			traits = {
+				rapid_industrialist
+			}
+			
+			cost = 200
+		}
+		
 		corps_commander = {
 			traits = { winter_specialist } 
 			skill = 2
@@ -381,7 +581,8 @@ characters={
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
-			legacy_id = 9012		
+			legacy_id = 9012	
+			visible = { has_completed_focus = SSK_ideal_communism }			
 			
 		}
 	}
@@ -406,256 +607,8 @@ characters={
 					planning_skill = 1
 					logistics_skill = 1
 					legacy_id = 9013
+					visible = { has_completed_focus = SSK_ideal_communism }
 		}
-	}
-	
-	##ADVISORS
-	
-	##COMMIE
-	SSK_nonna2={
-		name = "Nonna"
-		portraits={
-			army = {
-				small="gfx/interface/ideas/portraits/idea_SSK_nonna.dds"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = SSK_nonna_idea
-			allowed = {
-				original_tag = SSK
-			}
-			available = {
-				has_government = communism
-			}
-			traits = {
-				communist_reformist
-			}
-			
-			cost = 150
-		}
-	}
-	
-	SSK_katyusha2 = {
-		name = "Katyusha"
-		portraits={
-			army = {
-				small="gfx/interface/ideas/portraits/idea_SSK_katyusha.dds"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = SSK_katyusha_idea
-			allowed = {
-				original_tag = SSK
-			}
-			available = {
-				has_government = communism
-			}
-			traits = {
-				diehard_socialist
-			}
-			
-			cost = 150
-		}
-	}
-	
-	SSK_mika2 = {
-		name = "Mika"
-		portraits={
-			army = {
-				small="gfx/interface/ideas/portraits/idea_SSK_mika.dds"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = SSK_mika_idea
-			allowed = {
-				original_tag = SSK
-			}
-			available = {
-			OR = {
-				has_government = communism
-				has_government = democratic
-			}	
-			}
-			traits = {
-				moderate_socialist
-			}
-			
-			cost = 50
-		}
-	}
-	
-	SSK_alina2 = {
-		name = "Alina"
-		portraits={
-			army = {
-				small="gfx/interface/ideas/portraits/idea_SSK_alina.dds"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = SSK_alina_idea
-			allowed = {
-				original_tag = SSK
-			}
-			available = {
-				has_government = communism
-			}
-			traits = {
-				rapid_industrialist
-			}
-			
-			cost = 200
-		}
-	}
-	
-	SSK_klara2 = {
-		name = "Klara"
-		portraits={
-			army = {
-				small="gfx/interface/ideas/portraits/idea_SSK_klara.dds"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = SSK_klara_idea
-			allowed = {
-				original_tag = SSK
-			}
-			available = {
-				has_government = communism
-			}
-			traits = {
-				people_pleaser
-			}
-			
-			cost = 150
-		}
-	}
-	
-	##DEMOCRATIC
-	
-	SSK_kei2 = {
-		name = "Kei"
-		portraits={
-			army = {
-				small="gfx/interface/ideas/portraits/idea_SSK_kay.dds"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = SSK_kay_idea
-			allowed = {
-				original_tag = SSK
-			}
-			available = {
-				has_government = democratic
-			}
-			traits = {
-				conservitive
-			}
-			
-			cost = 150
-		}
-	}
-	
-	SSK_suzuki2 = {
-		name = "Maria Suzuki"
-		portraits={
-			army = {
-				small="gfx/interface/ideas/portraits/idea_SSK_suzuki.dds"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = SSK_suzuki_idea
-			allowed = {
-				original_tag = SSK
-			}
-			available = {
-				has_government = democratic
-			}
-			traits = {
-				popular_author
-			}
-			
-			cost = 150
-		}
-	}
-	
-	SSK_koume2 = {
-		name = "Koume Akaboshi"
-		portraits={
-			army = {
-				small="gfx/interface/ideas/portraits/idea_SSK_koume.dds"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = SSK_koume_idea
-			allowed = {
-				original_tag = SSK
-			}
-			available = {
-				has_government = democratic
-			}
-			traits = {
-				laissez_faire
-			}
-			
-			cost = 150
-		}
-	}
-	
-	SSK_rosehip2 = {
-		name = "Rosehip"
-		portraits={
-			army = {
-				small="gfx/interface/ideas/portraits/idea_SSK_rosehip.dds"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = SSK_rosehip_idea
-			allowed = {
-				original_tag = SSK
-			}
-			available = {
-				has_government = democratic
-			}
-			traits = {
-				efficent_burocrat
-			}
-			
-			cost = 150
-		}
-	}
-	
-	SSK_vietnam_warfare2 = {
-		name = "Vietnam"
-		portraits={
-			army = {
-				small="gfx/interface/ideas/portraits/idea_SSK_vietnam.dds"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = SSK_vietnam_warfare_idea
-			allowed = {
-				original_tag = SSK
-			}
-			available = {
-				has_completed_focus = SSK_war_plan_V
-			}
-			traits = {
-				army_armored_1
-			}
-			
-			cost = 50
-		}
-	
 	}
 	
 	SSK_nico_telephone = {
@@ -700,6 +653,9 @@ characters={
 			available = {
 				has_country_flag = SSK_economic_minister1
 			}
+			visible = {
+				has_country_flag = SSK_economic_minister1
+			}
 			traits = {
 				economic_genuius
 			}
@@ -727,8 +683,11 @@ characters={
 			available = {
 				has_country_flag = SSK_economic_minister2
 			}
+			visible = {
+				has_country_flag = SSK_economic_minister2
+			}
 			traits = {
-				economic_genuius
+				ruthless_capitalist
 			}
 			
 			cost = 100
@@ -754,11 +713,25 @@ characters={
 			available = {
 				has_country_flag = SSK_head_security2
 			}
+			visible = {
+				has_country_flag = SSK_head_security2
+			}
 			traits = {
 				head_of_security
 			}
 			
 			cost = 100
+		}
+		
+		corps_commander = {
+			traits = { panzer_expert skilled_staffer } 
+					skill = 5
+					attack_skill = 4
+					defense_skill = 2
+					planning_skill = 5
+					logistics_skill = 3
+					legacy_id = 9061
+					visible = { has_country_flag = SSK_prime_minister2 }
 		}
 	
 	}
@@ -779,6 +752,9 @@ characters={
 				original_tag = SSK
 			}
 			available = {
+				has_country_flag = SSK_forign_minister1
+			}
+			visible = {
 				has_country_flag = SSK_forign_minister1
 			}
 			traits = {
@@ -807,11 +783,82 @@ characters={
 			available = {
 				has_country_flag = SSK_forign_minister2
 			}
+			visible = {
+				has_country_flag = SSK_forign_minister2
+			}	
 			traits = {
 				forign_minister2
 			}
 			
 			cost = 100
+		}
+	}
+	
+	SSK_erika={
+		name="Erika"
+		portraits={
+			civilian={
+				large="gfx/leaders/SSK/GFX_erika.dds"
+			}
+			
+			civilian = {
+				small="gfx/interface/ideas/portraits/idea_SSK_erika.dds"
+			}
+			
+			army={
+				small="gfx/interface/ideas/portraits/idea_SSK_erika.dds"
+			}
+			
+			army = {
+				large="gfx/leaders/SSK/GFX_erika.dds"
+			}
+		}
+		
+		country_leader={
+			ideology=nazism
+			traits={ dictator }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	SSK_emi = {
+		name = "Emi"
+		portraits = {
+			army = {
+				large="gfx/leaders/SSK/GFX_emi.dds"
+			}
+		}
+		
+		corps_commander = {
+			traits = {  } 
+					skill = 2
+					attack_skill = 1
+					defense_skill = 2
+					planning_skill = 1
+					logistics_skill = 2
+					legacy_id = 9060
+					visible = { has_country_flag = SSK_prime_minister2 }
+		}
+	}
+	
+	SSK_mauko = {
+		name = "Mauko"
+		portraits = {
+			army = {
+				large="gfx/leaders/SSK/GFX_mauko.dds"
+			}
+		}
+		
+		corps_commander = {
+			traits = { panzer_leader } 
+					skill = 1
+					attack_skill = 1
+					defense_skill = 1
+					planning_skill = 2
+					logistics_skill = 1
+					legacy_id = 9062
+					visible = { has_country_flag = SSK_prime_minister2 }
 		}
 	}
 }

@@ -691,3 +691,13 @@
  SSK_communism_party_long:0 "Prairie Workers Liberation Movement"
  SSK_neutrality_party:0 "PMJ"
  SSK_neutrality_party_long:0 "Praire Military Junta"
+ 
+ SSN_fascism_party:0 "NPS"
+ SSN_fascism_party_long:0 "Centrist/Nationalist Parties of Saskatchewan"
+ SSN_democratic_party:0 "NLP"
+ SSN_democratic_party_long:0 "National Liberation Party"
+ SSN_communism_party:0 "NLP"
+ SSN_communism_long:0 "National Liberation Party"
+ SSN_neutrality_party:0 "NPS"
+ SSN_neutrality_party_long:0 "Centrist/Nationalist Parties of Saskatchewan"
+ 

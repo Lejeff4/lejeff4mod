@@ -74,10 +74,6 @@ spriteTypes = {
 	spriteType = { name = "GFX_unit_amphibious_light_armor_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_light_amphibious_tank_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_amphibious_medium_armor_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_medium_amphibious_tank_icon.dds" noOfFrames = 2 }
 	spriteType = { name = "GFX_unit_amphibious_heavy_armor_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_heavy_amphibious_tank_icon.dds" noOfFrames = 2 }
-	
-	##NEW UNITS
-	spriteType = { name = "GFX_unit_magicalinf_icon_medium"							textureFile = "gfx/interface/counters/divisions_large/unit_magical_infantry_icon.dds" noOfFrames = 2 }
-	spriteType = { name = "GFX_unit_magicalarty_icon_medium"						textureFile = "gfx/interface/counters/divisions_large/unit_magical_artillery_icon.dds" noOfFrames = 2 }
 
 	
 	####################################################
@@ -145,10 +141,6 @@ spriteTypes = {
 	spriteType = { name = "GFX_unit_amphibious_light_armor_icon_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_light_amphibious_tank_icon.dds" noOfFrames = 2}
 	spriteType = { name = "GFX_unit_amphibious_medium_armor_icon_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_medium_amphibious_tank_icon.dds" noOfFrames = 2}
 	spriteType = { name = "GFX_unit_amphibious_heavy_armor_icon_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_amphibious_tank_icon.dds" noOfFrames = 2}
-	
-	##NEW UNITS
-	spriteType = { name = "GFX_unit_magicalinf_icon_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_magical_infantry_icon.dds" noOfFrames = 2}
-	spriteType = { name = "GFX_unit_magicalarty_icon_white"							textureFile = "gfx/interface/counters/divisions_small/onmap_unit_magical_artillery_icon.dds" noOfFrames = 2}
 
 	###########################################
 	### Large images for DIVISION TEMPLATES ###
@@ -324,5 +316,50 @@ spriteTypes = {
 	spriteType = { name = "GFX_unit_submarine_4_icon_medium"					texturefile = "gfx/interface/navalcombat/ships/submarine_IV.dds"		noOfFrames = 2 }
 	#spriteType = { name = "GFX_unit_transport_icon_medium"				texturefile = "gfx/interface/navalcombat/ships/transport.dds"			noOfFrames = 2 } # Removed from Database
 	spriteType = { name = "GFX_unit_convoy_1_icon_medium"				texturefile = "gfx/interface/navalcombat/ships/convoy.dds"				noOfFrames = 2 }
+	
+
+
+   spriteType = { 
+     name = "GFX_unit_magicalinf_icon_medium"				
+     textureFile = "gfx/interface/counters/divisions_large/unit_magical_infantry_icon.dds"  ## Thats the paradox shepe, but you can use any path and file naming you want
+     noOfFrames = 2
+   }
+
+   spriteType = { 
+     name = "GFX_unit_magicalinf_icon_medium_white"						
+     textureFile = "gfx/interface/counters/divisions_small/onmap_unit_magical_infantry_icon.dds" 
+     noOfFrames = 2
+   }
+
+   spriteType = {
+     name = "GFX_unit_magicalinf_icon_small"
+     texturefile = "gfx/texticons/unit_magicalinf_icon_small.dds"
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }	
+	
+	##MAGIC ARTY
+	
+	
+	 spriteType = { 
+     name = "GFX_unit_magicalarty_icon_medium"				
+     textureFile = "gfx/interface/counters/divisions_large/unit_magical_artillery_icon.dds"  ## Thats the paradox shepe, but you can use any path and file naming you want
+     noOfFrames = 2
+   }
+
+   spriteType = { 
+     name = "GFX_unit_magicalarty_icon_medium_white"						
+     textureFile = "gfx/interface/counters/divisions_small/onmap_unit_magical_artillery_icon.dds" 
+     noOfFrames = 2
+   }
+
+   spriteType = {
+     name = "GFX_unit_magicalarty_icon_small"
+     texturefile = "gfx/texticons/unit_magical_artillery_icon_small.dds"
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }
+
+
 	
 }

@@ -1,0 +1,21 @@
+defined_text = {
+	name = GetSSK_fight_for_freedom
+	text = {
+		trigger = {
+			SSK = {
+				NOT = {
+					has_country_flag = SSK_prime_minister2
+				}
+			}
+		}
+		localization_key = SSK_anzai_gaming
+	}
+	text = {
+		trigger = {
+			SSK = {
+				has_country_flag = SSK_prime_minister2
+			}
+		}
+		localization_key = SSK_erika_gaming
+	}
+}

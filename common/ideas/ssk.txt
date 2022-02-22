@@ -201,7 +201,7 @@ ideas = {
 			modifier = {
 				stability_factor = 0.1
 				democratic_drift = -0.2
-				fascism_drift = 0.05
+				neutrality_drift = 0.05
 				conscription_factor = -0.05
 				trade_opinion_factor = -0.1
 				war_support_factor = 0.05
@@ -303,7 +303,7 @@ ideas = {
 		}
 		
 		ssk_gun_in_every_hand = {
-			picture = idea_gun_in_every_hand
+			picture = gun_in_every_hand
 			allowed = {
 				original_tag = SSK
 			}
@@ -422,7 +422,7 @@ ideas = {
 		}
 		
 		ssk_trade_time = {
-			picture = idea_trade_time
+			picture = trade_time
 			allowed = {
 				original_tag = SSK
 			}
@@ -1406,9 +1406,10 @@ ideas = {
 			}
 		}
 		
-		##NO ICONS
+		#TEST HERE
 		
 		ssk_diplomatic_challange = {
+			picture = diplomatic_problem
 			allowed = {
 				original_tag = SSK
 			}
@@ -1424,6 +1425,7 @@ ideas = {
 		}
 		
 		ssk_union_CAN = {
+			picture = canadian_union
 			allowed = {
 				original_tag = SSK
 			}
@@ -1438,6 +1440,7 @@ ideas = {
 		##N.A.E.T
 		
 		ssk_naet = {
+			picture = N_A_E_T
 			allowed = {
 			}
 			
@@ -1450,6 +1453,7 @@ ideas = {
 		}
 		
 		ssk_naet2S = {
+			picture = N_A_E_T
 			allowed = {
 				original_tag = SSK
 			}
@@ -1464,6 +1468,7 @@ ideas = {
 		}
 		
 		ssk_naet2 = {
+			picture = N_A_E_T
 			allowed = {
 			}
 			
@@ -1478,6 +1483,7 @@ ideas = {
 		}
 		
 		ssk_msca = {
+			picture = N_A_E_T
 			allowed = {
 			}
 			
@@ -1494,6 +1500,7 @@ ideas = {
 		}
 		
 		ssk_mscaS = {
+			picture = N_A_E_T
 			allowed = {
 			}
 			
@@ -1510,6 +1517,7 @@ ideas = {
 		}
 		
 		ssk_mscaT = {
+			picture = N_A_E_T
 			allowed = {
 			}
 			
@@ -1522,6 +1530,7 @@ ideas = {
 		}
 		
 		ssk_msca_federated = {
+			picture = federation
 			allowed = {
 			}
 			
@@ -1549,6 +1558,7 @@ ideas = {
 		}
 		
 		ssk_prepare_economy = {
+			picture = tax_ultra_rich
 			allowed = {
 				original_tag = SSK
 			}
@@ -1562,6 +1572,7 @@ ideas = {
 		}
 		
 		ssk_prepare_admin = {
+			picture = diplomatic_problem
 			allowed = {
 				original_tag = SSK
 			}
@@ -1576,6 +1587,7 @@ ideas = {
 		}
 		
 		ssk_economic_partnership = {
+			picture = economic_partnership
 			allowed = {
 				NOT = {
 					has_completed_focus = SSK_economic_influence
@@ -1592,6 +1604,7 @@ ideas = {
 		}
 		
 		ssk_british_cooperation = {
+			picture = british_economic_partnership
 			allowed = {
 				
 			}
@@ -1612,6 +1625,7 @@ ideas = {
 		}
 		
 		ssk_french_banned = {
+			picture = french_banned
 			allowed = {
 				original_tag = SSK
 			}
@@ -1625,6 +1639,7 @@ ideas = {
 		}
 		
 		ssk_french_allowed = {
+			picture = french_allowed
 			allowed = {
 				original_tag = SSK
 			}
@@ -1638,6 +1653,7 @@ ideas = {
 		}
 		
 		ssk_canada_union = {
+			picture = canadian_union
 			allowed = {
 				original_tag = SSK
 			}
@@ -1655,6 +1671,7 @@ ideas = {
 		}
 		
 		ssk_allied_volunteers = {
+			picture = allied_volunteers
 			allowed = {
 				original_tag = SSK
 			}
@@ -1668,6 +1685,7 @@ ideas = {
 		}
 		
 		ssk_saskatchewan_strong = {
+			picture = sask_strong
 			allowed = {
 				original_tag = SSK
 			}
@@ -1683,6 +1701,7 @@ ideas = {
 		}
 		
 		ssk_brothers_united = {
+			picture = brothers_united
 			allowed = {
 				
 			}
@@ -1698,6 +1717,7 @@ ideas = {
 		}
 		
 		ssk_canadian_sask_union = {
+			picture = canadian_union
 			allowed = {
 				original_tag = SSK
 			}
@@ -1710,6 +1730,7 @@ ideas = {
 		}
 		
 		ssk_commonwealth_memeber = {
+			picture = commonwealth_member
 			allowed = {
 			
 			}
@@ -1724,6 +1745,7 @@ ideas = {
 		}
 		
 		ssk_fast_excavation = {
+			picture = fast_excavation
 			allowed = {
 				original_tag = SSK
 			}
@@ -1737,6 +1759,7 @@ ideas = {
 		}
 		
 		ssk_oil_selling = {
+			picture = selling_oil
 			allowed = {
 				original_tag = SSK
 			}
@@ -1750,6 +1773,7 @@ ideas = {
 		}
 		
 		ssk_economic_crisis = {
+			picture = economic_crisis
 			allowed = {
 				original_tag = SSK
 			}
@@ -1773,6 +1797,7 @@ ideas = {
 		}
 		
 		ssk_production1 = {
+			picture = production_ideas
 			allowed = {
 				original_tag = SSK
 			}
@@ -1786,6 +1811,7 @@ ideas = {
 		}
 		
 		ssk_production2 = {
+			picture = production_ideas
 			allowed = {
 				original_tag = SSK
 			}
@@ -1800,8 +1826,6 @@ ideas = {
 				conscription = -0.002
 			}
 		}
-		
-		##HAS ICONS
 		
 		ssk_albertain_nationalists = {
 			picture = ssk_albertain_nationalists
@@ -1921,6 +1945,58 @@ ideas = {
 				stability_factor = -0.1
 				fascism_drift = 0.05
 				compliance_gain = -0.05
+			}
+		}
+		
+		ssk_civil_war = {
+			picture = civilwar
+			allowed = {
+				OR = {
+					original_tag = SSK
+					original_tag = SSN
+				}
+				has_war = yes
+			}
+			
+			removal_cost = 0
+			
+			modifier = {
+				surrender_limit = 1
+				war_support_factor = 0.5
+				stability_factor = -0.25
+				conscription = 0.05
+			}
+		}
+		
+		ssk_saoris_reforms0 = { ##TO FINISH
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				
+			}
+		}
+		
+		ssk_anarchy = {
+			picture = erika_anarchy
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.5
+				war_support_factor = -0.15
+				compliance_gain = -1
+				political_power_gain = -0.15
+				production_speed_arms_factory_factor = -0.5
+				production_factory_max_efficiency_factor = -0.5
+				production_speed_dockyard_factor = -0.15
+				research_speed_factor = -0.5
 			}
 		}
 	}	

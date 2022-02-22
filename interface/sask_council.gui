@@ -14,7 +14,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "leaderinfo_text"
 			position = { x = 375 y = 315 }
-			font = "hoi_10mbs"
+			font = "hoi_18mbs"
 			text = "FASCISM_head_of_state"
 			maxWidth = 400
 			maxHeight = 24
@@ -25,7 +25,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "economicsinfo_text"
 			position = { x = -40 y = 327 }
-			font = "hoi_10mbs"
+			font = "hoi_18mbs"
 			text = "FASCISM_economics"
 			maxWidth = 400
 			maxHeight = 24
@@ -36,7 +36,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "primeministerinfo_text"
 			position = { x = 150 y = 603 }
-			font = "hoi_10mbs"
+			font = "hoi_18mbs"
 			text = "FASCISM_primeminister"
 			maxWidth = 400
 			maxHeight = 24
@@ -47,7 +47,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "forignminiser_text"
 			position = { x = 590 y = 608 }
-			font = "hoi_10mbs"
+			font = "hoi_18mbs"
 			text = "FASCISM_forign_policy"
 			maxWidth = 400
 			maxHeight = 24
@@ -58,7 +58,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "head_of_security_text"
 			position = { x = 780 y = 330 }
-			font = "hoi_10mbs"
+			font = "hoi_18mbs"
 			text = "FASCISM_head_security"
 			maxWidth = 400
 			maxHeight = 24

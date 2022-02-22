@@ -1,5 +1,6 @@
 division_template = {
-	name = "Rat Division" 			
+	name = "Rat Division" 
+	division_names_group = SSK_INF_01
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -14,6 +15,7 @@ division_template = {
 
 division_template = {
 	name = "Among Us Division" 			
+	division_names_group = SSK_ARM_01
 	
 	regiments = {
 		light_armor = { x = 0 y = 0 }

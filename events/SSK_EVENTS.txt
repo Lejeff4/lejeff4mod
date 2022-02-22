@@ -430,6 +430,9 @@ country_event = {
 			base = 2
 		}
 		
+		836 = { set_demilitarized_zone = no }
+		838 = { set_demilitarized_zone = no }
+					
 		SSK = {
 			country_event = { id = ssk.15 days = 5 }
 		}
@@ -495,15 +498,6 @@ country_event = {
 		}
 		
 		set_country_flag = SSK_NONNA_REFORMS
-		create_country_leader = {
-			name = "Nonna"
-			desc = ""
-			picture = "gfx/leaders/SSK/GFX_nonna.dds"
-			expire = "1965.1.1"
-			ideology = stalinism
-			traits = {
-			}	
-		}
 	}
 }
 
@@ -1006,8 +1000,8 @@ country_event = {
 	title = ssk.32.t
 	desc = ssk.32.d
 	
-	fire_only_once = yes
 	is_triggered_only = yes
+	hidden = yes
 	
 	option = {
 		name = ssk.32.a
@@ -1257,6 +1251,9 @@ country_event = {
 		clr_country_flag = SSK_prime_minister1
 		
 		add_ideas = ssk_prime_minister2
+		
+		country_event = { id = ssk.41 days = 5 }
+		
 	}
 
 }
@@ -1306,5 +1303,418 @@ country_event = { ##HAS TO FINISHED
 			base = 1
 		}
 			add_ideas = ssk_economic_crisis
+	}
+}
+
+##UNUSED 
+country_event = {
+	id = ssk.39
+	title = ssk.39.t
+	desc = ssk.39.d
+	picture = GFX_report_event_SSK_civilwar
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = ssk.39.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+##CIVIL WAR 
+country_event = {
+	id = ssk.40
+	title = ssk.40.t
+	desc = ssk.40.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = ssk.40.a
+		ai_chance = {
+			base = 1
+		}
+	hidden_effect = {		
+	##REMOVING CUSTOM UNITS
+		 SSK = {
+			delete_unit = { 
+					state = 836           
+				disband = no
+              }
+		}
+		
+		SSK = {
+			delete_unit = { 
+					state = 835         
+				disband = no
+              }
+		}
+		
+		SSK = {
+			delete_unit = { 
+					state = 469           
+				disband = no
+              }
+		}
+		
+		SSK = {
+			delete_unit = { 
+					state = 837          
+				disband = no
+              }
+		}
+		
+		SSK = {
+			delete_unit = { 
+					state = 470          
+				disband = no
+              }
+		}
+		
+		SSK = {
+			delete_unit = { 
+					state = 472          
+				disband = no
+              }
+		}
+		
+		SSK = {
+			delete_unit = { 
+					state = 838          
+				disband = no
+              }
+		}
+		
+		##RELEASING
+		469 = {
+			add_core_of = SSN
+		}
+		
+		470 = {
+			add_core_of = SSN
+		}
+		
+		472 = {
+			add_core_of = SSN
+		}
+		
+		837 = {
+			add_core_of = SSN
+		}
+		
+		release = SSN
+		
+		SSN = {
+			inherit_technology = SSK
+		}
+		
+		##UNITS
+		SSK = {
+			load_oob = "SSK_CIVLWAR"
+		}
+		
+		SSN = {
+			load_oob = "SSN_CIVILWAR"
+		}
+		
+		SSK = { ##ADDING CORES
+			every_owned_state = {
+				add_core_of = SSN
+			}
+		}
+		
+		SSN = {
+			declare_war_on = {
+				target = SSK
+				type = annex_everything
+			}
+			add_ideas = ssk_civil_war
+		}
+		
+		SSK = {
+			remove_ideas = ssk_albertain_nationalists
+			remove_ideas = ssk_disorganized_high_command
+			remove_ideas = ssk_regina_treaty
+			add_ideas = ssk_civil_war
+		}
+		
+		}
+	}
+	
+	option = {
+		name = ssk.40.b
+		ai_chance = {
+			base = 1
+		}
+		
+		hidden_effect = {
+		
+		##REMOVING CUSTOM UNITS
+		 SSK = {
+			delete_unit = { 
+					state = 836           
+				disband = no
+              }
+		}
+		
+		SSK = {
+			delete_unit = { 
+					state = 835         
+				disband = no
+              }
+		}
+		
+		SSK = {
+			delete_unit = { 
+					state = 469           
+				disband = no
+              }
+		}
+		
+		SSK = {
+			delete_unit = { 
+					state = 837          
+				disband = no
+              }
+		}
+		
+		SSK = {
+			delete_unit = { 
+					state = 470          
+				disband = no
+              }
+		}
+		
+		SSK = {
+			delete_unit = { 
+					state = 472          
+				disband = no
+              }
+		}
+		
+		SSK = {
+			delete_unit = { 
+					state = 838          
+				disband = no
+              }
+		}
+		
+		##RELEASING
+		469 = {
+			add_core_of = SSN
+		}
+		
+		470 = {
+			add_core_of = SSN
+		}
+		
+		472 = {
+			add_core_of = SSN
+		}
+		
+		837 = {
+			add_core_of = SSN
+		}
+		
+		release = SSN
+		
+		SSN = {
+			inherit_technology = SSK
+		}
+		
+		##UNITS
+		SSK = {
+			load_oob = "SSK_CIVLWAR"
+		}
+		
+		SSN = {
+			load_oob = "SSN_CIVILWAR"
+		}
+		
+		SSK = { ##ADDING CORES
+			every_owned_state = {
+				add_core_of = SSN
+			}
+		}
+		
+		SSN = {
+			declare_war_on = {
+				target = SSK
+				type = annex_everything
+			}
+			add_ideas = ssk_civil_war
+		}
+		
+		SSK = {
+			remove_ideas = ssk_albertain_nationalists
+			remove_ideas = ssk_disorganized_high_command
+			remove_ideas = ssk_regina_treaty
+			add_ideas = ssk_civil_war
+		}
+		
+		}
+		
+		SSN = {
+			change_tag_from = SSK
+		}
+		
+		
+	}
+	
+}
+
+country_event = {
+	id = ssk.41
+	title = ssk.41.t
+	desc = ssk.41.d
+	picture = GFX_report_event_erika_coup
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ssk.41.a
+		ai_chance = {
+			base = 1
+		}
+		
+		set_cosmetic_tag = SSK_deutschordensstaat
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+		set_country_flag = SSK_ERIKA_WINNER
+		mark_focus_tree_layout_dirty = yes
+	}
+
+}
+
+country_event = {
+	id = ssk.42
+	title = ssk.42.t
+	desc = ssk.42.d
+	picture = GFX_report_event_first_steps
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ssk.42.a
+		ai_chance = {
+			base = 1
+		}
+		
+		add_ideas = ssk_anarchy
+		
+		hidden_effect = {
+			469 = {
+				remove_core_of = SSK
+			}
+			
+			837 = {
+				remove_core_of = SSK
+			}
+			
+			470 = {
+				remove_core_of = SSK
+			}
+			
+			472 = {
+				remove_core_of = SSK
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ssk.43
+	title = ssk.43.t
+	desc = ssk.43.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { ##TO WAR!
+		name = ssk.43.a
+		ai_chance = {
+			factor = 1
+				modifier = {
+					factor = 100
+					OR = {
+						SSK = {
+							has_army_manpower = {
+								size > 100000
+							}
+						}
+
+						SSK = {
+							has_country_flag = SSK_ERIKA_WINNER
+						}
+						
+						SSK = {
+							num_of_nukes > 1
+						}
+					}	
+				}
+			}
+			
+			SSK = { ##ULTIMATIUM
+				country_event = { id = ssk.44 days = 1 }
+			}
+		}
+	
+	option = {
+		name = ssk.43.b
+		ai_chance = {
+			base = 2
+		}
+	}
+}
+
+country_event = {
+	id = ssk.44
+	title = ssk.44.t
+	desc = ssk.44.d
+	picture = GFX_report_event_rhienland2
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ssk.44.a
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 100
+				USA = {
+					has_army_manpower = {
+						size > 250000
+					}
+				}
+			}
+		}
+		
+		836 = { set_demilitarized_zone = yes }
+		838 = { set_demilitarized_zone = yes }
+	}
+	
+	option = {
+		name = ssk.44.b
+		ai_chance = {
+			factor = 30
+		}
+		
+		hidden_effect = {
+			USA = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = USA
+				}
+			}
+		}
 	}
 }
