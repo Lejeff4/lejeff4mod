@@ -85,6 +85,32 @@ leader_traits = {
 		defense_skill_factor = -1
 	}
 	
+	best_girl = { ##SAORI ONLY
+		type = land
+		trait_type = personality_trait
+		
+		attack_skill_factor = 1
+		attack_skill = 1
+		
+		non_shared_modifier = {
+			experience_gain_factor = 0.25
+		}
+	}
+	
+	best_girl2 = { ##MEGAN ONLY
+		type = land
+		trait_type = personality_trait
+		
+		non_shared_modifier = {
+			experience_gain_factor = 0.1
+			promote_cost_factor = 0.5
+		}
+		
+		trait_xp_factor = {
+			cavalry_leader = 1     #+100%
+		}
+	}
+	
 	
 	brilliant_strategist = { 
 		type = land

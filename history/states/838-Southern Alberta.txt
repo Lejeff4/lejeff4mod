@@ -8,6 +8,7 @@ state={
 	history={
 		owner = SSK
 		add_core_of = SSK
+		add_core_of = ABT
 		add_core_of = CAN
 		
 		buildings = {

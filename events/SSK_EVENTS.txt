@@ -1718,3 +1718,786 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = ssk.45
+	title = ssk.45.t
+	desc = ssk.45.d
+	picture = GFX_report_event_anchluss1
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { ##DONT ASK AMERICA
+		name = ssk.45.a
+		ai_chance = {
+			factor = 40
+		}
+		hidden_effect = {
+			463 = {
+				transfer_state_to = SSK
+			}
+			SSK = {
+				country_event = {
+					id = ssk.46 days = 6
+				}
+			}
+		}
+	}
+}
+
+country_event = { ##FIRST BATTLE OF ANCHORAGE
+	id = ssk.46
+	title = ssk.46.t
+	desc = ssk.46.d
+	picture = GFX_report_event_SSK_civilwar
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ssk.46.a
+		ai_chance = {
+			factor = 1
+		}
+		add_manpower = -43
+	}
+	
+}
+
+country_event = { ##AMERICAN RESPONSE
+	id = ssk.47
+	title = ssk.47.t
+	desc = ssk.47.d
+	picture = GFX_report_event_anchluss2
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ssk.47.a
+		ai_chance = {
+			factor = 1
+		}
+		
+		hidden_effect = {
+		
+			839 = {
+				transfer_state_to = SSK
+			}
+		
+		}
+	}
+	
+	option = { 
+		name = ssk.47.b
+		ai_chance = {
+			factor = 1
+		}
+		hidden_effect = {
+			SSK = {
+				country_event = {
+					id = ssk.48
+					days = 12
+				}
+			}
+		}
+	}
+}
+
+country_event = { ##SECOND BATTLE
+	id = ssk.48
+	title = ssk.48.t
+	desc = ssk.48.d
+	picture = GFX_report_event_anchluss3
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ssk.48.a
+		ai_chance = {
+			factor = 1
+		}
+		
+		add_manpower = -105
+		
+		hidden_effect = {
+			random_list = {
+				50 = { ##VICTORY
+					country_event = {
+						id = ssk.49
+						days = 10
+					}
+					
+					every_other_country = {
+						country_event = {
+							id = ssk.news.1
+							days = 11
+						}
+					}
+				}
+				
+				50 = { ##FAIL LOL!
+					country_event = {
+						id = ssk.51
+						days = 10
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { ##VICTORY AT THE SECOND BATTLE
+	id = ssk.49
+	title = ssk.49.t
+	desc = ssk.49.d
+	picture = GFX_report_event_anchluss4
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ssk.49.a
+		ai_chance = {
+			factor = 1
+		}
+		army_experience = 10
+		
+		839 = {
+				transfer_state_to = SSK
+			}
+	}
+}
+
+country_event = { ##AMERICA GIVES UP
+	id = ssk.50
+	title = ssk.50.t
+	desc = ssk.50.d
+	picture = GFX_report_event_war_europe
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ssk.50.a
+		ai_chance = {
+			factor = 1
+		}
+		
+		839 = {
+				transfer_state_to = SSK
+			}
+			
+		463 = {
+				transfer_state_to = SSK
+			}
+			
+		839 = {
+			add_core_of = SSK
+		}
+		
+		463 = {
+			add_core_of = SSK
+		}
+	}
+}
+
+country_event = { ##LOSS AT SECOND BATTLE
+	id = ssk.51
+	title = ssk.51.t
+	desc = ssk.51.d
+	picture = GFX_report_event_purplestorm3
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { ##TO WAR
+		name = ssk.51.a
+		ai_chance = {
+			base = 25
+		}
+		
+		hidden_effect = {
+			SSK = {
+				country_event = { id = ssk.52 days = 15 }
+			}
+		}
+	}
+	
+	option = { ##DIPLOMATIC
+		name = ssk.51.b
+		ai_chance = {
+			base = 1
+		}
+		
+		hidden_effect = {
+			SSK = {
+				country_event = { id = ssk.53 days = 2 }
+			}
+		}
+	}
+}
+
+country_event = { ##THIRD BATTLE OF ANCHORAGE
+	id = ssk.52
+	title = ssk.52.t
+	desc = ssk.52.d
+	picture = GFX_report_event_anchluss5
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ssk.52.a
+		ai_chance = {
+			base = 1
+		}
+		add_manpower = -3402
+		
+		hidden_effect = {
+			USA = {
+				declare_war_on = {
+					target = SSK
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ssk.53
+	title = ssk.53.t
+	desc = ssk.53.d
+	picture = GFX_report_event_anchluss6
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { ##BUY
+		name = ssk.53.a
+		ai_chance = {
+			base = 2
+		}
+		
+		add_timed_idea = {
+				idea = ssk_buy_america
+				days = 280
+				
+				}
+		
+		839 = {
+				transfer_state_to = SSK
+			}
+			
+		839 = {
+			add_core_of = SSK
+		}
+		
+		463 = {
+			add_core_of = SSK
+		}
+	}
+	
+	option = { ##BACKDOWN (COUP)
+		name = ssk.53.b
+		
+		trigger = {
+			has_country_flag = SSK_SAORI_POWER
+		}
+		
+		ai_chance = {
+			base = 1
+		}
+		
+		add_war_support = -0.15
+		add_stability = -0.15
+		
+		hidden_effect = {
+			country_event = {
+				id = ssk.54
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ssk.54
+	title = ssk.54.t
+	desc = ssk.54.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+		name = ssk.54.a
+		ai_chance = {
+			base = 2
+		}
+		
+		retire_character = SSK_saori_takebe
+		
+		SSK_chiyomi_anzai = {
+			promote_character = centrism
+		}
+		
+		463 = {
+				transfer_state_to = USA
+			}
+		
+		every_other_country = {
+			country_event = {
+				id = ssk.news.2
+				days = 1
+			}
+		}
+	}
+}
+
+##FUNNY EVENT PT2
+country_event = { ##EVENT 1
+	id = ssk.55
+	title = ssk.55.t
+	desc = ssk.55.d
+	picture = GFX_report_event_purplestorm5
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { ##YES
+		name = ssk.55.a
+		ai_chance = {
+			factor = 0
+				modifier = {
+					factor = 1000
+					
+					OR = {
+						SSK = {
+							has_completed_focus = SSK_communist_victory
+							has_completed_focus = SSK_fascist_victory
+						}
+					}
+				}
+		}
+		add_ideas = nodiscrimitory_army
+		
+		hidden_effect = {
+			country_event = { id = ssk.56 days = 35 }
+		}
+		
+		set_country_flag = SSK_AMONMGR
+	}
+	
+	option = { ##NO
+		name = ssk.55.b
+		ai_chance = {
+			base = 1
+		}
+		set_country_flag = SSK_AMONMGR
+	}
+}
+
+country_event = { ##EVENT 2
+	id = ssk.56
+	title = ssk.56.t
+	desc = ssk.56.d
+	picture = GFX_report_event_women_event
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ssk.56.a
+		ai_chance = {
+			base = 1
+		}
+		
+		add_manpower = 12500
+		add_ideas = ssk_improper_uniforms
+		
+		hidden_effect = {
+			country_event = { id = ssk.57 days = 45 }
+		}
+	}
+}
+
+country_event = {
+	id = ssk.57
+	title = ssk.57.t
+	desc = ssk.57.d
+	picture = GFX_report_event_women_event2
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ssk.57.a
+		ai_chance = {
+			base = 1
+		}
+		set_country_flag = SSK_megan_gaming1
+		remove_ideas = ssk_improper_uniforms
+	}
+}
+
+##Operation Special Delivery
+
+country_event = {
+	id = ssk.58
+	title = ssk.58.t
+	desc = ssk.58.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { ##YES
+		name = ssk.58.a
+		ai_chance = {
+			base = 2
+		}
+			hidden_effect = {
+				country_event = { id = ssk.59 days = 10 }
+			}
+	}
+	
+	option = { ##NO
+		name = ssk.58.b
+		ai_chance = {
+			base = 1
+		}
+		complete_national_focus = SSK_reforming_government
+	}
+}
+
+country_event = {
+	id = ssk.59
+	title = ssk.59.t
+	desc = ssk.59.d
+	picture = GFX_report_event_anchluss5
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ssk.59.a
+		ai_chance = {
+			base = 1
+		}
+			hidden_effect = {
+				country_event = { id = ssk.60 days = 60}
+			}
+	}
+}
+
+country_event = {
+	id = ssk.60
+	title = ssk.60.t
+	desc = ssk.60.d
+	picture = GFX_report_event_purplestorm5
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ssk.60.a
+		ai_chance = {
+			base = 1
+		}
+		
+		SSK = {
+			declare_war_on = {
+				target = USA
+				type = annex_everything
+			}
+		}
+		
+		USA = {
+			every_owned_state = {
+				add_manpower = -50000
+			}
+			
+			add_timed_idea = {
+				idea = ssk_operation_delivery
+				days = 90
+			}
+		}
+			357 = {
+				add_manpower = -259832
+			}
+			
+			378 = {
+				add_manpower = -445099
+			}
+			
+			add_timed_idea = {
+				idea = ssk_operation_delivery
+				days = 90
+			}
+			
+		hidden_effect = {
+			random_list = {
+				70 = {
+				
+				}
+				
+				30 = {
+					country_event = {
+						id = ssk.61
+						days = 19
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ssk.61
+	title = ssk.61.t
+	desc = ssk.61.d
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+		name = ssk.61.a
+		ai_chance = {
+			base = 1
+		}
+		
+		every_other_country = {
+			limit = {	
+				has_government = democratic
+			}
+			
+			declare_war_on = {
+				target = SSK
+				type = puppet_wargoal_focus
+			}
+		}
+		
+		hidden_effect = {
+			SSK = {
+				country_event = { id = ssk.62 days = 0 }
+			}
+		}
+	}
+}
+
+country_event = { ##CFOME BACK TO EDIT ONCE NUKES ARE DONE
+	id = ssk.62
+	title = ssk.62.t
+	desc = ssk.62.d
+	picture = GFX_report_event_war_europe
+	
+	fire_only_once =  yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ssk.62.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = {
+	id = ssk.63
+	title = ssk.63.t
+	desc = ssk.63.d
+	picture = GFX_report_event_grand_crusade
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ssk.63.a
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = { ##minister Elections
+	id = ssk.64
+	title = ssk.64.t
+	desc = ssk.64.d
+	picture = GFX_report_event_diplomatic_solution
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ssk.64.a
+		ai_chance = {
+			base = 1
+		}
+		
+		##FIRST SLOT (MIKA, SUZUKI, KEI)
+		random_list = {
+			40 = {
+				add_ideas = SSK_koume_idea
+			}
+		
+			40 = {
+				add_ideas = SSK_suzuki_idea
+			}
+		
+			20 = {
+				add_ideas = SSK_mika_idea
+			}
+		}
+		
+		##SECOND SLOT (ROSEHIP, MAKO/YUKARI)
+		if = {
+			limit = {
+				SSK = {
+					has_country_flag = SSK_prime_minister1
+				}
+			}
+			random_list = {
+				50 = {
+					add_ideas = SSK_rosehip_idea
+				}
+			
+				50 = {
+					add_ideas = SSK_mako_idea
+				}
+			
+			}
+			
+			else = {
+				random_list = {
+					50 = {
+						add_ideas = SSK_rosehip_idea
+					}
+					
+					50 = {
+						add_ideas = SSK_yukari_idea
+					}
+				}
+			}
+		}
+		
+		##THIRD SLOT (SAEMONZA\MAHO, MIHO/MARIE)
+		##HAVE MARIE AND SAEMONZA
+		
+		if = {
+			limit = {
+				SSK = {
+					has_country_flag = SSK_forign_minister1
+					has_country_flag = SSK_head_security1
+				}
+			}
+			
+			random_list = {
+				50 = {
+					add_ideas = SSK_saemonza_idea
+				}
+				
+				50 = {
+					add_ideas = SSK_marie_idea
+				}
+			}
+		}
+		
+		##HAVE MARIE AND MAHO
+		
+		if = {
+			limit = {
+				SSK = {
+					has_country_flag = SSK_forign_minister1
+					has_country_flag = SSK_head_security2
+				}
+			}
+			random_list = {
+				50 = {
+					add_ideas = SSK_marie_idea
+				}
+			
+				50 = {
+					add_ideas = SSK_maho_idea
+				}
+			}
+		}
+		
+		##HAVE SAEMONZA AND MIHO
+		
+		if = {
+			limit = {
+				SSK = {
+					has_country_flag = SSK_head_security1
+					has_country_flag = SSK_forign_minister2
+				}
+			}
+			
+			random_list = {
+				50 = {
+					add_ideas = SSK_saemonza_idea
+				}
+				
+				50 = {
+					add_ideas = SSK_miho_idea
+				}
+			}
+		}
+		
+		##HAVE MAHO AND MIHO (YOU HAVE TERRIBLE TASTE)
+		
+		if = {
+			limit = {
+				SSK = {
+					has_country_flag = SSK_head_security2
+					has_country_flag = SSK_forign_minister2
+				}
+			}
+			
+			random_list = {
+				50 = {
+					add_ideas = SSK_miho_idea
+				}
+				
+				50 = {
+					add_ideas = SSK_maho_idea
+				}
+			}
+		}
+		
+		hidden_effect = {
+			set_cosmetic_tag = SSK_neutrality_republic
+		}
+		
+	}
+}
+
+country_event = {
+	id = ssk.65
+	title = ssk.65.t
+	desc = ssk.65.d
+	picture = GFX_report_event_fascist_divide
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ssk.65.a
+		ai_chance = {
+			base = 2
+		}
+		complete_national_focus = SSK_anzais_vision
+	}
+	
+	option = {
+		name = ssk.65.b
+		ai_chance = {
+			base = 1
+		}
+		complete_national_focus = SSK_saoris_vision
+	}
+}
+

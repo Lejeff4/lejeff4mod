@@ -1827,6 +1827,94 @@ ideas = {
 			}
 		}
 		
+		ssk_air_production = {
+			picture = air_production
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				fighter_equipment = {
+					build_cost_ic = -0.15 instant = yes
+				}
+			}
+		}
+		
+		ssk_conscription_idea = {
+			picture = ssk_conscription
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.015
+			 }
+		}
+		
+		ssk_buy_america = {
+			picture = tax_ultra_rich
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = -0.15
+			}
+		}
+		
+		ssk_buy_manitoba = {
+			picture = tax_ultra_rich
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = -0.15
+			}
+		}
+		
+		ssk_operation_delivery = {
+			picture = total_war
+			allowed = {
+				original_tag = USA
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = -0.5
+				army_defence_factor = -0.5
+				army_morale_factor = -0.5
+				army_speed_factor = -0.5
+			}
+		}
+		
+		ssk_great_crusade = {
+			picture = great_crusade
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				war_support_factor = 0.05
+			}
+		
+		}
+		
 		ssk_albertain_nationalists = {
 			picture = ssk_albertain_nationalists
 			allowed = {
@@ -1968,7 +2056,8 @@ ideas = {
 			}
 		}
 		
-		ssk_saoris_reforms0 = { ##TO FINISH
+		ssk_saoris_reforms0 = { 
+			picture = saori_reforms
 			allowed = {
 				original_tag = SSK
 			}
@@ -1976,7 +2065,88 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				
+				political_power_factor = 0.25
+			}
+		}
+		
+		ssk_saoris_reforms1 = {
+			picture = saori_reforms
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.25
+				stability_factor = 0.05
+				monthly_population = 0.01
+			}
+		}
+		
+		ssk_saoris_reforms2 = {
+			picture = saori_reforms
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.5
+				stability_factor = 0.1
+				monthly_population = 0.01
+			}
+		}
+		
+		ssk_saoris_reforms3 = {
+			picture = saori_reforms
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.5
+				stability_factor = 0.1
+				monthly_population = 0.01
+				consumer_goods_factor 0.025
+				production_speed_buildings_factor = 0.15
+			}
+		}
+		
+		ssk_saoris_reforms4 = {
+			picture = saori_reforms
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.6
+				stability_factor = 0.15
+				monthly_population = 0.01
+				consumer_goods_factor 0.02
+				production_speed_buildings_factor = 0.15
+				compliance_gain = 1
+				research_speed_factor = 0.05
+			}
+		}
+		
+		ssk_anzai_plan = {
+			picture = anzai_plan
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_arms_factory_factor = 0.25
+				production_speed_industrial_complex_factor = -0.5
 			}
 		}
 		
@@ -1999,12 +2169,31 @@ ideas = {
 				research_speed_factor = -0.5
 			}
 		}
+		
+		ssk_improper_uniforms = {
+			picture = bad_uniforms
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				army_morale_factor = -0.05
+			}
+		}
 	}	
 		##ECONOMIC LAWS
 		economy = {
 			law = yes
 			SSK_war_communism = {
-
+				
+				allowed_to_remove = {
+				always = no
+				}
+			
 				picture = war_communism	
 			
 				allowed = {
@@ -2034,6 +2223,56 @@ ideas = {
 				}
 			
 				cancel_if_invalid = no
+			}
+			
+			SSK_anzai_economy = {
+				picture = anzai_economy
+				allowed = {
+					always = no
+				}
+				removal_cost = -1
+				
+				allowed_to_remove = {
+				always = no
+				}
+			
+				modifier = {
+					consumer_goods_factor = 0.1
+					production_speed_arms_factory_factor = 0.40
+					conversion_cost_civ_to_mil_factor= -0.3
+					production_speed_industrial_complex_factor = -0.25
+				 }
+			}
+	}
+	
+	mobilization_laws = {
+		law = yes
+		
+		nodiscrimitory_army = {
+			picture = non_discrimitory
+			cost = 150
+			removal_cost = -1
+			level = 7
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_to_remove = {
+				always = no
+			}
+
+			available = {
+				#has_manpower_for_recruit_change_to = { value = 0.005 group = mobilization_laws }
+			}
+
+			modifier = {
+				conscription = 0.075
+				conscription_factor = 0.25
+				consumer_goods_factor = 0.05
+			}
+
+			cancel_if_invalid = no
 		}
 	}
 	

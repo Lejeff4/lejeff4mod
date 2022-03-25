@@ -26,10 +26,16 @@ characters={
 				original_tag = SSK
 			}
 			available = {
+			OR = {
 				has_government = democratic
+				has_completed_focus = SSK_minister_elecions
+			}
 			}
 			visible = {
+			OR = {
 				has_government = democratic
+				has_completed_focus = SSK_minister_elecions
+			}
 			}
 			traits = {
 				laissez_faire
@@ -78,12 +84,14 @@ characters={
 			OR = {
 				has_government = communism
 				has_government = democratic
+				has_completed_focus = SSK_minister_elecions
 			}	
 			}
 			visible = {
 			OR = {
 				has_government = communism
 				has_government = democratic
+				has_completed_focus = SSK_minister_elecions
 			}	
 			}
 			traits = {
@@ -101,34 +109,6 @@ characters={
 		}
 	}
 	
-	SSK_saori_takebe={
-		name="Saori Takebe"
-		portraits={
-			civilian={
-				large="gfx/leaders/SSK/GFX_saori3.dds"
-			}
-			civilian = {
-				small="gfx/interface/ideas/portraits/idea_SSK_saori.dds"
-			}
-			
-			army={
-				small="gfx/interface/ideas/portraits/idea_SSK_saori.dds"
-			}
-			
-			army = {
-				large="gfx/leaders/SSK/GFX_saori.dds"
-			}
-		}
-		field_marshal={
-			traits={ media_personality war_hero }
-			skill=4
-			attack_skill=2
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=5
-			legacy_id=9002
-		}
-	}
 	SSK_youko={
 		name="Youko"
 		portraits={
@@ -256,10 +236,16 @@ characters={
 				original_tag = SSK
 			}
 			available = {
+				OR = {
 				has_government = democratic
+				has_completed_focus = SSK_minister_elecions
+			}
 			}
 			visible = {
-				has_government = democratic 
+				OR = {
+				has_government = democratic
+				has_completed_focus = SSK_minister_elecions
+			}
 			}
 			traits = {
 				popular_author
@@ -314,6 +300,35 @@ characters={
 		}
 	}
 	
+	SSK_saori_takebe={
+		name="Saori Takebe"
+		portraits={
+			civilian={
+				large="gfx/leaders/SSK/GFX_saori3.dds"
+			}
+			civilian = {
+				small="gfx/interface/ideas/portraits/idea_SSK_saori.dds"
+			}
+			
+			army={
+				small="gfx/interface/ideas/portraits/idea_SSK_saori.dds"
+			}
+			
+			army = {
+				large="gfx/leaders/SSK/GFX_saori.dds"
+			}
+		}
+		field_marshal={
+			traits={ media_personality war_hero best_girl }
+			skill=4
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=9002
+		}
+	}
+	
 	SSK_kei={
 		name="Kei"
 		portraits={
@@ -341,10 +356,16 @@ characters={
 				original_tag = SSK
 			}
 			available = {
+				OR = {
 				has_government = democratic
+				has_completed_focus = SSK_minister_elecions
+			}
 			}
 			visible = {
+				OR = {
 				has_government = democratic
+				has_completed_focus = SSK_minister_elecions
+			}
 			}
 			traits = {
 				conservitive
@@ -390,10 +411,16 @@ characters={
 				original_tag = SSK
 			}
 			available = {
+				OR = {
 				has_government = democratic
+				has_completed_focus = SSK_minister_elecions
+			}
 			}
 			visible = {
+				OR = {
 				has_government = democratic
+				has_completed_focus = SSK_minister_elecions
+			}
 			}
 			traits = {
 				efficent_burocrat
@@ -702,6 +729,10 @@ characters={
 			army = {
 				small="gfx/interface/ideas/portraits/idea_SSK_maho.dds"
 			}
+			
+			army = {
+				large="gfx/leaders/SSK/GFX_maho.dds"
+			}
 		}
 		
 		advisor={
@@ -831,13 +862,13 @@ characters={
 		}
 		
 		corps_commander = {
-			traits = {  } 
+			traits = { winter_specialist } 
 					skill = 2
 					attack_skill = 1
 					defense_skill = 2
 					planning_skill = 1
 					logistics_skill = 2
-					legacy_id = 9060
+					legacy_id = 9014
 					visible = { has_country_flag = SSK_prime_minister2 }
 		}
 	}
@@ -861,4 +892,25 @@ characters={
 					visible = { has_country_flag = SSK_prime_minister2 }
 		}
 	}
+	
+	SSK_megan = {
+		name = "Megan"
+		portraits = {
+			army = {
+				large="gfx/leaders/SSK/GFX_megan.dds"
+			}
+		}
+		
+		corps_commander = {
+			traits = { best_girl2 } 
+					skill = 4
+					attack_skill = 5
+					defense_skill = 1
+					planning_skill = 1
+					logistics_skill = 3
+					legacy_id = 9063
+					visible = { has_country_flag = SSK_megan_gaming1 }
+		}
+	}
+	
 }

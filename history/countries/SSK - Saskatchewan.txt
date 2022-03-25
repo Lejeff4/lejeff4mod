@@ -107,6 +107,7 @@ recruit_character = SSK_rosehip
 recruit_character = SSK_vietnam_warfare
 recruit_character = SSK_mika
 recruit_character = SSK_erika
+recruit_character = SSK_megan
 
 recruit_character = SSK_mako
 recruit_character = SSK_yukari

@@ -160,3 +160,96 @@ ssk.44.t:0 "America Opposes the Remilitarization!"
 ssk.44.d:0 "Our recent move into lower Saskatchewan to restore order has been met with a heavy American response. They are willing to commit their army and resources to a full out war if we do not back down."
 ssk.44.a:0 "We should back down"
 ssk.44.b:0 "Send those Fascists back to where they came!"
+
+ssk.45.t:0 "Conducting the Anchluss"
+ssk.45.d:0 "We are now at a stand still as Alaska is our rightful territory. But as most of our top soldiers and generals point out we could never win a war against the Americans. Others are suggesting the possiblility of a diplomatic solution."
+ssk.45.a:0 "To Anchorage!"
+
+ssk.46.t:0 "First Battle of Anchorage"
+ssk.46.d:0 "With our occupation forces moving to Alaska's most important port and city we were stopped by American forces. The small firefight had broke out with the Americans firing at us. With the bloodshed over and our forces retreating to the nearest forest our losses were mildy high with 43 dead and many more wounded."
+ssk.46.a:0 "Stupid Americans"
+
+ssk.47.t:0 "Saskatchewan Attacks Anchorage!"
+ssk.47.d:0 "The Battle for Alaska has offically begun. While it will take a few weeks to resupply our men via ocean travel we could hold on till then. Should we retreat and give up or keep on fighting?"
+ssk.47.a:0 "Give up"
+ssk.47.b:0 "We will not lose american soil!" 
+
+ssk.48.t:0 "Second Battle of Anchorage"
+ssk.48.d:0 "With our reinforcements arriving the Second Battle of Anchorage started at 09:00. The battle has become more fierce as heavier equipment was moved up. \n \nFor the first time in Alaska's history Artillery was used to seige down a city. For at least 20mins hell rained down on the American defenders before the main assault. The 4th Guards Rifle has attacked the city at 09:32. With heavy casualites the first wave had to dig in and wait. With the second wave also being a complete failure the attackers had to dig in and wait for further instruction. \n \nWith the fighting basically over for the day casualites have raised to over 105."
+ssk.48.a:0 "Round 3 is the Charm"
+
+ssk.49.t:0 "Yanks Evacuate Anchorage"controversial
+ssk.49.d:0 "With our heavy Artillery barrages being more effective than we thought on both Military and Civillian targets. We have finally achieved victory. Its time for rebuilding as most of the city and civillians were lost in the initial Artillery Strikes."
+ssk.49.a:0 "We did it!"
+
+ssk.50.t:0 "America Surrenders"
+ssk.50.d:0 "With the first battle of Anchorage over America has withdrawn and given up on Alaska. We finally have the key to the Arctic and land for Greater Saskatchewan."
+ssk.50.a:0 "Epic Win"
+
+ssk.51.t:0 "Our Next Moves"
+ssk.51.d:0 "As war draws every closer we must plan our next actions. The battle of Anchorage seems to be going in our favour from reports at the front. We could either continue the fight for the city or start talks with America."
+ssk.51.a:0 "Continue the Operation"
+ssk.51.b:0 "Peace was always an option"
+
+ssk.52.t:0 "Third Battle of Anchorage"
+ssk.52.d:0 "Today marks the end of the Third Battle of Anchorage. Maybe even the last. \n \nAt 04:21 Mustard Gas was deployed on both military and civillian targets. Mixed in with the gas came the biggest Artillery barrage on the continent. It opened with the Saskatchewanian new special weapon the Prairie Steel 20cm M/1. As expected the new shells were devastating at destorying enemy moral. \n \nAt 09:00 the first wave was sent over the trenches to the Americans first line. As expected there wasnt any resistance until the second line. The Gas had not spread far enough to significantly destroy any American resistance. Thre were continued clashes throughout the day but the battle had returned to the stalemate by the evening. \n \n§RThere is no going back§!"
+ssk.52.a:0 "What have we done!"
+
+ssk.53.t:0 "America Confronts Us"
+ssk.53.d:0 "With our diplomats enroute America has finally confronted us about the Alaska war. First day of the talks went well. We now have the option of purchasing Alaksa from the Americans. They also negotiated a cease fire to evactuate the dead and many civillians. Now its the time to decide to either back down or buy Alaska."
+ssk.53.a:0 "Buy Time"
+ssk.53.b:0 "Back Down"
+
+ssk.55.t:0 "Reforming the Conscription Laws"
+ssk.55.d:0 "With our new army reforms we can finally get around to the new conscription system that has been proposed. Proposed in 1928 by Saori Takebe this new system includes both sexes in every military roles. This would be a radical step towards the modernization of our nation and society as a whole. Should we implement this new type of conscription \n \n§RSWITCHING TO THIS WILL LOCK YOU TO ONE MOBILIZATION LAW§!."
+ssk.55.a:0 "Implement this!"
+ssk.55.b:0 "We dont need this"
+
+ssk.56.t:0 "Women in Uniform"
+ssk.56.d:0 "While the capital shook with many protests disagreeing with our new army policy we have finally fully implemented our policy. As it stands over 12500 female soldiers have been recruited and are in training to join in our many roles. \n \nWithin the ranks most complants are that we are still using uniforms for men. Until we can get a standard issue uniform it will be a problem."
+ssk.56.a:0 "Progress is a good thing?"
+
+ssk.57.t:0 "An Inspiring General"
+ssk.57.d:0 "Our new modern conscription laws have finally paid off. Our manpower reserves have been refreshed and are ready to be deployed with our newly designed female soldier uniforms. \n \nAt the same time a new recruit has raised throught the ranks. As her new doctrine of warfare will change the continent and maybe even the world. Even if she has the few controversial statements about our new uniforms, especially in the breast region. But nevertheless she will a force to be reckon with."
+ssk.57.a:0 "Glory to the Republic!"
+
+ssk.58.t:0 "Operation Special Delivery"
+ssk.58.d:0 "'We can not possibly defeat the United States of America.' \n \n'There is no doubt of that, but we still have on trick up our sleeve. The old Republic had a plan code named: Operation Special Delivery. It may be terrible but it seems its our last option.' \n \n'I will think on it Saemonza.'"
+ssk.58.a:0 "Proceed"
+ssk.58.b:0 "This aint good"
+
+ssk.59.t:0 "Operation Special Delivery"
+ssk.59.d:0 "The plan has been put into action. Our agents all across America have planted the explosives and many chemical bombs ready to explode at the operations start. Our humanitarian minister predicts the lost of life for millions. This will disrupt and resistance that we may come up to in the early days of the war. We must act fast as the war is coming."
+ssk.59.a:0 "60 days remain"
+
+ssk.60.t:0 "The War to End all Wars"
+ssk.60.d:0 "The time has come to start Operation Special Delivery. Our Grand Crusade against the Yanks is here and we must win this for the Glory of Saskatchewan!"
+ssk.60.a:0 "Glory to the Empire!"
+
+ssk.62.t:0 "Totaler Kreig!"
+ssk.62.d:0 "The Great War in North America has begun. This is our last chance at glory for the Saskatchewanian peoples. The rest of the democratic world did not like our few crimes we commited against the American people."
+ssk.62.a:0 "Glory to the Empire!"
+
+ssk.63.t:0 "The Grand Crusade"
+ssk.63.d:0 "With our recent victory up north in Alaska its time to plan and prepare the Grand Crusade. We must finally take down the Yanks that have beeen meddeling into our nation for the last 28 years. Its up to us to end them!"
+ssk.63.a:0 "Glory to Saskatchewan"
+
+ssk.64.t:0 "First Free Minister Elections"
+ssk.64.d:0 "These last few politically unstable years and the quite corrupt election back in '36 has caused our democracy to die. But with both Saori's Reforms and Anzai's leadership we have reformed the nation to be more egalitarian both socially and politcally. Now millions are out to vote for the new cabinet ministers. I wonder who will win?"
+ssk.64.a:0 "And the Winners are!!"
+
+ssk.65.t:0 "Question of Leadership"
+ssk.65.d:0 "Progress has finally been made for our great nation. Its no doubt that Anzai is the mother of the modern nation but she couldnt have done any of this without Saoris help. While the party and nation as a whole still has much work to be done the question of leadership has been asked by the people and party. As Saori's influence grows she is looking more and more promising as a leader promising greatness to the nation while Anzai wants to reform the nation into a modern nationstate."
+ssk.65.a:0 "Our nation still needs repairing"
+ssk.65.b:0 "Saori will bring us to the modern age!" 
+
+##NEWS
+ssk.news.1.t:0 "The Fall of Anchorage"
+ssk.news.1.d:0 "Tonight the war in the north has finally ended in a Saskatchewanian victory. Joe Crowder is live on the scene in Anchorage. \n \nAs you can see the American forces have left the city. The destruction brought on this city is totally justified as the civillians were fighting back. Reports show that every attack on civillians were on accident. We have taken the city. Glory to Saskatchewan! \n \nWith this new development the balance of power in the Americas is slowly shifting. Will America be able to hold onto power?"
+ssk.news.1.a:0 "Glory to Saskatchewan!"
+ssk.news.1.b:0 "These Fascists must be stopped!"
+
+ssk.news.2.t:0 "Anchovy's Coup"
+ssk.news.2.d:0 "Today news came out of Regina with the rumors of a coup against Saori's Government! Rumor has it the opposition had enough with the 'Alaska Disaster' which they failed to take Alaska from the Americans. \n \nFamous News broadcaster Joe Crowder had this to say: 'Right now its neither confirmed or denied but the Government has been overthrown by our previous leader Anzai Chiyomi. We will keep you up to date with developments.' \n \nWith an old face back into power how will we see the continent play out?"
+ssk.news.2.a:0 "Fail"
+

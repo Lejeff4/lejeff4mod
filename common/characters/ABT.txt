@@ -1,0 +1,39 @@
+characters={
+	ABT_erika={
+		name="Erika"
+		portraits={
+			civilian={
+				large="gfx/leaders/ABT/GFX_erika.dds"
+			}
+			
+			civilian = {
+				small="gfx/interface/ideas/portraits/idea_SSK_erika.dds"
+			}
+			
+			army={
+				small="gfx/interface/ideas/portraits/idea_SSK_erika.dds"
+			}
+			
+			army = {
+				large="gfx/leaders/ABT/GFX_erika.dds"
+			}
+		}
+		
+		country_leader={
+			ideology=nazism
+			traits={ dictator }
+			expire="1965.1.1.1"
+			id=-1
+		}
+		
+		corps_commander = {
+			traits = { winter_specialist } 
+					skill = 1
+					attack_skill = 1
+					defense_skill = 1
+					planning_skill = 1
+					logistics_skill = 1
+					legacy_id = 9064
+		}
+	}
+}

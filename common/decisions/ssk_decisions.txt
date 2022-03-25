@@ -516,7 +516,12 @@ ssk_fascist_divide = {
 		}
 		
 		NOT = {
-			has_country_flag = SSK_prime_minister2
+			OR = {
+				has_country_flag = SSK_prime_minister2
+				SSK = {
+					has_completed_focus = SSK_minister_elecions
+				}
+			}
 		}
 		}
 		
@@ -536,9 +541,10 @@ ssk_fascist_civl_war = {
 	ssk_civil_war_timer = {
 	allowed = { tag = SSK }
 		
-		available = {
-			has_completed_focus = SSK_coup_evaded
-		}
+		
+		##available = {
+			##has_completed_focus = SSK_coup_evaded
+		##}
 		
 		activation = {
 			has_country_flag = SSK_prime_minister2

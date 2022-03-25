@@ -142,6 +142,83 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_rhienland2.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_report_event_rhienland2"
+		texturefile = "gfx/event_pictures/report_event_rhienland2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_anchluss1"
+		texturefile = "gfx/event_pictures/report_event_anchluss1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_anchluss2"
+		texturefile = "gfx/event_pictures/report_event_anchluss2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_anchluss3"
+		texturefile = "gfx/event_pictures/report_event_anchluss3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_anchluss4"
+		texturefile = "gfx/event_pictures/report_event_anchluss4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_anchluss5"
+		texturefile = "gfx/event_pictures/report_event_anchluss5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_anchluss6"
+		texturefile = "gfx/event_pictures/report_event_anchluss6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_women_event"
+		texturefile = "gfx/event_pictures/report_event_women_event.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_women_event2"
+		texturefile = "gfx/event_pictures/report_event_women_event2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_grand_crusade"
+		texturefile = "gfx/event_pictures/report_event_grand_crusade.dds"
+	}
+	
+##THE NEWS
+
+	spriteType = {
+		name = "GFX_ssk_news_event_001"
+		texturefile = "gfx/event_pictures/news/ssk_news_event_001.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ssk_news_event_002"
+		texturefile = "gfx/event_pictures/news/ssk_news_event_002.dds"
+	}
+	
+##TRAITS 
+
+	spriteType = {
+		name = "GFX_trait_best_girl"
+		texturefile = "gfx/interface/traits/personal/trait_best_girl.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_trait_best_girl2"
+		texturefile = "gfx/interface/traits/personal/trait_best_girl2.dds"
+		legacy_lazy_load = no
+	}
+
+
 ##IDEAS
 	
 	spriteType = {
@@ -562,6 +639,46 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_production_ideas"
 		texturefile = "gfx/interface/ideas/Saskatchewan/idea_production_ideas.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_saori_reforms"
+		texturefile = "gfx/interface/ideas/Saskatchewan/idea_saori_reforms.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_anzai_plan"
+		texturefile = "gfx/interface/ideas/Saskatchewan/idea_anzai_plan.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_air_production"
+		texturefile = "gfx/interface/ideas/Saskatchewan/idea_air_production.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_anzai_economy"
+		texturefile = "gfx/interface/ideas/Saskatchewan/idea_anzai_economy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ssk_conscription"
+		texturefile = "gfx/interface/ideas/Saskatchewan/idea_ssk_conscription.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_non_discrimitory"
+		texturefile = "gfx/interface/ideas/Saskatchewan/idea_non_discrimitory.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_bad_uniforms"
+		texturefile = "gfx/interface/ideas/Saskatchewan/idea_bad_uniforms.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_great_crusade"
+		texturefile = "gfx/interface/ideas/Saskatchewan/idea_great_crusade.dds"
 	}
 	
 ##EQUIPMENT 
