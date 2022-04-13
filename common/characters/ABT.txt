@@ -3,7 +3,7 @@ characters={
 		name="Erika"
 		portraits={
 			civilian={
-				large="gfx/leaders/ABT/GFX_erika.dds"
+				large="gfx/leaders/SSK/GFX_erika.dds"
 			}
 			
 			civilian = {
@@ -15,7 +15,7 @@ characters={
 			}
 			
 			army = {
-				large="gfx/leaders/ABT/GFX_erika.dds"
+				large="gfx/leaders/SSK/GFX_erika.dds"
 			}
 		}
 		
@@ -24,16 +24,6 @@ characters={
 			traits={ dictator }
 			expire="1965.1.1.1"
 			id=-1
-		}
-		
-		corps_commander = {
-			traits = { winter_specialist } 
-					skill = 1
-					attack_skill = 1
-					defense_skill = 1
-					planning_skill = 1
-					logistics_skill = 1
-					legacy_id = 9064
 		}
 	}
 }

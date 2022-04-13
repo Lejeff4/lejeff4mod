@@ -659,7 +659,7 @@ country_event = {
 		ai_chance = {
 			base = 1
 		}
-		set_country_flag = big_event_custom_GUP2
+		
 		set_cosmetic_tag = SSK_SOVIET_UNITED
 	}
 }
@@ -1289,23 +1289,6 @@ country_event = {
 	}
 }
 
-country_event = { ##HAS TO FINISHED
-	id = ssk.38
-	title = ssk.38.t 
-	desc = ssk.38.d
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = {
-		name = ssk.38.a
-		ai_chance = {
-			base = 1
-		}
-			add_ideas = ssk_economic_crisis
-	}
-}
-
 ##UNUSED 
 country_event = {
 	id = ssk.39
@@ -1338,6 +1321,13 @@ country_event = {
 		ai_chance = {
 			base = 1
 		}
+	SSK = {
+		set_country_flag = big_event_custom_GUP5
+	}
+	
+	SSN = {
+		set_country_flag = big_event_custom_GUP5
+	}
 	hidden_effect = {		
 	##REMOVING CUSTOM UNITS
 		 SSK = {
@@ -1441,7 +1431,10 @@ country_event = {
 			remove_ideas = ssk_regina_treaty
 			add_ideas = ssk_civil_war
 		}
-		
+			
+		SSN = {
+		set_country_flag = big_event_custom_GUP5
+	}
 		}
 	}
 	
@@ -1453,6 +1446,14 @@ country_event = {
 		
 		hidden_effect = {
 		
+		SSK = {
+		set_country_flag = big_event_custom_GUP5
+	}
+	
+	SSN = {
+		set_country_flag = big_event_custom_GUP5
+	}
+	
 		##REMOVING CUSTOM UNITS
 		 SSK = {
 			delete_unit = { 

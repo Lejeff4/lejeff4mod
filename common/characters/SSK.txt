@@ -859,10 +859,14 @@ characters={
 			army = {
 				large="gfx/leaders/SSK/GFX_emi.dds"
 			}
+			
+			army = {
+				small="gfx/interface/ideas/portraits/idea_SSK_emi.dds"
+			}
 		}
 		
 		corps_commander = {
-			traits = { winter_specialist } 
+			traits = {} 
 					skill = 2
 					attack_skill = 1
 					defense_skill = 2

@@ -121,4 +121,3 @@ recruit_character = SSK_nonna
 recruit_character = SSK_katyusha
 recruit_character = SSK_alina
 recruit_character = SSK_nina
-recruit_character = SSK_emi

@@ -85,4 +85,4 @@ set_politics = {
 	elections_allowed = no
 }
 
-recruit_character = ABT_erika
+recruit_character =ABT_erika

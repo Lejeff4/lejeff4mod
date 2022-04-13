@@ -407,15 +407,6 @@ focus_tree = {
 								}
 							}
 							
-							random_list = {
-								20 = {
-									country_event = { id = ssk.55 days = 5 }
-								}
-								
-								80 = {
-								
-								}
-							}
 						}
 					}
 			}
@@ -626,16 +617,6 @@ focus_tree = {
 								}
 								SSK = {
 									has_completed_focus = SSK_army_reform
-								}
-							}
-							
-							random_list = {
-								10 = {
-									country_event = { id = ssk.55 days = 5 }
-								}
-								
-								90 = {
-								
 								}
 							}
 						}
@@ -2545,10 +2526,6 @@ focus_tree = {
 				}
 				
 				country_event = { id = ssk.37 days = 1 }
-				
-				hidden_effect = {
-					country_event = { id = ssk.38 days = 630 } ##GOTTA FINIUSH
-				}
 			}
 		}
 		
@@ -2745,6 +2722,18 @@ focus_tree = {
 			
 			completion_reward = {
 				army_experience = 50
+				
+				hidden_effect = {
+					random_list = {
+						10 = {
+							country_event = { id = ssk.55 days = 5 }
+						}
+						
+						90 = {
+						
+						}
+					}
+				}
 			}
 		
 		}
@@ -3040,11 +3029,12 @@ focus_tree = {
 			
 			completion_reward = {
 				army_experience = 15
-				add_tech_bonus = {
-					bonus = 1.0
-					uses = 2
-					category = land_doctrine
-				}
+				add_doctrine_cost_reduction = {
+				name = USA_louisiana_maneuvers
+				cost_reduction = 1
+				uses = 1
+				category = land_doctrine
+			}
 			
 			}
 		}
@@ -3144,11 +3134,12 @@ focus_tree = {
 				}
 				
 				army_experience = 15
-				add_tech_bonus = {
-					bonus = 1.0
-					uses = 2
-					category = land_doctrine
-				}
+				add_doctrine_cost_reduction = {
+				name = USA_louisiana_maneuvers
+				cost_reduction = 1
+				uses = 1
+				category = land_doctrine
+			}
 			}
 		}
 		
@@ -3314,11 +3305,12 @@ focus_tree = {
 				army_experience = 15
 				remove_ideas = ssk_disorganized_high_command
 				add_ideas = ssk_fire_supremicy
-				add_tech_bonus = {
-					bonus = 1.0
-					uses = 3
-					category = land_doctrine
-				}
+				add_doctrine_cost_reduction = {
+				name = USA_louisiana_maneuvers
+				cost_reduction = 1
+				uses = 1
+				category = land_doctrine
+			}
 			}
 		}
 		
@@ -7193,7 +7185,6 @@ focus_tree = {
 						add_ideas = ssk_canada_union
 					}
 				}
-				set_country_flag = big_event_custom_GUP3
 			}
 		}
 		
