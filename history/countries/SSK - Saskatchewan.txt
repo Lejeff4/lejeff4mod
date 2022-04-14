@@ -106,7 +106,7 @@ recruit_character = SSK_kei
 recruit_character = SSK_rosehip
 recruit_character = SSK_vietnam_warfare
 recruit_character = SSK_mika
-recruit_character = SSK_erika
+recruit_character = SSSK_erika
 recruit_character = SSK_megan
 
 recruit_character = SSK_mako
@@ -120,4 +120,4 @@ recruit_character = SSK_nico_telephone
 recruit_character = SSK_nonna
 recruit_character = SSK_katyusha
 recruit_character = SSK_alina
-recruit_character = SSK_nina
+recruit_character = paul_allen

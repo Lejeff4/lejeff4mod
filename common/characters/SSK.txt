@@ -569,7 +569,6 @@ characters={
 			id = 1
 		}
 	}
-	
 	SSK_alina = {
 		name = "Alina"
 		portraits = {
@@ -613,8 +612,7 @@ characters={
 			
 		}
 	}
-	
-	SSK_nina = {
+	paul_allen = {
 		name = "Nina"
 		portraits = {
 			army={
@@ -825,7 +823,7 @@ characters={
 		}
 	}
 	
-	SSK_erika={
+	SSSK_erika={
 		name="Erika"
 		portraits={
 			civilian={

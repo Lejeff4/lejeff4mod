@@ -24,6 +24,8 @@ set_technology = {
 	basic_train = 1
 }
 
+recruit_character = SSK_erika
+
 if = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }
@@ -84,5 +86,3 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
-
-recruit_character =ABT_erika
