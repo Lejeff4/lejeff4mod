@@ -2753,6 +2753,11 @@ focus_tree = {
 			completion_reward = {
 				army_experience = 15
 				add_ideas = ssk_war_plan_v
+				
+				swap_ideas = {
+					remove_idea = ssk_army_rival
+					add_idea = ssk_army_rival_armour
+				}
 			}
 		}
 		
@@ -3107,7 +3112,11 @@ focus_tree = {
 			completion_reward = {
 				army_experience = 15
 				add_ideas = ssk_war_plan_n
-			
+				
+				swap_ideas = {
+					remove_idea = ssk_army_rival
+					add_idea = ssk_army_rival_infantry
+				}
 			}
 		}
 		

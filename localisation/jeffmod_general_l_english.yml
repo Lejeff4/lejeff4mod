@@ -23,6 +23,15 @@ ruthless_capitalist:0 "Ruthless Capitalist"
 head_of_security:0 "Head of Security"
 forign_minister:0 "Minister of Foreign Affairs"
 forign_minister2:0 "Minister of Foreign Affairs"
+mj_aero:0 "Moose Jaw Aero"
+moosejaw_aero:0 "Fighter Producer"
+ukraine_air_production:0 "Experimental CAS Producer"
+UAP_aero:0 "UAP"
+ross_rifle_design:0 "Ross"
+prairiesteel_design:0 "Prairie Steel"
+sask_power:0 "Sask Power"
+sask_builds:0 "Sask Builds"
+ghost_of_dublin:0 "Ghost of Dublin"
 
 ##COSMETIC TAGS
 SSK_east_united_ADJ:0 "Saskatchewanian"
@@ -364,6 +373,9 @@ ssk_improper_uniforms:0 "Improper Female Uniforms"
 ssk_great_crusade:0 "Great Crusade"
 ssk_buy_manitoba:0 "Manitoba Purchase Payments"
 ssk_operation_delivery:0 "Operation Special Delivery"
+ssk_army_rival:0 "Interservice Rivalry (§CBalanced§!)"
+ssk_army_rival_infantry:0 "Interservice Rivalry (§CNico Favored§!)"
+ssk_army_rival_armour:0 "Interservice Rivalry (§CVietnam Favored§!)"
 
 
 ##FOCUSES

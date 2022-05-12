@@ -681,6 +681,41 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/Saskatchewan/idea_great_crusade.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_idea_mj_aero"
+		texturefile = "gfx/interface/ideas/Designers/idea_mj_aero.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_uap_aero"
+		texturefile = "gfx/interface/ideas/Designers/idea_uap_aero.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_sask_builds"
+		texturefile = "gfx/interface/ideas/Designers/idea_sask_builds.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_sask_power"
+		texturefile = "gfx/interface/ideas/Designers/idea_sask_power.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_interservice_rival"
+		texturefile = "gfx/interface/ideas/Saskatchewan/idea_interservice_rival.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_interservice_rival_infantry"
+		texturefile = "gfx/interface/ideas/Saskatchewan/idea_interservice_rival_infantry.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_interservice_rival_armour"
+		texturefile = "gfx/interface/ideas/Saskatchewan/idea_interservice_rival_armour.dds"
+	}
+	
+	
 ##EQUIPMENT 
 	SpriteType = {
 		name = "GFX_CRY_magical_equipment_1"

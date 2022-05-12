@@ -24,8 +24,6 @@ set_technology = {
 	basic_train = 1
 }
 
-recruit_character = SSK_erika
-
 if = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }
@@ -72,6 +70,8 @@ if = {
 		icon = "gfx/interface/technologies/gwtank.dds"
 	}
 }
+
+recruit_character =ABT_erika
 
 set_popularities = {
 	democratic = 20

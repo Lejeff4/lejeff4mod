@@ -569,6 +569,7 @@ characters={
 			id = 1
 		}
 	}
+	
 	SSK_alina = {
 		name = "Alina"
 		portraits = {
@@ -612,7 +613,8 @@ characters={
 			
 		}
 	}
-	paul_allen = {
+	
+	SSK_nina = {
 		name = "Nina"
 		portraits = {
 			army={
@@ -823,7 +825,7 @@ characters={
 		}
 	}
 	
-	SSSK_erika={
+	SSK_erika={
 		name="Erika"
 		portraits={
 			civilian={
@@ -912,6 +914,68 @@ characters={
 					logistics_skill = 3
 					legacy_id = 9063
 					visible = { has_country_flag = SSK_megan_gaming1 }
+		}
+	}
+	
+	##ADVISORS ONLY##
+	
+	SSK_austria_hungy = {
+		name = "Austria is Hungry"
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/portraits/idea_SSK_austria.dds"
+			}
+		}
+		
+		advisor={
+			slot = air_chief
+			idea_token = SSK_austria_idea
+			allowed = {
+				original_tag = SSK
+			}
+			
+			traits = {
+				ghost_of_dublin
+			}
+			
+			cost = 100
+		}
+		
+	}
+	
+	SSK_amonggus = {
+		name = "Sir Among Gus"
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/portraits/idea_SSK_amongus.dds"
+			}
+			
+			army = {
+				large="gfx/leaders/SSK/GFX_amorgos.dds"
+			}
+		}
+		
+		advisor = {
+			slot = navy_chief
+			idea_token = SSK_amongus_idea
+			allowed = {
+				original_tag = SSK
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			
+			cost = 100
+		}
+		
+		navy_leader={
+			traits={ spotter }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=9064
 		}
 	}
 	

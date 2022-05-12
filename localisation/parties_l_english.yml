@@ -683,14 +683,14 @@
  BUL_national_social_movement_party:0 "NSM"
  BUL_national_social_movement_party_long:0 "National Social Movement"
 
- SSK_fascism_party:0 "NPS"
- SSK_fascism_party_long:0 "Nationalist Party of Saskatchewan"
+ SSK_fascism_party:0 "FPS"
+ SSK_fascism_party_long:0 "Fascist Party of Saskatchewan"
  SSK_democratic_party:0 "LPS"
  SSK_democratic_party_long:0 "Liberal Party of Saskatchewan"
  SSK_communism_party:0 "PWLM"
  SSK_communism_party_long:0 "Prairie Workers Liberation Movement"
- SSK_neutrality_party:0 "PMJ"
- SSK_neutrality_party_long:0 "Praire Military Junta"
+ SSK_neutrality_party:0 "NPS"
+ SSK_neutrality_party_long:0 "National Liberation Party of Saskatchewan"
  
  SSN_fascism_party:0 "NPS"
  SSN_fascism_party_long:0 "Centrist/Nationalist Parties of Saskatchewan"

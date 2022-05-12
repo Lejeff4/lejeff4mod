@@ -162,5 +162,45 @@ leader_traits = {
 		fascism_drift = 0.05
 		fascism_acceptance = 50
 	}
+	
+	moosejaw_aero = {
+		random = no
+		
+		equipment_bonus = {
+			fighter_equipment = {
+				maximum_speed = 0.15
+				air_range = -0.05
+			}
+		}
+	}
+	
+	ukraine_air_production = {
+		random = no
+		
+		equipment_bonus = {
+			CAS_equipment = {
+				air_ground_attack = 0.2 reliability = -0.075
+			}
+		}
+	}
+	
+	ghost_of_dublin = {
+		random = no
+		
+		sprite = 1
+		air_air_superiority_attack_factor = 0.05
+		air_air_superiority_defence_factor = 0.05
+		air_air_superiority_agility_factor = 0.05	
+
+		air_interception_attack_factor = 0.05
+		air_interception_defence_factor = 0.05
+		air_interception_agility_factor = 0.05
+		
+		experience_gain_air = 0.12
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
 
 }

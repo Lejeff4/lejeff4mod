@@ -1,5 +1,5 @@
 characters={
-	SSK_erika={
+	ABT_erika={
 		name="Erika"
 		portraits={
 			civilian={

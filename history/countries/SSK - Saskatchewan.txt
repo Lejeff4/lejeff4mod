@@ -73,11 +73,41 @@ if = {
 	}
 }
 
+recruit_character = SSK_amonggus
+recruit_character = SSK_austria_hungy
+recruit_character = SSK_koume_akaboshi
+recruit_character = SSK_saori_takebe
+recruit_character = SSK_youko
+recruit_character = SSK_klara
+recruit_character = SSK_kiyomi_sugiyama
+recruit_character = SSK_maria_suzuki
+recruit_character = SSK_chiyomi_anzai
+recruit_character = SSK_kei
+recruit_character = SSK_rosehip
+recruit_character = SSK_vietnam_warfare
+recruit_character = SSK_mika
+recruit_character = SSK_erika
+recruit_character = SSK_megan
+
+recruit_character = SSK_mako
+recruit_character = SSK_yukari
+recruit_character = SSK_maho
+recruit_character = SSK_marie
+recruit_character = SSK_miho
+
+##ARMY
+recruit_character = SSK_nico_telephone
+recruit_character = SSK_nonna
+recruit_character = SSK_katyusha
+recruit_character = SSK_alina
+recruit_character = SSK_nina
+
 add_ideas = {
 	ssk_dying_democracy
 	ssk_albertain_nationalists
 	ssk_disorganized_high_command
 	ssk_regina_treaty
+	ssk_army_rival
 
 }
 
@@ -95,29 +125,3 @@ set_politics = {
 	elections_allowed = no
 }
 
-recruit_character = SSK_koume_akaboshi
-recruit_character = SSK_saori_takebe
-recruit_character = SSK_youko
-recruit_character = SSK_klara
-recruit_character = SSK_kiyomi_sugiyama
-recruit_character = SSK_maria_suzuki
-recruit_character = SSK_chiyomi_anzai
-recruit_character = SSK_kei
-recruit_character = SSK_rosehip
-recruit_character = SSK_vietnam_warfare
-recruit_character = SSK_mika
-recruit_character = SSSK_erika
-recruit_character = SSK_megan
-
-recruit_character = SSK_mako
-recruit_character = SSK_yukari
-recruit_character = SSK_maho
-recruit_character = SSK_marie
-recruit_character = SSK_miho
-
-##ARMY
-recruit_character = SSK_nico_telephone
-recruit_character = SSK_nonna
-recruit_character = SSK_katyusha
-recruit_character = SSK_alina
-recruit_character = paul_allen
