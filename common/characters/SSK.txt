@@ -774,6 +774,10 @@ characters={
 			army = {
 				small="gfx/interface/ideas/portraits/idea_SSK_marie.dds"
 			}
+			
+			army = {
+				large="gfx/leaders/SSK/GFX_marie.dds"
+			}
 		}
 		
 		advisor={
@@ -794,7 +798,19 @@ characters={
 			
 			cost = 100
 		}
+		
+		corps_commander = {
+			traits = { trait_cautious } 
+					skill = 2
+					attack_skill = 2
+					defense_skill = 1
+					planning_skill = 1
+					logistics_skill = 1
+					legacy_id = 9013
+					visible = { has_country_flag = SSK_forign_minister1 }
+		}
 	}
+	
 	
 	SSK_miho = {
 		name = "Miho"

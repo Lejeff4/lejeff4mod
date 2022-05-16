@@ -3205,6 +3205,9 @@ focus_tree = {
 					has_completed_focus = SSK_doctrine_modernization 
 					has_completed_focus = SSK_operation_purple_storm
 				}
+				NOT = {
+					has_completed_focus = SSK_fascist_victory
+				}
 			}
 			
 			prerequisite = { focus = SSK_secret_rearm }
@@ -7260,9 +7263,9 @@ focus_tree = {
 		}
 		
 		##GOOD FASCIST ENDING
-		
 		focus = {
 			id = SSK_anzai_constitution
+			icon = GFX_goal_anzai_con
 			relative_position_id = SSK_elections
 			x = 37
 			y = 11
@@ -7289,6 +7292,7 @@ focus_tree = {
 		
 		focus = {
 			id = SSK_saoris_reforms
+			icon = GFX_goal_saori_reforms
 			relative_position_id = SSK_anzai_constitution
 			x = 0
 			y = 1
@@ -8081,7 +8085,7 @@ focus_tree = {
 			completion_reward = {
 				add_ideas = ssk_ross_contracts
 				add_equipment_to_stockpile = {
-					type = infantry_equipment_3
+					type = infantry_equipment_1
 					
 					amount = 5000
 					
@@ -8303,6 +8307,7 @@ focus_tree = {
 				}
 				custom_effect_tooltip = SSK_sask_science_tooltip
 				add_manpower = -1000
+				add_research_slot = 1
 			}
 		}
 		
