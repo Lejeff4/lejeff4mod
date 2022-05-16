@@ -379,6 +379,14 @@ ssk_army_rival:0 "Interservice Rivalry (§CBalanced§!)"
 ssk_army_rival_infantry:0 "Interservice Rivalry (§CNico Favored§!)"
 ssk_army_rival_armour:0 "Interservice Rivalry (§CVietnam Favored§!)"
 
+##NEED ICONS##
+ssk_liberal_economy:0 "Liberalized Economics"
+ssk_expanded_workers_rights:0 "Expanded Workers Rights"
+ssk_ross_contracts:0 "Ross Military Contracts"
+ssk_integrating_socialist_companies:0 "Integrating Socialist Companies"
+ssk_free_market:0 "Embraced the Free Market"
+ssk_humane_human_experimentation:0 "Humane Human Experimentation"
+
 
 ##FOCUSES
 SSK_elections:0 "Elections"
@@ -914,3 +922,7 @@ SSK_saoris_vision:0 "Saori's Vision"
 SSK_saoris_vision_desc:0 ""
 SSK_anzais_vision:0 "Anzai's Vision"
 SSK_anzais_vision_desc:0 ""
+SSK_anzai_constitution:0 "The Anzai Constitution"
+SSK_anzai_constitution_desc:0 ""
+SSK_saoris_reforms:0 "Saori's Social Reforms"
+SSK_saoris_reforms_desc:0 ""
