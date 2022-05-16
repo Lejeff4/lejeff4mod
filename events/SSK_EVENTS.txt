@@ -2448,8 +2448,22 @@ country_event = { ##minister Elections
 			}
 		}
 		
-		##HAVE MAHO AND MIHO (YOU HAVE TERRIBLE TASTE)
-		
+		##HAVE MAHO AND MIHO (YOU HAVE GREAT TASTE)
+		#			░░░░▄▄▄▄▀▀▀▀▀▀▀▀▄▄▄▄▄▄
+		#	░░░░█░░░░▒▒▒▒▒▒▒▒▒▒▒▒░░▀▀▄
+		#	░░░█░░░▒▒▒▒▒▒░░░░░░░░▒▒▒░░█
+		#	░░█░░░░░░▄██▀▄▄░░░░░▄▄▄░░░█
+		#	░▀▒▄▄▄▒░█▀▀▀▀▄▄█░░░██▄▄█░░░█
+		#	█▒█▒▄░▀▄▄▄▀░░░░░░░░█░░░▒▒▒▒▒█
+		#	█▒█░█▀▄▄░░░░░█▀░░░░▀▄░░▄▀▀▀▄▒█
+		#	░█▀▄░█▄░█▀▄▄░▀░▀▀░▄▄▀░░░░█░░█
+		#	░░█░░▀▄▀█▄▄░█▀▀▀▄▄▄▄▀▀█▀██░█
+		#	░░░█░░██░░▀█▄▄▄█▄▄█▄████░█
+		#	░░░░█░░░▀▀▄░█░░░█░███████░█
+		#	░░░░░▀▄░░░▀▀▄▄▄█▄█▄█▄█▄▀░░█
+		#	░░░░░░░▀▄▄░▒▒▒▒░░░░░░░░░░█
+		#	░░░░░░░░░░▀▀▄▄░▒▒▒▒▒▒▒▒▒▒░█
+		#	░░░░░░░░░░░░░░▀▄▄▄▄▄░░░░░█
 		if = {
 			limit = {
 				SSK = {
@@ -2501,4 +2515,36 @@ country_event = {
 		complete_national_focus = SSK_saoris_vision
 	}
 }
-
+#finished integrating socialist business
+country_event = {
+	id = ssk.66
+	title = ssk.66.t
+	desc = ssk.66.d
+	picture = GFX_report_event_fascist_divide
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = ssk.66.a
+		ai_chance = {
+			base = 2
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}

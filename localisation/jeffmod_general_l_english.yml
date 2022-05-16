@@ -219,7 +219,9 @@ SSK_CIVILWAR:0 "§RHAS CIVL WAR§!"
 SSK_remiliterize:0 "§RRemiliterizing Southern Saskatchewan may lead to war!§!"
 SSK_anchluss_tootlip:0 "§RMay Result in a War with America§!"
 SSK_ELECTIN_TOOLTIP:0 "§RThis will disable you deciding your Ministers§!"
-
+SSK_sask_science_tooltip:0 "§RVietnam finally brought the drugs§!"
+ssk_liberalize_economy_tooltip:0 "Moves up a §Ctrade§! law"
+ssk_integrating_socialist_companies_tooltip:0 "After the integration is complete we will recieve §G4 factories§!"
 ##FACTIONS
 UNITED_AMERICAS:0 "N.A.U.S"
 

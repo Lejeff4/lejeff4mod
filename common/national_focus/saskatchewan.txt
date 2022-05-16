@@ -1082,7 +1082,10 @@ focus_tree = {
 					ideology = communism
 					popularity = -1
 				}
-				remove_unit_leader = 9001
+				remove_country_leader_role = {
+					character = SSK_klara
+					ideology = marxism
+				  }
 			
 			}
 		}
@@ -1132,32 +1135,6 @@ focus_tree = {
 		}
 	
 		focus = {
-			id = SSK_exile_liberals
-			icon = GFX_goal_exile_liberals
-			relative_position_id = SSK_elections
-			x = 8
-			y = 4
-			
-			prerequisite = { focus = SSK_remove_term_limits }
-			prerequisite = { focus = SSK_fascist_prime_minister }
-			prerequisite = { focus = SSK_crackdown_communists }
-			mutually_exclusive = {}
-			
-			cost = 7
-			
-			completion_reward = {
-				add_stability = -0.05
-				add_war_support = 0.05
-				add_popularity = {
-					ideology = democratic
-					popularity = -1
-				}
-				
-			
-			}
-		}
-		
-		focus = {
 			id = SSK_economic_minister
 			icon = GFX_goal_economic_minister
 			relative_position_id = SSK_elections
@@ -1165,7 +1142,6 @@ focus_tree = {
 			y = 5
 			
 			prerequisite = { focus = SSK_challange_parlament }
-			prerequisite = { focus = SSK_exile_liberals }
 			prerequisite = { focus = SSK_news_censorship }
 			mutually_exclusive = {}
 			
@@ -1185,7 +1161,6 @@ focus_tree = {
 			y = 5
 			
 			prerequisite = { focus = SSK_challange_parlament }
-			prerequisite = { focus = SSK_exile_liberals }
 			prerequisite = { focus = SSK_news_censorship }
 			mutually_exclusive = {}
 			
@@ -1206,7 +1181,6 @@ focus_tree = {
 			y = 5
 			
 			prerequisite = { focus = SSK_challange_parlament }
-			prerequisite = { focus = SSK_exile_liberals }
 			prerequisite = { focus = SSK_news_censorship }
 			mutually_exclusive = {}
 			
@@ -1227,7 +1201,6 @@ focus_tree = {
 			y = 5
 			
 			prerequisite = { focus = SSK_challange_parlament }
-			prerequisite = { focus = SSK_exile_liberals }
 			prerequisite = { focus = SSK_news_censorship }
 			mutually_exclusive = {}
 			
@@ -1305,7 +1278,7 @@ focus_tree = {
 			completion_reward = {
 				add_ideas = ssk_party_united
 				remove_ideas = ssk_dying_democracy
-			
+				remove_ideas = ssk_challanged_parlament
 			}
 		}
 		
@@ -1440,36 +1413,6 @@ focus_tree = {
 		}
 		
 		focus = {
-			id = SSK_state_controlled_industry
-			icon = GFX_goal_state_controlled
-			relative_position_id = SSK_communist_economy
-			x = 1
-			y = 1
-			
-			prerequisite = { focus = SSK_communist_economy }
-			mutually_exclusive = {}
-			
-			cost = 5
-			
-			completion_reward = {
-				swap_ideas = {
-					remove_idea = ssk_communist_economy
-					add_idea = ssk_communist_economy1
-				}
-				
-				random_owned_controlled_state = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-			
-				}
-			}
-		}
-		
-		focus = {
 			id = SSK_consumer_goods_problem
 			icon = GFX_goal_consumer_goods
 			relative_position_id = SSK_communist_economy
@@ -1531,88 +1474,6 @@ focus_tree = {
 			}
 		}
 		
-		focus = {
-			id = SSK_state_controlled_railways
-			icon = GFX_goal_state_controlled_railway
-			relative_position_id = SSK_communist_economy
-			x = 1
-			y = 2
-			
-			prerequisite = { focus = SSK_state_controlled_industry }
-			mutually_exclusive = {}
-			
-			cost = 5
-			
-			completion_reward = {
-			
-				swap_ideas = {
-					remove_idea = ssk_communist_economy1
-					add_idea = ssk_communist_economy2
-				}
-				
-				470 = {
-					if = {
-						limit = {
-							free_building_slots = {
-								building = infrastructure
-								size > 10
-								include_locked = yes
-							}
-						}
-						
-					}
-					else = {
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-					}
-				}
-				469 = {
-					if = {
-						limit = {
-							free_building_slots = {
-								building = infrastructure
-								size > 10
-								include_locked = yes
-							}
-						}
-						
-					}
-					else = {
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-					}
-				}
-				472 = {
-					if = {
-						limit = {
-							free_building_slots = {
-								building = infrastructure
-								size > 10
-								include_locked = yes
-							}
-						}
-						
-					}
-					else = {
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			
-			 
-		}
-		
-		}
-		
-		}
 		
 		focus = {
 			id = SSK_workers_rights
@@ -2070,320 +1931,7 @@ focus_tree = {
 			}
 		}
 		
-		##FASCIST 
-		
-		focus = {
-			id = SSK_state_controlled
-			icon = GFX_goal_state_controlledf
-			relative_position_id = SSK_industrial_problems
-			x = 8
-			y = 1
-			
-			available = {
-				has_completed_focus = SSK_fascist_victory
-			}
-			
-			prerequisite = { focus = SSK_industrial_problems }
-			mutually_exclusive = { focus = SSK_trade_time }
-			mutually_exclusive = { focus = SSK_communist_economy }
-			
-			cost = 5
-			
-			completion_reward = {
-				add_ideas = ssk_state_controlled
-			}
-		}
-		
-		focus = {
-			id = SSK_apporpiate_farmers
-			icon = GFX_goal_apporpiate_farmers
-			relative_position_id = SSK_state_controlled
-			x = -1
-			y = 1
-			
-			prerequisite = { focus = SSK_state_controlled }
-			mutually_exclusive = {}
-			
-			cost = 5
-			
-			completion_reward = {
-				
-				469 = {
-					add_manpower = -8500
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-				
-				470 = {
-					add_manpower = -8500
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-			
-			}
-		}
-		
-		focus = {
-			id = SSK_seize_albertian_buisness
-			icon = GFX_goal_albertan_buisness
-			relative_position_id = SSK_state_controlled
-			x = 1
-			y = 1
-			
-			prerequisite = { focus = SSK_state_controlled }
-			mutually_exclusive = {}
-			
-			cost = 5
-			
-			completion_reward = {
-				add_stability = -0.15
-				add_timed_idea = {
-					idea = ssk_albertain_buisness
-					days = 180
-				}
-				
-				469 = {
-					
-					add_resource = {
-						type = oil
-						amount = 35
-					}
-					
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
-			}
-		}
-		
-		focus = {
-			id = SSK_regina_industrialpark
-			icon = GFX_goal_regina_industrialpark
-			relative_position_id = SSK_state_controlled
-			x = 1
-			y = 2
-			
-			prerequisite = { focus = SSK_seize_albertian_buisness }
-			mutually_exclusive = {}
-			
-			cost = 5
-			
-			completion_reward = {
-			
-				add_stability = -0.05
-				
-				469 = {
-					add_manpower = -5000
-					
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-					
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-				
-				
-				
-				}
-			
-			}
-		}
-		
-		focus = {
-			id = SSK_open_workcamps
-			icon = GFX_goal_albertan_workcamp
-			relative_position_id = SSK_state_controlled
-			x = -1
-			y = 2
-			
-			prerequisite = { focus = SSK_apporpiate_farmers }
-			mutually_exclusive = {}
-			
-			cost = 5
-			
-			completion_reward = {
-				add_ideas = ssk_work_camps
-			}
-		}
-		
-		focus = {
-			id = SSK_rapid_buildup
-			icon = GFX_goal_rapid_buildup
-			relative_position_id = SSK_state_controlled
-			x = 0
-			y = 3
-			
-			prerequisite = { focus = SSK_regina_industrialpark }
-			prerequisite = { focus = SSK_open_workcamps }
-			mutually_exclusive = {}
-			
-			cost = 5
-			
-			completion_reward = {
-				custom_effect_tooltip = SSK_rapid_buildup_tooltip
-				if = {
-					limit = {
-						has_idea = civilian_economy
-					}
-					add_ideas = low_economic_mobilisation
-				}
-				
-				if = {
-					limit = {
-						has_idea = low_economic_mobilisation
-					}
-					add_ideas = partial_economic_mobilisation
-				}
-				
-				if = {
-					limit = {
-						has_idea = partial_economic_mobilisation
-					}
-					add_ideas = war_economy
-				}
-				
-				if = {
-					limit = {
-						has_idea = war_economy
-					}
-					add_ideas = tot_economic_mobilisation
-				}
-			
-			}
-		}
-		
-		focus = {
-			id = SSK_solving_oil_issue
-			icon = GFX_goal_oil_production
-			relative_position_id = SSK_state_controlled
-			x = 1
-			y = 4
-			
-			prerequisite = { focus = SSK_rapid_buildup }
-			mutually_exclusive = {}
-			
-			cost = 5 
-			
-			completion_reward = {
-				
-				470 = {
-					add_resource = {
-						type = oil
-						amount = 60
-					}
-				}
-			
-			}
-		}
-		
-		focus = {
-			id = SSK_relocate_saskatchewanians
-			icon = GFX_goal_relocate_sask
-			relative_position_id = SSK_state_controlled
-			x = -1
-			y = 4
-			
-			prerequisite = { focus = SSK_rapid_buildup }
-			mutually_exclusive = {}
-			
-			cost = 5
-			
-			completion_reward = {
-				470 = {
-					add_manpower = 10000
-					
-					if = {
-						limit = {
-							free_building_slots = {
-								building = infrastructure
-								size > 10
-								include_locked = yes
-							}
-						}
-						
-					}
-					else = {
-					add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = yes
-					}
-					}
-					
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory 
-						level = 2
-						instant_build = yes
-					}
-					
-				}
-			}
-		}
-		
-		focus = {
-			id = SSK_austarity
-			icon = GFX_goal_autarky
-			relative_position_id = SSK_state_controlled
-			x = 0
-			y = 5
-			
-			prerequisite = { focus = SSK_relocate_saskatchewanians }
-			prerequisite = { focus = SSK_solving_oil_issue }
-			mutually_exclusive = {}
-			
-			cost = 5
-			
-			completion_reward = {
-				swap_ideas = {
-					remove_idea = ssk_state_controlled
-					add_idea = ssk_state_controlled2
-				}
-				
-				if = {
-					limit = {
-						has_idea = free_trade
-					}
-					
-					add_ideas = closed_economy
-				}
-				
-				if = {
-					limit = {
-						has_idea = export_focus
-					}
-					
-					add_ideas = closed_economy
-				}
-				
-				if = {
-					limit = {
-						has_idea = limited_exports
-					}
-					
-					add_ideas = closed_economy
-				}
-			
-			}
-		}
+		##FASCIST
 		
 		##RESOURCE/OTHER STUFF
 		
@@ -8319,7 +7867,7 @@ focus_tree = {
 			cost = 2
 			
 			completion_reward = {
-			
+				add_ideas = SSK_liberal_economy
 			}
 		}
 		
@@ -8336,7 +7884,8 @@ focus_tree = {
 			
 			completion_reward = {
 			
-			
+			add_ideas = ssk_expanded_workers_rights
+			add_stability = 0.05
 			}
 		}
 		
@@ -8352,7 +7901,27 @@ focus_tree = {
 			cost = 3
 			
 			completion_reward = {
-			
+				custom_effect_tooltip = ssk_liberalize_economy_tooltip
+				if = {
+					limit = {
+						has_idea = closed_economy
+					}
+					add_ideas = limited_exports
+				}
+				
+				if = {
+					limit = {
+						has_idea = limited_exports
+					}
+					add_ideas = export_focus
+				}
+				
+				if = {
+					limit = {
+						has_idea = export_focus
+					}
+					add_ideas = free_trade
+				}
 			}
 		}
 		
@@ -8368,7 +7937,14 @@ focus_tree = {
 			cost = 3
 			
 			completion_reward = {
-			
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 4
+						instant_build = yes
+					}
+				}
 			}
 		}
 		
@@ -8378,19 +7954,30 @@ focus_tree = {
 			x = 0
 			y = 2
 			
-			prerequisite = { focus = SSK_expand_worker_rights focus = SSK_opening_markets focus = SSK_civillian_economy }
+			prerequisite = { 
+				focus = SSK_expand_worker_rights
+			    focus = SSK_opening_markets 
+			    focus = SSK_civillian_economy 
+			}
 			mutually_exclusive = {}
 			
 			cost = 5
 			
 			completion_reward = {
-			
-			
+				add_ideas = ssk_ross_contracts
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_3
+					
+					amount = 5000
+					
+					producer = SSK
+				
+				}
 			}
 		}
 		
 		focus = {
-			id = SSK_ban_socialist_companies
+			id = SSK_nationalize_socialist_companies
 			relative_position_id = SSK_liberalize_economy
 			x = -1
 			y = 3
@@ -8401,7 +7988,11 @@ focus_tree = {
 			cost = 2
 			
 			completion_reward = {
-			
+				custom_effect_tooltip = ssk_integrating_socialist_companies_tooltip
+				add_timed_idea = {
+					idea = ssk_integrating_socialist_companies
+					days = 180
+				}
 			}
 		}
 		
@@ -8428,20 +8019,21 @@ focus_tree = {
 			x = 0
 			y = 4
 			
-			prerequisite = { focus = SSK_ban_socialist_companies }
+			prerequisite = { focus = SSK_nationalize_socialist_companies }
 			prerequisite = { focus = SSK_encourage_entrapanures }
 			mutually_exclusive = {}
 			
 			cost = 5
 			
 			completion_reward = {
-			
+				add_ideas = ssk_free_market
 			
 			}
 		}
 		
 		focus = {
 			id = SSK_workcamp
+			icon = GFX_goal_albertan_workcamp
 			relative_position_id = SSK_liberalize_economy
 			x = -2
 			y = 5
@@ -8452,8 +8044,7 @@ focus_tree = {
 			cost = 2
 			
 			completion_reward = {
-			
-			
+				add_ideas = ssk_work_camps
 			}
 		}
 		
@@ -8469,12 +8060,41 @@ focus_tree = {
 			cost = 7
 			
 			completion_reward = {
+				custom_effect_tooltip = SSK_rapid_buildup_tooltip
+				if = {
+					limit = {
+						has_idea = civilian_economy
+					}
+					add_ideas = low_economic_mobilisation
+				}
+				
+				if = {
+					limit = {
+						has_idea = low_economic_mobilisation
+					}
+					add_ideas = partial_economic_mobilisation
+				}
+				
+				if = {
+					limit = {
+						has_idea = partial_economic_mobilisation
+					}
+					add_ideas = war_economy
+				}
+				
+				if = {
+					limit = {
+						has_idea = war_economy
+					}
+					add_ideas = tot_economic_mobilisation
+				}
 			
 			}
 		}
 		
 		focus = {
 			id = SSK_forced_industrialization
+			icon = GFX_goal_apporpiate_farmers
 			relative_position_id = SSK_liberalize_economy
 			x = 2
 			y = 5
@@ -8485,6 +8105,26 @@ focus_tree = {
 			cost = 10
 			
 			completion_reward = {
+				
+				469 = {
+					add_manpower = -8500
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+				
+				470 = {
+					add_manpower = -8500
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
 			
 			}
 		}
@@ -8492,6 +8132,7 @@ focus_tree = {
 		focus = {
 			id = SSK_regina_industrial_park
 			relative_position_id = SSK_liberalize_economy
+			icon = GFX_goal_regina_industrialpark
 			x = 1
 			y = 6
 			
@@ -8502,6 +8143,29 @@ focus_tree = {
 			cost = 5
 			
 			completion_reward = {
+			
+				add_stability = -0.05
+				
+				469 = {
+					add_manpower = -5000
+					
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				
+				
+				
+				}
 			
 			}
 		}
@@ -8519,12 +8183,17 @@ focus_tree = {
 			cost = 5
 			
 			completion_reward = {
-			
+				add_ideas = {
+					humane_human_experimentation
+				}
+				custom_effect_tooltip = SSK_sask_science_tooltip
+				add_manpower = -1000
 			}
 		}
 		
 		focus = {
 			id = SSK_continue_industrialization
+			
 			relative_position_id = SSK_liberalize_economy
 			x = 0
 			y = 7
@@ -8534,10 +8203,45 @@ focus_tree = {
 			mutually_exclusive = {}
 			
 			cost = 20
-			
-			completion_reward = {
-			
-			
+				completion_reward = {
+				random_owned_controlled_state = {
+					
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+					
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
+				
+				
+				
+				}
+				random_owned_controlled_state = {
+					
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+					
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
+				
+				
+				
+				}
 			}
 		}
 		
