@@ -1403,7 +1403,6 @@ focus_tree = {
 			
 			prerequisite = { focus = SSK_industrial_problems }
 			mutually_exclusive = { focus = SSK_trade_time }
-			mutually_exclusive = { focus = SSK_state_controlled }
 			
 			cost = 1
 			
@@ -1709,7 +1708,6 @@ focus_tree = {
 			
 			prerequisite = { focus = SSK_industrial_problems }
 			mutually_exclusive = { focus = SSK_communist_economy }
-			mutually_exclusive = { focus = SSK_state_controlled }
 			
 			cost = 1
 			
@@ -2335,7 +2333,11 @@ focus_tree = {
 			x = 0
 			y = 7
 			
-			prerequisite = { focus = SSK_socialist_economic_miricle focus = SSK_economic_aid focus = SSK_join_allies focus = SSK_austarity }
+			prerequisite = { 
+			 focus = SSK_socialist_economic_miricle 
+			 focus = SSK_economic_aid
+			 focus = SSK_join_allies 
+			}
 			mutually_exclusive = {}
 			
 			cost = 10
@@ -3204,9 +3206,6 @@ focus_tree = {
 				OR = {
 					has_completed_focus = SSK_doctrine_modernization 
 					has_completed_focus = SSK_operation_purple_storm
-				}
-				NOT = {
-					has_completed_focus = SSK_fascist_victory
 				}
 			}
 			
@@ -7263,9 +7262,9 @@ focus_tree = {
 		}
 		
 		##GOOD FASCIST ENDING
+		
 		focus = {
 			id = SSK_anzai_constitution
-			icon = GFX_goal_anzai_con
 			relative_position_id = SSK_elections
 			x = 37
 			y = 11
@@ -7292,7 +7291,6 @@ focus_tree = {
 		
 		focus = {
 			id = SSK_saoris_reforms
-			icon = GFX_goal_saori_reforms
 			relative_position_id = SSK_anzai_constitution
 			x = 0
 			y = 1
@@ -8085,7 +8083,7 @@ focus_tree = {
 			completion_reward = {
 				add_ideas = ssk_ross_contracts
 				add_equipment_to_stockpile = {
-					type = infantry_equipment_1
+					type = infantry_equipment_3
 					
 					amount = 5000
 					
@@ -8307,7 +8305,6 @@ focus_tree = {
 				}
 				custom_effect_tooltip = SSK_sask_science_tooltip
 				add_manpower = -1000
-				add_research_slot = 1
 			}
 		}
 		
