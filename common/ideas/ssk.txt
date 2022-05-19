@@ -1868,6 +1868,20 @@ ideas = {
 				production_speed_buildings_factor = -0.15
 			}
 		}
+
+		ssk_small_business = {
+			picture = tax_ultra_rich
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
 		
 		ssk_buy_manitoba = {
 			picture = tax_ultra_rich
@@ -2283,6 +2297,101 @@ ideas = {
 				army_morale_factor = -0.05
 			}
 		}
+		ssk_expanded_workers_rights = {
+			picture = tax_ultra_rich
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.03
+				production_factory_efficiency_gain_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		
+		}
+		SSK_liberal_economy = {
+			picture = tax_ultra_rich
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+			}
+		
+		}	
+		ssk_integrating_socialist_companies = {
+			picture = tax_ultra_rich
+			allowed = {
+				original_tag = SSK
+			}
+			on_remove = {
+				country_event = {
+					days = 1
+					id = ssk.66
+				}
+			}
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.15
+				consumer_goods_factor = 0.05
+			}
+		
+		}	
+		ssk_ross_contracts = {
+			picture = gun_in_every_hand
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.15
+					soft_attack = 0.05 
+					instant = yes
+				}
+			}
+		}	
+		ssk_free_market = {
+			picture = tax_ultra_rich
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				extra_trade_to_target_factor = 0.25
+			}
+		
+		}
+		humane_human_experimentation = {
+			picture = tax_ultra_rich
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.15
+				army_org_factor = -0.1
+				army_morale_factor = 0.05
+				army_speed_factor = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_org_regain = 0.05
+			}
+		}
 	}
 		##ECONOMIC LAWS
 		economy = {
@@ -2509,9 +2618,6 @@ ideas = {
 		}
 	
 	}
-	
-	
 		
-	
 }
 

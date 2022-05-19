@@ -1,5 +1,30 @@
 guiTypes = {
 	containerWindowType = {
+		name = "ssk_council_open_button"
+		position = {   x = 290 y = -45 }
+		size = { width = 500 height = 240 }
+		orientation = centre
+		
+		buttonType = {
+			name = "ssk_council_open_button"
+			spriteType = "GFX_open_button"
+			position = { x = 103 y = 303 }
+			scale = 0.95
+			
+		}
+		instantTextboxType = {
+			name = "ssk_council_open_button_text"
+			position = {  x =145 y = 306 }
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "ssk_council_open_button_text_loc"
+			maxWidth = 200
+			maxHeight = 151
+			fixedsize = yes	
+			alwaystransparent = yes
+		}
+	} 
+	containerWindowType = {
 		name = "SSK_fascist_council_window_custom"
 		size = { width = 220 height = 128 }
 		position = { x = 375 y = 200 }

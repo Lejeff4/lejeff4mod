@@ -1,6 +1,26 @@
 scripted_gui = {
 
-
+	ssk_council_open_button = { 
+		window_name = "ssk_council_open_button"
+		context_type = player_context
+		parent_window_token = politics_tab
+		
+		visible = {
+			tag = SSK
+			has_country_flag = fascism_council
+		}
+		
+		effects = {
+			ssk_council_open_button_click = {
+				set_country_flag = SSK_council_fascism
+			}
+			ssk_council_open_button_right_click = {
+				clr_country_flag = SSK_council_fascism
+			}
+		}
+		
+		
+		}
 SSK_fascist_council_window_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
 		context_type = player_context
 		window_name = "SSK_fascist_council_window_custom"

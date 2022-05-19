@@ -14,6 +14,10 @@ spriteTypes = {
 		name = "GFX_council_button"
 		textureFile = "gfx/interface/council/council_button.dds"
 	}
+	spriteType = {
+		name = "GFX_open_button"
+		textureFile = "gfx/interface/council/open_button.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_mako_economic_minister"
