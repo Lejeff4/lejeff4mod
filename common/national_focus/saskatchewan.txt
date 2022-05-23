@@ -1279,6 +1279,7 @@ focus_tree = {
 				add_ideas = ssk_party_united
 				remove_ideas = ssk_dying_democracy
 				remove_ideas = ssk_challanged_parlament
+				set_country_flag = fascism_council
 			}
 		}
 		
@@ -2808,12 +2809,13 @@ focus_tree = {
 				}
 				
 				army_experience = 15
-				add_doctrine_cost_reduction = {
-				name = USA_louisiana_maneuvers
-				cost_reduction = 1
-				uses = 1
-				category = land_doctrine
-			}
+					add_doctrine_cost_reduction = {
+					name = USA_louisiana_maneuvers
+					cost_reduction = 1
+					uses = 1
+					category = land_doctrine
+				}
+				set_rule = can_use_kamikaze_pilots
 			}
 		}
 		
@@ -7852,6 +7854,7 @@ focus_tree = {
 					id = ssk.64
 					days = 5
 				}
+				clr_country_flag = fascism_council
 			}
 		}
 		
@@ -8358,6 +8361,117 @@ focus_tree = {
 				
 				
 				
+				}
+			}
+		}
+		#land_of_the_living_skies
+		focus = {
+			id = ssk_land_of_the_living_skies
+			icon = GFX_goal_unknown
+			x = 65
+			y = 0
+			cost = 3
+			completion_reward = {
+				air_experience = 25
+				
+			}
+		}
+
+		#
+		focus = {
+			id = ssk_learn_from_canadian_air_doctrine
+			icon = GFX_goal_unknown
+			relative_position_id = ssk_land_of_the_living_skies
+			x = -1
+			y = 1
+			cost = 3
+			prerequisite = { focus = ssk_land_of_the_living_skies }
+			completion_reward = {
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.5
+					uses = 2
+					category = air_doctrine
+				}
+			}
+		}
+		focus = {
+			id = ssk_saori_plane
+			icon = GFX_goal_unknown
+			relative_position_id = ssk_land_of_the_living_skies
+			x = -1
+			y = 2
+			cost = 15
+			prerequisite = { focus = ssk_learn_from_canadian_air_doctrine }
+			completion_reward = {
+				create_equipment_variant = {
+					name = "Saori Plane"
+					type = fighter_equipment_2
+					upgrades = {
+						plane_gun_upgrade = 4
+						plane_engine_upgrade = 3
+						plane_reliability_upgrade = 3
+					}
+				}
+			}
+		}
+		focus = {
+			id = ssk_sky_of_the_dying_earth
+			icon = GFX_goal_unknown
+			relative_position_id = ssk_land_of_the_living_skies
+			x = 1
+			y = 1
+			cost = 3
+			prerequisite = { focus = ssk_land_of_the_living_skies }
+			completion_reward = {
+				add_tech_bonus = {
+					bonus = 1
+					uses = 1
+					category = cas_bomber
+				}
+			}
+		}
+		focus = {
+			id = ssk_allow_outstanding_female_airmen
+			icon = GFX_goal_unknown
+			relative_position_id = ssk_land_of_the_living_skies
+			x = 1
+			y = 2
+			cost = 3
+			prerequisite = { focus = ssk_sky_of_the_dying_earth }
+			completion_reward = {
+				set_rule = { can_generate_female_aces = yes }
+				add_ace = {
+					name = "Saori"
+					surname = "Takebe"
+					callsign = "Best Girl"
+					type = fighter_genius
+					is_female = yes
+				}
+				add_ace = {
+					name = "Miho"
+					surname = "Nishizumi"
+					callsign = "Miporin"
+					type = fighter_genius
+					is_female = yes
+				}
+			}
+		}
+		focus = {
+			id = ssk_apply_air_technology_elsewhere
+			icon = GFX_goal_unknown
+			relative_position_id = ssk_land_of_the_living_skies
+			x = 0
+			y = 3
+			cost = 3
+			prerequisite = { focus = ssk_allow_outstanding_female_airmen focus = ssk_saori_plane }
+			completion_reward = {
+				add_tech_bonus = {
+					bonus = 1
+					uses = 6
+					category = rocketry
+					category = artillery
+					category = motorized_equipment
+					category = nuclear
 				}
 			}
 		}
