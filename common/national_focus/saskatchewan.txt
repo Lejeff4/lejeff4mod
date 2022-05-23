@@ -1279,7 +1279,6 @@ focus_tree = {
 				add_ideas = ssk_party_united
 				remove_ideas = ssk_dying_democracy
 				remove_ideas = ssk_challanged_parlament
-				set_country_flag = fascism_council
 			}
 		}
 		
@@ -7534,10 +7533,6 @@ focus_tree = {
 			
 			completion_reward = {
 				custom_effect_tooltip = SSK_anchluss_tootlip
-				country_event = {
-					days = 1
-					id = ssk.45
-				}
 			}
 		}
 		
@@ -7857,7 +7852,6 @@ focus_tree = {
 					id = ssk.64
 					days = 5
 				}
-				clr_country_flag = fascism_council
 			}
 		}
 		
@@ -8131,7 +8125,7 @@ focus_tree = {
 			cost = 4
 			
 			completion_reward = {
-				add_ideas = { ssk_small_business }
+			
 			
 			}
 		}
