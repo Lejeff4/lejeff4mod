@@ -192,6 +192,11 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_grand_crusade.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_report_event_jettest"
+		texturefile = "gfx/event_pictures/report_event_jettest.dds"
+	}
+	
 ##THE NEWS
 
 	spriteType = {

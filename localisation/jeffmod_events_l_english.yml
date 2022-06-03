@@ -243,6 +243,11 @@ ssk.65.d:0 "Progress has finally been made for our great nation. Its no doubt th
 ssk.65.a:0 "Our nation still needs repairing"
 ssk.65.b:0 "Saori will bring us to the modern age!" 
 
+ssk.67.t:0 "Jet Engines?"
+ssk.67.d:0 "With our new discovery of Magicite and its military uses our scientists have been busy at work trying to apply this to our airforce. We might be able to apply this and propel ourselves with Magicite."
+ssk.67.a:0 "Interesting"
+
+
 ##NEWS
 ssk.news.1.t:0 "The Fall of Anchorage"
 ssk.news.1.d:0 "Tonight the war in the north has finally ended in a Saskatchewanian victory. Joe Crowder is live on the scene in Anchorage. \n \nAs you can see the American forces have left the city. The destruction brought on this city is totally justified as the civillians were fighting back. Reports show that every attack on civillians were on accident. We have taken the city. Glory to Saskatchewan! \n \nWith this new development the balance of power in the Americas is slowly shifting. Will America be able to hold onto power?"
