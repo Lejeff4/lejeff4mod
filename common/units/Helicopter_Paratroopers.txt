@@ -1,0 +1,71 @@
+sub_units = {
+
+	helicopter_paratroopers = {
+		abbreviation = "HLP"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 599
+		ai_priority = 200
+		active = no
+		special_forces = yes
+		active = no 
+		transport = helicopter_equipment
+
+		type = { infantry }
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_army
+		}
+
+		forest = {
+			movement = 0.25
+		}
+		mountain = {
+			movement = 0.25
+		}
+		jungle = {
+			movement = 0.25
+		}
+		marsh = {
+			movement = 0.25
+		}
+		urban = {
+			movement = 0.25
+		}
+		river = {
+			movement = 0.25
+		}
+		amphibious = {
+			attack = 0.2
+		}
+
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 50
+		max_organisation = 60
+		default_morale = 0.8
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 120
+		suppression = 2.2
+		weight = 0.75
+		move
+		affects_speed = yes  
+
+		#Offensive Abilities
+		suppression = 2
+		can_be_parachuted = yes 
+		recon = 1
+		initiative = 0.3
+
+		need = {
+			helicopter_equipment_1 = 250
+			infantry_equipment = 1000
+		}
+	}
+}
