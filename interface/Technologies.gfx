@@ -6184,5 +6184,25 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/SSK_infantry_equipment_1.dds"
 	}
 	
+	SpriteType = {
+		name = "GFX_SSK_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/SSK_early_fighter.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_SSK_fighter1_medium"
+		texturefile = "gfx/interface/technologies/SSK_fighter1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SSK_fighter2_medium"
+		texturefile = "gfx/interface/technologies/SSK_fighter2.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_SSK_fighter3_medium"
+		texturefile = "gfx/interface/technologies/SSK_fighter3.dds"
+	}
+	
 
 }

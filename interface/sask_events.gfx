@@ -191,15 +191,12 @@ spriteTypes = {
 		name = "GFX_report_event_grand_crusade"
 		texturefile = "gfx/event_pictures/report_event_grand_crusade.dds"
 	}
+	
 	spriteType = {
-		name = "GFX_report_event_yukari_coup"
-		texturefile = "gfx/event_pictures/report_event_yukari_coup.dds"
+		name = "GFX_report_event_jettest"
+		texturefile = "gfx/event_pictures/report_event_jettest.dds"
 	}
-	spriteType = {
-		name = "GFX_report_event_yukari_puppet"
-		texturefile = "gfx/event_pictures/report_event_yukari_puppet.dds"
-	}
-
+	
 ##THE NEWS
 
 	spriteType = {
@@ -225,7 +222,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/traits/personal/trait_best_girl2.dds"
 		legacy_lazy_load = no
 	}
-	
 
 
 ##IDEAS
