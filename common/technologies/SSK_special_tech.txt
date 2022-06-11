@@ -18,4 +18,17 @@ SSK_magical_infantry_tech = {
 			magical_equipment_1
 		}
 }
+
+SSK_helicopter_tech = {
+	research_cost = 1
+		allow = {
+			always = no
+		}
+		enable_equipments = {
+			helicopter_equipment_1
+		}
+		enable_subunits = {
+			helicopter_paratroopers
+		}
+}
 }

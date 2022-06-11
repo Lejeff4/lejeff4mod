@@ -32,6 +32,7 @@ prairiesteel_design:0 "Prairie Steel"
 sask_power:0 "Sask Power"
 sask_builds:0 "Sask Builds"
 ghost_of_dublin:0 "Ghost of Dublin"
+ssk_sayori_takabe_desc:0 "Sayori Takabe is a bit of a mysterious figure on the political scene. What we do know is that she was a survivor of one of the many purges conducted by Red and Yellow and she had been living underground ever since. When Yukari overthrew them, Takabe came out of hiding and joined the political scene, gaining popularity fast enough to win in the recent snap elections. Something about Takabe is sparking up some old feelings in the heart of the people but we cant really say why."
 
 ##COSMETIC TAGS
 SSK_east_united_ADJ:0 "Saskatchewanian"
@@ -81,6 +82,13 @@ SSK_deutschordensstaat_fascism:0 "Deutschordensstaat Saskatchewan"
 SSK_neutrality_republic_ADJ:0 "Saskatchewanian"
 SSK_neutrality_republic_DEF:0 "Saskatchewan"
 SSK_neutrality_republic_neutrality:0 "Republic of Saskatchewan"
+
+STR_ADJ:0 "Saskatchewanian"
+STR_DEF:0 "Saskatchewan"
+STR_fascism:0 "Saskatchewanian Triumvirate"
+STR_democratic:0 "Guided Saskatchewan State"
+
+
 
 ##SCRIPTED GUI
 ELECTIONS_TEXT:0 "Since our inception in 1919 our elections have been quite chaotic, the upcoming one is no better. All sides of the political spectrum are fighting it out to grab onto power. This will be a tight race."
@@ -224,6 +232,11 @@ SSK_ELECTIN_TOOLTIP:0 "§RThis will disable you deciding your Ministers§!"
 SSK_sask_science_tooltip:0 "§RVietnam finally brought the drugs§!"
 ssk_liberalize_economy_tooltip:0 "Moves up a §Ctrade§! law"
 ssk_integrating_socialist_companies_tooltip:0 "After the integration is complete we will recieve §G4 factories§!"
+yukari_obeys_for_now:0 "Yukari has become a §RPuppet§! of the Imposters"
+yukari_triumphs:0 "Yukari will now lead Saskatchewan back torwards §BDemocracy§! although fractured by the Imposters"
+yukari_purge_tooltip:0 "All incompetents and Politicians are §Rkilled§! With the purge complete, Albertans, petty army rivalry, and supporters of the Regina treaty are all gone"
+yukaris_legion_tooltip:0 "With new commanders, High command becomes reorganized and we boldly remilitarize our border with the Americans!"
+declare_on_world_tooltip:0 "In 30 days §REvery Western§! nation on earth will declare war on us"
 ##FACTIONS
 UNITED_AMERICAS:0 "N.A.U.S"
 
@@ -234,6 +247,9 @@ ssk_nationalist:0 "Saskatchewan Nationalist"
 ssk_underrated_politician:0 "Under-Rated Politician"
 ssk_iron_fist:0 "Iron Fist"
 ssk_funny_fish:0 "Funny Fish"
+ssk_uneasy_alliance:0 "Uneasy Alliance"
+ssk_mournful_guardian:0 "Mournful Guardian"
+best_girl3:0 "Best Girl?"
 
 ##PARTY NAMES
 SSK_SOCIALIST_WIN_LONG:0 "New Democratic Party"
@@ -388,7 +404,8 @@ ssk_ross_contracts:0 "Ross Military Contracts"
 ssk_integrating_socialist_companies:0 "Integrating Socialist Companies"
 ssk_free_market:0 "Embraced the Free Market"
 ssk_humane_human_experimentation:0 "Humane Human Experimentation"
-
+ssk_yukaris_legion:0 "Yukari's Legion"
+ssk_yukaris_legion_desc:0 "The Elite Legions that Red and Yellow dropped into Regina are well disciplined and trained against the worst this world can bring apon them"
 
 ##FOCUSES
 SSK_elections:0 "Elections"

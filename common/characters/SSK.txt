@@ -439,6 +439,44 @@ characters={
 			legacy_id=9008
 		}
 	}
+	
+	SSK_salt={
+		name="Spilled Salt"
+		portraits={
+			army={
+				large="gfx\leaders\SSK\GFX_salt.dds"
+			}
+		}
+		
+		field_marshal={
+			traits={ adaptable memories_of_aragon  }
+			skill=9
+			attack_skill=10
+			defense_skill=8
+			planning_skill=6
+			logistics_skill=7
+			legacy_id=4312
+		}
+	}
+
+	ssk_deez_rodent = {
+		name="Deez Rodent"
+		portraits={
+			army={
+				large="gfx\leaders\SSK\GFX_deez_rodent.dds"
+			}
+		}
+		
+		corps_commander={
+			traits={ adaptable annoying cat_collection }
+			skill=6
+			attack_skill=5
+			defense_skill=8
+			planning_skill=6
+			logistics_skill=9
+			legacy_id=5555
+		}
+	}
 	SSK_vietnam_warfare={
 		name="Vietnam Warfare"
 		portraits={
@@ -699,7 +737,20 @@ characters={
 			army = {
 				small="gfx/interface/ideas/portraits/idea_SSK_yukari.dds"
 			}
-		}
+
+			army={
+				large="gfx/leaders/SSK/GFX_yukari.dds"
+			}
+			civilian = {
+				large = "gfx/leaders/SSK/GFX_yukari.dds"
+			}
+			
+			civilian = {
+				small="gfx/interface/ideas/portraits/idea_SSK_yukari.dds"
+			}
+			
+		}	
+		
 		
 		advisor={
 			slot = political_advisor
@@ -720,6 +771,34 @@ characters={
 			cost = 100
 		}
 	
+	}
+	SSK_sad_yukari = {
+		name = "Yukari"
+		
+		portraits={
+			civilian = {
+				large = "gfx/leaders/SSK/GFX_sad_yukari.dds"
+			}
+			
+		}
+	}
+	
+	SSK_yukari_triumvirate = {
+		name = "Yukari's Triumvirate"
+		
+		portraits={
+			civilian = {
+				large = "gfx/leaders/SSK/GFX_yukari_triumvirate.dds"
+			}
+		}	
+	}
+	SSK_sayori_takabe={
+		name="Sayori Takabe"
+		portraits={
+			civilian={
+				large="gfx/leaders/SSK/GFX_sayori_takabe.dds"
+			}
+		}
 	}
 	
 	SSK_maho = {

@@ -2392,6 +2392,27 @@ ideas = {
 				army_org_regain = 0.05
 			}
 		}
+		ssk_yukaris_legion = {
+			picture = idea_professional_army
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				attrition = -100
+				army_org_factor = 0.25
+				army_morale_factor = 0.25
+				army_speed_factor = 10
+				army_attack_factor = 0.25
+				army_defence_factor = 0.25
+				army_org_regain = 0.25
+				out_of_supply_factor = -1
+				terrain_penalty_reduction = 0.5
+				supply_factor = 1000
+			}
+		}
 	}
 		##ECONOMIC LAWS
 		economy = {

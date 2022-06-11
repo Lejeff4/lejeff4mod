@@ -38,6 +38,17 @@ leader_traits = {
 		political_power_gain = 0.05
 	}
 	
+	ssk_uneasy_alliance = {
+		stability_factor = -0.15
+		war_support_factor = -0.04
+		political_power_gain = 0.05
+	}
+
+	ssk_mournful_guardian = {
+		stability_factor = 0.05
+		political_power_gain = 0.15
+		army_defence_factor = 0.1
+	}
 	##POLITICAL ADVISORS
 	
 	communist_reformist = {
