@@ -237,6 +237,7 @@ yukari_triumphs:0 "Yukari will now lead Saskatchewan back torwards §BDemocracy�
 yukari_purge_tooltip:0 "All incompetents Generals and Politicians are §Rkilled§! With the purge complete, Albertans, petty army rivalry, and supporters of the Regina treaty are all gone. However some reports show some dissertion from some parts of the army that were to partake in the purge"
 yukaris_legion_tooltip:0 "With new commanders, High command becomes reorganized and we boldly remilitarize our border with the Americans!"
 declare_on_world_tooltip:0 "In 30 days §REvery Western§! nation on earth will declare war on us"
+the_mysterious_candidate:0 "The §Ymystery candidate§! becomes our nation leader!"
 ##FACTIONS
 UNITED_AMERICAS:0 "N.A.U.S"
 

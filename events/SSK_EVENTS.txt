@@ -193,6 +193,12 @@ country_event = {
 			trigger = {
 				check_variable = { global.ssk_democractic = global.ssk_communist } 
 				check_variable = { global.ssk_democractic = global.ssk_fascism }
+				COL = {
+					has_opinion = {
+						target = SSK
+						value > 50
+					}
+				}
 			}
 		country_event = { id = ssk.68 days = 1 }
 		complete_national_focus = SSK_elections_are_in
