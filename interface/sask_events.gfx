@@ -197,6 +197,14 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_jettest.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_report_event_yukari_coup"
+		texturefile = "gfx/event_pictures/report_event_yukari_coup.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_yukari_puppet"
+		texturefile = "gfx/event_pictures/report_event_yukari_puppet.dds"
+	}
 ##THE NEWS
 
 	spriteType = {
