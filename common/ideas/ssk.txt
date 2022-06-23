@@ -1929,6 +1929,20 @@ ideas = {
 		
 		}
 		
+		ssk_encourage_ent = {
+			##picture = 
+			allowed = {
+				original_tag = SSK
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		
 		ssk_albertain_nationalists = {
 			picture = ssk_albertain_nationalists
 			allowed = {
