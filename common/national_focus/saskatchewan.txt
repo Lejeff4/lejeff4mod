@@ -7545,6 +7545,7 @@ focus_tree = {
 			
 			completion_reward = {
 				custom_effect_tooltip = SSK_anchluss_tootlip
+				country_event = { id = ssk.45 days = 5 }
 			}
 		}
 		
@@ -7552,6 +7553,7 @@ focus_tree = {
 		
 		focus = {
 			id = SSK_greater_saskatchewan
+			icon = GFX_goal_greater_sask
 			relative_position_id = SSK_anchluss
 			x = -2
 			y = 1
@@ -7571,12 +7573,15 @@ focus_tree = {
 			cost = 1
 			
 			completion_reward = {
-			
+				467 = {
+					add_core_of = SSK
+				}
 			}
 		}
 		
 		focus = {
 			id = SSK_manitoba_purchase
+			icon = GFX_goal_purchase
 			relative_position_id = SSK_anchluss
 			x = -3
 			y = 2
@@ -7587,7 +7592,11 @@ focus_tree = {
 			cost = 5
 			
 			completion_reward = {
-			
+				add_ideas = ssk_buy_manitoba
+				
+				SSK = {
+					transfer_state = 467
+				}
 			
 			}
 		}
@@ -7596,6 +7605,7 @@ focus_tree = {
 		
 		focus = {
 			id = SSK_liberalize_politics
+			icon = GFX_goal_liberalize2
 			relative_position_id = SSK_anchluss
 			x = -1
 			y = 2
@@ -7606,12 +7616,13 @@ focus_tree = {
 			cost = 2
 			
 			completion_reward = {
-			
+				add_ideas = ssk_liberalized_politics
 			}
 		}
 		
 		focus = {
 			id = SSK_consitutional_dictatorship
+			icon = GFX_goal_consitutional
 			relative_position_id = SSK_anchluss
 			x = -2
 			y = 3
@@ -7623,12 +7634,21 @@ focus_tree = {
 			cost = 5
 			
 			completion_reward = {
-			
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = yes
+				}
+				
+				swap_ideas = {
+					remove_idea = ssk_liberalized_politics
+					add_idea = ssk_liberalized_politics2
+				}
 			}
 		}
 		
 		focus = {
 			id = SSK_isolationist
+			icon = GFX_goal_isolationist
 			relative_position_id = SSK_anchluss 
 			x = -3
 			y = 4
@@ -7639,12 +7659,13 @@ focus_tree = {
 			cost = 5
 			
 			completion_reward = {
-			
+				add_ideas = neutrality_idea
 			}
 		}
 		
 		focus = {
 			id = SSK_cooperative
+			icon = GFX_goal_cooperative
 			relative_position_id = SSK_anchluss 
 			x = -1
 			y = 4
@@ -7655,12 +7676,13 @@ focus_tree = {
 			cost = 3 
 			
 			completion_reward = {
-			
+				add_ideas = ssk_cooperative
 			}
 		}
 		
 		focus = {
 			id = SSK_military_control
+			icon = GFX_goal_military_coup
 			relative_position_id = SSK_anchluss
 			x = 0
 			y = 3
@@ -7671,12 +7693,37 @@ focus_tree = {
 			cost = 5
 			
 			completion_reward = {
+				add_country_leader_role = {
+				character = SSK_marie
+				promote_leader = yes
+				
+				country_leader = {
+					ideology = centrism
+					expire = "1965.1.1"
+					traits = {
+					
+					}
+				}
+			}
 			
+			
+			remove_country_leader_role = {
+				character = SSK_saori_takebe
+				ideology = centrism
+			}
+			
+			remove_country_leader_role = {
+				character = SSK_chiyomi_anzai
+				ideology = centrism
+			}
+			
+			add_ideas = ssk_army_takeover
 			}
 		}
 		
 		focus = {
 			id = SSK_keep_dictator
+			icon = GFX_goal_keep_dictatorship
 			relative_position_id = SSK_anchluss
 			x = 1
 			y = 2
@@ -7687,12 +7734,13 @@ focus_tree = {
 			cost = 2
 			
 			completion_reward = {
-			
+				add_ideas = ssk_dicatorship
 			}
 		}
 		
 		focus = {
 			id = SSK_life_reign
+			icon = GFX_goal_for_life
 			relative_position_id = SSK_anchluss
 			x = 2
 			y = 3
@@ -7704,12 +7752,36 @@ focus_tree = {
 			cost = 5
 			
 			completion_reward = {
+					add_country_leader_role = {
+						character = SSK_chiyomi_anzai
+						promote_leader = yes
+				
+				country_leader = {
+					ideology = nazism
+					expire = "1965.1.1"
+					traits = {
+					
+					}
+				}
+			}
 			
+			hidden_effect = {
+			remove_country_leader_role = {
+				character = SSK_erika
+				ideology = nazism
+			}
+			}
+			
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
 			}
 		}
 		
 		focus = {
 			id = SSK_follow_mussolini
+			icon = GFX_goal_ally_italy
 			relative_position_id = SSK_anchluss
 			x = 1
 			y = 4
@@ -7720,12 +7792,22 @@ focus_tree = {
 			cost = 5
 			
 			completion_reward = {
-			
+				diplomatic_relation = {
+					country = ITA
+					relation = non_aggression_pact
+					active = no
+				}
+				
+				reverse_add_opinion_modifier = {
+					target = ITA
+					modifier = our_liberators
+				}
 			}
 		}
 		
 		focus = {
 			id = SSK_diplomatic_solutions
+			icon = GFX_goal_entente
 			relative_position_id = SSK_anchluss
 			x = 3
 			y = 4
@@ -7736,12 +7818,28 @@ focus_tree = {
 			cost = 5
 			
 			completion_reward = {
-			
+				reverse_add_opinion_modifier = {
+					target = CAN
+					modifier = our_liberators
+				}
+				
+				reverse_add_opinion_modifier = {
+					target = USA
+					modifier = our_liberators
+				}
+				
+				reverse_add_opinion_modifier = {
+					target = ENG
+					modifier = our_liberators
+				}
+				
+				add_ideas = ssk_collaberation
 			}
 		}
 		
 		focus = {
 			id = SSK_militerized_state
+			icon = GFX_goal_militerized_state
 			relative_position_id = SSK_anchluss
 			x = 0
 			y = 5
@@ -7752,12 +7850,25 @@ focus_tree = {
 			cost = 5
 			
 			completion_reward = {
-			
+				remove_ideas = ssk_saoris_reforms4
+				remove_ideas = ssk_army_takeover
+				add_ideas = ssk_militerized_state
+				
+				create_wargoal = {
+					type = annex_everything
+					target = CAN
+				}
+				
+				create_wargoal = {
+					type = annex_everything
+					target = USA
+				}
 			}
 		}
 		
 		focus = {
 			id = SSK_join_allies3
+			icon = GFX_goal_join_allies3
 			relative_position_id = SSK_anchluss
 			x = -2
 			y = 5
@@ -7768,12 +7879,15 @@ focus_tree = {
 			cost = 3
 			
 			completion_reward = {
-			
+				ENG = {
+					country_event = { id = ssk.81 days = 5 }
+				}
 			}
 		}
 		
 		focus = {
 			id = SSK_american_alliance
+			icon = GFX_goal_joint_america
 			relative_position_id = SSK_anchluss
 			x = 2
 			y = 5
@@ -7784,12 +7898,20 @@ focus_tree = {
 			cost = 3
 			
 			completion_reward = {
-			
+				custom_effect_tooltip = SSK_united_america_alliance
+				USA = {
+					country_event = {
+						id = ssk.83
+						days = 3
+					}
+				}
+				add_ideas = ssk_america_alliance
 			}
 		}
 		
 		focus = {
 			id = SSK_saskatchewan_strongest
+			icon = GFX_goal_repaired
 			relative_position_id = SSK_anchluss
 			x = 0
 			y = 6
@@ -7800,7 +7922,27 @@ focus_tree = {
 			cost = 10
 			
 			completion_reward = {
-			
+				if = {
+					limit = {
+						has_completed_focus = SSK_anzais_vision
+					}
+					
+					country_event = {
+						id = ssk.84
+						days = 5
+					}
+				}
+				
+				if = {
+					limit = {
+						has_completed_focus = SSK_saoris_vision
+					}
+					
+					country_event = {
+						id = ssk.85
+						days = 5
+					}
+				}
 			}
 		}
 		
@@ -7808,6 +7950,7 @@ focus_tree = {
 		
 		focus = {
 			id = SSK_unite_nation
+			icon = GFX_goal_united_sask
 			relative_position_id = SSK_anchluss
 			x = 2
 			y = 1
@@ -7827,12 +7970,21 @@ focus_tree = {
 			cost = 1
 			
 			completion_reward = {
-			
+				463 = {
+					add_core_of = SSK
+				}
+				
+				839 = {
+					add_core_of = SSK
+				}
+				
+				remove_ideas = ssk_albertain_nationalists
 			}
 		}
 		
 		focus = {
 			id = SSK_order277
+			icon = GFX_goal_order277
 			relative_position_id = SSK_anchluss
 			x = 3
 			y = 2
@@ -7843,14 +7995,19 @@ focus_tree = {
 			cost = 3
 			
 			completion_reward = {
-			
+				838 = {
+					add_manpower = -250000
+				}
+				
+				470 = {
+					add_manpower = -450000
+				}
 			}
 		}
 		
 		
 		
 		##SOCIAL
-		
 		focus = {
 			id = SSK_repeal_alberta_act
 			icon = GFX_goal_repeal_alberta
@@ -8579,7 +8736,7 @@ focus_tree = {
 		focus = {
 			id = ssk_land_of_the_living_skies
 			icon = GFX_goal_living_sky
-			x = 70
+			x = 65
 			y = 0
 			cost = 3
 			completion_reward = {
@@ -8667,6 +8824,7 @@ focus_tree = {
 				}
 			}
 		}
+		
 		focus = {
 			id = ssk_apply_air_technology_elsewhere
 			icon = GFX_goal_apply_else
@@ -8687,253 +8845,5 @@ focus_tree = {
 			}
 		}
 		
-		##EXPERIMENTAL AIR STUFF
 		
-		focus = {
-			id = SSK_jet_engine 
-			relative_position_id = ssk_land_of_the_living_skies
-			x = 0
-			y = 4
-			cost = 5
-			
-			available = {
-				has_completed_focus = SSK_operation_purple_storm
-				has_completed_focus = SSK_rocket_program 
-			}
-			
-			prerequisite = { focus = ssk_apply_air_technology_elsewhere }
-			mutually_exclusive = {}
-			
-			completion_reward = {
-				country_event = { id = ssk.67 days = 1 }
-			}
-		}
-		
-		##MOON AND ROCKETS
-		focus = {
-			id = SSK_above_beyond
-			relative_position_id = ssk_land_of_the_living_skies
-			x = -2
-			y = 5
-			
-			cost = 1
-			
-			prerequisite = { focus = SSK_jet_engine }
-			mutually_exclusive = { focus = SSK_jets }
-			
-			completion_reward = {
-			
-			}
-		}
-		
-		focus = {
-			id = SSK_aquire_funding 
-			relative_position_id = SSK_above_beyond 
-			x = -1
-			y = 1
-			
-			cost = 3
-			
-			prerequisite = { focus = SSK_above_beyond }
-			mutually_exclusive = {}
-			
-			completion_reward = {
-			
-			}
-		}
-		
-		focus = {
-			id = SSK_sell_to_military
-			relative_position_id = SSK_above_beyond
-			x = 1
-			y = 1
-			
-			cost = 5
-			
-			prerequisite = { focus = SSK_above_beyond }
-			mutually_exclusive = {}
-			
-			completion_reward = {
-			
-			}
-		}
-
-		focus = {
-			id = SSK_rocket_designs
-			relative_position_id = SSK_above_beyond
-			x = 0
-			y = 2
-			
-			cost = 3
-			
-			prerequisite = { focus = SSK_aquire_funding }
-			prerequisite = { focus = SSK_sell_to_military }
-			mutually_exclusive = {}
-			
-			completion_reward = {
-			
-			}
-		}
-		
-		focus = {
-			id = SSK_first_rocket
-			relative_position_id = SSK_above_beyond 
-			x = 0
-			y = 3
-			
-			cost = 3
-			
-			prerequisite = { focus = SSK_rocket_designs }
-			mutually_exclusive = {}
-			
-			completion_reward = {
-			
-			}
-		}
-		
-		focus = {
-			id = SSK_test_time 
-			relative_position_id = SSK_above_beyond 
-			x = 0
-			y = 4
-			
-			cost = 1
-			
-			prerequisite = { focus = SSK_first_rocket }
-			mutually_exclusive = {}
-			
-			completion_reward = {
-			
-			}
-		}
-		
-		##JETS AND PLANES
-		focus = {
-			id = SSK_jets
-			relative_position_id = ssk_land_of_the_living_skies
-			x = 2
-			y = 5
-			
-			cost = 1
-			
-			prerequisite = { focus = SSK_jet_engine }
-			mutually_exclusive = { focus = SSK_above_beyond }
-			
-			completion_reward = {
-			
-			}
-		}
-		
-		focus = {
-			id = SSK_inital_engine
-			relative_position_id = SSK_jets
-			x = 0 
-			y = 1
-			
-			cost = 5
-			
-			prerequisite = { focus = SSK_jets }
-			mutually_exclusive = {}
-			
-			completion_reward = {
-			
-			}
-		}
-		
-		focus = {
-			id = SSK_first_test_flight
-			relative_position_id = SSK_jets
-			x = 0
-			y = 2
-			
-			cost = 1
-			
-			prerequisite = { focus = SSK_inital_engine }
-			mutually_exclusive = {}
-			
-			completion_reward = {
-			
-			}
-		}
-		
-		focus = {
-			id = SSK_23mm_or_37mm
-			relative_position_id = SSK_jets
-			x = -1
-			y = 3
-			
-			cost = 1
-			
-			prerequisite = { focus = SSK_first_test_flight }
-			mutually_exclusive = {}
-			
-			completion_reward = {
-			
-			}
-		}
-		
-		focus = {
-			id = SSK_plane_priority
-			relative_position_id = SSK_jets
-			x = 1
-			y = 3
-			
-			cost = 1
-			
-			prerequisite = { focus = SSK_first_test_flight }
-			mutually_exclusive = {}
-			
-			completion_reward = {
-			
-			}
-		}
-		
-		focus = {
-			 id = SSK_military_adoptation
-			 relative_position_id = SSK_jets
-			 x = 0
-			 y = 4
-			 
-			 cost = 5
-			 
-			 prerequisite = { focus = SSK_23mm_or_37mm }
-			 prerequisite = { focus = SSK_plane_priority }
-			 mutually_exclusive = {}
-			 
-			 completion_reward = {
-			 
-			 }
-		}
-		
-		focus = {
-			id = SSK_mach1_testing
-			relative_position_id = SSK_jets
-			x = 1
-			y = 5
-			
-			cost = 10
-			
-			prerequisite = { focus = SSK_military_adoptation }
-			mutually_exclusive = {}
-			
-			completion_reward = {
-			
-			}
-		}
-		
-		focus = {
-			id = SSK_gsuit
-			relative_position_id = SSK_jets
-			x = -1
-			y = 5
-			
-			cost = 10
-			
-			prerequisite = { focus = SSK_military_adoptation }
-			mutually_exclusive = {}
-			
-			completion_reward = {
-			
-			}
-		}
 	}

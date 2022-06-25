@@ -1,0 +1,247 @@
+focus = {
+			id = SSK_jet_engine 
+			relative_position_id = ssk_land_of_the_living_skies
+			x = 0
+			y = 4
+			cost = 5
+			
+			available = {
+				has_completed_focus = SSK_operation_purple_storm
+				has_completed_focus = SSK_rocket_program 
+			}
+			
+			prerequisite = { focus = ssk_apply_air_technology_elsewhere }
+			mutually_exclusive = {}
+			
+			completion_reward = {
+				country_event = { id = ssk.67 days = 1 }
+			}
+		}
+		
+		##MOON AND ROCKETS
+		focus = {
+			id = SSK_above_beyond
+			relative_position_id = ssk_land_of_the_living_skies
+			x = -2
+			y = 5
+			
+			cost = 1
+			
+			prerequisite = { focus = SSK_jet_engine }
+			mutually_exclusive = { focus = SSK_jets }
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_aquire_funding 
+			relative_position_id = SSK_above_beyond 
+			x = -1
+			y = 1
+			
+			cost = 3
+			
+			prerequisite = { focus = SSK_above_beyond }
+			mutually_exclusive = {}
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_sell_to_military
+			relative_position_id = SSK_above_beyond
+			x = 1
+			y = 1
+			
+			cost = 5
+			
+			prerequisite = { focus = SSK_above_beyond }
+			mutually_exclusive = {}
+			
+			completion_reward = {
+			
+			}
+		}
+
+		focus = {
+			id = SSK_rocket_designs
+			relative_position_id = SSK_above_beyond
+			x = 0
+			y = 2
+			
+			cost = 3
+			
+			prerequisite = { focus = SSK_aquire_funding }
+			prerequisite = { focus = SSK_sell_to_military }
+			mutually_exclusive = {}
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_first_rocket
+			relative_position_id = SSK_above_beyond 
+			x = 0
+			y = 3
+			
+			cost = 3
+			
+			prerequisite = { focus = SSK_rocket_designs }
+			mutually_exclusive = {}
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_test_time 
+			relative_position_id = SSK_above_beyond 
+			x = 0
+			y = 4
+			
+			cost = 1
+			
+			prerequisite = { focus = SSK_first_rocket }
+			mutually_exclusive = {}
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		##JETS AND PLANES
+		focus = {
+			id = SSK_jets
+			relative_position_id = ssk_land_of_the_living_skies
+			x = 2
+			y = 5
+			
+			cost = 1
+			
+			prerequisite = { focus = SSK_jet_engine }
+			mutually_exclusive = { focus = SSK_above_beyond }
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_inital_engine
+			relative_position_id = SSK_jets
+			x = 0 
+			y = 1
+			
+			cost = 5
+			
+			prerequisite = { focus = SSK_jets }
+			mutually_exclusive = {}
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_first_test_flight
+			relative_position_id = SSK_jets
+			x = 0
+			y = 2
+			
+			cost = 1
+			
+			prerequisite = { focus = SSK_inital_engine }
+			mutually_exclusive = {}
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_23mm_or_37mm
+			relative_position_id = SSK_jets
+			x = -1
+			y = 3
+			
+			cost = 1
+			
+			prerequisite = { focus = SSK_first_test_flight }
+			mutually_exclusive = {}
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_plane_priority
+			relative_position_id = SSK_jets
+			x = 1
+			y = 3
+			
+			cost = 1
+			
+			prerequisite = { focus = SSK_first_test_flight }
+			mutually_exclusive = {}
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			 id = SSK_military_adoptation
+			 relative_position_id = SSK_jets
+			 x = 0
+			 y = 4
+			 
+			 cost = 5
+			 
+			 prerequisite = { focus = SSK_23mm_or_37mm }
+			 prerequisite = { focus = SSK_plane_priority }
+			 mutually_exclusive = {}
+			 
+			 completion_reward = {
+			 
+			 }
+		}
+		
+		focus = {
+			id = SSK_mach1_testing
+			relative_position_id = SSK_jets
+			x = 1
+			y = 5
+			
+			cost = 10
+			
+			prerequisite = { focus = SSK_military_adoptation }
+			mutually_exclusive = {}
+			
+			completion_reward = {
+			
+			}
+		}
+		
+		focus = {
+			id = SSK_gsuit
+			relative_position_id = SSK_jets
+			x = -1
+			y = 5
+			
+			cost = 10
+			
+			prerequisite = { focus = SSK_military_adoptation }
+			mutually_exclusive = {}
+			
+			completion_reward = {
+			
+			}
+		}

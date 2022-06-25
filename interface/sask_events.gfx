@@ -205,6 +205,17 @@ spriteTypes = {
 		name = "GFX_report_event_yukari_puppet"
 		texturefile = "gfx/event_pictures/report_event_yukari_puppet.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_report_event_fascism1"
+		texturefile = "gfx/event_pictures/report_event_fascism1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_fascism2"
+		texturefile = "gfx/event_pictures/report_event_fascism2.dds"
+	}
+	
 ##THE NEWS
 
 	spriteType = {
@@ -723,9 +734,70 @@ spriteTypes = {
 		name = "GFX_idea_interservice_rival_infantry"
 		texturefile = "gfx/interface/ideas/Saskatchewan/idea_interservice_rival_infantry.dds"
 	}
+	
 	spriteType = {
 		name = "GFX_idea_interservice_rival_armour"
 		texturefile = "gfx/interface/ideas/Saskatchewan/idea_interservice_rival_armour.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_liberalized_economy"
+		texturefile = "gfx/interface/ideas/Saskatchewan/idea_liberalized_economy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_labourer"
+		texturefile = "gfx/interface/ideas/Saskatchewan/idea_labourer.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ross_contracts"
+		texturefile = "gfx/interface/ideas/Saskatchewan/idea_ross_contracts.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_integrate_socialist"
+		texturefile = "gfx/interface/ideas/Saskatchewan/idea_integrate_socialist.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_free_market"
+		texturefile = "gfx/interface/ideas/Saskatchewan/idea_free_market.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_experiment"
+		texturefile = "gfx/interface/ideas/Saskatchewan/idea_experiment.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_encourage_ent"
+		texturefile = "gfx/interface/ideas/Saskatchewan/idea_encourage_ent.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_liberalized"
+		texturefile = "gfx/interface/ideas/Saskatchewan/idea_liberalized.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_cooperative"
+		texturefile = "gfx/interface/ideas/Saskatchewan/idea_cooperative.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_military_coup"
+		texturefile = "gfx/interface/ideas/Saskatchewan/idea_military_coup.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_dictatorship"
+		texturefile = "gfx/interface/ideas/Saskatchewan/idea_dictatorship.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_usa_joint"
+		texturefile = "gfx/interface/ideas/Saskatchewan/idea_usa_joint.dds"
 	}
 	
 	
