@@ -83,6 +83,13 @@ SSK_neutrality_republic_ADJ:0 "Saskatchewanian"
 SSK_neutrality_republic_DEF:0 "Saskatchewan"
 SSK_neutrality_republic_neutrality:0 "Republic of Saskatchewan"
 
+LIB_BIG_BEAVER_ADJ:0 "Saskatchewanian"
+LIB_BIG_BEAVER_DEF:0 "Liberia"
+LIB_BIG_BEAVER_communism:0 "Big Beaver Co."
+LIB_BIG_BEAVER_fascism:0 "Big Beaver Co."
+LIB_BIG_BEAVER_democratic:0 "Big Beaver Co."
+LIB_BIG_BEAVER_neutrality:0 "Big Beaver Co."
+
 STR_ADJ:0 "Saskatchewanian"
 STR_DEF:0 "Saskatchewan"
 STR_fascism:0 "Saskatchewanian Triumvirate"
@@ -239,6 +246,7 @@ yukaris_legion_tooltip:0 "With new commanders, High command becomes reorganized 
 declare_on_world_tooltip:0 "In 30 days §REvery Western§! nation on earth will declare war on us"
 the_mysterious_candidate:0 "The §Ymystery candidate§! becomes our nation leader!"
 SSK_united_america_alliance:0 "§RIf§! America §GAccepts:§!"
+SSK_liberia_tooltip:0 "§OThis focus will spawn troops in Liberia. Don't forget to check guarantees!§!"
 
 ##FACTIONS
 UNITED_AMERICAS:0 "N.A.U.S"
@@ -253,6 +261,8 @@ ssk_funny_fish:0 "Funny Fish"
 ssk_uneasy_alliance:0 "Uneasy Alliance"
 ssk_mournful_guardian:0 "Mournful Guardian"
 best_girl3:0 "Best Girl?"
+best_girl3_desc:0 "No"
+mass_assault_expert:0 "Mass Assault Expert"
 
 ##PARTY NAMES
 SSK_SOCIALIST_WIN_LONG:0 "New Democratic Party"
@@ -399,8 +409,6 @@ ssk_operation_delivery:0 "Operation Special Delivery"
 ssk_army_rival:0 "Interservice Rivalry (§CBalanced§!)"
 ssk_army_rival_infantry:0 "Interservice Rivalry (§CNico Favored§!)"
 ssk_army_rival_armour:0 "Interservice Rivalry (§CVietnam Favored§!)"
-
-##NEED ICONS##
 SSK_liberal_economy:0 "Liberalized Economics"
 ssk_expanded_workers_rights:0 "Expanded Workers Rights"
 ssk_ross_contracts:0 "Ross Military Contracts"
@@ -418,6 +426,7 @@ ssk_dicatorship:0 "Dictatorship"
 ssk_collaberation:0 "Allied Collaboration"
 ssk_militerized_state:0 "Militerized State"
 ssk_america_alliance:0 "Joint Sask/American Army"
+ssk_ETB:0 "Economic and Taxes Bill"
 
 ##FOCUSES
 SSK_elections:0 "Elections"
@@ -1021,6 +1030,10 @@ SSK_american_alliance:0 "Joint American Operations"
 SSK_american_alliance_desc:0 ""
 SSK_saskatchewan_strongest:0 "A Repaired Republic"
 SSK_saskatchewan_strongest_desc:0 ""
+SSK_liberia_colony:0 "An African Colony?"
+SSK_liberia_colony_desc:0 ""
+SSK_shanghai_crisis:0 "7 days at Shanghai"
+SSK_shanghai_crisis_desc:0 ""
 
 ssk_land_of_the_living_skies:0 "Land of the Living Skies"
 ssk_land_of_the_living_skies_desc:0 ""

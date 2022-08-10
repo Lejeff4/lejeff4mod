@@ -127,20 +127,25 @@ country_event = {
 			transfer_state = 739
 		}
 		
-		471 = {
-			add_core_of = SSK
-		}
-		
-		473 = {
-			add_core_of = SSK
-		}
-		
-		740 = {
-			add_core_of = SSK
-		}
-		
-		739 = {
-			add_core_of = SSK
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							has_completed_focus = SSK_remiliterize_rhien
+							has_completed_focus = SSK_regina_treaty
+						}
+					}
+				}
+				473 = {
+					set_demilitarized_zone = yes
+				}
+						
+				471 = {
+					set_demilitarized_zone = yes
+				}
+						
+			}
 		}
 	}
 }
@@ -202,6 +207,14 @@ country_event = {
 			}
 		country_event = { id = ssk.68 days = 1 }
 		complete_national_focus = SSK_elections_are_in
+	}
+	
+	option = {
+		name = ssk.5.e
+			trigger = {
+				check_variable = { global.ssk_democractic = global.ssk_communist } 
+				check_variable = { global.ssk_democractic = global.ssk_fascism }
+			}
 	}
 
 }
@@ -448,7 +461,8 @@ country_event = {
 		
 		836 = { set_demilitarized_zone = no }
 		838 = { set_demilitarized_zone = no }
-					
+		473 = { set_demilitarized_zone = no }
+		471 = { set_demilitarized_zone = no }			
 		SSK = {
 			country_event = { id = ssk.15 days = 5 }
 		}
@@ -1269,8 +1283,9 @@ country_event = {
 		
 		add_ideas = ssk_prime_minister2
 		
-		country_event = { id = ssk.41 days = 5 }
-		
+		hidden_effect = {
+			country_event = { id = ssk.41 days = 5 }
+		}
 	}
 
 }
@@ -1607,6 +1622,37 @@ country_event = {
 			}
 		set_country_flag = SSK_ERIKA_WINNER
 		mark_focus_tree_layout_dirty = yes
+		
+		if = {
+			limit = {
+				SSK = {
+					NOT = {
+						has_country_flag = SSK_prime_minister2
+					}
+				}
+			}
+			set_country_flag = SSK_prime_minister2
+			
+			
+		}
+		
+		hidden_effect = {
+			retire_character = SSK_koume_akaboshi
+					retire_character = SSK_mika
+					retire_character = SSK_youko
+					retire_character = SSK_kiyomi_sugiyama
+					retire_character = SSK_maria_suzuki
+					retire_character = SSK_chiyomi_anzai
+					retire_character = SSK_kei
+					retire_character = SSK_rosehip
+					retire_character = SSK_kei2
+					retire_character = SSK_suzuki2
+					retire_character = SSK_koume2
+					retire_character = SSK_rosehip2
+					retire_character = SSK_mako
+					retire_character = SSK_marie
+					retire_character = SSK_klara
+		}
 	}
 
 }
@@ -2174,6 +2220,24 @@ country_event = {
 		}
 		set_country_flag = SSK_megan_gaming1
 		remove_ideas = ssk_improper_uniforms
+		
+		hidden_effect = {
+			if = {
+				limit = {
+					SSK = {
+						has_completed_focus = SSK_fascist_victory
+					}
+				}
+				
+				10 = {
+					country_event = { id = ssk.87 days = 5 }
+				}
+				
+				90 = {
+				
+				}
+			}
+		}
 	}
 }
 
@@ -3010,8 +3074,10 @@ country_event = {
 			base = 2
 		}
 		
+		
 		ENG = {
 			end_puppet = SSK
+			remove_from_faction = SSK
 		}
 	}
 }
@@ -3119,6 +3185,318 @@ country_event = {
 			base = 1
 		}
 	}
+}
+
+country_event = {
+	id = ssk.86
+	title = ssk.86.t
+	desc = ssk.86.d
+	picture = GFX_report_event_ETB
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = ssk.86.a
+		
+		ai_chance = {
+			base = 1
+		}
+		
+		add_ideas = ssk_ETB
+	}
+	
+	option = {
+		name = ssk.86.b
+		
+		ai_chance = {
+			base = 1 
+		}
+	}
+}
+
+##heheha lejeff4 event (in the mod????)
+##country_event = {
+	#id = ssk.87
+	#title = ssk.87.t
+	#desc = ssk.87.d
+	
+	#is_triggered_only = yes
+	#fire_only_once = yes
+	
+	#option = { 
+		#name = ssk.87.a
+		
+		#set_country_flag = SSK_lejeff4_gaming1
+		#adD_ideas = SSK_lejeff4_idea
+		
+		#ai_chance = {
+			#base = 1
+		#}
+	#}
+#}
+
+country_event = {
+	id = ssk.88
+	title = ssk.88.t
+	desc = ssk.88.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = ssk.88.a
+		hidden_effect = {
+			country_event = { id = ssk.89 days = 30 }
+			country_event = { id = ssk.90 days = 10 }
+		}
+		
+		retire_character = SSK_koume_akaboshi
+	}
+}
+
+country_event = {
+	id = ssk.89
+	title = ssk.89.t
+	desc = ssk.89.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = ssk.89.a
+		
+		set_cosmetic_tag = SSK_deutschordensstaat
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+		set_country_flag = SSK_ERIKA_WINNER
+		mark_focus_tree_layout_dirty = yes
+		
+		if = {
+			limit = {
+				SSK = {
+					NOT = {
+						has_country_flag = SSK_prime_minister2
+					}
+				}
+			}
+			set_country_flag = SSK_prime_minister2
+			
+			
+		}
+		
+		hidden_effect = {
+			retire_character = SSK_koume_akaboshi
+					retire_character = SSK_mika
+					retire_character = SSK_youko
+					retire_character = SSK_kiyomi_sugiyama
+					retire_character = SSK_maria_suzuki
+					retire_character = SSK_chiyomi_anzai
+					retire_character = SSK_kei
+					retire_character = SSK_rosehip
+					retire_character = SSK_kei2
+					retire_character = SSK_suzuki2
+					retire_character = SSK_koume2
+					retire_character = SSK_rosehip2
+					retire_character = SSK_mako
+					retire_character = SSK_marie
+					retire_character = SSK_klara
+			
+			if = {
+				limit = {
+					SSK = {
+						NOT = {
+							has_idea = ssk_disorganized_high_command
+						}
+					}
+				}
+				
+				add_ideas = ssk_disorganized_high_command
+			}
+			
+			if = {
+				limit = {
+					SSK = {
+						has_idea = ssk_regina_treaty
+					}
+				}
+				
+				remove_ideas = ssk_regina_treaty
+			}
+			
+			remove_ideas = ssk_army_rival_armour
+			remove_ideas = ssk_army_rival
+			remove_ideas = ssk_war_plan_v
+			remove_ideas = ssk_revitalise_heer
+			remove_ideas = ssk_regina_vehicle_factory
+			remove_ideas = ssk_war_plan_v1
+			remove_ideas = ssk_advanced_training
+			remove_ideas = ssk_tank_production
+			remove_ideas = ssk_motorized_production
+			remove_ideas = ssk_mechanized_production
+			remove_ideas = ssk_army_rival_infantry
+			remove_ideas = ssk_war_plan_n
+			remove_ideas = ssk_war_plan_n1
+			remove_ideas = ssk_bayonett_focus
+			remove_ideas = ssk_5cm_cannon
+			remove_ideas = ssk_chemical_warfare
+			remove_ideas = ssk_fire_supremicy
+			remove_ideas = ssk_total_war
+			remove_ideas = ssk_professional_army
+			remove_ideas = ssk_secret_rearmament
+		}
+	}
+}
+
+country_event = {
+	id = ssk.90
+	title = ssk.90.t
+	desc = ssk.90.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = ssk.88.a
+			add_manpower -103
+	}
+}
+
+country_event = {
+	id = ssk.91
+	title = ssk.91.t
+	desc = ssk.91.d
+	picture = GFX_report_event_liberia_colony
+	
+	is_triggered_only = no
+	fire_only_once = no
+	
+	trigger = {
+		original_tag = SSK
+		NOT = {
+			country_exists = LIB
+		}
+		
+		SSK = {
+			controls_state = 298
+		}
+	}
+	
+	option = {
+		name = ssk.91.a
+		ai_chance = {
+			base = 2
+		}
+		
+		release = LIB
+		
+		SSK = {
+			puppet = LIB
+		}
+		
+		LIB = {
+			set_cosmetic_tag = LIB_BIG_BEAVER
+			
+			LIB_midoriko = {
+				promote_character = centrism
+				promote_character = nazism
+				promote_character = liberalism
+				promote_character = marxism
+			}
+			
+		}
+	}
+	
+	option = {
+		name = ssk.91.b
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+##7 days at shanghai events
+
+country_event = {
+	id = ssk.92
+	title = ssk.92.t
+	desc = ssk.92.d
+	picture = GFX_report_event_rhienland2
+	
+	is_triggered_only = no
+	fire_only_once = no
+	
+	trigger = {
+		SSK = {
+			has_completed_focus = SSK_east_united
+		}
+		
+		CHI = {
+			controls_province = 7014
+		}
+		
+		original_tag = SSK
+	}
+	
+	option = {
+		name = ssk.92.a
+		
+		ai_chance = {
+			base = 1
+		}
+		hidden_effect = {
+			play_song = 7daysatshanghai
+			
+			every_other_country = {
+				country_event = { id = ssk.news.3 days = 1 }
+			}
+			
+			country_event = { id = ssk.news.3 days = 1 }
+			
+			random_list = {
+				
+				60 = { ##LOW CASUALTIES
+					country_event = { id = ssk.93 days = 3 }
+				}
+				
+				40 = { ##DECIMATED
+				
+				}
+			}
+		}
+		
+	}
+}
+
+country_event = { ##winning
+	id = ssk.93 
+	title = ssk.93.t
+	desc = ssk.93.d
+	picture = GFX_report_event_7days1
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { ##send some troops
+		name = ssk.93.a
+		
+		ai_chance = {
+			base = 5
+		}
+		add_manpower = -12
+	}
+	
+	option = { ##ceasefire
+		name = ssk.93.b
+		
+		ai_chance = {
+			base = 1
+		}
+		add_manpower = -12
+	}
+	
 }
 
 

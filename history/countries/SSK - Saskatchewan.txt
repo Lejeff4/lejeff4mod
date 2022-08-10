@@ -88,12 +88,15 @@ recruit_character = SSK_vietnam_warfare
 recruit_character = SSK_mika
 recruit_character = SSK_erika
 recruit_character = SSK_megan
+recruit_character = SSK_lejeff4
 
 recruit_character = SSK_mako
 recruit_character = SSK_yukari
 recruit_character = SSK_maho
 recruit_character = SSK_marie
 recruit_character = SSK_miho
+recruit_character = SSK_emi1
+recruit_character = SSK_mauko1
 
 ##ARMY
 recruit_character = SSK_nico_telephone

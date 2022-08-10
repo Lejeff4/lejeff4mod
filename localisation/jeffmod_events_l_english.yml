@@ -313,6 +313,36 @@ ssk.85.t:0 "Final Victory"
 ssk.85.d:0 "Finally the Republic has become a true republic with some differences. Democracy, and civil rights have been protected by the constitution. All the hard work has been completed and the groundwork for a new republic has been formed. \n \nSaori finally signed off the last of the bills preserving democracy. With this she is finally free to go back home and think about something else that isnt to do with the government. \n \nHer first priority is to visit her parents back in Big Beaver. With their ailing health its on the top of her priority list. Finally back to civilian life. \n \nYou have made all the people of Saskatchewan Proud."
 ssk.85.a:0 "A Republic is Born"
 
+ssk.86.t:0 "Economic and Taxes Bill"
+ssk.86.d:0 "Our Economic Minister has suggested we implement a new bill that will allow us to rearm the nation from loans from the Bank of Saskatchewan. To pay back these intrest rates its suggested that we tax the people a small amount more and buisnesses by a significant amount. If war was to come this bill would be rendered useless. \n \nSo Fuhrer, what do you think?"
+ssk.86.a:0 "Sounds like a great idea!"
+ssk.86.b:0 "Maybe not"
+
+ssk.88.t:0 "A Shot to Raddle a Nation"
+ssk.88.d:0 "For the past few months election campaigns have been under way and suprisingly been the most peaceful in years. \n \nIn Big Beaver a Liberal rally was commencing with a large crowd in the small town. Out of nowhere a shot rang from the middle of the crowd, within the chaos the gunner had escaped the scene and is still ont he loose. \n \nWith the current leader dead Kei is planned to take the seat of Prime Minister till the end of the Elections campaign."
+ssk.88.a:0 "Tragic"
+
+ssk.89.t:0 "Storming of the Parliament"
+ssk.89.d:0 "The Blackshirts have stormed the Parliament."
+
+ssk.90.t:0 "Violence in the Streets"
+ssk.90.d:0 "With the annoucement of the death of Koume the country has been in chaos. The riots in the streets have become extremely violent and clashes are being fought against the National Guard. With this chaos in the streets there are rumors of the Blackshirts organizing in the south of the nation."
+ssk.90.a:0 "We will watch the situation"
+
+ssk.91.t:0 "Big Beaver Co."
+ssk.91.d:0 "The Parliament colony of Liberia has been under our control for a small amount of time. We have finally established our new government facilities there and deployed a few troops to Africa. A strange colonial company originating from Big Beaver has stepped forward to buy the colony from us. They state that they will still be under our control and we will profit."
+ssk.91.a:0 "Deal"
+ssk.91.b:0 "No Deal"
+
+ssk.92.t:0 "Battle for Shanghai!"
+ssk.92.d:0 "With the unification of our country both politically and socially bad news comes out of our embassy in Shanghai. It has been attacked from Chinese forces. \n \nEarlier today a force of soldiers were massed outside Shanghai as per usual with these stressful times. We still do not know if it was the Communists or the Nationalists but whats for certain they are storming the embassy."
+ssk.92.a:0 "We pray for their lives"
+
+ssk.93.t:0 "3 days in Shanghai"
+ssk.93.d:0 "The flags of Saskatchewan and Alberta, How they fluttered in the breeze, The North West Territories and the British Columbian and the flag of the Yukon. \n \nThe seige had been raging on for 3 days at this point. The Albertan free corps had been over run and decimated. Our one maxim machinegun has been firing for almost 6 hours straight. We need back up they are a endless wave. \n \n§R62 Men and Women remain§!"
+ssk.93.a:0 "Send more troops!"
+ssk.93.b:0 "Negotiate a ceasefire!"
+
 ##NEWS
 ssk.news.1.t:0 "The Fall of Anchorage"
 ssk.news.1.d:0 "Tonight the war in the north has finally ended in a Saskatchewanian victory. Joe Crowder is live on the scene in Anchorage. \n \nAs you can see the American forces have left the city. The destruction brought on this city is totally justified as the civillians were fighting back. Reports show that every attack on civillians were on accident. We have taken the city. Glory to Saskatchewan! \n \nWith this new development the balance of power in the Americas is slowly shifting. Will America be able to hold onto power?"
@@ -322,4 +352,8 @@ ssk.news.1.b:0 "These Fascists must be stopped!"
 ssk.news.2.t:0 "Anchovy's Coup"
 ssk.news.2.d:0 "Today news came out of Regina with the rumors of a coup against Saori's Government! Rumor has it the opposition had enough with the 'Alaska Disaster' which they failed to take Alaska from the Americans. \n \nFamous News broadcaster Joe Crowder had this to say: 'Right now its neither confirmed or denied but the Government has been overthrown by our previous leader Anzai Chiyomi. We will keep you up to date with developments.' \n \nWith an old face back into power how will we see the continent play out?"
 ssk.news.2.a:0 "Fail"
+
+ssk.news.3.t:0 "Battle for Shanghai"
+ssk.news.3.d:0 "Today news is coming out from the Parliament of Saskatchewan with news that a force of Chinese soldiers have attacked the Saskatchewan embassy in Shanghai! The Saskatchewanian government can not confirm with reporters if it was either a Communist or Nationalist attack on the embassy in the city. \n \nNot on the ground but back in Saskatchewan infront of the Parliament building Joe Crowder had this to say: 'We can neither confirm or deny this was a Communist attack on the embassy. All we know for a fact is the armed guards are defending the building with ferocious vigour. I will get back to you shortly with more infomation coming out of the embassy.'"
+ssk.news.3.a:0 "This is Outrageous!"
 

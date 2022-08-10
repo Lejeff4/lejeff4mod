@@ -213,5 +213,17 @@ leader_traits = {
 			factor = 3
 		}
 	}
+	
+	mass_assault_expert = {
+		random = no
+		sprite = 5
+		
+		cat_mass_assault_cost_factor = -0.15
+		
+		
+		ai_will_do = {
+			factor = 3
+		}
+	}
 
 }

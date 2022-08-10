@@ -1152,6 +1152,9 @@ focus_tree = {
 			
 			completion_reward = {
 				country_event = { id = ssk.33 days = 1 }
+				hidden_effect = {
+					country_event = { id = ssk.86 days = 35 }
+				}
 			}
 		
 		}
@@ -1341,7 +1344,16 @@ focus_tree = {
 				add_stability = 0.05
 				add_political_power = 25
 				
-				set_cosmetic_tag = SSK_east_united
+				if = {
+					limit = {
+						NOT = {
+							has_completed_focus = SSK_fascist_victory
+						}
+					}
+					
+					set_cosmetic_tag = SSK_east_united
+				}
+				
 				
 				473 = {
 					add_core_of = SSK
@@ -1367,7 +1379,7 @@ focus_tree = {
 			id = SSK_industrial_problems
 			icon = GFX_goal_industrial_problems
 			relative_position_id = SSK_elections
-			x = 47
+			x = 44
 			y = 0
 			
 			allow_branch = {
@@ -1398,7 +1410,7 @@ focus_tree = {
 			id = SSK_communist_economy
 			icon = GFX_goal_communist_economy
 			relative_position_id = SSK_industrial_problems
-			x = -8
+			x = -2
 			y = 1
 			
 			available = {
@@ -1703,7 +1715,7 @@ focus_tree = {
 			id = SSK_trade_time
 			icon = GFX_goal_trade_time
 			relative_position_id = SSK_industrial_problems
-			x = 0
+			x = 2
 			y = 1
 			
 			available = {
@@ -2056,7 +2068,7 @@ focus_tree = {
 			id = SSK_resource_excavation
 			icon = GFX_goal_resource_extraction
 			relative_position_id = SSK_industrial_problems
-			x = -4
+			x = -6
 			y = 2
 			
 			available = {
@@ -2200,7 +2212,7 @@ focus_tree = {
 			id = SSK_industrial_tech
 			icon = GFX_goal_industrialisation
 			relative_position_id = SSK_industrial_problems
-			x = 4
+			x = 6
 			y = 2
 			
 			available = {
@@ -2413,6 +2425,10 @@ focus_tree = {
 			relative_position_id = SSK_army_reform
 			x = 7
 			y = 1
+			
+			allow_branch = {
+
+			}
 			
 			prerequisite = { focus = SSK_army_reform }
 			mutually_exclusive = { focus = SSK_war_plan_N }
@@ -2773,6 +2789,10 @@ focus_tree = {
 			x = -6
 			y = 1
 			
+			allow_branch = {
+
+			}
+			
 			prerequisite = { focus = SSK_army_reform }
 			mutually_exclusive = { focus = SSK_war_plan_V }
 			
@@ -3120,6 +3140,7 @@ focus_tree = {
 			}
 		}
 		
+		
 		focus = {
 			id = SSK_southern_forts
 			icon = GFX_goal_fortify_america
@@ -3239,6 +3260,7 @@ focus_tree = {
 				has_completed_focus = SSK_secret_rearm
 				has_completed_focus = SSK_war_plan_N
 			}
+			
 			
 			select_effect = {
 				SSK = {
@@ -7916,6 +7938,14 @@ focus_tree = {
 			x = 0
 			y = 6
 			
+			available = {
+				has_war = no
+				NOT = {
+					has_completed_focus = SSK_military_control
+				}
+				has_government = fascism
+			}
+			
 			prerequisite = { focus = SSK_join_allies3 focus = SSK_militerized_state focus = SSK_american_alliance }
 			mutually_exclusive = {}
 			
@@ -7946,6 +7976,56 @@ focus_tree = {
 			}
 		}
 		
+		##demands/wars
+		focus = {
+			id = SSK_liberia_colony
+			icon = GFX_goal_african
+			relative_position_id = SSK_anchluss
+			x = 4
+			y = 3
+			
+			available = {
+				has_war = no
+			}
+			
+			prerequisite = { focus = SSK_liberalize_politics focus = SSK_keep_dictator focus = SSK_order277 focus = SSK_manitoba_purchase }
+			mutually_exclusive = {}
+			
+			cost = 7
+			
+			completion_reward = {
+				custom_effect_tooltip = SSK_liberia_tooltip
+				SSK = {
+					declare_war_on = {
+						target = LIB
+						type = annex_everything
+					}
+				}
+				
+				hidden_effect = {
+					load_oob = "liberia_invasion"
+				}
+			}
+		}
+		
+		focus = {
+			id = SSK_shanghai_crisis
+			relative_position_id = SSK_anchluss
+			x = -4
+			y = 3
+			
+			prerequisite = { focus = SSK_liberalize_politics focus = SSK_keep_dictator focus = SSK_order277 focus = SSK_manitoba_purchase }
+			mutually_exclusive = {}
+			
+			cost = 7
+			
+			completion_reward = {
+				
+			}
+			
+		}
+		
+		
 		##ANZAI
 		
 		focus = {
@@ -7955,10 +8035,6 @@ focus_tree = {
 			x = 2
 			y = 1
 			
-			available = {
-				controls_state = 463
-				controls_state = 839
-			}
 			
 			prerequisite = { focus = SSK_anchluss }
 			mutually_exclusive = { focus = SSK_greater_saskatchewan }
@@ -8738,6 +8814,13 @@ focus_tree = {
 			icon = GFX_goal_living_sky
 			x = 65
 			y = 0
+			
+			allow_branch = {
+				NOT = {
+					has_country_flag = SSK_ERIKA_WINNER
+				}	
+			}
+			
 			cost = 3
 			completion_reward = {
 				air_experience = 25

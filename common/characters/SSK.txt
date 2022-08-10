@@ -318,6 +318,23 @@ characters={
 				large="gfx/leaders/SSK/GFX_saori.dds"
 			}
 		}
+		
+		advisor={
+			slot = high_command
+			idea_token = SSK_saori_idea
+			ledger = army
+			allowed = {
+				original_tag = SSK
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+		
 		field_marshal={
 			traits={ media_personality war_hero best_girl }
 			skill=4
@@ -346,6 +363,22 @@ characters={
 			}
 			army={
 				large="gfx/leaders/SSK/GFX_kay.dds"
+			}
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = SSK_kei_idea
+			ledger = army
+			allowed = {
+				original_tag = SSK
+			}
+			traits = {
+				army_logistics_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.500
 			}
 		}
 		
@@ -427,6 +460,25 @@ characters={
 			}
 			
 			cost = 150
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = SSK_roseship_idea2
+			ledger = army
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+				
+			}
+			traits = {
+				army_armored_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 8.000
+			}
 		}
 		
 		corps_commander={
@@ -710,6 +762,25 @@ characters={
 		}
 		
 		advisor={
+			slot = high_command
+			idea_token = SSK_mako_idea2
+			ledger = air
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+				
+			}
+			traits = {
+				air_close_air_support_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		advisor={
 			slot = political_advisor
 			idea_token = SSK_mako_idea
 			allowed = {
@@ -751,6 +822,21 @@ characters={
 			
 		}	
 		
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = SSK_yukari_idea2
+			ledger = air
+			allowed = {
+				original_tag = SSK
+			}
+			research_bonus = {
+				rocketry = 0.150
+			}
+			traits = {
+				rocket_scientist
+			}
+		}
 		
 		advisor={
 			slot = political_advisor
@@ -956,7 +1042,7 @@ characters={
 		}
 	}
 	
-	SSK_emi = {
+	SSK_emi1 = {
 		name = "Emi"
 		portraits = {
 			army = {
@@ -975,12 +1061,12 @@ characters={
 					defense_skill = 2
 					planning_skill = 1
 					logistics_skill = 2
-					legacy_id = 9014
+					legacy_id = 10001
 					visible = { has_country_flag = SSK_prime_minister2 }
 		}
 	}
 	
-	SSK_mauko = {
+	SSK_mauko1 = {
 		name = "Mauko"
 		portraits = {
 			army = {
@@ -1031,6 +1117,17 @@ characters={
 		}
 		
 		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = SSK_austria_hungy_idea
+			ledger = air
+			allowed = {
+				original_tag = SSK
+			}
+			traits = { air_warfare_theorist }
+		}
+		
+		advisor={
 			slot = air_chief
 			idea_token = SSK_austria_idea
 			allowed = {
@@ -1058,6 +1155,17 @@ characters={
 			}
 		}
 		
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = SSK_amongus_idea2
+			ledger = navy
+			allowed = {
+				original_tag = SSK
+			}
+			traits = { naval_theorist }
+		}
+		
 		advisor = {
 			slot = navy_chief
 			idea_token = SSK_amongus_idea
@@ -1080,6 +1188,44 @@ characters={
 			coordination_skill=2
 			legacy_id=9064
 		}
+	}
+	
+	SSK_lejeff4 = {
+		name = "LeJeff4"
+		portraits = {
+			civilian = {
+				small="gfx/interface/ideas/portraits/idea_SSK_lejeff4.dds"
+			}
+			
+			army = {
+				large="gfx/leaders/SSK/GFX_lejeff4.dds"
+			}
+		}
+		
+		corps_commander = {
+			traits = { trait_reckless } 
+					skill = 5
+					attack_skill = 1
+					defense_skill = 5
+					planning_skill = 0
+					logistics_skill = 6
+					legacy_id = 90666
+					visible = { has_country_flag = SSK_lejeff4_gaming1 }
+		}
+		
+		advisor = {
+			slot = army_chief
+			idea_token = SSK_lejeff4_idea
+			allowed = {
+				original_tag = SSK
+			}
+			traits = {
+				mass_assault_expert
+			}
+			
+			cost = 100
+		}
+		
 	}
 	
 }

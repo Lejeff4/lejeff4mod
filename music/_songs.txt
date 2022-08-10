@@ -281,3 +281,14 @@ music = {
 		}		
 	}	
 }
+##new
+
+music = {
+	song = "7daysatshanghai"
+	
+		chance = {
+			modifier = {
+				factor = 0
+			}
+		}
+}

@@ -23,3 +23,8 @@ SSK_deutschordensstaat = {
 	color = { 54 54 54 }
 	color_ui = rgb { 115 115 115 }
 }
+
+LIB_BIG_BEAVER = {
+	color = { 255  153  0 }
+	color = { 255  153  0 }
+}

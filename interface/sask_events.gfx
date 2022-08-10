@@ -216,6 +216,21 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_fascism2.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_report_event_ETB"
+		texturefile = "gfx/event_pictures/report_event_ETB.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_liberia_colony"
+		texturefile = "gfx/event_pictures/report_event_liberia_colony.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_7days1"
+		texturefile = "gfx/event_pictures/report_event_7days1.dds"
+	}
+	
 ##THE NEWS
 
 	spriteType = {
@@ -226,6 +241,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ssk_news_event_002"
 		texturefile = "gfx/event_pictures/news/ssk_news_event_002.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ssk_news_event_003"
+		texturefile = "gfx/event_pictures/news/ssk_news_event_003.dds"
 	}
 	
 ##TRAITS 
@@ -798,6 +818,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_usa_joint"
 		texturefile = "gfx/interface/ideas/Saskatchewan/idea_usa_joint.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_ETB"
+		texturefile = "gfx/interface/ideas/Saskatchewan/idea_ETB.dds"
 	}
 	
 	

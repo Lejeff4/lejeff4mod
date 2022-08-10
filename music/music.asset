@@ -160,3 +160,11 @@ music = {
 	file = "Under_Veils_Of_Secrets.ogg"
 	volume = 0.65
 }
+
+##ADDED STUFF
+
+music = {
+	name = "7daysatshanghai"
+	file = "7daysinshanghai.ogg"
+	volume = 1
+}
