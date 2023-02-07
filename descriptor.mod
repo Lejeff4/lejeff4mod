@@ -5,4 +5,4 @@ tags={
 	"Sound"
 }
 name="LeJeff4 Mod"
-supported_version="1.11.*"
+supported_version="1.12.*"

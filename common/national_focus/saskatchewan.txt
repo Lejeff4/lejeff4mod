@@ -11,8 +11,10 @@ focus_tree = {
 		}
 	}
 	
-	continuous_focus_position = { x = 2100 y = 900 }
-	
+	continuous_focus_position = { x = 2065 y = 900 }
+		
+		
+		##INDEPENDENCE
 		focus = {
 			id = SSK_elections
 			icon = GFX_goal_elections
@@ -26,7 +28,7 @@ focus_tree = {
 			}
 			
 			prerequisite = {}
-			mutually_exclusive = {}
+			mutually_exclusive = { focus = SSK_stay_commonwealth }
 		
 			cost = 1
 			
@@ -34,6 +36,21 @@ focus_tree = {
 				custom_effect_tooltip = SSK_elections_focus
 			}
 		
+		}
+		
+		focus = {
+			id = SSK_stay_commonwealth
+			x = 12
+			y = 0
+			
+			prerequisite = {}
+			mutually_exclusive = { focus = SSK_elections }
+		
+			cost = 1
+			
+			completion_reward = {
+			
+			}
 		}
 		
 		focus = {
@@ -65,8 +82,12 @@ focus_tree = {
 			id = SSK_communist_victory
 			icon = GFX_goal_communist_victory
 			relative_position_id = SSK_elections
-			x = -8
+			x = 0
 			y = 2
+			
+			allow_branch = {
+				has_country_flag = SSK_communism_victory1
+			}
 			
 			available = {
 				has_country_flag = SSK_communism_victory1
@@ -88,9 +109,9 @@ focus_tree = {
 		focus = {
 			id = SSK_great_purge
 			icon = GFX_goal_great_purge
-			relative_position_id = SSK_elections
-			x = -8
-			y = 3
+			relative_position_id = SSK_communist_victory
+			x = 0
+			y = 1
 			
 			prerequisite = { focus = SSK_communist_victory }
 			mutually_exclusive = {}
@@ -134,14 +155,14 @@ focus_tree = {
 		focus = {
 			id = SSK_establish_politburo
 			icon = GFX_goal_politburo
-			relative_position_id = SSK_elections
-			x = -8
-			y = 4
+			relative_position_id = SSK_great_purge
+			x = 0
+			y = 1
 			
 			prerequisite ={ focus = SSK_great_purge }
 			mutually_exclusive = {}
 			
-			cost = 5
+			cost = 2
 			
 			completion_reward = {
 				add_ideas = ssk_politburo
@@ -152,9 +173,9 @@ focus_tree = {
 		focus = {
 			id = SSK_begin_collectivation
 			icon = GFX_goal_begin_collectization
-			relative_position_id = SSK_elections
-			x = -10
-			y = 4
+			relative_position_id = SSK_great_purge
+			x = -2
+			y = 1
 			
 			prerequisite = { focus = SSK_great_purge }
 			mutually_exclusive = {}
@@ -170,9 +191,9 @@ focus_tree = {
 		focus = {
 			id = SSK_seize_land
 			icon = GFX_goal_seize_land
-			relative_position_id = SSK_elections
-			x = -6
-			y = 4
+			relative_position_id = SSK_great_purge
+			x = 2
+			y = 1
 			
 			prerequisite = { focus = SSK_great_purge }
 			mutually_exclusive = {}
@@ -212,14 +233,14 @@ focus_tree = {
 		focus = {
 			id = SSK_establish_communes ##FIVEYEAR PLAN
 			icon = GFX_goal_fifteenyear
-			relative_position_id = SSK_elections
-			x = -10
-			y = 5
+			relative_position_id = SSK_great_purge
+			x = -2
+			y = 2
 			
 			prerequisite = { focus = SSK_begin_collectivation }
 			mutually_exclusive = {}
 			
-			cost = 5
+			cost = 10
 			
 			completion_reward = {
 			custom_effect_tooltip = SSK_five_year_plan_tooltip
@@ -234,14 +255,14 @@ focus_tree = {
 		focus = {
 			id = SSK_promote_commisars
 			icon = GFX_goal_promote_people
-			relative_position_id = SSK_elections
-			x = -8
-			y = 5
+			relative_position_id = SSK_great_purge
+			x = 0
+			y = 2
 			
 			prerequisite = { focus = SSK_establish_politburo }
 			mutually_exclusive = {}
 			
-			cost = 5
+			cost = 1
 			
 			completion_reward = {
 				swap_ideas = {
@@ -254,14 +275,14 @@ focus_tree = {
 		focus = {
 			id = SSK_gun_in_hand
 			icon = GFX_goal_gun_for_everyone
-			relative_position_id = SSK_elections
-			x = -6
-			y = 5
+			relative_position_id = SSK_great_purge
+			x = 2
+			y = 2
 			
 			prerequisite = { focus = SSK_seize_land }
 			mutually_exclusive = {}
 			
-			cost = 5
+			cost = 1
 			
 			completion_reward = {
 				add_ideas = ssk_gun_in_every_hand
@@ -271,15 +292,15 @@ focus_tree = {
 		focus = {
 			id = SSK_collectivisation
 			icon = GFX_goal_collect_society
-			relative_position_id = SSK_elections
-			x = -9
-			y = 6
+			relative_position_id = SSK_great_purge
+			x = -1
+			y = 3
 			
 			prerequisite = { focus = SSK_establish_communes }
 			prerequisite = { focus = SSK_promote_commisars }
 			mutually_exclusive = {}
 			
-			cost = 7
+			cost = 3
 			
 			completion_reward = {
 				swap_ideas = {
@@ -293,15 +314,15 @@ focus_tree = {
 		focus = {
 			id = SSK_socialism_in_country
 			icon = GFX_goal_socialism_one_country
-			relative_position_id = SSK_elections
-			x = -7
-			y = 6
+			relative_position_id = SSK_great_purge
+			x = 1
+			y = 3
 			
 			prerequisite = { focus = SSK_promote_commisars }
 			prerequisite = { focus = SSK_gun_in_hand }
 			mutually_exclusive = {}
 			
-			cost = 7
+			cost = 2
 			
 			completion_reward = {
 				add_stability = 0.15
@@ -317,20 +338,21 @@ focus_tree = {
 		focus = {
 			id = SSK_ideal_communism
 			icon = GFX_goal_soviet_anthem
-			relative_position_id = SSK_elections
-			x = -8
-			y = 7
+			relative_position_id = SSK_great_purge
+			x = 0
+			y = 4
 			
 			prerequisite = { focus = SSK_collectivisation }
 			prerequisite = { focus = SSK_socialism_in_country }
 			mutually_exclusive = {}
 			
-			cost = 2
+			cost = 1
 			
 			completion_reward = {
 				custom_effect_tooltip = SSK_COMMIE_GENERALS_TOOLTIP
 			}
 		}
+		
 		##FREEDOM
 		focus = {
 			id = SSK_democratic_victory
@@ -338,6 +360,10 @@ focus_tree = {
 			relative_position_id = SSK_elections
 			x = 0
 			y = 2
+			
+			allow_branch = {
+				has_country_flag = SSK_democratic_victory1
+			}
 			
 			available = {
 				has_country_flag = SSK_democratic_victory1
@@ -357,9 +383,9 @@ focus_tree = {
 		focus = {
 			id = SSK_socialist_coalition
 			icon = GFX_goal_socialist_coalition
-			relative_position_id = SSK_elections
+			relative_position_id = SSK_democratic_victory
 			x = -3
-			y = 3
+			y = 1
 			
 			available = {
 				has_country_flag = SSK_socialist_victory
@@ -418,9 +444,9 @@ focus_tree = {
 		focus = {
 			id = SSK_continue_free_health
 			icon = GFX_goal_free_healthcare
-			relative_position_id = SSK_elections
-			x = -4
-			y = 4
+			relative_position_id = SSK_socialist_coalition
+			x = -1
+			y = 1
 			
 			prerequisite = { focus = SSK_socialist_coalition }
 			mutually_exclusive = {}
@@ -435,9 +461,9 @@ focus_tree = {
 		focus = {
 			id = SSK_tackle_the_ultra_rich
 			icon = GFX_goal_ultra_rich
-			relative_position_id = SSK_elections
-			x = -2
-			y = 4
+			relative_position_id = SSK_socialist_coalition
+			x = 1
+			y = 1
 			
 			prerequisite = { focus = SSK_socialist_coalition }
 			mutually_exclusive = {}
@@ -455,15 +481,15 @@ focus_tree = {
 		focus = {
 			id = SSK_share_the_wealth
 			icon = GFX_goal_share_the_wealth
-			relative_position_id = SSK_elections
-			x = -3
-			y = 5
+			relative_position_id = SSK_socialist_coalition
+			x = 0
+			y = 2
 			
 			prerequisite = { focus = SSK_continue_free_health }
 			prerequisite = { focus = SSK_tackle_the_ultra_rich }
 			mutually_exclusive = {}
 			
-			cost = 7
+			cost = 2
 			
 			completion_reward = {
 				add_stability = 0.1
@@ -475,14 +501,14 @@ focus_tree = {
 		focus = {
 			id = SSK_fund_CPR
 			icon = GFX_goal_cpr_funding
-			relative_position_id = SSK_elections
-			x = -2
-			y = 6
+			relative_position_id = SSK_socialist_coalition
+			x = 1
+			y = 3
 			
 			prerequisite = { focus = SSK_share_the_wealth focus = SSK_railway_expansion }
 			mutually_exclusive = {}
 			
-			cost = 7
+			cost = 5
 			
 			completion_reward = {
 				469 = {
@@ -524,13 +550,13 @@ focus_tree = {
 		focus = {
 			id = SSK_farmer_relief_fund
 			icon = GFX_goal_farmer_relief
-			relative_position_id = SSK_elections
-			x = -4
-			y = 6
+			relative_position_id = SSK_socialist_coalition
+			x = -1
+			y = 3
 			prerequisite = { focus = SSK_share_the_wealth }
 			mutually_exclusive = {}
 			
-			cost = 7
+			cost = 2
 			
 			completion_reward = {
 				add_stability = 0.05
@@ -556,15 +582,15 @@ focus_tree = {
 		focus = {
 			id = SSK_expand_cities 
 			icon = GFX_goal_expand_cities
-			relative_position_id = SSK_elections
-			x = -3
-			y = 7
+			relative_position_id = SSK_socialist_coalition
+			x = 0
+			y = 4
 			
 			prerequisite = { focus = SSK_farmer_relief_fund }
 			prerequisite = { focus = SSK_fund_CPR }
 			mutually_exclusive = {}
 			
-			cost = 7
+			cost = 3
 			
 			completion_reward = {
 				469 = {
@@ -584,9 +610,9 @@ focus_tree = {
 		focus = {
 			id = SSK_sask_coalition
 			icon = GFX_goal_sask_victory
-			relative_position_id = SSK_elections
+			relative_position_id = SSK_democratic_victory
 			x = 0
-			y = 3
+			y = 1
 			
 			available = {
 				has_country_flag = SSK_conervitive_victory
@@ -671,13 +697,13 @@ focus_tree = {
 		focus = {
 			id = SSK_tax_relief
 			icon = GFX_goal_tax_relief
-			relative_position_id = SSK_elections
+			relative_position_id = SSK_sask_coalition
 			x = 0
-			y = 4
+			y = 1
 			prerequisite = { focus = SSK_sask_coalition }
 			mutually_exclusive = {}
 			
-			cost = 7
+			cost = 2
 			
 			completion_reward = {
 				add_ideas = ssk_tax_relief
@@ -687,14 +713,14 @@ focus_tree = {
 		focus = {
 			id = SSK_railway_expansion
 			icon = GFX_goal_railway_expansion
-			relative_position_id = SSK_elections
+			relative_position_id = SSK_sask_coalition
 			x = -1
-			y = 5
+			y = 2
 			
 			prerequisite = { focus = SSK_tax_relief }
 			mutually_exclusive = {}
 			
-			cost = 7
+			cost = 2
 			
 			completion_reward = {
 				469 = {
@@ -736,14 +762,14 @@ focus_tree = {
 		focus = {
 			id = SSK_corporate_holdings
 			icon = GFX_goal_corprate_holdings
-			relative_position_id = SSK_elections
+			relative_position_id = SSK_sask_coalition
 			x = 1
-			y = 5
+			y = 2
 			
 			prerequisite = { focus = SSK_tax_relief }
 			mutually_exclusive = {}
 			
-			cost = 7
+			cost = 2
 			
 			completion_reward = {
 				add_stability = 0.05
@@ -785,15 +811,15 @@ focus_tree = {
 		focus = {
 			id = SSK_deregulate_financal
 			icon = GFX_goal_deregulate
-			relative_position_id = SSK_elections
+			relative_position_id = SSK_sask_coalition
 			x = 0
-			y = 6
+			y = 3
 			
 			prerequisite = { focus = SSK_railway_expansion }
 			prerequisite = { focus = SSK_corporate_holdings }
 			mutually_exclusive = {}
 			
-			cost = 7
+			cost = 3
 			
 			completion_reward = {
 				add_ideas = ssk_deregulate
@@ -803,14 +829,14 @@ focus_tree = {
 		focus = {
 			id = SSK_capitalist_example
 			icon = GFX_goal_shinning
-			relative_position_id = SSK_elections
+			relative_position_id = SSK_sask_coalition
 			x = 0
-			y = 7
+			y = 4
 			
 			prerequisite = { focus = SSK_deregulate_financal }
 			mutually_exclusive = {}
 			
-			cost = 7
+			cost = 4
 			
 			completion_reward = {
 				swap_ideas = {
@@ -826,9 +852,9 @@ focus_tree = {
 		focus = {
 			id = SSK_liberal_coalition
 			icon = GFX_goal_liberal_victory
-			relative_position_id = SSK_elections
+			relative_position_id = SSK_democratic_victory
 			x = 3
-			y = 3
+			y = 1
 			
 			available = {
 				has_country_flag = SSK_liberal_victory
@@ -859,13 +885,13 @@ focus_tree = {
 		focus = {
 			id = SSK_modernize_agriculture
 			icon = GFX_goal_modernize_agriculture
-			relative_position_id = SSK_elections
-			x = 2
-			y = 4
+			relative_position_id = SSK_liberal_coalition
+			x = -1
+			y = 1
 			prerequisite = { focus = SSK_liberal_coalition }
 			mutually_exclusive = {}
 			
-			cost = 7
+			cost = 3
 			
 			completion_reward = {
 				469 = {
@@ -887,13 +913,13 @@ focus_tree = {
 		focus = {
 			id = SSK_promote_immigration
 			icon = GFX_goal_promote_immigration
-			relative_position_id = SSK_elections
-			x = 4
-			y = 4
+			relative_position_id = SSK_liberal_coalition
+			x = 1
+			y = 1
 			prerequisite = { focus = SSK_liberal_coalition }
 			mutually_exclusive = {}
 			
-			cost = 7
+			cost = 2
 			
 			completion_reward = {
 				add_ideas = ssk_immigration
@@ -904,9 +930,9 @@ focus_tree = {
 		focus = {
 			id = SSK_territorial_problem
 			icon = GFX_goal_territorial_problem
-			relative_position_id = SSK_elections
-			x = 3
-			y = 5
+			relative_position_id = SSK_liberal_coalition
+			x = 0
+			y = 2
 			
 			prerequisite = { focus = SSK_modernize_agriculture }
 			prerequisite = { focus = SSK_promote_immigration }
@@ -923,14 +949,14 @@ focus_tree = {
 		focus = {
 			id = SSK_deal_with_alberta
 			icon = GFX_goal_alberta_autonomy
-			relative_position_id = SSK_elections
-			x = 2
-			y = 6
+			relative_position_id = SSK_liberal_coalition
+			x = -1
+			y = 3
 			
 			prerequisite = { focus = SSK_territorial_problem }
 			mutually_exclusive = {}
 			
-			cost = 10
+			cost = 7
 			
 			completion_reward = {
 				custom_effect_tooltip = SSK_alberta_automony
@@ -954,14 +980,14 @@ focus_tree = {
 		focus = {
 			id = SSK_northern_territories
 			icon = GFX_goal_northern_autonomy
-			relative_position_id = SSK_elections
-			x = 4
-			y = 6
+			relative_position_id = SSK_liberal_coalition
+			x = 1
+			y = 3
 			
 			prerequisite = { focus = SSK_territorial_problem }
 			mutually_exclusive = {}
 			
-			cost = 10
+			cost = 7
 			
 			completion_reward = {
 				custom_effect_tooltip = SSK_north_automony
@@ -982,9 +1008,9 @@ focus_tree = {
 		focus = {
 			id = SSK_saskatchewan_united
 			icon = GFX_goal_sask_united
-			relative_position_id = SSK_elections
-			x = 3
-			y = 7
+			relative_position_id = SSK_liberal_coalition
+			x = 0
+			y = 4
 			
 			prerequisite = { focus = SSK_deal_with_alberta }
 			prerequisite = { focus = SSK_northern_territories }
@@ -1006,8 +1032,12 @@ focus_tree = {
 			id = SSK_fascist_victory
 			icon = GFX_goal_fascist_victory
 			relative_position_id = SSK_elections
-			x = 8
+			x = 0
 			y = 2
+			
+			allow_branch = {
+				has_country_flag = SSK_fascist_victory1
+			}
 			
 			available = {
 				has_country_flag = SSK_fascist_victory1
@@ -1030,14 +1060,14 @@ focus_tree = {
 		focus = {
 			id = SSK_remove_term_limits
 			icon = GFX_goal_remove_term_limits
-			relative_position_id = SSK_elections
-			x = 6
-			y = 3
+			relative_position_id = SSK_fascist_victory
+			x = -2
+			y = 1
 			
 			prerequisite = { focus = SSK_fascist_victory }
 			mutually_exclusive = {}
 			
-			cost = 5
+			cost = 2
 			
 			completion_reward = {
 				add_ideas = ssk_removed_term_limits	
@@ -1047,9 +1077,9 @@ focus_tree = {
 		focus = {
 			id = SSK_fascist_prime_minister
 			icon = GFX_goal_fascist_prime_minister
-			relative_position_id = SSK_elections
-			x = 8 
-			y = 3
+			relative_position_id = SSK_fascist_victory
+			x = 0
+			y = 1
 			
 			prerequisite = { focus = SSK_fascist_victory }
 			mutually_exclusive = {}
@@ -1069,14 +1099,14 @@ focus_tree = {
 		focus = {
 			id = SSK_crackdown_communists
 			icon = GFX_goal_socialist_crackdown
-			relative_position_id = SSK_elections
-			x = 10
-			y = 3
+			relative_position_id = SSK_fascist_victory
+			x = 2
+			y = 1
 			
 			prerequisite = { focus = SSK_fascist_victory }
 			mutually_exclusive = {}
 			
-			cost = 10
+			cost = 7
 			
 			completion_reward = {
 				add_stability = -0.15
@@ -1096,15 +1126,15 @@ focus_tree = {
 		focus = {
 			id = SSK_news_censorship
 			icon = GFX_goal_news_censorship
-			relative_position_id = SSK_elections
-			x = 10
-			y = 4
+			relative_position_id = SSK_fascist_victory
+			x = 1
+			y = 2
 			
 			prerequisite = { focus = SSK_fascist_prime_minister }
 			prerequisite = { focus = SSK_crackdown_communists }
 			mutually_exclusive = {}
 			
-			cost = 5
+			cost = 2
 			
 			completion_reward = {
 				add_stability = 0.05
@@ -1118,15 +1148,15 @@ focus_tree = {
 		focus = {
 			id = SSK_challange_parlament
 			icon = GFX_goal_challange_parliamnet
-			relative_position_id = SSK_elections
-			x = 6
-			y = 4
+			relative_position_id = SSK_fascist_victory
+			x = -1
+			y = 2
 			
 			prerequisite = { focus = SSK_remove_term_limits }
 			prerequisite = { focus = SSK_fascist_prime_minister }
 			mutually_exclusive = {}
 			
-			cost = 10
+			cost = 5
 			
 			completion_reward = {
 				swap_ideas = {
@@ -1140,9 +1170,9 @@ focus_tree = {
 		focus = {
 			id = SSK_economic_minister
 			icon = GFX_goal_economic_minister
-			relative_position_id = SSK_elections
-			x = 5
-			y = 5
+			relative_position_id = SSK_fascist_victory
+			x = -3
+			y = 3
 			
 			prerequisite = { focus = SSK_challange_parlament }
 			prerequisite = { focus = SSK_news_censorship }
@@ -1162,9 +1192,9 @@ focus_tree = {
 		focus = {
 			id = SSK_head_security
 			icon = GFX_goal_head_security
-			relative_position_id = SSK_elections
-			x = 7
-			y = 5
+			relative_position_id = SSK_fascist_victory
+			x = -1
+			y = 3
 			
 			prerequisite = { focus = SSK_challange_parlament }
 			prerequisite = { focus = SSK_news_censorship }
@@ -1182,9 +1212,9 @@ focus_tree = {
 		focus = {
 			id = SSK_forign_affairs
 			icon = GFX_goal_forign_minister
-			relative_position_id = SSK_elections
-			x = 9
-			y = 5
+			relative_position_id = SSK_fascist_victory
+			x = 1
+			y = 3
 			
 			prerequisite = { focus = SSK_challange_parlament }
 			prerequisite = { focus = SSK_news_censorship }
@@ -1202,9 +1232,9 @@ focus_tree = {
 		focus = {
 			id = SSK_prime_minister
 			icon = GFX_goal_prime_minister
-			relative_position_id = SSK_elections
-			x = 11
-			y = 5
+			relative_position_id = SSK_fascist_victory
+			x = 3
+			y = 3
 			
 			prerequisite = { focus = SSK_challange_parlament }
 			prerequisite = { focus = SSK_news_censorship }
@@ -1222,9 +1252,9 @@ focus_tree = {
 		focus = {
 			id = SSK_fight_for_freedom
 			icon = GFX_goal_duce_duce
-			relative_position_id = SSK_elections
-			x = 8
-			y = 6
+			relative_position_id = SSK_fascist_victory
+			x = 0
+			y = 4
 			
 			prerequisite = { focus = SSK_economic_minister }
 			prerequisite = { focus = SSK_head_security }
@@ -1268,9 +1298,9 @@ focus_tree = {
 		focus = {
 			id = SSK_party_united
 			icon = GFX_goal_party_united
-			relative_position_id = SSK_elections
-			x = 8
-			y = 7
+			relative_position_id = SSK_fascist_victory
+			x = 0
+			y = 5
 			
 			available = {
 
@@ -1293,7 +1323,7 @@ focus_tree = {
 			id = SSK_first_wave_mob
 			icon = GFX_goal_first_wave
 			relative_position_id = SSK_elections 
-			x = 0
+			x = -1
 			y = 8
 			
 			prerequisite = { focus = SSK_ideal_communism focus = SSK_expand_cities focus = SSK_capitalist_example focus = SSK_saskatchewan_united focus = SSK_party_united }
@@ -1313,13 +1343,14 @@ focus_tree = {
 			id = SSK_diplomatic_solution
 			icon = GFX_goal_diplomatic
 			relative_position_id = SSK_elections
-			x = 0
-			y = 9
+			x = 1
+			y = 8
 			
-			prerequisite = { focus = SSK_first_wave_mob }
+			prerequisite = { focus = SSK_ideal_communism focus = SSK_expand_cities focus = SSK_capitalist_example focus = SSK_saskatchewan_united focus = SSK_party_united }
+			
 			mutually_exclusive = {}
 			
-			cost = 7
+			cost = 3
 			
 			completion_reward = {
 				country_event = { id = ssk.3 days = 1 }
@@ -1332,12 +1363,13 @@ focus_tree = {
 			icon = GFX_goal_east_united
 			relative_position_id = SSK_elections 
 			x = 0
-			y = 10
+			y = 9
 			
 			prerequisite = { focus = SSK_diplomatic_solution }
+			prerequisite = { focus = SSK_first_wave_mob }
 			mutually_exclusive = {}
 			
-			cost = 10
+			cost = 5
 			
 			completion_reward = {
 				custom_effect_tooltip = SSK_form_east_tooltip
@@ -1379,7 +1411,7 @@ focus_tree = {
 			id = SSK_industrial_problems
 			icon = GFX_goal_industrial_problems
 			relative_position_id = SSK_elections
-			x = 44
+			x = 38
 			y = 0
 			
 			allow_branch = {
@@ -2387,7 +2419,7 @@ focus_tree = {
 			id = SSK_army_reform 
 			icon = GFX_goal_army_reform
 			relative_position_id = SSK_elections
-			x = 25
+			x = 19
 			y = 0
 			
 			allow_branch = {
@@ -2399,7 +2431,7 @@ focus_tree = {
 			prerequisite = { }
 			mutually_exclusive = {}
 			
-			cost = 5
+			cost = 1
 			
 			completion_reward = {
 				army_experience = 50
@@ -2433,7 +2465,7 @@ focus_tree = {
 			prerequisite = { focus = SSK_army_reform }
 			mutually_exclusive = { focus = SSK_war_plan_N }
 			
-			cost = 5
+			cost = 1
 			
 			completion_reward = {
 				army_experience = 15
@@ -2456,7 +2488,7 @@ focus_tree = {
 			prerequisite = { focus = SSK_war_plan_V }
 			mutually_exclusive = {}
 			
-			cost = 5
+			cost = 3
 			
 			completion_reward = {
 				army_experience = 15
@@ -2483,7 +2515,7 @@ focus_tree = {
 			prerequisite = { focus = SSK_war_plan_V }
 			mutually_exclusive = {}
 			
-			cost = 5
+			cost = 2
 			
 			completion_reward = {
 				army_experience = 15
@@ -2501,7 +2533,7 @@ focus_tree = {
 			prerequisite = { focus = SSK_war_plan_V }
 			mutually_exclusive = {}
 			
-			cost = 5
+			cost = 2
 			
 			completion_reward = {
 				add_equipment_to_stockpile = {
@@ -2527,7 +2559,7 @@ focus_tree = {
 			prerequisite = { focus = SSK_motorized_equipment }
 			mutually_exclusive = {}
 			
-			cost = 7
+			cost = 1
 			
 			completion_reward = {
 				army_experience = 15
@@ -2555,7 +2587,7 @@ focus_tree = {
 			prerequisite = { focus = SSK_revitalisze_heer }
 			mutually_exclusive = {}
 			
-			cost = 5
+			cost = 2
 			
 			completion_reward = {
 				army_experience = 15
@@ -2594,7 +2626,7 @@ focus_tree = {
 			prerequisite = { focus = SSK_revitalisze_heer focus = SSK_high_command_reorg }
 			mutually_exclusive = {}
 			
-			cost = 5
+			cost = 2
 			
 			completion_reward = {
 				army_experience = 15
@@ -2622,7 +2654,7 @@ focus_tree = {
 			prerequisite = { focus = SSK_high_command_reorg }
 			mutually_exclusive = {}
 			
-			cost = 5
+			cost = 2
 			
 			completion_reward = {
 				army_experience = 15
@@ -2630,6 +2662,7 @@ focus_tree = {
 			}
 		}
 		
+		##CHANGE##
 		focus = {
 			id = SSK_tank_modernization
 			icon = GFX_goal_soil_plough
@@ -2796,7 +2829,7 @@ focus_tree = {
 			prerequisite = { focus = SSK_army_reform }
 			mutually_exclusive = { focus = SSK_war_plan_V }
 			
-			cost = 5
+			cost = 1
 			
 			completion_reward = {
 				army_experience = 15
@@ -2819,7 +2852,7 @@ focus_tree = {
 			prerequisite = { focus = SSK_war_plan_N }
 			mutually_exclusive = {}
 			
-			cost = 5
+			cost = 3
 			
 			completion_reward = {
 				add_manpower = 10000
@@ -2852,7 +2885,7 @@ focus_tree = {
 			prerequisite = { focus = SSK_war_plan_N }
 			mutually_exclusive = {}
 			
-			cost = 5
+			cost = 3
 			
 			completion_reward = {
 				army_experience = 15
@@ -2903,7 +2936,7 @@ focus_tree = {
 			prerequisite = { focus = SSK_artillery_modernization focus = SSK_trench_warfare }
 			mutually_exclusive = {}
 			
-			cost = 7
+			cost = 2
 			
 			completion_reward = {
 				army_experience = 15
@@ -2921,7 +2954,7 @@ focus_tree = {
 			prerequisite = { focus = SSK_artillery_modernization focus = SSK_trench_warfare }
 			mutually_exclusive = {}
 			
-			cost = 5
+			cost = 2
 			
 			completion_reward = {
 				army_experience = 15
@@ -2941,7 +2974,7 @@ focus_tree = {
 			prerequisite = { focus = SSK_fortifications }
 			mutually_exclusive = {}
 			
-			cost = 5
+			cost = 2
 			
 			completion_reward = {
 				army_experience = 15
@@ -2998,7 +3031,7 @@ focus_tree = {
 			prerequisite = { focus = SSK_bayonett_primarcy }
 			mutually_exclusive = {}
 			
-			cost = 5
+			cost = 3
 			
 			completion_reward = {
 				army_experience = 15
@@ -3049,7 +3082,7 @@ focus_tree = {
 			prerequisite = { focus = SSK_bayonett_primarcy  focus = SSK_chemical_warfare }
 			mutually_exclusive = {}
 			
-			cost = 5
+			cost = 2
 			
 			completion_reward = {
 				army_experience = 15
@@ -3214,7 +3247,7 @@ focus_tree = {
 			prerequisite = { focus = SSK_army_reform }
 			mutually_exclusive = {}
 			
-			cost = 7
+			cost = 1
 			
 			completion_reward = {
 				add_ideas = ssk_secret_rearmament
@@ -3238,7 +3271,7 @@ focus_tree = {
 			prerequisite = { focus = SSK_secret_rearm }
 			mutually_exclusive = {}
 			
-			cost = 5
+			cost = 3
 			
 			completion_reward = {
 				remove_ideas = ssk_secret_rearmament
@@ -3330,7 +3363,7 @@ focus_tree = {
 			id = SSK_navy_time
 			icon = GFX_goal_navy_time
 			relative_position_id = SSK_elections
-			x = 13
+			x = 7
 			y = 0
 			
 			allow_branch = {
@@ -3346,7 +3379,7 @@ focus_tree = {
 			prerequisite = { }
 			mutually_exclusive = {}
 			
-			cost = 5
+			cost = 1
 			
 			completion_reward = {
 				navy_experience = 25
@@ -3363,7 +3396,7 @@ focus_tree = {
 			prerequisite = { focus = SSK_navy_time }
 			mutually_exclusive = {}
 			
-			cost = 5
+			cost = 2
 			
 			completion_reward = {
 			navy_experience = 25
@@ -3387,7 +3420,7 @@ focus_tree = {
 			prerequisite = { focus = SSK_surface_fleet }
 			mutually_exclusive = {}
 			
-			cost = 5
+			cost = 3
 			
 			completion_reward = {
 				add_ideas = ssk_destroyer_production
@@ -3411,7 +3444,7 @@ focus_tree = {
 			prerequisite = { focus = SSK_destoryer_production }
 			mutually_exclusive = {}
 			
-			cost = 5
+			cost = 3
 			
 			completion_reward = {
 				
@@ -3454,7 +3487,7 @@ focus_tree = {
 			prerequisite = { focus = SSK_carrier_capital }
 			mutually_exclusive = {}
 			
-			cost = 5
+			cost = 2
 			
 			completion_reward = {
 				add_tech_bonus = {
@@ -3476,7 +3509,7 @@ focus_tree = {
 			prerequisite = { focus = SSK_navy_time }
 			mutually_exclusive = {}
 			
-			cost = 5
+			cost = 4
 			
 			completion_reward = {
 				
@@ -3534,7 +3567,7 @@ focus_tree = {
 			prerequisite = { focus = SSK_dockyards }
 			mutually_exclusive = {}
 			
-			cost = 5
+			cost = 3
 			
 			completion_reward = {
 				if = {
@@ -3587,7 +3620,7 @@ focus_tree = {
 			prerequisite = { focus = SSK_dockyards2 }
 			mutually_exclusive = {}
 			
-			cost = 5
+			cost = 2
 			
 			completion_reward = {
 				add_ideas = ssk_dockyard_production
@@ -3602,6 +3635,10 @@ focus_tree = {
 			relative_position_id = SSK_elections
 			x = 0
 			y = 11
+			
+			allow_branch = {
+				has_country_flag = SSK_communism_victory1
+			}
 			
 			available = {
 				has_completed_focus = SSK_communist_victory
@@ -5107,9 +5144,13 @@ focus_tree = {
 		focus = {
 			id = SSK_diplomatic_challange
 			icon = GFX_goal_diplomatic_challange
-			relative_position_id = SSK_elections
-			x = 18
-			y = 11
+			relative_position_id = SSK_east_united
+			x = 0
+			y = 1
+			
+			allow_branch = {
+				has_country_flag = SSK_democratic_victory1
+			}
 			
 			available = {
 				has_completed_focus = SSK_democratic_victory
@@ -7298,9 +7339,13 @@ focus_tree = {
 		focus = {
 			id = SSK_anzai_constitution
 			icon = GFX_goal_anzai_con
-			relative_position_id = SSK_elections
-			x = 37
-			y = 11
+			relative_position_id = SSK_east_united
+			x = 0
+			y = 1
+			
+			allow_branch = {
+				has_country_flag = SSK_fascist_victory1
+			}
 			
 			available = {
 				has_completed_focus = SSK_fascist_victory
@@ -8812,8 +8857,8 @@ focus_tree = {
 		focus = {
 			id = ssk_land_of_the_living_skies
 			icon = GFX_goal_living_sky
-			x = 65
-			y = 0
+			x = 31
+			y = 7
 			
 			allow_branch = {
 				NOT = {

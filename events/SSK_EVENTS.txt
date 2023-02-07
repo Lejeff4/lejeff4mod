@@ -168,6 +168,7 @@ country_event = {
 			check_variable = { global.ssk_democractic > global.ssk_fascism }
 		}
 		set_country_flag = SSK_democratic_victory1
+		mark_focus_tree_layout_dirty = yes
 	}
 	
 	##FASCISM
@@ -179,6 +180,7 @@ country_event = {
 		}
 		
 		set_country_flag = SSK_fascist_victory1
+		mark_focus_tree_layout_dirty = yes
 	}
 	
 	##COMMUNISM
@@ -190,6 +192,7 @@ country_event = {
 		}
 		
 		set_country_flag = SSK_communism_victory1
+		mark_focus_tree_layout_dirty = yes
 		country_event = { id = ssk.19 days = 1 }
 	}
 	##secret
@@ -3212,6 +3215,9 @@ country_event = {
 		ai_chance = {
 			base = 1 
 		}
+		
+		set_country_flag = SSK_fascist_victory1
+		mark_focus_tree_layout_dirty = yes
 	}
 }
 
