@@ -1,0 +1,27 @@
+
+units= {
+	fleet = {
+		name = "Saskatchewan Navy"
+		naval_base = 1408  # Vancouver
+		task_force = {
+			name = "Saskatchewan Navy Taskforce"
+			location = 1408  # Vancouver
+			
+			ship = { name = "SNR Regina" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SSK } } }
+			ship = { name = "SNR Among Gus" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SSK } } }
+			ship = { name = "SNR Moose Jaw" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SSK } } }
+			ship = { name = "SNR Yellowknife" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SSK } } }
+			
+			ship = { name = "SNR Tiger Lily" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SSK } } }
+			ship = { name = "SNR Koume" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SSK } } }
+			ship = { name = "SNR Vietnam" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SSK } } }
+			ship = { name = "SNR Wheat" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SSK } } }
+			
+			ship = { name = "SNR Prairie" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SSK } } }
+			ship = { name = "SNR Alberta" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SSK } } }
+			ship = { name = "SNR Northwest Territories" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SSK } } }
+			ship = { name = "SNR Republic" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = SSK } } }
+		}
+	}
+
+}

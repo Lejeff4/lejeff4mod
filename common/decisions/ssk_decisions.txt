@@ -18,7 +18,7 @@ ssk_elections_decision = {
 		
 		is_good = yes
 		
-		days_mission_timeout = 180
+		days_mission_timeout = 1
 		
 		timeout_effect = {
 			set_country_flag = SSK_elections_over
@@ -535,31 +535,6 @@ ssk_fascist_divide = {
 		}
 		
 	 }
-}
-
-ssk_fascist_civl_war = {
-	ssk_civil_war_timer = {
-	allowed = { tag = SSK }
-		
-		
-		##available = {
-			##has_completed_focus = SSK_coup_evaded
-		##}
-		
-		activation = {
-			has_country_flag = SSK_prime_minister2
-		}
-		
-		is_good = no
-		
-		days_mission_timeout = 180
-		
-		timeout_effect = {
-			set_country_flag = SSK_CIVILWAR
-			set_country_flag = big_event_custom_GUP5
-			country_event = { id = ssk.40 days = 0 }
-		}
-	}
 }
 
 ssk_resistance_fighting = {

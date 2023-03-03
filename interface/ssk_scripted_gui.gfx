@@ -60,5 +60,10 @@ spriteTypes = {
 		name = "GFX_super_event_civil_war"
 		textureFile = "gfx/interface/super_event_civil_war.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_super_event_diplomatic"
+		textureFile = "gfx/interface/super_event_diplomatic.dds"
+	}
 
 }

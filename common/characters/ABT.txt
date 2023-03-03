@@ -1,29 +1,120 @@
 characters={
-	ABT_erika={
-		name="Erika"
+	ABT_nico_telephone = {
+		name = "Nico is a Telephone99"
 		portraits={
-			civilian={
-				large="gfx/leaders/SSK/GFX_erika.dds"
-			}
-			
-			civilian = {
-				small="gfx/interface/ideas/portraits/idea_SSK_erika.dds"
-			}
-			
-			army={
-				small="gfx/interface/ideas/portraits/idea_SSK_erika.dds"
+			army = {
+				small="gfx/interface/ideas/portraits/idea_SSK_nico.dds"
 			}
 			
 			army = {
-				large="gfx/leaders/SSK/GFX_erika.dds"
+				large="gfx/leaders/ABT/GFX_nico.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = SSK_nico_idea
+			ledger = army
+			allowed = {
+				original_tag = SSK
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+		corps_commander = {
+			traits = {  } 
+					skill = 1
+					attack_skill = 1
+					defense_skill = 1
+					planning_skill = 1
+					logistics_skill = 1
+					legacy_id = 9013
+					visible = { has_country_flag = ABT_RISE_VIETNAM }
+		}
+	}
+	
+	ABT_vietnam_warfare={
+		name="Vietnam Warfare"
+		portraits={
+			army={
+				small="gfx/interface/ideas/portraits/idea_SSK_vietnam.dds"
+			}
+			army={
+				large="gfx/leaders/SSK/GFX_vietnam.dds"
 			}
 		}
 		
-		country_leader={
-			ideology=nazism
-			traits={ dictator }
-			expire="1965.1.1.1"
-			id=-1
+		advisor={
+			slot = army_chief
+			idea_token = SSK_vietnam_warfare_idea
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+				has_country_flag = ABT_RISE_VIETNAM
+			}
+			traits = {
+				army_armored_1
+			}
+			
+			cost = 50
+		}
+		
+		corps_commander={
+			traits={ death_or_dishonor trait_reckless }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			visible = { has_country_flag = ABT_RISE_VIETNAM }
+			legacy_id=9009
 		}
 	}
+	
+	ABT_salt={
+		name="Spilled Salt"
+		portraits={
+			army={
+				large="gfx\leaders\SSK\GFX_salt.dds"
+			}
+		}
+		
+		field_marshal={
+			traits={ adaptable memories_of_aragon  }
+			skill=9
+			attack_skill=10
+			defense_skill=8
+			planning_skill=6
+			logistics_skill=7
+			visible = { has_country_flag = ABT_RISE_VIETNAM }
+			legacy_id=4312
+		}
+	}
+
+	ABT_deez_rodent = {
+		name="Deez Rodent"
+		portraits={
+			army={
+				large="gfx/leaders/SSK/GFX_deez_rodent.dds"
+			}
+		}
+		
+		corps_commander={
+			traits={ adaptable annoying cat_collection }
+			skill=6
+			attack_skill=5
+			defense_skill=8
+			planning_skill=6
+			logistics_skill=9
+			visible = { has_country_flag = ABT_RISE_VIETNAM }
+			legacy_id=5555
+		}
+	}
+	
+	
 }

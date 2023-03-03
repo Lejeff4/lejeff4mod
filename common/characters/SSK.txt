@@ -294,7 +294,7 @@ characters={
 		
 		country_leader = {
 			ideology = centrism
-			traits = { }
+			traits = { nationalist_saskatchewan }
 			expire = "1965.1.1"
 			id = 1
 		}
@@ -734,6 +734,10 @@ characters={
 			army = {
 				small="gfx/interface/ideas/portraits/idea_SSK_nico.dds"
 			}
+			
+			army = {
+				large="gfx/leaders/ABT/GFX_nico.dds"
+			}
 		}
 		advisor={
 			slot = army_chief
@@ -749,6 +753,16 @@ characters={
 			}
 			
 			cost = 50
+		}
+		
+		corps_commander = {
+			traits = {  } 
+					skill = 1
+					attack_skill = 1
+					defense_skill = 1
+					planning_skill = 1
+					logistics_skill = 1
+					legacy_id = 9013
 		}
 	}
 	
@@ -927,7 +941,12 @@ characters={
 					planning_skill = 5
 					logistics_skill = 3
 					legacy_id = 9061
-					visible = { has_country_flag = SSK_prime_minister2 }
+					visible = { 
+						OR = {
+							has_country_flag = SSK_prime_minister2
+							has_country_flag = SSN_bozo12
+						}
+					}
 		}
 	
 	}
@@ -992,6 +1011,11 @@ characters={
 			army = {
 				small="gfx/interface/ideas/portraits/idea_SSK_miho.dds"
 			}
+			
+			army = {
+				large="gfx/leaders/SSK/GFX_miho.dds"
+			}
+			
 		}
 		
 		advisor={
@@ -1011,6 +1035,17 @@ characters={
 			}
 			
 			cost = 100
+		}
+		
+		corps_commander = {
+			traits = { panzer_expert } 
+					skill = 5
+					attack_skill = 6
+					defense_skill = 1
+					planning_skill = 2
+					logistics_skill = 2
+					legacy_id = 9061
+					visible = { has_country_flag = SSK_prime_minister2 }
 		}
 	}
 	
@@ -1039,6 +1074,17 @@ characters={
 			traits={ dictator }
 			expire="1965.1.1.1"
 			id=-1
+		}
+		
+		field_marshal={
+			traits={ politically_connected }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=99999
+			visible = { has_country_flag = SSK_prime_minister2 }
 		}
 	}
 	
@@ -1226,6 +1272,25 @@ characters={
 			cost = 100
 		}
 		
+	}
+	
+	SSK_mahcovy = {
+		name = "Maho/Chiyomi"
+		portraits = {
+			army = {
+				large="gfx/leaders/SSK/GFX_anchovymaho.dds"
+			}
+		}
+		
+		corps_commander = {
+			traits = { duel_planner } 
+				skill = 3
+				attack_skill = 1
+				defense_skill = 3
+				planning_skill = 5
+				logistics_skill = 2
+				legacy_id = 90666
+		}
 	}
 	
 }

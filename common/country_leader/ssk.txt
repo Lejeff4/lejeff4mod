@@ -225,5 +225,15 @@ leader_traits = {
 			factor = 3
 		}
 	}
+	
+	nationalist_saskatchewan = {
+		random = no
+		
+		neutrality_drift = 0.08
+		neutrality_acceptance = 50
+		democratic_acceptance = 50
+		stability_factor = 0.05
+		
+	}
 
 }

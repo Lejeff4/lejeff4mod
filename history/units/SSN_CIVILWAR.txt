@@ -45,26 +45,6 @@ division_template = {
 	priority = 2
 }
 
-division_template = {
-	name = "Armoured Brigade of the Republic" 			
-	
-	regiments = {
-		medium_armor = { x = 0 y = 0 }
-		medium_armor = { x = 0 y = 1 }
-		medium_armor = { x = 1 y = 0 }		
-		medium_armor = { x = 1 y = 1 }
-
-		motorized = { x = 2 y = 0 }
-		motorized = { x = 2 y = 1 }
-		motorized = { x = 2 y = 2 }
-		motorized = { x = 2 y = 3 }
-
-	}
-	support = {
-		engineer = { x = 0 y = 1 }
-		signal_company = { x = 0 y = 4 }		
-	}
-}
 
 units = {
 	division = {	
@@ -75,63 +55,49 @@ units = {
 	}
 	
 	division = {	
-		location = 4739
-		division_template = "Armoured Brigade of the Republic"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1
-	}
-	
-	division = {	
-		location = 1347
+		location = 7901
 		division_template = "Conscripts"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
 	}
 	
 	division = {	
-		location = 6754
+		location = 7901
 		division_template = "Conscripts"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
 	}
 	
 	division = {	
-		location = 7787
+		location = 13075
 		division_template = "Conscripts"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
 	}
 	
 	division = {	
-		location = 10684
+		location = 13075
 		division_template = "Conscripts"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
 	}
 	
 	division = {	
-		location = 11440
+		location = 2407
 		division_template = "Conscripts"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
 	}
 	
 	division = {	
-		location = 4739
+		location = 2407
 		division_template = "Conscripts"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
 	}
 	
 	division = {	
-		location = 12682
-		division_template = "Conscripts"
-		start_experience_factor = 0.1
-		start_equipment_factor = 1
-	}
-	
-	division = {	
-		location = 736
+		location = 7858
 		division_template = "Conscripts"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1

@@ -1,0 +1,271 @@
+focus_tree = {
+	id = saskatchewanliberation_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SSN
+			
+		}
+	}
+	
+	focus = {
+		id = SSN_civil_war
+		icon =GFX_goal_SSN_civil1
+		x = 5
+		y = 0
+		
+		prerequisite = {}
+		
+		cost = 0
+		
+		completion_reward = {
+			add_ideas = ssk_SSN_army
+		}
+	}
+	
+	focus = {
+		id = SSN_call_upon_loyalists
+		icon = GFX_goal_SSN_civil2
+		relative_position_id = SSN_civil_war
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = SSN_civil_war }
+		
+		cost = 1
+		
+		completion_reward = {
+			add_manpower = 25000
+			
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"1st Volunteer Corps\" division_template = \"Conscripts\" start_experience_factor = 0.9" 
+					owner = SSN
+				}
+				
+				create_unit = {
+					division = "name = \"2nd Volunteer Corps\" division_template = \"Conscripts\" start_experience_factor = 0.9" 
+					owner = SSN
+				}
+				
+				create_unit = {
+					division = "name = \"3rd Volunteer Corps\" division_template = \"Conscripts\" start_experience_factor = 0.9" 
+					owner = SSN
+				}
+				}
+		}
+	}
+	
+	focus = {
+		id = SSN_follow_morals
+		icon = GFX_goal_SSN_civil3
+		relative_position_id = SSN_call_upon_loyalists
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = SSN_call_upon_loyalists }
+		mutually_exclusive = { focus = SSN_all_or_nothing }
+		cost = 1
+		
+		completion_reward = {
+			add_stability = 0.05
+			swap_ideas = {
+				remove_idea = ssk_SSN_army
+				add_idea = ssk_SSN_army2
+			}
+		}
+	}
+	
+	focus = {
+		id = SSN_all_women_brigade
+		icon = GFX_goal_SSN_civil5
+		relative_position_id = SSN_call_upon_loyalists
+		x = -2
+		y = 2
+		
+		prerequisite = { focus = SSN_follow_morals }
+		cost = 3
+		
+		completion_reward = {
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"1st All Womens Corps\" division_template = \"Conscripts\" start_experience_factor = 0.9" 
+					owner = SSN
+				}
+				
+				create_unit = {
+					division = "name = \"2nd All Womens Corps\" division_template = \"Conscripts\" start_experience_factor = 0.9" 
+					owner = SSN
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = SSN_form_38th
+		icon = GFX_goal_27th
+		relative_position_id = SSN_call_upon_loyalists
+		x = -2
+		y = 3
+		
+		prerequisite = { focus = SSN_all_women_brigade }
+		cost = 3
+		
+		completion_reward = {
+			custom_effect_tooltip = ssk_38th_tooltip
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"38th Guards Rifle Infantry\" division_template = \"37th Elite Guards Division\" start_experience_factor = 0.9" 
+					owner = SSN
+				}
+				}
+		}
+	}
+	
+	focus = {
+		id = SSN_buyout_factories
+		icon = GFX_goal_SSN_civil4
+		relative_position_id = SSN_call_upon_loyalists
+		x = -4
+		y = 2
+		
+		prerequisite = { focus = SSN_follow_morals }
+		cost = 3
+		
+		completion_reward = {
+			472 = {
+				add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+			}	
+		}
+	}
+	
+	focus = {
+		id = SSN_all_or_nothing
+		icon = GFX_goal_SSN_civil7
+		relative_position_id = SSN_call_upon_loyalists
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = SSN_call_upon_loyalists }
+		mutually_exclusive = { focus = SSN_follow_morals }
+		cost = 1
+		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ssk_SSN_army
+				add_idea = ssk_SSN_army3
+			}
+		}
+	}
+	
+	focus = {
+		id = SSN_all_adults_serve
+		icon = GFX_goal_SSN_civil8
+		relative_position_id = SSN_call_upon_loyalists
+		x = 2
+		y = 2
+		
+		prerequisite = { focus = SSN_all_or_nothing }
+		cost = 3
+		
+		completion_reward = {
+			add_manpower = 45000
+			add_ideas = ssk_conscription_idea
+			add_political_power = -150
+			add_stability = -0.1
+		}
+	}
+	
+	focus = {
+		id = SSN_death_brigades
+		icon = GFX_goal_SSN_civil9
+		relative_position_id = SSN_call_upon_loyalists
+		x = 2
+		y = 3
+		
+		prerequisite = { focus = SSN_all_adults_serve }
+		cost = 3
+		
+		completion_reward = {
+			add_political_power = -150
+			swap_ideas = {
+				remove_idea = ssk_SSN_army3
+				add_idea = ssk_SSN_army4
+			}
+		}
+	}
+	
+	focus = {
+		id = SSN_convert_factories
+		icon = GFX_goal_SSN_civil10
+		relative_position_id = SSN_call_upon_loyalists
+		x = 4
+		y = 2
+		
+		prerequisite = { focus = SSN_all_or_nothing }
+		cost = 3
+		
+		completion_reward = {
+			472 = {
+				add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
+			}
+		}
+	}
+	
+	focus = {
+		id = SSN_american_help
+		icon = GFX_goal_SSN_civil6
+		relative_position_id = SSN_call_upon_loyalists
+		x = 0
+		y = 2
+		
+		prerequisite = { focus = SSN_follow_morals focus = SSN_all_or_nothing }
+		cost = 3
+		
+		completion_reward = {
+			add_manpower = 15000
+			
+			add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					
+					amount = 5000
+					
+					producer = USA
+				
+				}
+		}
+	}
+	
+	focus = {
+		id = SSN_victory
+		icon = GFX_goal_SSN_civil11
+		relative_position_id = SSN_call_upon_loyalists
+		x = 0
+		y = 4
+		
+		available = {
+			has_war = no
+		}
+		
+		prerequisite = { focus = SSN_form_38th focus = SSN_death_brigades }
+		cost = 1
+		
+		completion_reward = {
+			custom_effect_tooltip = ssk_SSN_victory
+			set_country_flag = big_event_custom_GUP6
+		}
+	}
+}

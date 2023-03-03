@@ -37,3 +37,8 @@ LIB_BIG_BEAVER = {
 	color = { 255  153  0 }
 	color_ui = { 255  153  0 }
 }
+
+ALB_VIETNAM_LEGION = {
+	color = rgb { 19  70  189 }
+	color_ui = rgb { 19  70  189 }
+}

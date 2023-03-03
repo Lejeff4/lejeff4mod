@@ -343,6 +343,52 @@ ssk.93.d:0 "The flags of Saskatchewan and Alberta, How they fluttered in the bre
 ssk.93.a:0 "Send more troops!"
 ssk.93.b:0 "Negotiate a ceasefire!"
 
+ssk.95.t:0 "Political Opponents"
+ssk.95.d:0 "With the country catching on fire we must do something to stop our political and military opposition. We must deal with them quickly or the country will explode."
+ssk.95.a:0 "Time to roll"
+
+ssk.96.t:0 "An Escapee"
+ssk.96.d:0 "The capital rang with gunshots earlier today as many liberal and republican ministers and officers were executed. But a few had escaped the nation to Canada and The United States. We must track these rouge ministers down and end them before its too late."
+ssk.96.a:0 "Grrr."
+
+ssk.97.t:0 "The Nationalists"
+ssk.97.d:0 "The Nationalists were our rise to power and loyal subjects of the party. Now that we have grabbed onto power they are one of our largest and last threats. Fuhrer Erika, what shall we do with these traitors?"
+ssk.97.a:0 "Hunt them down!"
+ssk.97.b:0 "Jail them, they are no threat"
+
+ssk.98.t:0 "Rat Captured"
+ssk.98.d:0 "11:30pm, North Battleford Saskatchewan. \n \nIt was a rainy and cold night in northern Saskatchewan, it was mostly peaceful up here being out of the grasp of the military and Fascist Party. Saori Takebe had been in hiding from the Fascists at a motel. After a long day it was time to tuck in and have a long nap. \n \nIn the darkness and rain a Ross CMP transport truck rolled into the parking lot and 8 men had got out of the truck, and a high ranking general. Entering the cashiers building a soldier shouts: 'We suspect that a political figure is staying here for the night, we request the list.' \n \n11:47pm: A knock at the door of the motel room is heard, but no answer at the door. The soldiers bashed the door down and ran in the room yelling for Saori, seeing her crying in the bed. Snatching her up and driving her back to Regina. \n \n'Do you know why your here?' 'What are you scared? Cmon speak up!' Only response she got was sobbing. 'Alright guard, get the rifle ready.' \n \n'No Please!! We did nothing wrong!' \n \n§RSaskatchewan is a Worst Place Now§!"
+ssk.98.a:0 "Another Traitor Brang to Justice"
+
+ssk.99.t:0 "Rat Escaped!"
+ssk.99.d:0 "Our recon teams have not been able to catch Saori Takebe and her suspected guard team. She most likely has escaped the country and is out of our grasp!"
+ssk.99.a:0 "God Damnit!"
+
+ssk.100.t:0 "The Anzai Plan?"
+ssk.100.d:0 "11:19am, Regina Saskatchewan \n \n'But Erika, the purge of the government is against the constitution! You can't keep doing this!' \n \n'Whats stopping me Anzai? It seems you aren't stopping me, besides we are progressing the nation faster than you and your 'Nationalists' could ever do!' \n \n'Are you insane, you have done nothing but run this nation into the ground! You have doomed us!' \n \n'Well if you don't like our policies, then why don't you just flee the nation? Your not needed anymore.' \n \n'I'm not giving into your baseless threats, you can't and won't do anything. The justice system will find you guilty!' \n \nWith that last 'threat' Erika reached for her desk drawer and pulled out her §R1911R§!. 'I guess we will see them try.'"
+ssk.100.a:0 "Another Traitor Brang to Justice"
+
+ssk.101.t:0 "The Anzai Plan"
+ssk.101.d:0 "Our unorganized spy agents couldnt find a trail of where Anzai had escaped to. Hopefully she isnt plotting to coup the government."
+ssk.101.a:0 "She played us like a damn fiddle!!"
+
+ssk.102.t:0 "Albertan Garrison Rises"
+ssk.102.d:0 "With our weak grip over the nation and especially Alberta the garrison being run by Vietnam Warfare has rose against the government. They will meet their end soon enough!"
+ssk.102.a:0 "To Alberta (§CPlay As§!)"
+ssk.102.b:0 "Your Next"
+
+ssk.103.t:0 "Saskatchewan Civil War!"
+ssk.103.d:0 "Chaos is ingulfing the nation with multiple sides fighting eachother we have been put in their crosshairs, now we are part of the civil war!"
+ssk.103.a:0 "But we were neutral!!"
+
+ssk.104.t:0 "A Traitor!"
+ssk.104.d:0 "Maho hasnt been seen in days around the capital or at the front lines, and the intelligence cant find a trace of her anywhere. They suppect she has swapped sides joining Anzai and the Liberation front!"
+ssk.104.a:0 "I knew there was something between them."
+
+ssk.105.t:0 "Maho Arrives?" 
+ssk.105.d:0 "In the middle of the night a mysterious figure had appeared at the doorstep of our new government today asking for salvation and to know where Anzai was. She had revealed herself to Maho from the other side of the civil war."
+ssk.105.a:0 "Well thats a unexpected visit"
+
 ##NEWS
 ssk.news.1.t:0 "The Fall of Anchorage"
 ssk.news.1.d:0 "Tonight the war in the north has finally ended in a Saskatchewanian victory. Joe Crowder is live on the scene in Anchorage. \n \nAs you can see the American forces have left the city. The destruction brought on this city is totally justified as the civillians were fighting back. Reports show that every attack on civillians were on accident. We have taken the city. Glory to Saskatchewan! \n \nWith this new development the balance of power in the Americas is slowly shifting. Will America be able to hold onto power?"

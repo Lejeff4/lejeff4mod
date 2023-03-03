@@ -125,6 +125,7 @@ country_event = {
 			transfer_state = 473
 			transfer_state = 740
 			transfer_state = 739
+			transfer_state = 864
 		}
 		
 		hidden_effect = {
@@ -1358,6 +1359,18 @@ country_event = {
 		}
 	SSK = {
 		set_country_flag = big_event_custom_GUP5
+		
+		set_nationality = {
+			target_country = SSN
+			character = SSK_koume_akaboshi
+		}
+	}
+	
+	ABT = {
+		country_event = {
+			id = ssk.103
+			days = 1
+		}
 	}
 	
 	SSN = {
@@ -1415,21 +1428,10 @@ country_event = {
 		}
 		
 		##RELEASING
-		469 = {
-			add_core_of = SSN
-		}
-		
-		470 = {
-			add_core_of = SSN
-		}
-		
 		472 = {
 			add_core_of = SSN
 		}
 		
-		837 = {
-			add_core_of = SSN
-		}
 		
 		release = SSN
 		
@@ -1444,6 +1446,7 @@ country_event = {
 		
 		SSN = {
 			load_oob = "SSN_CIVILWAR"
+			set_country_flag = SSN_bozo12
 		}
 		
 		SSK = { ##ADDING CORES
@@ -1460,16 +1463,94 @@ country_event = {
 			add_ideas = ssk_civil_war
 		}
 		
+		
 		SSK = {
-			remove_ideas = ssk_albertain_nationalists
-			remove_ideas = ssk_disorganized_high_command
-			remove_ideas = ssk_regina_treaty
 			add_ideas = ssk_civil_war
 		}
 			
 		SSN = {
-		set_country_flag = big_event_custom_GUP5
-	}
+			set_country_flag = big_event_custom_GUP5
+		}
+		
+		SSK = {
+			set_nationality = {
+				target_country = SSN
+				character = SSK_koume_akaboshi
+			}
+			
+			if = {
+				limit = {
+					SSK = {
+						has_country_flag = SSK_SAORI_DEAD
+					}
+				}
+				
+				else = {
+					set_nationality = {
+						target_country = SSN
+						character = SSK_saori_takebe
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					SSK = {
+						has_country_flag = SSK_ANZAI_DEAD
+					}
+				}
+				
+				country_event = {
+					id = ssk.104
+					days = 10
+				}
+				
+				else = {
+					set_nationality = {
+						target_country = SSN
+						character = SSK_chiyomi_anzai
+					}
+					
+					country_event = {
+						id = ssk.104
+						days = 10
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					SSK = {
+						has_country_flag = SSK_SAORI_DEAD
+					}
+				}
+				
+				add_country_leader_role = {
+					character = SSK_koume_akaboshi
+					promote_leader = yes
+						country_leader = {
+							ideology = liberalism
+							expire = "1965.1.1.1"
+							traits = {  }
+					}
+				}
+				
+				else = {
+					add_country_leader_role = {
+					character = SSK_saori_takebe
+					promote_leader = yes
+						country_leader = {
+							ideology = liberalism
+							expire = "1965.1.1.1"
+							traits = { }
+					}
+				}
+				}
+			}
+		
+		
+		}
+		
 		}
 	}
 	
@@ -1479,10 +1560,22 @@ country_event = {
 			base = 1
 		}
 		
+		ABT = {
+		country_event = {
+			id = ssk.103
+			days = 1
+		}
+		}
+		
 		hidden_effect = {
 		
 		SSK = {
 		set_country_flag = big_event_custom_GUP5
+		
+		set_nationality = {
+			target_country = SSN
+			character = SSK_koume_akaboshi
+		}
 	}
 	
 	SSN = {
@@ -1540,19 +1633,7 @@ country_event = {
 		}
 		
 		##RELEASING
-		469 = {
-			add_core_of = SSN
-		}
-		
-		470 = {
-			add_core_of = SSN
-		}
-		
 		472 = {
-			add_core_of = SSN
-		}
-		
-		837 = {
 			add_core_of = SSN
 		}
 		
@@ -1586,9 +1667,6 @@ country_event = {
 		}
 		
 		SSK = {
-			remove_ideas = ssk_albertain_nationalists
-			remove_ideas = ssk_disorganized_high_command
-			remove_ideas = ssk_regina_treaty
 			add_ideas = ssk_civil_war
 		}
 		
@@ -1596,6 +1674,85 @@ country_event = {
 		
 		SSN = {
 			change_tag_from = SSK
+		}
+		
+		SSK = {
+			set_nationality = {
+				target_country = SSN
+				character = SSK_koume_akaboshi
+			}
+			
+			if = {
+				limit = {
+					SSK = {
+						has_country_flag = SSK_SAORI_DEAD
+					}
+				}
+				
+				else = {
+					set_nationality = {
+						target_country = SSN
+						character = SSK_saori_takebe
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					SSK = {
+						has_country_flag = SSK_ANZAI_DEAD
+					}
+				}
+				
+				country_event = {
+					id = ssk.104
+					days = 10
+				}
+				
+				else = {
+					set_nationality = {
+						target_country = SSN
+						character = SSK_chiyomi_anzai
+					}
+					
+					country_event = {
+						id = ssk.104
+						days = 10
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					SSK = {
+						has_country_flag = SSK_SAORI_DEAD
+					}
+				}
+				
+				add_country_leader_role = {
+					character = SSK_koume_akaboshi
+					promote_leader = yes
+						country_leader = {
+							ideology = liberalism
+							expire = "1965.1.1.1"
+							traits = {  }
+					}
+				}
+				
+				else = {
+					add_country_leader_role = {
+					character = SSK_saori_takebe
+					promote_leader = yes
+						country_leader = {
+							ideology = liberalism
+							expire = "1965.1.1.1"
+							traits = { }
+					}
+				}
+				}
+			}
+		
+		
 		}
 		
 		
@@ -1618,6 +1775,8 @@ country_event = {
 			base = 1
 		}
 		
+		complete_national_focus = SSK_situation
+		
 		set_cosmetic_tag = SSK_deutschordensstaat
 			set_politics = {
 				ruling_party = fascism
@@ -1639,23 +1798,23 @@ country_event = {
 			
 		}
 		
-		hidden_effect = {
-			retire_character = SSK_koume_akaboshi
-					retire_character = SSK_mika
-					retire_character = SSK_youko
-					retire_character = SSK_kiyomi_sugiyama
-					retire_character = SSK_maria_suzuki
-					retire_character = SSK_chiyomi_anzai
-					retire_character = SSK_kei
-					retire_character = SSK_rosehip
-					retire_character = SSK_kei2
-					retire_character = SSK_suzuki2
-					retire_character = SSK_koume2
-					retire_character = SSK_rosehip2
-					retire_character = SSK_mako
-					retire_character = SSK_marie
-					retire_character = SSK_klara
-		}
+		##hidden_effect = {
+					##retire_character = SSK_koume_akaboshi
+					##retire_character = SSK_mika
+					##retire_character = SSK_youko
+					##retire_character = SSK_kiyomi_sugiyama
+					##retire_character = SSK_maria_suzuki
+					##retire_character = SSK_chiyomi_anzai
+					##retire_character = SSK_kei
+					##retire_character = SSK_rosehip
+					##retire_character = SSK_kei2
+					##retire_character = SSK_suzuki2
+					##retire_character = SSK_koume2
+					##retire_character = SSK_rosehip2
+					##retire_character = SSK_mako
+					##retire_character = SSK_marie
+					##retire_character = SSK_klara
+		##}
 	}
 
 }
@@ -3167,7 +3326,7 @@ country_event = {
 					ideology = nazism
 						traits = {
 						}	
-					}
+				}
 			
 	}
 }
@@ -3376,7 +3535,7 @@ country_event = {
 	desc = ssk.91.d
 	picture = GFX_report_event_liberia_colony
 	
-	is_triggered_only = no
+	is_triggered_only = yes
 	fire_only_once = no
 	
 	trigger = {
@@ -3423,87 +3582,523 @@ country_event = {
 	}
 }
 
-##7 days at shanghai events
-
 country_event = {
-	id = ssk.92
-	title = ssk.92.t
-	desc = ssk.92.d
-	picture = GFX_report_event_rhienland2
+	id = ssk.94
+	title = ssk.94.t
+	desc = ssk.94.d
 	
-	is_triggered_only = no
-	fire_only_once = no
-	
-	trigger = {
-		SSK = {
-			has_completed_focus = SSK_east_united
-		}
-		
-		CHI = {
-			controls_province = 7014
-		}
-		
-		original_tag = SSK
-	}
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
 	
 	option = {
-		name = ssk.92.a
+		name = ssk.94.a
 		
 		ai_chance = {
 			base = 1
 		}
-		hidden_effect = {
-			play_song = 7daysatshanghai
-			
-			every_other_country = {
-				country_event = { id = ssk.news.3 days = 1 }
-			}
-			
-			country_event = { id = ssk.news.3 days = 1 }
-			
-			random_list = {
-				
-				60 = { ##LOW CASUALTIES
-					country_event = { id = ssk.93 days = 3 }
-				}
-				
-				40 = { ##DECIMATED
-				
-				}
-			}
-		}
 		
+		add_manpower = -2500
+		
+				469 = {
+					remove_core_of = SSK
+				}
+				
+				865 = {
+					remove_core_of = SSK
+				}
+				
+				470 = {
+					remove_core_of = SSK
+				}
+				
+				472 = {
+					remove_core_of = SSK
+				}
+				
 	}
 }
 
-country_event = { ##winning
-	id = ssk.93 
-	title = ssk.93.t
-	desc = ssk.93.d
-	picture = GFX_report_event_7days1
+country_event = {
+	id = ssk.95
+	title = ssk.95.t
+	desc = ssk.95.d
+	picture = GFX_report_event_report_event_war_coup2
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	
-	option = { ##send some troops
-		name = ssk.93.a
-		
-		ai_chance = {
-			base = 5
-		}
-		add_manpower = -12
-	}
-	
-	option = { ##ceasefire
-		name = ssk.93.b
+	option = {
+		name = ssk.95.a
 		
 		ai_chance = {
 			base = 1
 		}
-		add_manpower = -12
+		
+		swap_ideas = {
+			remove_idea = ssk_anarchy
+			add_idea = ssk_anarchy2
+		}
+	}
+}
+
+country_event = {
+	id = ssk.96
+	title = ssk.96.t
+	desc = ssk.96.d
+	picture = GFX_report_event_report_event_war_coup3
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = ssk.96.a
+		
+		ai_chance = {
+			base = 1
+		}
+		
+		add_political_power = -50
+		add_stability = -0.01
+	}
+}
+
+country_event = {
+	id = ssk.97
+	title = ssk.97.t
+	desc = ssk.97.d
+	picture = GFX_report_event_report_event_war_coup4
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { ##hunt them
+		name = ssk.97.a
+		
+		ai_chance = {
+			base = 1
+		}
+		
+		hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = {
+						id = ssk.98
+						days = 3
+					}
+					
+					set_country_flag = SSK_SAORI_DEAD
+				}
+				
+				50 = {
+					country_event = {
+						id = ssk.99
+						days = 3
+					}
+				}
+			}
+			
+			random_list = {
+				50 = {
+					country_event = {
+						id = ssk.100
+						days = 7
+					}
+					
+					set_country_flag = SSK_ANZAI_DEAD
+				}
+				
+				50 = {
+					country_event = {
+						id = ssk.101
+						days = 7
+					}
+				}
+			}
+		}
+	}
+	
+	option = { ##let them be
+		name = ssk.97.b
+		
+		ai_chance = {
+			base = 1
+		}
 	}
 	
 }
 
+##SAORI CAPTURE EVENTS
 
+country_event = {
+	id = ssk.98
+	title = ssk.98.t
+	desc = ssk.98.d
+	picture = GFX_report_event_report_event_war_coup5
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = ssk.98.a
+		
+		ai_chance = {
+			base = 1
+		}
+		
+		retire_character = SSK_saori_takebe
+	}
+}
 
+country_event = {
+	id = ssk.99
+	title = ssk.99.t
+	desc = ssk.99.d
+	picture = GFX_report_event_report_event_war_coup6
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = ssk.99.a
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+##ANZAI
+
+country_event = {
+	id = ssk.100
+	title = ssk.100.t
+	desc = ssk.100.d
+	picture = GFX_report_event_report_event_war_coup7
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = ssk.100.a
+		
+		ai_chance = {
+			base = 1
+		}
+		
+		retire_character = SSK_chiyomi_anzai
+	}
+	
+}
+
+country_event = {
+	id = ssk.101
+	title = ssk.101.t
+	desc = ssk.101.d
+	picture = GFX_report_event_report_event_war_coup8
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = ssk.101.a
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+##MILITARY JUNTA
+country_event = {
+	id = ssk.102
+	title = ssk.102.t
+	desc = ssk.102.d
+	picture = GFX_report_event_report_event_war_coup9
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = ssk.102.a
+		
+		ai_chance = {
+			base = 1
+		}
+		
+		SSK = {
+			remove_ideas = ssk_albertain_nationalists
+		}	
+		
+		release = ABT
+		
+		##NICO
+		set_nationality = {
+			target_country = ABT
+			character = SSK_nico_telephone
+		}
+		
+		##VIETNAM
+		set_nationality = {
+			target_country = ABT
+			character = SSK_vietnam_warfare
+		}
+		
+		ABT = {
+			set_country_flag = ABT_RISE_VIETNAM
+			add_ideas = ssk_ABT_army
+		}
+		
+		ABT = {
+			change_tag_from = SSK
+		}
+		
+		hidden_effect = {
+			ABT = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
+					long_name = ABT_NEUTRALITY_LONG
+					name = ABT_NEUTRALITY_SHORT
+				}
+				
+				add_country_leader_role = {
+					character = SSK_vietnam_warfare
+					promote_leader = yes
+						country_leader = {
+							ideology = centrism
+							expire = "1965.1.1.1"
+							traits = { war_industrialist }
+					}
+				}
+			
+			set_cosmetic_tag = ALB_VIETNAM_LEGION
+			
+			set_popularities = {
+				democratic = 5
+				neutrality = 85
+				fascism = 10
+				communism = 0
+			}
+
+			inherit_technology = SSK
+				
+			load_oob = "ABT_militia"
+		
+		}
+		
+		##SALT
+		set_nationality = {
+			target_country = ABT
+			character = SSK_salt
+		}
+		
+		##DANSK
+		set_nationality = {
+			target_country = ABT
+			character = ssk_deez_rodent
+		}
+		
+		ABT = {
+			recruit_character = SSK_salt
+			recruit_character = ssk_deez_rodent
+		}
+}
+}
+
+	option = {
+		name = ssk.102.b
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		SSK = {
+			remove_ideas = ssk_albertain_nationalists
+		}	
+		
+		release = ABT
+		
+		##NICO
+		set_nationality = {
+			target_country = ABT
+			character = SSK_nico_telephone
+		}
+		
+		##VIETNAM
+		set_nationality = {
+			target_country = ABT
+			character = SSK_vietnam_warfare
+		}
+		
+		ABT = {
+			set_country_flag = ABT_RISE_VIETNAM
+			add_ideas = ssk_ABT_army
+		}
+		
+		hidden_effect = {
+			ABT = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
+					long_name = ABT_NEUTRALITY_LONG
+					name = ABT_NEUTRALITY_SHORT
+				}
+				
+				add_country_leader_role = {
+					character = SSK_vietnam_warfare
+					promote_leader = yes
+						country_leader = {
+							ideology = centrism
+							expire = "1965.1.1.1"
+							traits = { war_industrialist }
+					}
+				}
+			
+			set_cosmetic_tag = ALB_VIETNAM_LEGION
+			
+			set_popularities = {
+				democratic = 5
+				neutrality = 85
+				fascism = 10
+				communism = 0
+			}
+
+			inherit_technology = SSK
+				
+			load_oob = "ABT_militia"
+		
+		}
+		
+		##SALT
+		set_nationality = {
+			target_country = ABT
+			character = SSK_salt
+		}
+		
+		##DANSK
+		set_nationality = {
+			target_country = ABT
+			character = ssk_deez_rodent
+		}
+		
+		ABT = {
+			recruit_character = SSK_salt
+			recruit_character = ssk_deez_rodent
+		}
+	}
+}
+}
+
+country_event = {
+	id = ssk.103
+	title = ssk.103.t
+	desc = ssk.103.d
+	picture = GFX_report_event_report_event_war_coup10
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = ssk.103.a
+		
+		ai_chance = {
+			base = 1
+		}
+		
+		add_ideas = ssk_civil_war
+		
+		hidden_effect = {
+			SSK = {
+				declare_war_on = {
+					target = ABT
+					type = annex_everything
+				}
+			}
+			
+			SSN = {
+				declare_war_on = {
+					target = ABT
+					type = annex_everything
+				}
+			}
+		}
+	}
+}
+
+##maho escape
+country_event = {
+	id = ssk.104
+	title = ssk.104.t
+	desc = ssk.104.d
+	picture = GFX_report_event_report_event_war_coup11
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = ssk.104.a
+		
+		ai_chance = {
+			base = 1
+		}
+		
+		hidden_effect = {
+			SSN = {
+				country_event = {
+					id = ssk.105
+					days = 1
+				}
+			}
+		}
+		
+		set_nationality = {
+			target_country = SSN
+			character = SSK_maho
+		}
+	}
+}
+
+country_event = {
+	id = ssk.105
+	title = ssk.105.t
+	desc = ssk.105.d
+	picture = GFX_report_event_report_event_war_coup12
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = ssk.105.a
+		
+		ai_chance = {
+			base = 1 
+		}
+		
+		
+		add_corps_commander_role = {
+			Character = SSK_maho
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 5
+		}
+
+		if = {
+			limit = {
+				SSK = {
+					has_country_flag = SSK_ANZAI_DEAD
+				}
+			}
+			
+			else = {
+				recruit_character = SSK_mahcovy
+			}
+		}
+	}
+}

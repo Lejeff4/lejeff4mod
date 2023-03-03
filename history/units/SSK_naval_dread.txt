@@ -1,0 +1,14 @@
+
+units= {
+	fleet = {
+		name = "Saskatchewan Navy"
+		naval_base = 1408  # Vancouver
+		task_force = {
+			name = "Saskatchewan Navy Taskforce"
+			location = 1408  # Vancouver
+			
+			ship = { name = "SNR Saskatchewan" definition = battleship  equipment = {battleship_1 = { amount = 1 owner = SSK version_name = "Saskatchewan Class" } } }
+		}
+	}
+
+}

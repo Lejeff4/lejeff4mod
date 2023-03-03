@@ -231,6 +231,61 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_7days1.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_report_event_report_event_war_coup2"
+		texturefile = "gfx/event_pictures/report_event_war_coup2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_report_event_war_coup3"
+		texturefile = "gfx/event_pictures/report_event_war_coup3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_report_event_war_coup4"
+		texturefile = "gfx/event_pictures/report_event_war_coup4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_report_event_war_coup5"
+		texturefile = "gfx/event_pictures/report_event_war_coup5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_report_event_war_coup6"
+		texturefile = "gfx/event_pictures/report_event_war_coup6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_report_event_war_coup7"
+		texturefile = "gfx/event_pictures/report_event_war_coup7.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_report_event_war_coup8"
+		texturefile = "gfx/event_pictures/report_event_war_coup8.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_report_event_war_coup9"
+		texturefile = "gfx/event_pictures/report_event_war_coup9.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_report_event_war_coup10"
+		texturefile = "gfx/event_pictures/report_event_war_coup10.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_report_event_war_coup11"
+		texturefile = "gfx/event_pictures/report_event_war_coup11.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_report_event_war_coup12"
+		texturefile = "gfx/event_pictures/report_event_war_coup12.dds"
+	}
+	
 ##THE NEWS
 
 	spriteType = {
@@ -259,6 +314,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_trait_best_girl2"
 		texturefile = "gfx/interface/traits/personal/trait_best_girl2.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_trait_duel_planner"
+		texturefile = "gfx/interface/traits/personal/trait_duel_planner.dds"
 		legacy_lazy_load = no
 	}
 
@@ -823,6 +884,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_ETB"
 		texturefile = "gfx/interface/ideas/Saskatchewan/idea_ETB.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_vietnam_legion"
+		texturefile = "gfx/interface/ideas/Saskatchewan/idea_vietnam_legion.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_SSN_army"
+		texturefile = "gfx/interface/ideas/Saskatchewan/idea_SSN_army.dds"
 	}
 	
 	

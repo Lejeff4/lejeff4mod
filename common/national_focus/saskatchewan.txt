@@ -28,7 +28,6 @@ focus_tree = {
 			}
 			
 			prerequisite = {}
-			mutually_exclusive = { focus = SSK_stay_commonwealth }
 		
 			cost = 1
 			
@@ -36,21 +35,6 @@ focus_tree = {
 				custom_effect_tooltip = SSK_elections_focus
 			}
 		
-		}
-		
-		focus = {
-			id = SSK_stay_commonwealth
-			x = 12
-			y = 0
-			
-			prerequisite = {}
-			mutually_exclusive = { focus = SSK_elections }
-		
-			cost = 1
-			
-			completion_reward = {
-			
-			}
 		}
 		
 		focus = {
@@ -1039,6 +1023,12 @@ focus_tree = {
 				has_country_flag = SSK_fascist_victory1
 			}
 			
+			allow_branch = {
+				NOT = {
+					has_country_flag = SSK_ERIKA_WINNER
+				}	
+			}
+			
 			available = {
 				has_country_flag = SSK_fascist_victory1
 			}
@@ -1174,6 +1164,14 @@ focus_tree = {
 			x = -3
 			y = 3
 			
+			available = {
+				NOT = {
+					has_country_flag = SSK_prime_minister2
+				}
+				
+				has_country_flag = SSK_prime_minister
+			}
+			
 			prerequisite = { focus = SSK_challange_parlament }
 			prerequisite = { focus = SSK_news_censorship }
 			mutually_exclusive = {}
@@ -1196,6 +1194,14 @@ focus_tree = {
 			x = -1
 			y = 3
 			
+			available = {
+				NOT = {
+					has_country_flag = SSK_prime_minister2
+				}
+				
+				has_country_flag = SSK_prime_minister
+			}
+			
 			prerequisite = { focus = SSK_challange_parlament }
 			prerequisite = { focus = SSK_news_censorship }
 			mutually_exclusive = {}
@@ -1215,6 +1221,14 @@ focus_tree = {
 			relative_position_id = SSK_fascist_victory
 			x = 1
 			y = 3
+			
+			available = {
+				NOT = {
+					has_country_flag = SSK_prime_minister2
+				}
+				
+				has_country_flag = SSK_prime_minister
+			}
 			
 			prerequisite = { focus = SSK_challange_parlament }
 			prerequisite = { focus = SSK_news_censorship }
@@ -1400,6 +1414,10 @@ focus_tree = {
 				}
 				
 				740 = {
+					add_core_of = SSK
+				}
+				
+				864 = {
 					add_core_of = SSK
 				}
 			}
@@ -3383,6 +3401,62 @@ focus_tree = {
 			
 			completion_reward = {
 				navy_experience = 25
+			}
+		}
+		
+		focus = {
+			id= SSK_snr_saskatchewan
+			icon = GFX_goal_snr_dreadnought
+			relative_position_id = SSK_navy_time
+			x = -3
+			y = 1
+			
+			available = {
+				SSK = {
+					473 = {
+						is_controlled_by = SSK
+					}
+				}
+			}
+			
+			prerequisite = { focus = SSK_navy_time }
+			mutually_exclusive = {}
+			
+			cost = 3
+			
+			completion_reward = {
+				custom_effect_tooltip = SSK_dreadnought_tool
+				hidden_effect = {
+					load_oob = "SSK_naval_dread"
+				}
+			}
+		}
+		
+		focus = {
+			id = SSK_snr_shields
+			icon = GFX_goal_snr_screens
+			relative_position_id = SSK_navy_time
+			x = -3
+			y = 2
+			
+			available = {
+				SSK = {
+					473 = {
+						is_controlled_by = SSK
+					}
+				}
+			}
+			
+			prerequisite = { focus = SSK_snr_saskatchewan }
+			mutually_exclusive = {}
+			
+			cost = 3
+			
+			completion_reward = {
+				custom_effect_tooltip = SSK_destoryers_tool
+				hidden_effect = {
+					load_oob = "SSK_naval_dest"
+				}
 			}
 		}
 		
@@ -7988,7 +8062,6 @@ focus_tree = {
 				NOT = {
 					has_completed_focus = SSK_military_control
 				}
-				has_government = fascism
 			}
 			
 			prerequisite = { focus = SSK_join_allies3 focus = SSK_militerized_state focus = SSK_american_alliance }
@@ -8051,23 +8124,6 @@ focus_tree = {
 					load_oob = "liberia_invasion"
 				}
 			}
-		}
-		
-		focus = {
-			id = SSK_shanghai_crisis
-			relative_position_id = SSK_anchluss
-			x = -4
-			y = 3
-			
-			prerequisite = { focus = SSK_liberalize_politics focus = SSK_keep_dictator focus = SSK_order277 focus = SSK_manitoba_purchase }
-			mutually_exclusive = {}
-			
-			cost = 7
-			
-			completion_reward = {
-				
-			}
-			
 		}
 		
 		
@@ -8417,7 +8473,7 @@ focus_tree = {
 					ideology = centrism
 					expire = "1965.1.1"
 					traits = {
-					
+						nationalist_saskatchewan
 					}
 				}
 			}
@@ -8973,5 +9029,257 @@ focus_tree = {
 			}
 		}
 		
+		## CHAOS ##
+		
+		focus = {
+			id = SSK_situation
+			icon = GFX_goal_coup1
+			x = 5
+			y = 0
+			
+			allow_branch = {
+				has_country_flag = SSK_ERIKA_WINNER
+			}
+			
+			completion_reward = {
+				add_political_power = 50
+				add_ideas = ssk_anarchy
+				
+				hidden_effect = {
+					country_event = ssk.94
+					
+					##ideas
+					
+					remove_ideas = ssk_war_plan_n
+					remove_ideas = ssk_war_plan_n1
+					remove_ideas = ssk_war_plan_v1
+					remove_ideas = ssk_war_plan_v
+					remove_ideas = ssk_5cm_cannon
+					remove_ideas = ssk_fire_supremicy
+					remove_ideas = ssk_bayonett_focus
+					remove_ideas = ssk_chemical_warfare
+					remove_ideas = ssk_secret_rearmament
+					remove_ideas = ssk_professional_army
+					remove_ideas = ssk_regina_vehicle_factory
+					remove_ideas = ssk_advanced_training
+					remove_ideas = ssk_revitalise_heer
+					remove_ideas = ssk_tank_production
+					remove_ideas = ssk_motorized_production
+					remove_ideas = ssk_mechanized_production
+					
+					remove_ideas = ssk_challanged_parlament
+				}
+			}
+		}
+		
+		focus = {
+			id = SSK_deal_opponents
+			icon = GFX_goal_coup2
+			relative_position_id = SSK_situation
+			x = 0
+			y = 1
+			cost = 3
+			prerequisite = { focus = SSK_situation }
+			completion_reward = {
+				country_event = ssk.95
+				remove_ideas = ssk_dying_democracy
+			}
+		}
+		
+		focus = {
+			id = SSK_purge_communists
+			icon = GFX_goal_coup3
+			relative_position_id = SSK_deal_opponents
+			x = -3
+			y = 1
+			
+			cost = 1
+			prerequisite = { focus = SSK_deal_opponents }
+			completion_reward = {
+				add_stability = -0.1
+				add_political_power = -50
+				retire_character = SSK_klara
+				retire_character = SSK_nonna
+				retire_character = SSK_katyusha
+				retire_character = SSK_alina
+				retire_character = SSK_nina
+			}
+		}
+		
+		focus = {
+			id = SSK_purge_oldguard
+			icon = GFX_goal_coup4
+			relative_position_id = SSK_deal_opponents
+			x = -1
+			y = 1
+			
+			cost = 1
+			prerequisite = { focus = SSK_deal_opponents }
+			completion_reward = {
+				add_stability = -0.05
+				add_political_power = -25
+				retire_character = SSK_youko
+				retire_character = SSK_kiyomi_sugiyama
+				retire_character = SSK_maria_suzuki
+				retire_character = SSK_rosehip
+				retire_character = SSK_mako
+				
+				hidden_effect = {
+					retire_character = SSK_austria_hungy
+					retire_character = SSK_amonggus
+					retire_character = SSK_lejeff4
+				}
+			}
+		}
+		
+		focus = {
+			id = SSK_pruge_democrats
+			icon = GFX_goal_coup5
+			relative_position_id = SSK_deal_opponents
+			x = 1
+			y = 1
+			
+			select_effect = {
+				country_event = {
+					id = ssk.96
+					days = 7
+				}
+			}
+			
+			cost = 2
+			prerequisite = { focus = SSK_deal_opponents }
+			completion_reward = {
+				add_stability = -0.15
+				add_political_power = -55
+				
+				retire_character = SSK_mika
+				retire_character = SSK_kei
+				
+				hidden_effect = {
+					retire_character = SSK_kei2
+				}
+			}
+		}
+		
+		focus = {
+			id = SSK_deal_nationalists
+			icon = GFX_goal_coup6
+			relative_position_id = SSK_deal_opponents
+			x = 3
+			y = 1
+			
+			cost = 1
+			prerequisite = { focus = SSK_deal_opponents }
+			completion_reward = {
+				country_event = {
+					id = ssk.97
+				}
+			}
+		}
+		
+		focus = {
+			id = SSK_reward_loyal
+			icon = GFX_goal_coup8
+			relative_position_id = SSK_deal_opponents
+			x = 2
+			y = 2
+			
+			cost = 2
+			
+			prerequisite = { focus = SSK_purge_communists }
+			prerequisite = { focus = SSK_purge_oldguard }
+			prerequisite = { focus = SSK_pruge_democrats }
+			prerequisite = { focus = SSK_deal_nationalists }
+			completion_reward = {
+				add_trait = {
+					character = SSK_maho
+					trait = politically_connected
+				}
+				
+				add_trait = {
+					character = SSK_emi1
+					trait = politically_connected
+				}
+				
+				add_trait = {
+					character = SSK_mauko1
+					trait = politically_connected
+				}
+				
+				remove_ideas = ssk_disorganized_high_command
+				
+				if = {
+					limit = { has_idea = ssk_army_rival }
+					remove_ideas = ssk_army_rival
+				}
+				
+				if = {
+					limit = { has_idea = ssk_army_rival_infantry }
+					remove_ideas = ssk_army_rival_infantry
+				}
+				
+				if = {
+					limit = { has_idea = ssk_army_rival_armour }
+					remove_ideas = ssk_army_rival_armour
+				}
+			}
+		}
+		
+		focus = {
+			id = SSK_cleanse_army
+			icon = GFX_goal_coup7
+			relative_position_id = SSK_deal_opponents
+			x = -2
+			y = 2
+			
+			select_effect = {
+				country_event = {
+					id = ssk.102
+					days = 12
+				}
+			}
+			
+			cost = 3 
+			
+			prerequisite = { focus = SSK_purge_communists }
+			prerequisite = { focus = SSK_purge_oldguard }
+			prerequisite = { focus = SSK_pruge_democrats }
+			prerequisite = { focus = SSK_deal_nationalists }
+			completion_reward = {
+				add_manpower = -25000
+				
+				remove_ideas = ssk_regina_treaty
+			}
+		}
+		
+		focus = {
+			id = SSK_reign_terror
+			icon = GFX_goal_coup9
+			relative_position_id = SSK_deal_opponents
+			x = 0
+			y = 3
+			
+			select_effect = {
+				country_event = {
+					id = ssk.40
+					days = 14
+				}
+			}
+			
+			cost = 10
+			
+			prerequisite = { focus = SSK_cleanse_army }
+			prerequisite = { focus = SSK_reward_loyal }
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = ssk_anarchy2
+					add_idea = ssk_anarchy3
+				}
+				
+				every_owned_state = {
+					add_manpower = -15000
+				}
+			}
+		}
 		
 	}

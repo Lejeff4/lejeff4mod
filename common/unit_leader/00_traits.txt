@@ -139,6 +139,20 @@ leader_traits = {
 		}
 	}
 	
+	duel_planner = { ##MAHO/ANZAI
+		type = land
+		trait_type = personality_trait
+		
+		non_shared_modifier = {
+			planning_speed = 0.15
+			planning_skill = 1
+		}
+		
+		non_shared_modifier = {
+			experience_gain_factor = 0.25
+		}
+	}
+	
 	
 	brilliant_strategist = { 
 		type = land
