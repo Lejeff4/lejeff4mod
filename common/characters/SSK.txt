@@ -31,7 +31,7 @@ characters={
 				has_completed_focus = SSK_minister_elecions
 			}
 			}
-			visible = {
+			available = {
 			OR = {
 				has_government = democratic
 				has_completed_focus = SSK_minister_elecions
@@ -87,13 +87,7 @@ characters={
 				has_completed_focus = SSK_minister_elecions
 			}	
 			}
-			visible = {
-			OR = {
-				has_government = communism
-				has_government = democratic
-				has_completed_focus = SSK_minister_elecions
-			}	
-			}
+	
 			traits = {
 				moderate_socialist
 			}
@@ -154,9 +148,6 @@ characters={
 			available = {
 				has_government = communism
 			}
-			visible = {
-				has_government = communism
-			}
 			traits = {
 				people_pleaser
 			}
@@ -208,9 +199,6 @@ characters={
 			available = {
 				has_country_flag = SSK_head_security1
 			}
-			visible = {
-				has_country_flag = SSK_head_security1
-			}
 			traits = {
 				head_of_security
 			}
@@ -236,12 +224,6 @@ characters={
 				original_tag = SSK
 			}
 			available = {
-				OR = {
-				has_government = democratic
-				has_completed_focus = SSK_minister_elecions
-			}
-			}
-			visible = {
 				OR = {
 				has_government = democratic
 				has_completed_focus = SSK_minister_elecions
@@ -394,12 +376,7 @@ characters={
 				has_completed_focus = SSK_minister_elecions
 			}
 			}
-			visible = {
-				OR = {
-				has_government = democratic
-				has_completed_focus = SSK_minister_elecions
-			}
-			}
+	
 			traits = {
 				conservitive
 			}
@@ -449,12 +426,7 @@ characters={
 				has_completed_focus = SSK_minister_elecions
 			}
 			}
-			visible = {
-				OR = {
-				has_government = democratic
-				has_completed_focus = SSK_minister_elecions
-			}
-			}
+		
 			traits = {
 				efficent_burocrat
 			}
@@ -556,6 +528,22 @@ characters={
 			cost = 50
 		}
 		
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = SSK_vietnam_theroist_idea
+			ledger = army
+			allowed = {
+				original_tag = SSK
+			}
+			
+			available = {
+				has_completed_focus = SSK_war_plan_V
+			}
+			
+			traits = { mobile_warfare_expert }
+		}
+		
 		corps_commander={
 			traits={ death_or_dishonor trait_reckless }
 			skill=1
@@ -588,9 +576,7 @@ characters={
 			available = {
 				has_government = communism
 			}
-			visible = {
-				has_government = communism
-			}
+	
 			traits = {
 				diehard_socialist
 			}
@@ -642,9 +628,7 @@ characters={
 			available = {
 				has_government = communism
 			}
-			visible = {
-				has_government = communism
-			}
+		
 			traits = {
 				communist_reformist
 			}
@@ -681,9 +665,7 @@ characters={
 			available = {
 				has_government = communism
 			}
-			visible = {
-				has_government = communism
-			}
+		
 			traits = {
 				rapid_industrialist
 			}
@@ -755,6 +737,22 @@ characters={
 			cost = 50
 		}
 		
+		advisor={
+			cost = 100
+			slot = theorist
+			idea_token = SSK_nico_theroist_idea
+			ledger = army
+			allowed = {
+				original_tag = SSK
+			}
+			
+			available = {
+				has_completed_focus = SSK_war_plan_N
+			}
+			
+			traits = { grand_battle_plan_expert }
+		}
+		
 		corps_commander = {
 			traits = {  } 
 					skill = 1
@@ -795,6 +793,22 @@ characters={
 		}
 		
 		advisor={
+			slot = high_command
+			idea_token = SSK_mako_army_idea
+			ledger = army
+			allowed = {
+				original_tag = SSK
+			}
+			traits = {
+				dive_bomber
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+		
+		advisor={
 			slot = political_advisor
 			idea_token = SSK_mako_idea
 			allowed = {
@@ -803,9 +817,7 @@ characters={
 			available = {
 				has_country_flag = SSK_economic_minister1
 			}
-			visible = {
-				has_country_flag = SSK_economic_minister1
-			}
+			
 			traits = {
 				economic_genuius
 			}
@@ -853,6 +865,22 @@ characters={
 		}
 		
 		advisor={
+			slot = high_command
+			idea_token = SSK_yukari_army_idea
+			ledger = army
+			allowed = {
+				original_tag = SSK
+			}
+			traits = {
+				army_artillery_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+		
+		advisor={
 			slot = political_advisor
 			idea_token = SSK_yukari_idea
 			allowed = {
@@ -861,9 +889,7 @@ characters={
 			available = {
 				has_country_flag = SSK_economic_minister2
 			}
-			visible = {
-				has_country_flag = SSK_economic_minister2
-			}
+			
 			traits = {
 				ruthless_capitalist
 			}
@@ -931,6 +957,22 @@ characters={
 			}
 			
 			cost = 100
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = SSK_yukari_army_idea
+			ledger = army
+			allowed = {
+				original_tag = SSK
+			}
+			traits = {
+				army_armored_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 2.000
+			}
 		}
 		
 		corps_commander = {

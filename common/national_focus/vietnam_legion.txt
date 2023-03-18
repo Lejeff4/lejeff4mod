@@ -11,4 +11,388 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = ABT_situation
+		icon = GFX_goal_twogiants
+		x = 5
+		y = 0
+		
+		prerequisite = {}
+		mutually_exclusive = {}
+		
+		cost = 0
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+		}
+	}
+	
+	focus = {
+		id = ABT_british_equipment
+		icon = GFX_goal_rifles
+		relative_position_id = ABT_situation
+		
+		x = 0
+		y = 1
+		
+		prerequisite = { focus = ABT_situation }
+		mutually_exclusive = {}
+		
+		cost = 1
+		
+		completion_reward = {
+			army_experience = 15
+			add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					
+					amount = 5000
+					
+					producer = ENG
+				
+				}
+		}
+	}
+	
+	focus = {
+		id = ABT_warplan_n
+		icon = GFX_goal_warplann
+		relative_position_id = ABT_situation
+		
+		x = -3
+		y = 1
+		
+		prerequisite = { focus = ABT_situation }
+		mutually_exclusive = {}
+		
+		cost = 2
+		
+		completion_reward = {
+			add_ideas = ssk_war_plan_n
+		}
+	}
+	
+	focus = {
+		id = ABT_bolster_militia
+		icon = GFX_goal_militia
+		relative_position_id = ABT_warplan_n
+		
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = ABT_warplan_n }
+		mutually_exclusive = {}
+		
+		cost = 2
+		
+		completion_reward = {
+			add_manpower = 50000
+			
+			470 = {
+			create_unit = {
+					division = "name = \"Albertian Militia\" division_template = \"Albertian Militia\" start_experience_factor = 0.9" 
+					owner = ABT
+				}
+				
+			create_unit = {
+					division = "name = \"Albertian Militia\" division_template = \"Albertian Militia\" start_experience_factor = 0.9" 
+					owner = ABT
+				}
+				
+			create_unit = {
+					division = "name = \"Albertian Militia\" division_template = \"Albertian Militia\" start_experience_factor = 0.9" 
+					owner = ABT
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = ABT_dig_trenches
+		icon = GFX_goal_dig
+		relative_position_id = ABT_warplan_n
+		
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = ABT_warplan_n }
+		mutually_exclusive = {}
+		
+		cost = 2
+		
+		completion_reward = {
+			470 = {
+				add_building_construction = {
+						type = bunker
+						level = 3
+						province = 3010
+						instant_build = yes
+					}
+					
+				add_building_construction = {
+						type = bunker
+						level = 3
+						province = 510
+						instant_build = yes
+					}
+					
+				add_building_construction = {
+						type = bunker
+						level = 3
+						province = 6754
+						instant_build = yes
+					}
+			}
+		}
+	}
+	
+	focus = {
+		id = ABT_old_cache
+		icon = GFX_goal_old_weapons
+		relative_position_id = ABT_warplan_n
+		
+		x = 1
+		y = 2
+		
+		prerequisite = { focus = ABT_dig_trenches }
+		mutually_exclusive = {}
+		
+		cost = 1
+		
+		completion_reward = {
+			add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					
+					amount = 3200
+					
+					producer = SSK
+				
+				}
+				
+			add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					
+					amount = 200
+					
+					producer = SSK
+				
+				}
+				
+			add_equipment_to_stockpile = {
+					type = artillery_equipment
+					
+					amount = 500
+					
+					producer = SSK
+				
+				}
+		}
+	}
+	
+	focus = {
+		id = ABT_conscription
+		icon = GFX_goal_conscript
+		relative_position_id = ABT_warplan_n
+		
+		x = -1
+		y = 2
+		
+		prerequisite = { focus = ABT_bolster_militia }
+		mutually_exclusive = {}
+		
+		cost = 1
+		
+		completion_reward = {
+			add_manpower = 45000
+			add_ideas = ssk_conscription_idea
+			add_stability = -0.1
+		}
+	}
+	
+	focus = {
+		id = ABT_chemical_warfare
+		icon = GFX_goal_chemical_warfare
+		relative_position_id = ABT_warplan_n
+		
+		x = 0
+		y = 3
+		
+		prerequisite = { focus = ABT_conscription focus = ABT_old_cache }
+		mutually_exclusive = { focus = ABT_human_experiments }
+		
+		cost = 2
+		
+		completion_reward = {
+			add_ideas = ssk_chemical_warfare
+		}
+	}
+	
+	focus = {
+		id = ABT_warplan_v
+		icon = GFX_goal_warplanv
+		relative_position_id = ABT_situation
+		
+		x = 3
+		y = 1
+		
+		prerequisite = { focus = ABT_situation }
+		mutually_exclusive = {}
+		
+		cost = 2
+		
+		completion_reward = {
+			add_ideas = ssk_war_plan_v
+		}
+	}
+	
+	focus = {
+		id = ABT_raise_vietstaffle
+		icon = GFX_goal_vietstaffle
+		relative_position_id = ABT_warplan_v
+		
+		x = -1
+		y = 1
+		
+		prerequisite = { focus = ABT_warplan_v }
+		mutually_exclusive = {}
+		
+		cost = 2
+		
+		completion_reward = {
+			custom_effect_tooltip = SSK_moterized_mob_tooltip
+				hidden_effect = {
+					load_oob = ABT_motorized
+				}
+		}
+	}
+	
+	focus = {
+		id = ABT_vtsp_prototype
+		icon = GFX_goal_proto
+		relative_position_id = ABT_warplan_v 
+		
+		x = 1
+		y = 1
+		
+		prerequisite = { focus = ABT_warplan_v }
+		mutually_exclusive = {}
+		
+		cost = 2
+		
+		completion_reward = {
+			set_technology = {
+				basic_medium_tank_chassis = 1
+				tank_welded_armor = 1
+			}
+			
+			create_equipment_variant = {
+					name = "VTSP Prototype"
+					type = medium_tank_chassis_1
+					parent_version = 0
+					modules = {
+						main_armament_slot = tank_medium_cannon
+						turret_type_slot = tank_medium_three_man_tank_turret
+						suspension_type_slot = tank_christie_suspension
+						armor_type_slot = tank_welded_armor
+						engine_type_slot = tank_diesel_engine
+						special_type_slot_1 = tank_radio_1
+					}
+					upgrades = {
+						tank_nsb_engine_upgrade = 6
+						tank_nsb_armor_upgrade = 2
+					}
+					icon = "gfx/interface/technologies/ABT_medium_tank_3.dds"
+				}
+		}	
+	}
+	
+	focus = {
+		id = ABT_officer_training
+		icon = GFX_goal_training
+		relative_position_id = ABT_warplan_v
+		x = -1
+		y = 2
+		
+		prerequisite = { focus = ABT_raise_vietstaffle }
+		mutually_exclusive = {}
+		
+		cost = 2
+		
+		completion_reward = {
+			add_ideas = ssk_advanced_training
+		}
+	}
+	
+	focus = {
+		id = ABT_tank_factories
+		icon = GFX_goal_factory
+		relative_position_id = ABT_warplan_v
+		
+		x = 1
+		y = 2
+		
+		prerequisite = { focus = ABT_vtsp_prototype }
+		mutually_exclusive = {}
+		
+		cost = 2
+		
+		completion_reward = {
+			470 = {
+				add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = arms_factory
+						level = 3
+						instant_build = yes
+					}
+			}
+		}
+	}
+	
+	focus = {
+		id = ABT_human_experiments
+		icon = GFX_goal_experiment
+		relative_position_id = ABT_warplan_v
+		
+		x = 0
+		y = 3
+		
+		prerequisite = { focus = ABT_officer_training focus = ABT_tank_factories }
+		mutually_exclusive = { focus = ABT_chemical_warfare }
+		
+		cost = 2
+		
+		completion_reward = {
+			add_ideas = {
+					humane_human_experimentation
+				}
+		}
+	}
+	
+	focus = {
+		id = ABT_white_peace
+		icon = GFX_goal_whitepeace
+		relative_position_id = ABT_situation 
+		
+		x = 0
+		y = 5
+		
+		available = { 
+			470 = {
+				is_controlled_by = ABT
+			}
+		}
+		
+		prerequisite = { focus = ABT_chemical_warfare focus = ABT_human_experiments }
+		mutually_exclusive = {}
+		
+		cost = 1
+		
+		completion_reward = {
+			country_event = {
+				id = ssk.106
+				days = 1
+			}
+		}
+	}
+	
 }

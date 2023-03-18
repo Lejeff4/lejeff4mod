@@ -389,6 +389,10 @@ ssk.105.t:0 "Maho Arrives?"
 ssk.105.d:0 "In the middle of the night a mysterious figure had appeared at the doorstep of our new government today asking for salvation and to know where Anzai was. She had revealed herself to Maho from the other side of the civil war."
 ssk.105.a:0 "Well thats a unexpected visit"
 
+ssk.106.t:0 "Survival"
+ssk.106.d:0 "We have survived the onslaught of the other civil war participants. Now it is time to repair the country and bring peace to Alberta and the North American contenent. Glory to the Army."
+ssk.106.a:0 "o7"
+
 ##NEWS
 ssk.news.1.t:0 "The Fall of Anchorage"
 ssk.news.1.d:0 "Tonight the war in the north has finally ended in a Saskatchewanian victory. Joe Crowder is live on the scene in Anchorage. \n \nAs you can see the American forces have left the city. The destruction brought on this city is totally justified as the civillians were fighting back. Reports show that every attack on civillians were on accident. We have taken the city. Glory to Saskatchewan! \n \nWith this new development the balance of power in the Americas is slowly shifting. Will America be able to hold onto power?"

@@ -4102,3 +4102,24 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = ssk.106
+	title = ssk.106.t
+	desc = ssk.106.d
+	picture = GFX_report_event_ETB
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = ssk.106.a
+		
+		ai_chance = {
+			base = 1 
+		}
+		
+		white_peace = SSK
+		white_peace = SSN
+	}
+}
