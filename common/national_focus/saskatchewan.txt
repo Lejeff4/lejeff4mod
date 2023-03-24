@@ -2388,7 +2388,6 @@ focus_tree = {
 			
 			completion_reward = {
 				custom_effect_tooltip = SSK_ROCKET_TIME_TOOLTIP
-				set_country_flag = SSK_ROCKET_TIME
 			}
 		}
 		
@@ -3155,7 +3154,10 @@ focus_tree = {
 			y = 4
 			
 			available = {
+			OR = {
 				has_completed_focus = SSK_fascist_victory
+				has_completed_focus = SSK_communist_victory
+			}
 				SSK = {
 					has_war = yes
 				}
@@ -3282,7 +3284,7 @@ focus_tree = {
 			available = {
 				OR = {
 					has_completed_focus = SSK_doctrine_modernization 
-					has_completed_focus = SSK_operation_purple_storm
+					has_completed_focus = SSK_modernized_trench_warfare
 				}
 			}
 			

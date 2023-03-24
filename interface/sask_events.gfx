@@ -896,6 +896,21 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/Saskatchewan/idea_SSN_army.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_idea_rocket_program"
+		texturefile = "gfx/interface/ideas/Saskatchewan/idea_rocket_program.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_sask_polytech"
+		texturefile = "gfx/interface/ideas/Designers/idea_sask_polytech.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_lj4_welding"
+		texturefile = "gfx/interface/ideas/Designers/idea_lj4_welding.dds"
+	}
+	
 	
 ##EQUIPMENT 
 	SpriteType = {

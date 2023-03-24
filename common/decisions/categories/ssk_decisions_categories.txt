@@ -69,3 +69,14 @@ ssk_resistance_fighting = {
 	}
 	
 }
+ssk_rocket_program = {
+		priority = 4
+	
+	allowed = {
+		original_tag = SSK
+	}
+	
+	visible = {
+		has_completed_focus = SSK_rocket_program
+	}
+}

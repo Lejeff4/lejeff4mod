@@ -235,5 +235,31 @@ leader_traits = {
 		stability_factor = 0.05
 		
 	}
+	
+	saskpolytech = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		research_speed_factor = 0.1
+	}
+	
+	lj4_welding = {
+		random = no
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		equipment_bonus = {
+			armor = {
+				reliability = 0.15
+				armor_value = 0.05
+			}
+		}
+		
+	}
 
 }

@@ -2724,6 +2724,21 @@ ideas = {
 				
 			}
 		}
+		
+		ssk_rocket_funding = {
+			picture = rocket_program
+			
+			allowed = {
+			
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.05
+			}	
+		}
 	}
 		##ECONOMIC LAWS
 		economy = {
@@ -2834,6 +2849,18 @@ ideas = {
 			
 				traits = { fast_tank_manufacturer }
 			}
+			
+			lj4_welding_company = {
+				picture = lj4_welding
+				cost = 150
+				removal_cost = 10
+				
+				allowed = {
+					original_TAG = SSK
+				}
+				
+				traits = { lj4_welding }
+			}
 		}
 		
 		aircraft_manufacturer = {
@@ -2931,6 +2958,16 @@ ideas = {
 			}
 			
 			traits = { electronics_concern }
+		}
+		
+		sask_polytech = {
+			picture = sask_polytech
+			
+			allowed = {
+				original_TAG = SSK
+			}
+			
+			traits = { saskpolytech }
 		}
 		
 		sask_builds = {

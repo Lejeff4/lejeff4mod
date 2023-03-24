@@ -1,7 +1,7 @@
 spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_war_communism"
-		texturefile = "gfx/interface/ideas/idea_war_communism_economic_mobilisation.dds"
+		texturefile = "gfx/interface/ideas/Saskatchewan/idea_war_communism_economic_mobilisation.dds"
 	}
 	
 	spriteType = {

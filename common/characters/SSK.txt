@@ -584,6 +584,22 @@ characters={
 			cost = 150
 		}
 		
+		advisor={
+			slot = high_command
+			idea_token = SSK_katyushaarmy_idea
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+				has_government = communism
+			}
+			traits = {
+				army_infantry_2
+			}
+			
+			cost = 100
+		}
+		
 		corps_commander = {
 			traits = { hill_fighter urban_assault_specialist panzer_expert } 
 			skill = 5
@@ -634,6 +650,22 @@ characters={
 			}
 			
 			cost = 150
+		}
+		
+		advisor={
+			slot = high_command
+			idea_token = SSK_nonnaarmy_idea
+			allowed = {
+				original_tag = SSK
+			}
+			available = {
+				has_government = communism
+			}
+			traits = {
+				army_armored_1
+			}
+			
+			cost = 100
 		}
 		
 		country_leader = {
